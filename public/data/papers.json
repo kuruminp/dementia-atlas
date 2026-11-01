@@ -1,16 +1,84 @@
 {
   "meta": {
     "mode": "api",
-    "fetched_at": "2026-11-01T12:42:48+00:00",
+    "fetched_at": "2026-11-01T15:26:04+00:00",
     "verified_at": null,
     "source": "PubMed",
     "description": "Metadata-based research prioritization; not scientific appraisal.",
     "selection_method": "metadata_quality_v1",
     "daily_limit": 3,
     "display_limit": 100,
-    "newly_added": 0
+    "newly_added": 3
   },
   "items": [
+    {
+      "id": "42960521",
+      "title": "The Association of Amyloid-β and Tau With Synaptic Dysfunction in Alzheimer's Disease.",
+      "journal": "Annals of clinical and translational neurology",
+      "date": "2026-10-30",
+      "pubmed_entry_date": "2026-10-30",
+      "disease": "ad",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1002/acn3.70558",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42960521/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "independent"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42959361",
+      "title": "A multidomain, nurse-led, mobile health-supported intervention for dementia risk reduction in primary care (HAPPI MIND): a pragmatic, single-blind, two-arm, cluster randomised controlled trial.",
+      "journal": "The Lancet regional health. Western Pacific",
+      "date": "2026-10-20",
+      "pubmed_entry_date": "2026-10-30",
+      "disease": "other",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1016/j.lanwpc.2026.102000",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42959361/",
+      "source": "PubMed",
+      "research_type": "trial",
+      "selection_signals": [
+        "rct"
+      ],
+      "priority_score": 10,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42957174",
+      "title": "The Effects of Virtual Reality Group Reminiscence Therapy on Agitation, Cognition, Depression and Social Function in Patients With Alzheimer's Disease.",
+      "journal": "Psychogeriatrics : the official journal of the Japanese Psychogeriatric Society",
+      "date": "2026-11",
+      "pubmed_entry_date": "2026-10-29",
+      "disease": "ad",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article",
+        "Randomized Controlled Trial"
+      ],
+      "doi": "10.1111/psyg.70196",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42957174/",
+      "source": "PubMed",
+      "research_type": "trial",
+      "selection_signals": [
+        "rct"
+      ],
+      "priority_score": 10,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
     {
       "id": "42966490",
       "title": "Feasibility of an 8-week lifestyle intervention combining exercise, diet, cognitive training, and social engagement in individuals with mild cognitive impairment: a pilot randomized controlled trial.",
@@ -2282,76 +2350,6 @@
         "large_sample"
       ],
       "priority_score": 12,
-      "journal_tiebreak": 0,
-      "selected_on": "2026-11-01"
-    },
-    {
-      "id": "42459054",
-      "title": "Deep Model Families for EEG-Based Multi-Class Dementia Classification.",
-      "journal": "International journal of neural systems",
-      "date": "2026-07-16",
-      "pubmed_entry_date": "2026-07-16",
-      "disease": "ftd",
-      "topic": "other",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "doi": "10.1142/S0129065727500055",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42459054/",
-      "source": "PubMed",
-      "research_type": "validation",
-      "selection_signals": [
-        "validation",
-        "independent"
-      ],
-      "priority_score": 9,
-      "journal_tiebreak": 0,
-      "selected_on": "2026-11-01"
-    },
-    {
-      "id": "42429110",
-      "title": "Comment on 'Evidence Mapping of Clinical Practice Guidelines Recommendations and Quality for Nutritional Management in Dementia'.",
-      "journal": "Journal of clinical nursing",
-      "date": "2026-07-10",
-      "pubmed_entry_date": "2026-07-10",
-      "disease": "other",
-      "topic": "other",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "doi": "10.1111/jocn.70439",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42429110/",
-      "source": "PubMed",
-      "research_type": "guideline",
-      "selection_signals": [
-        "guideline"
-      ],
-      "priority_score": 10,
-      "journal_tiebreak": 0,
-      "selected_on": "2026-11-01"
-    },
-    {
-      "id": "42411372",
-      "title": "Cognitive Impairment and Postoperative Outcomes in Patients Undergoing Primary Total Hip Arthroplasty and Primary Total Knee Arthroplasty: A Systematic Review and Meta-analysis.",
-      "journal": "Annals of African medicine",
-      "date": "2026-07-07",
-      "pubmed_entry_date": "2026-07-07",
-      "disease": "mci",
-      "topic": "diagnosis",
-      "publication_types": [
-        "Journal Article",
-        "Systematic Review",
-        "Meta-Analysis"
-      ],
-      "doi": "10.4103/aam.aam_465_26",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42411372/",
-      "source": "PubMed",
-      "research_type": "systematic",
-      "selection_signals": [
-        "systematic",
-        "large_sample"
-      ],
-      "priority_score": 11,
       "journal_tiebreak": 0,
       "selected_on": "2026-11-01"
     }
