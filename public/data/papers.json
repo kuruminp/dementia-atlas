@@ -1,14 +1,14 @@
 {
   "meta": {
     "mode": "api",
-    "fetched_at": "2026-11-01T07:18:28+00:00",
+    "fetched_at": "2026-11-01T12:08:01+00:00",
     "verified_at": null,
     "source": "PubMed",
     "description": "Metadata-based research prioritization; not scientific appraisal.",
     "selection_method": "metadata_quality_v1",
     "daily_limit": 3,
     "display_limit": 30,
-    "newly_added": 15
+    "newly_added": 3
   },
   "items": [
     {
@@ -59,6 +59,29 @@
       "selected_on": "2026-11-01"
     },
     {
+      "id": "42961136",
+      "title": "Unveiling the molecular bridge between hearing loss and dementia via plasma proteomic mapping.",
+      "journal": "Journal of Alzheimer's disease : JAD",
+      "date": "2026-10-30",
+      "pubmed_entry_date": "2026-10-30",
+      "disease": "other",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1177/13872877261502870",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42961136/",
+      "source": "PubMed",
+      "research_type": "validation",
+      "selection_signals": [
+        "validation",
+        "independent"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-01"
+    },
+    {
       "id": "42959148",
       "title": "The association between diabetic retinopathy and cognitive impairment in patients with diabetes mellitus: a systematic review and meta-analysis.",
       "journal": "Frontiers in endocrinology",
@@ -100,6 +123,55 @@
       "research_type": "trial",
       "selection_signals": [
         "rct",
+        "large_sample"
+      ],
+      "priority_score": 12,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-01"
+    },
+    {
+      "id": "42953065",
+      "title": "Luteolin for Alzheimer's disease and related cognitive impairment: a systematic review and meta-analysis of efficacy and molecular mechanisms.",
+      "journal": "Frontiers in medicine",
+      "date": "2026-10-14",
+      "pubmed_entry_date": "2026-10-29",
+      "disease": "ad",
+      "topic": "pathology",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.3389/fmed.2026.1976119",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42953065/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-01"
+    },
+    {
+      "id": "42951347",
+      "title": "The Effects of Mind-Body Exercise on Cognitive Function and Peripheral Blood BDNF in Elderly People With Mild Cognitive Impairment: A Systematic Review and Meta-Analysis.",
+      "journal": "Geriatrics & gerontology international",
+      "date": "2026-11",
+      "pubmed_entry_date": "2026-10-28",
+      "disease": "mci",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review",
+        "Meta-Analysis",
+        "Review"
+      ],
+      "doi": "10.1111/ggi.70863",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42951347/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic",
         "large_sample"
       ],
       "priority_score": 12,
