@@ -1,14 +1,14 @@
 {
   "meta": {
     "mode": "api",
-    "fetched_at": "2026-11-01T12:11:02+00:00",
+    "fetched_at": "2026-11-01T12:13:09+00:00",
     "verified_at": null,
     "source": "PubMed",
     "description": "Metadata-based research prioritization; not scientific appraisal.",
     "selection_method": "metadata_quality_v1",
     "daily_limit": 3,
     "display_limit": 100,
-    "newly_added": 100
+    "newly_added": 0
   },
   "items": [
     {
