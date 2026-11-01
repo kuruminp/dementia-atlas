@@ -1,12 +1,19 @@
 {
   "meta": {
     "mode": "curated",
-    "fetched_at": null,
-    "verified_at": "2026-11-01",
     "source": "note",
-    "description": "公開済みnote記事の編集リスト"
+    "description": "Public note article links",
+    "fetched_at": "2026-11-01T12:11:33+00:00"
   },
   "items": [
+    {
+      "title": "アルツハイマー病の遺伝的リスクは，DNAメチル化を介して現れるのか",
+      "url": "https://note.com/merry_lily/n/nc4d5198bd38b",
+      "date": "2026-10-21",
+      "category": "研究の読みもの",
+      "description": "noteで公開した記事を読む．",
+      "tag": "research"
+    },
     {
       "title": "【2027年度受験向け】認知症専門医試験の勉強方法・最新版",
       "url": "https://note.com/merry_lily/n/n970030fbda40",
@@ -24,11 +31,139 @@
       "tag": "research"
     },
     {
+      "title": "血液p-tau217は，症状がない人の未来をどこまで予測できるのか",
+      "url": "https://note.com/merry_lily/n/nabdd7ac86909",
+      "date": "2026-08-03",
+      "category": "研究の読みもの",
+      "description": "noteで公開した記事を読む．",
+      "tag": "research"
+    },
+    {
+      "title": "記憶に必要なArcは，タウを運ぶ乗り物にもなるのか",
+      "url": "https://note.com/merry_lily/n/nc156827da6dd",
+      "date": "2026-07-21",
+      "category": "研究の読みもの",
+      "description": "noteで公開した記事を読む．",
+      "tag": "research"
+    },
+    {
       "title": "脳の免疫細胞は，アルツハイマー病の分かれ道を決めるのか",
       "url": "https://note.com/merry_lily/n/n628953f3b99c",
       "date": "2026-07-06",
       "category": "研究の読みもの",
       "description": "ミクログリアとアルツハイマー病の多様性について考える．",
+      "tag": "research"
+    },
+    {
+      "title": "レカネマブ・ドナネマブの違いを専門医試験目線で整理する",
+      "url": "https://note.com/merry_lily/n/n9eb551419093",
+      "date": "2026-07-05",
+      "category": "試験対策",
+      "description": "noteで公開した記事を読む．",
+      "tag": "research"
+    },
+    {
+      "title": "認知症専門医試験を受ける前に知っておきたいこと",
+      "url": "https://note.com/merry_lily/n/n2e54fd17c3c1",
+      "date": "2026-07-02",
+      "category": "試験対策",
+      "description": "noteで公開した記事を読む．",
+      "tag": "research"
+    },
+    {
+      "title": "腸内細菌は，アルツハイマー病の早い段階から変わるのか",
+      "url": "https://note.com/merry_lily/n/n0559e7c95291",
+      "date": "2026-07-01",
+      "category": "研究の読みもの",
+      "description": "noteで公開した記事を読む．",
+      "tag": "research"
+    },
+    {
+      "title": "ドナネマブは，どの段階で使うと最も効果が大きいのか",
+      "url": "https://note.com/merry_lily/n/n44592039d2c1",
+      "date": "2026-06-30",
+      "category": "研究の読みもの",
+      "description": "noteで公開した記事を読む．",
+      "tag": "research"
+    },
+    {
+      "title": "血圧をどこまで下げるべきかは，体の状態で変わるのかもしれない",
+      "url": "https://note.com/merry_lily/n/n5a29168cd955",
+      "date": "2026-06-29",
+      "category": "研究の読みもの",
+      "description": "noteで公開した記事を読む．",
+      "tag": "research"
+    },
+    {
+      "title": "アミロイドがたまりやすい人の遺伝子を，PETと剖検から探す",
+      "url": "https://note.com/merry_lily/n/n157934896fbc",
+      "date": "2026-06-27",
+      "category": "研究の読みもの",
+      "description": "noteで公開した記事を読む．",
+      "tag": "research"
+    },
+    {
+      "title": "グルコサミンは，アルツハイマー病の脳に影響するのか",
+      "url": "https://note.com/merry_lily/n/n257c821e7bb1",
+      "date": "2026-06-26",
+      "category": "研究の読みもの",
+      "description": "noteで公開した記事を読む．",
+      "tag": "research"
+    },
+    {
+      "title": "アルツハイマー病研究で，「除外されたデータ」は何を語るのか",
+      "url": "https://note.com/merry_lily/n/n46b3726be7f6",
+      "date": "2026-06-25",
+      "category": "研究の読みもの",
+      "description": "noteで公開した記事を読む．",
+      "tag": "research"
+    },
+    {
+      "title": "大人の脳は，新しい神経細胞を作り続けているのか",
+      "url": "https://note.com/merry_lily/n/n365bd59ebad6",
+      "date": "2026-06-18",
+      "category": "研究の読みもの",
+      "description": "noteで公開した記事を読む．",
+      "tag": "research"
+    },
+    {
+      "title": "アルツハイマー病を，血液でどこまで診断できるのか",
+      "url": "https://note.com/merry_lily/n/ne0519d58e075",
+      "date": "2026-06-03",
+      "category": "研究の読みもの",
+      "description": "noteで公開した記事を読む．",
+      "tag": "research"
+    },
+    {
+      "title": "アルツハイマー病のステージを，血液でどこまで見られるのか",
+      "url": "https://note.com/merry_lily/n/ne04e6bf3aa05",
+      "date": "2026-06-02",
+      "category": "研究の読みもの",
+      "description": "noteで公開した記事を読む．",
+      "tag": "research"
+    },
+    {
+      "title": "アルツハイマー病治療を，臨床試験から実臨床へ届ける",
+      "url": "https://note.com/merry_lily/n/n41427e9b4f57",
+      "date": "2026-06-01",
+      "category": "治療",
+      "description": "noteで公開した記事を読む．",
+      "tag": "research"
+    },
+    {
+      "title": "アルツハイマー病のリスクを，どう伝えるべきか",
+      "url": "https://note.com/merry_lily/n/n5ae06d751cce",
+      "date": "2026-05-30",
+      "category": "研究の読みもの",
+      "description": "noteで公開した記事を読む．",
+      "tag": "research"
+    },
+    {
+      "title": "認知機能を，診察室の外で測る",
+      "url": "https://note.com/merry_lily/n/n70d56f7eda98",
+      "date": "2026-05-29",
+      "category": "研究の読みもの",
+      "description": "noteで公開した記事を読む．",
       "tag": "research"
     },
     {
@@ -40,11 +175,131 @@
       "tag": "care"
     },
     {
+      "title": "アルツハイマー病を，「発症する理由」だけでなく「発症しない理由」から考える",
+      "url": "https://note.com/merry_lily/n/nde4428f8a885",
+      "date": "2026-05-27",
+      "category": "研究の読みもの",
+      "description": "noteで公開した記事を読む．",
+      "tag": "research"
+    },
+    {
+      "title": "若年発症アルツハイマー病の「見えない遺伝」を探す",
+      "url": "https://note.com/merry_lily/n/na26e6964cda2",
+      "date": "2026-05-26",
+      "category": "研究の読みもの",
+      "description": "noteで公開した記事を読む．",
+      "tag": "research"
+    },
+    {
+      "title": "アルツハイマー病を，発症してからではなく，発症前から治療できるのか",
+      "url": "https://note.com/merry_lily/n/n1995314a5ed9",
+      "date": "2026-05-25",
+      "category": "治療",
+      "description": "noteで公開した記事を読む．",
+      "tag": "research"
+    },
+    {
+      "title": "タウを「動き」と「形」から見る",
+      "url": "https://note.com/merry_lily/n/nda8fd98e87cd",
+      "date": "2026-05-24",
+      "category": "研究の読みもの",
+      "description": "noteで公開した記事を読む．",
+      "tag": "research"
+    },
+    {
+      "title": "アルツハイマー病は，症状が出る前からどのように進んでいくのか",
+      "url": "https://note.com/merry_lily/n/n4388d71562a5",
+      "date": "2026-05-23",
+      "category": "研究の読みもの",
+      "description": "noteで公開した記事を読む．",
+      "tag": "research"
+    },
+    {
+      "title": "認知症を，病名ではなく「タンパク質の地図」として見る",
+      "url": "https://note.com/merry_lily/n/n101590ef8bc5",
+      "date": "2026-05-22",
+      "category": "研究の読みもの",
+      "description": "noteで公開した記事を読む．",
+      "tag": "research"
+    },
+    {
+      "title": "睡眠時間は，長ければ長いほどよいわけではないのかもしれない",
+      "url": "https://note.com/merry_lily/n/nd5b91159a6aa",
+      "date": "2026-05-21",
+      "category": "研究の読みもの",
+      "description": "noteで公開した記事を読む．",
+      "tag": "research"
+    },
+    {
+      "title": "認知症予防は，「何をするか」だけでなく「誰に届くか」が大切なのかもしれない",
+      "url": "https://note.com/merry_lily/n/n0575a9170fe6",
+      "date": "2026-05-20",
+      "category": "予防・生活",
+      "description": "noteで公開した記事を読む．",
+      "tag": "research"
+    },
+    {
       "title": "アルツハイマー病を，脳だけで考えなくてもよいのかもしれない",
       "url": "https://note.com/merry_lily/n/n8d474d45fc5e",
       "date": "2026-05-19",
       "category": "研究の読みもの",
       "description": "APOEと末梢臓器の関係から病態を考える．",
+      "tag": "research"
+    },
+    {
+      "title": "アルツハイマー病は，症状が出る20年前から始まっているのかもしれない",
+      "url": "https://note.com/merry_lily/n/n87618757d4b7",
+      "date": "2026-05-17",
+      "category": "研究の読みもの",
+      "description": "noteで公開した記事を読む．",
+      "tag": "research"
+    },
+    {
+      "title": "同じ遺伝子変異を持っていても，発症の時期が違うのはなぜか",
+      "url": "https://note.com/merry_lily/n/n0d74daa6a957",
+      "date": "2026-05-15",
+      "category": "研究の読みもの",
+      "description": "noteで公開した記事を読む．",
+      "tag": "research"
+    },
+    {
+      "title": "アルツハイマー病は，脳が縮む前から始まっているのか",
+      "url": "https://note.com/merry_lily/n/nc81d869ee740",
+      "date": "2026-05-14",
+      "category": "研究の読みもの",
+      "description": "noteで公開した記事を読む．",
+      "tag": "research"
+    },
+    {
+      "title": "脳の細胞を「アミロイド掃除係」に変えることはできるのか",
+      "url": "https://note.com/merry_lily/n/n4eb37368e833",
+      "date": "2026-05-13",
+      "category": "研究の読みもの",
+      "description": "noteで公開した記事を読む．",
+      "tag": "research"
+    },
+    {
+      "title": "アルツハイマー病の臨床試験は，もっと小さく，早くできるのか",
+      "url": "https://note.com/merry_lily/n/n55a66bfeb149",
+      "date": "2026-05-12",
+      "category": "治療",
+      "description": "noteで公開した記事を読む．",
+      "tag": "research"
+    },
+    {
+      "title": "帯状疱疹ワクチンは，認知症を遠ざけるのか",
+      "url": "https://note.com/merry_lily/n/n784116cdff9d",
+      "date": "2026-05-11",
+      "category": "研究の読みもの",
+      "description": "noteで公開した記事を読む．",
+      "tag": "research"
+    },
+    {
+      "title": "アルツハイマー病は，症状が出る前に遅らせられるのか",
+      "url": "https://note.com/merry_lily/n/ne941ccc5014c",
+      "date": "2026-05-10",
+      "category": "研究の読みもの",
+      "description": "noteで公開した記事を読む．",
       "tag": "research"
     },
     {
@@ -64,11 +319,107 @@
       "tag": "research"
     },
     {
+      "title": "研究参加の「謝礼」は，人を集めるのか，遠ざけるのか",
+      "url": "https://note.com/merry_lily/n/n42b44da6c1d9",
+      "date": "2026-05-07",
+      "category": "研究の読みもの",
+      "description": "noteで公開した記事を読む．",
+      "tag": "research"
+    },
+    {
+      "title": "リチウムは，軽度認知障害の進行を遅らせるのか",
+      "url": "https://note.com/merry_lily/n/n2bc4bd425647",
+      "date": "2026-05-06",
+      "category": "研究の読みもの",
+      "description": "noteで公開した記事を読む．",
+      "tag": "research"
+    },
+    {
+      "title": "アルツハイマー病は「生まれつきの遺伝子」だけで説明できるのか",
+      "url": "https://note.com/merry_lily/n/n69e7497d83d9",
+      "date": "2026-05-05",
+      "category": "研究の読みもの",
+      "description": "noteで公開した記事を読む．",
+      "tag": "research"
+    },
+    {
       "title": "糖尿病・肥満治療薬は，アルツハイマー病にも効くのか",
       "url": "https://note.com/merry_lily/n/n5fcca4d1fed2",
       "date": "2026-05-04",
       "category": "治療",
       "description": "セマグルチド試験と創薬仮説の検証を考える．",
+      "tag": "research"
+    },
+    {
+      "title": "アルツハイマー病治療は，免疫を動かせば変わるのか",
+      "url": "https://note.com/merry_lily/n/ne199bcee2399",
+      "date": "2026-05-03",
+      "category": "治療",
+      "description": "noteで公開した記事を読む．",
+      "tag": "research"
+    },
+    {
+      "title": "アルツハイマー病に強い脳は，何が違うのか",
+      "url": "https://note.com/merry_lily/n/n1c534f99ba1e",
+      "date": "2026-05-02",
+      "category": "研究の読みもの",
+      "description": "noteで公開した記事を読む．",
+      "tag": "research"
+    },
+    {
+      "title": "認知症の人にとって，テレビは「刺激」か「ケア」か",
+      "url": "https://note.com/merry_lily/n/na5471d93d943",
+      "date": "2026-05-01",
+      "category": "研究の読みもの",
+      "description": "noteで公開した記事を読む．",
+      "tag": "research"
+    },
+    {
+      "title": "アミロイドを取り除くと，タウはどう変わるのか",
+      "url": "https://note.com/merry_lily/n/nb52552fb900a",
+      "date": "2026-04-30",
+      "category": "研究の読みもの",
+      "description": "noteで公開した記事を読む．",
+      "tag": "research"
+    },
+    {
+      "title": "アルツハイマー病治療薬は，実臨床で誰に届いているのか",
+      "url": "https://note.com/merry_lily/n/n1956b2c9c1db",
+      "date": "2026-04-29",
+      "category": "治療",
+      "description": "noteで公開した記事を読む．",
+      "tag": "research"
+    },
+    {
+      "title": "認知症予防は「何か一つ」ではなく，「組み合わせ」の時代へ",
+      "url": "https://note.com/merry_lily/n/n27ee7e30b489",
+      "date": "2026-04-28",
+      "category": "予防・生活",
+      "description": "noteで公開した記事を読む．",
+      "tag": "research"
+    },
+    {
+      "title": "アルツハイマー病治療は「次の段階」へ",
+      "url": "https://note.com/merry_lily/n/n64d727555c2e",
+      "date": "2026-04-27",
+      "category": "治療",
+      "description": "noteで公開した記事を読む．",
+      "tag": "research"
+    },
+    {
+      "title": "「もの忘れ」はどこから病気なのか",
+      "url": "https://note.com/merry_lily/n/nf767486ba403",
+      "date": "2026-04-26",
+      "category": "研究の読みもの",
+      "description": "noteで公開した記事を読む．",
+      "tag": "research"
+    },
+    {
+      "title": "歯周病菌を標的にしたアルツハイマー病治療？",
+      "url": "https://note.com/merry_lily/n/n0310054f9807",
+      "date": "2026-04-25",
+      "category": "治療",
+      "description": "noteで公開した記事を読む．",
       "tag": "research"
     },
     {
@@ -78,6 +429,30 @@
       "category": "予防・生活",
       "description": "睡眠と脳内老廃物排出に関する研究を紹介．",
       "tag": "care"
+    },
+    {
+      "title": "アルツハイマー病は，何歳から始まるのか",
+      "url": "https://note.com/merry_lily/n/n4199da5b10df",
+      "date": "2026-04-23",
+      "category": "研究の読みもの",
+      "description": "noteで公開した記事を読む．",
+      "tag": "research"
+    },
+    {
+      "title": "アルツハイマー病は，血液の中の「かたち」からわかるようになるのかもしれない",
+      "url": "https://note.com/merry_lily/n/n4c486491b3ab",
+      "date": "2026-04-22",
+      "category": "研究の読みもの",
+      "description": "noteで公開した記事を読む．",
+      "tag": "research"
+    },
+    {
+      "title": "アルツハイマー病は，血液検査でどこまでわかるのか",
+      "url": "https://note.com/merry_lily/n/n5b43769869c9",
+      "date": "2026-04-21",
+      "category": "バイオマーカー",
+      "description": "noteで公開した記事を読む．",
+      "tag": "research"
     },
     {
       "title": "認知症専門医試験の勉強方法",

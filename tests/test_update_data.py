@@ -60,12 +60,12 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual(added,MAX_PAPERS_PER_DAY)
         self.assertEqual(len(selected),MAX_PAPERS_PER_DAY)
         selected_again,added_again=merge_curated(selected,rows,today=today,bootstrap=False)
-        self.assertEqual(added_again,3)
-        self.assertEqual(len({r['id'] for r in selected_again}),6)
+        self.assertEqual(added_again,0)
+        self.assertEqual(len({r['id'] for r in selected_again}),3)
         self.assertTrue(all('selected_on' in r for r in selected_again))
         past=[{'id':str(10000+i),'priority_score':8,'selected_on':'2026-09-01','title':'x'} for i in range(50)]
         archive,added=merge_curated(past,[],today=today,bootstrap=False)
-        self.assertEqual(len(archive),MAX_DISPLAYED_PAPERS)
+        self.assertEqual(len(archive),min(50,MAX_DISPLAYED_PAPERS))
 
     def test_no_old_papers_promoted_daily(self):
         old={'id':'1','priority_score':100,'pubmed_entry_date':'2026-09-01',

@@ -7,8 +7,8 @@ import datetime as dt
 import re
 
 MAX_PAPERS_PER_DAY = 3
-MAX_PAPERS_ON_FIRST_RUN = 15
-MAX_DISPLAYED_PAPERS = 30
+MAX_PAPERS_ON_FIRST_RUN = 100
+MAX_DISPLAYED_PAPERS = 100
 FRESH_ENTRY_DAYS = 4
 MIN_PRIORITY_SCORE = 7
 
@@ -222,11 +222,11 @@ def merge_curated(previous, candidates, *, today, last_fetched_at=None, bootstra
         if entered and entered > today_date + dt.timedelta(days=1):
             continue
         fresh.append(p)
-    quota = MAX_PAPERS_ON_FIRST_RUN if bootstrap else MAX_PAPERS_PER_DAY
+    quota = MAX_PAPERS_ON_FIRST_RUN if bootstrap else max(0, MAX_PAPERS_PER_DAY - sum(p.get('selected_on') == today for p in previous))
     if bootstrap:
         # Initial import should be more recent than the 120-day search window.
         fresh = [p for p in fresh if not (_date(p.get('pubmed_entry_date')) or _date(p.get('date'))) or
-                 (today_date - (_date(p.get('pubmed_entry_date')) or _date(p.get('date')))).days <= 60]
+                 (today_date - (_date(p.get('pubmed_entry_date')) or _date(p.get('date')))).days <= 120]
     selected = balance_select(fresh,quota,day=today)
     for p in selected:
         p['selected_on'] = today

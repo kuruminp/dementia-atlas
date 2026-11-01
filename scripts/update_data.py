@@ -306,7 +306,7 @@ def main():
         today = (now + dt.timedelta(hours=9)).date().isoformat()
         try:
             previous = read_json('papers')
-            bootstrap = previous.get('meta',{}).get('mode') != 'api'
+            bootstrap = (previous.get('meta',{}).get('mode') != 'api' or previous.get('meta',{}).get('display_limit',30) < MAX_DISPLAYED_PAPERS)
             candidates = fetch_pubmed(args.papers)
             items, added = merge_curated(
                 [] if bootstrap else previous['items'], candidates,
