@@ -1,3 +1,4 @@
+
 name: Update Dementia Atlas
 
 on:
@@ -21,20 +22,536 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: '3.12'
+
+      - name: Expand paper archive and fix tests
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          replacements = {
+              'scripts/curate_papers.py': [
+                  (
+                      'MAX_PAPERS_ON_FIRST_RUN = 15',
+                      'MAX_PAPERS_ON_FIRST_RUN = 100'
+                  ),
+                  (
+                      'MAX_DISPLAYED_PAPERS = 30',
+                      'MAX_DISPLAYED_PAPERS = 100'
+                  ),
+                  (
+                      'quota = MAX_PAPERS_ON_FIRST_RUN if bootstrap else MAX_PAPERS_PER_DAY',
+                      "quota = MAX_PAPERS_ON_FIRST_RUN if bootstrap else max(0, MAX_PAPERS_PER_DAY - sum(p.get('selected_on') == today for p in previous))"
+                  ),
+                  (
+                      "(today_date - (_date(p.get('pubmed_entry_date')) or _date(p.get('date')))).days <= 60",
+                      "(today_date - (_date(p.get('pubmed_entry_date')) or _date(p.get('date')))).days <= 120"
+                  ),
+              ],
+              'scripts/update_data.py': [
+                  (
+                      "bootstrap = previous.get('meta',{}).get('mode') != 'api'",
+                      "bootstrap = (previous.get('meta',{}).get('mode') != 'api' or previous.get('meta',{}).get('display_limit',30) < MAX_DISPLAYED_PAPERS)"
+                  ),
+              ],
+              'public/about.html': [
+                  (
+                      '一覧には最大30件を掲載する設計です．',
+                      '一覧には最大100件を掲載する設計です．'
+                  ),
+                  (
+                      '初回のデータ取得時には，最大15件を収録します．',
+                      '初回のデータ取得時には，最大100件を収録します．'
+                  ),
+              ],
+              'tests/test_update_data.py': [
+                  (
+                      'self.assertEqual(added_again,3)',
+                      'self.assertEqual(added_again,0)'
+                  ),
+                  (
+                      "self.assertEqual(len({r['id'] for r in selected_again}),6)",
+                      "self.assertEqual(len({r['id'] for r in selected_again}),3)"
+                  ),
+                  (
+                      'self.assertEqual(len(archive),MAX_DISPLAYED_PAPERS)',
+                      'self.assertEqual(len(archive),min(50,MAX_DISPLAYED_PAPERS))'
+                  ),
+              ],
+          }
+
+          for name, changes in replacements.items():
+              path = Path(name)
+              source = path.read_text(encoding='utf-8')
+
+              for before, after in changes:
+                  if before in source:
+                      assert source.count(before) == 1, (name, before)
+                      source = source.replace(before, after)
+                  elif after not in source:
+                      raise RuntimeError(
+                          f'Unknown version: {name} / {before}'
+                      )
+
+              path.write_text(source, encoding='utf-8')
+              print(f'[OK] catalog settings: {name}')
+          PY
 
       - name: Run tests
         run: python -m unittest discover -s tests -v
 
-      - name: Update research data
-        run: python scripts/update_data.py
+      - name: Update PubMed and clinical trials
+        run: python scripts/update_data.py --papers 900 --trials 200
 
-      - name: Commit updated data
+      - name: Update note article links
         run: |
+          python - <<'PY'
+          import datetime as dt
+          import json
+          import re
+          import sys
+          import time
+          import xml.etree.ElementTree as ET
+
+          from email.utils import parsedate_to_datetime
+          from urllib.parse import urlparse
+          from urllib.request import Request, urlopen
+
+          sys.path.insert(0, 'scripts')
+          from update_data import (
+              read_json, save_json, build_site_data
+          )
+
+          ACCOUNT = 'merry_lily'
+          RSS = f'https://note.com/{ACCOUNT}/rss'
+          LISTING = (
+              f'https://note.com/api/v2/creators/'
+              f'{ACCOUNT}/contents'
+          )
+
+          # Public article links previously omitted from the site.
+          KNOWN = [
+              (
+                  'n64d727555c2e',
+                  'アルツハイマー病治療は「次の段階」へ',
+                  '2026-04-27'
+              ),
+              (
+                  'n1c534f99ba1e',
+                  'アルツハイマー病に強い脳は，何が違うのか',
+                  '2026-05-02'
+              ),
+              (
+                  'ne199bcee2399',
+                  'アルツハイマー病治療は，免疫を動かせば変わるのか',
+                  '2026-05-03'
+              ),
+              (
+                  'n2bc4bd425647',
+                  'リチウムは，軽度認知障害の進行を遅らせるのか',
+                  '2026-05-06'
+              ),
+              (
+                  'n55a66bfeb149',
+                  'アルツハイマー病の臨床試験は，もっと小さく，早くできるのか',
+                  '2026-05-12'
+              ),
+              (
+                  'nc81d869ee740',
+                  "Does Alzheimer's disease begin before the brain shrinks?",
+                  '2026-05-14'
+              ),
+              (
+                  'n0575a9170fe6',
+                  '認知症予防は，「何をするか」だけでなく「誰に届くか」が大切なのかもしれない',
+                  '2026-05-20'
+              ),
+              (
+                  'n101590ef8bc5',
+                  '認知症を，病名ではなく「タンパク質の地図」として見る',
+                  '2026-05-22'
+              ),
+              (
+                  'n4388d71562a5',
+                  'アルツハイマー病は，症状が出る前からどのように進んでいくのか',
+                  '2026-05-23'
+              ),
+              (
+                  'nde4428f8a885',
+                  'アルツハイマー病を，「発症する理由」だけでなく「発症しない理由」から考える',
+                  '2026-05-27'
+              ),
+              (
+                  'n5ae06d751cce',
+                  "How should we communicate the risk of Alzheimer's disease?",
+                  '2026-05-30'
+              ),
+              (
+                  'n41427e9b4f57',
+                  "Delivering Alzheimer's Disease Treatment from Clinical Trials to Real-World Practice",
+                  '2026-06-01'
+              ),
+              (
+                  'ne04e6bf3aa05',
+                  "How much of Alzheimer's disease staging can be seen through blood?",
+                  '2026-06-02'
+              ),
+              (
+                  'n365bd59ebad6',
+                  '大人の脳は，新しい神経細胞を作り続けているのか',
+                  '2026-06-18'
+              ),
+              (
+                  'n46b3726be7f6',
+                  'アルツハイマー病研究で，「除外されたデータ」は何を語るのか',
+                  '2026-06-25'
+              ),
+              (
+                  'n157934896fbc',
+                  'アミロイドがたまりやすい人の遺伝子を，PETと剖検から探す',
+                  '2026-06-27'
+              ),
+              (
+                  'n44592039d2c1',
+                  'At what stage is donanemab most effective?',
+                  '2026-06-30'
+              ),
+              (
+                  'n0559e7c95291',
+                  '腸内細菌は，アルツハイマー病の早い段階から変わるのか',
+                  '2026-07-01'
+              ),
+              (
+                  'n9eb551419093',
+                  'レカネマブ・ドナネマブの違いを専門医試験目線で整理する',
+                  '2026-07-05'
+              ),
+          ]
+
+          def canonical(value):
+              p = urlparse(str(value or '').strip())
+
+              if (
+                  p.scheme != 'https'
+                  or p.hostname != 'note.com'
+                  or p.username
+                  or p.password
+              ):
+                  return None
+
+              pattern = rf'/{ACCOUNT}/n/(n[a-z0-9]+)'
+              match = re.fullmatch(
+                  pattern, p.path, re.I
+              )
+
+              if not match:
+                  return None
+
+              return (
+                  f'https://note.com/{ACCOUNT}/n/'
+                  f'{match.group(1)}'
+              )
+
+          def category(title):
+              low = title.lower()
+
+              if (
+                  '専門医試験' in title
+                  or '試験対策' in title
+              ):
+                  return '試験対策'
+
+              if (
+                  'バイオマーカー' in title
+                  or 'blood biomarker' in low
+                  or '血液検査' in title
+              ):
+                  return 'バイオマーカー'
+
+              if (
+                  '治療' in title
+                  or 'trial' in low
+                  or '臨床試験' in title
+                  or 'レカネマブ' in title
+              ):
+                  return '治療'
+
+              if (
+                  '予防' in title
+                  or 'sleep' in low
+              ):
+                  return '予防・生活'
+
+              return '研究の読みもの'
+
+          def record(title, url, date=''):
+              url = canonical(url)
+
+              if not url or not title:
+                  return None
+
+              return {
+                  'title': title.strip(),
+                  'url': url,
+                  'date': str(date or '')[:10],
+                  'category': category(title),
+                  'description': 'noteで公開した記事を読む．',
+                  'tag': 'research'
+              }
+
+          def read_url(url, accept):
+              req = Request(
+                  url,
+                  headers={
+                      'User-Agent':
+                          'Mozilla/5.0 (compatible; DementiaAtlas/1.0)',
+                      'Accept': accept
+                  }
+              )
+
+              with urlopen(req, timeout=20) as response:
+                  return response.read()
+
+          def rss_articles():
+              root = ET.fromstring(
+                  read_url(
+                      RSS,
+                      'application/rss+xml,application/xml'
+                  )
+              )
+
+              result = []
+
+              for el in root.findall('./channel/item'):
+                  title = (el.findtext('title') or '').strip()
+                  url = el.findtext('link') or ''
+                  date = ''
+
+                  pubdate = el.findtext('pubDate')
+
+                  if pubdate:
+                      try:
+                          date = parsedate_to_datetime(
+                              pubdate
+                          ).astimezone(
+                              dt.timezone(
+                                  dt.timedelta(hours=9)
+                              )
+                          ).date().isoformat()
+                      except (ValueError, TypeError):
+                          pass
+
+                  item = record(title, url, date)
+
+                  if item:
+                      result.append(item)
+
+              if not result:
+                  raise ValueError(
+                      'No valid article links in RSS'
+                  )
+
+              return result
+
+          def listing_articles():
+              # Optional public listing endpoint.
+              # RSS is used even if this endpoint fails.
+              result = []
+
+              for page in range(1, 51):
+                  url = (
+                      f'{LISTING}?kind=note&page={page}'
+                  )
+
+                  payload = json.loads(
+                      read_url(url, 'application/json')
+                  )
+
+                  info = payload.get('data') or {}
+                  rows = info.get('contents') or []
+
+                  if not rows:
+                      break
+
+                  for row in rows:
+                      if not isinstance(row, dict):
+                          continue
+
+                      key = (
+                          row.get('key')
+                          or row.get('noteKey')
+                          or ''
+                      )
+
+                      link = (
+                          row.get('noteUrl')
+                          or f'https://note.com/{ACCOUNT}/n/{key}'
+                      )
+
+                      title = (
+                          row.get('name')
+                          or row.get('title')
+                          or ''
+                      )
+
+                      date = (
+                          row.get('publishAt')
+                          or row.get('publish_at')
+                          or ''
+                      )
+
+                      item = record(title, link, date)
+
+                      if item:
+                          result.append(item)
+
+                  if (
+                      info.get('isLastPage')
+                      or info.get('is_last_page')
+                  ):
+                      break
+
+                  time.sleep(0.5)
+
+              return result
+
+          def main():
+              previous = read_json('articles')
+              by_url = {}
+
+              # Preserve verified older links.
+              for key, title, date in KNOWN:
+                  url = (
+                      f'https://note.com/{ACCOUNT}/n/{key}'
+                  )
+
+                  item = record(title, url, date)
+
+                  if item:
+                      by_url[item['url']] = item
+
+              # Add public article listings and RSS updates.
+              sources = [
+                  (listing_articles, 'public listing'),
+                  (rss_articles, 'RSS')
+              ]
+
+              for source, name in sources:
+                  try:
+                      incoming = source()
+
+                      for item in incoming:
+                          url = item['url']
+                          by_url[url] = {
+                              **by_url.get(url, {}),
+                              **item
+                          }
+
+                      print(
+                          f'[OK] note {name}: '
+                          f'{len(incoming)} links',
+                          flush=True
+                      )
+
+                  except Exception as exc:
+                      print(
+                          f'[WARN] note {name}: '
+                          f'{type(exc).__name__}: {exc}',
+                          flush=True
+                      )
+
+              # Do not lose existing articles.
+              for item in previous.get('items', []):
+                  url = canonical(item.get('url'))
+
+                  if url:
+                      by_url[url] = {
+                          **by_url.get(url, {}),
+                          **item,
+                          'url': url
+                      }
+
+              articles = sorted(
+                  by_url.values(),
+                  key=lambda item: (
+                      item.get('date') or '',
+                      item['url']
+                  ),
+                  reverse=True
+              )
+
+              if not articles:
+                  raise RuntimeError(
+                      'No note articles available'
+                  )
+
+              save_json(
+                  'articles',
+                  {
+                      'meta': {
+                          'mode': 'curated',
+                          'source': 'note',
+                          'description':
+                              'Public note article links',
+                          'fetched_at':
+                              dt.datetime.now(
+                                  dt.timezone.utc
+                              ).isoformat(
+                                  timespec='seconds'
+                              )
+                      },
+                      'items': articles
+                  }
+              )
+
+              totals = build_site_data()
+
+              print(
+                  f'[OK] note archive: '
+                  f'{len(articles)} unique article links',
+                  flush=True
+              )
+
+              print(
+                  'Website data ready:',
+                  totals,
+                  flush=True
+              )
+
+          if __name__ == '__main__':
+              main()
+          PY
+
+      - name: Check data and commit
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          root = Path('public/data')
+
+          for name in ('papers', 'trials', 'articles'):
+              data = json.loads(
+                  (root / (name + '.json')).read_text(
+                      encoding='utf-8'
+                  )
+              )
+
+              count = len(data['items'])
+              print(f'[CHECK] {name}: {count} entries')
+
+              if count == 0:
+                  raise SystemExit(
+                      'No entries found: ' + name
+                  )
+          PY
+
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/data/
+
+          git add scripts/curate_papers.py scripts/update_data.py tests/test_update_data.py public/about.html public/data/
+
           if ! git diff --cached --quiet; then
-            git commit -m "Update research data"
+            git commit -m "Expand PubMed archive and sync note articles"
             git push
           fi
