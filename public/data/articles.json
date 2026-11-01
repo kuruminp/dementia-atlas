@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "mode": "curated",
+    "fetched_at": null,
+    "verified_at": "2026-11-01",
+    "source": "note",
+    "description": "公開済みnote記事の編集リスト"
+  },
+  "items": [
+    {
+      "title": "【2027年度受験向け】認知症専門医試験の勉強方法・最新版",
+      "url": "https://note.com/merry_lily/n/n970030fbda40",
+      "date": "2026-10-13",
+      "category": "試験対策",
+      "description": "2026年度試験の結果を踏まえ，ガイドラインの改訂点や学習の優先順位を整理．",
+      "tag": "guide"
+    },
+    {
+      "title": "同じアルツハイマー病でも，なぜ症状が違うのか？",
+      "url": "https://note.com/merry_lily/n/ne6d001063d7f",
+      "date": "2026-09-30",
+      "category": "研究の読みもの",
+      "description": "大規模な単一細胞データから見たアルツハイマー病の個人差．",
+      "tag": "research"
+    },
+    {
+      "title": "脳の免疫細胞は，アルツハイマー病の分かれ道を決めるのか",
+      "url": "https://note.com/merry_lily/n/n628953f3b99c",
+      "date": "2026-07-06",
+      "category": "研究の読みもの",
+      "description": "ミクログリアとアルツハイマー病の多様性について考える．",
+      "tag": "research"
+    },
+    {
+      "title": "認知症を，「運転」という日常生活から見る",
+      "url": "https://note.com/merry_lily/n/nab9749614d0a",
+      "date": "2026-05-28",
+      "category": "診療・生活",
+      "description": "認知機能だけでなく，安全と自立の観点から運転を考える．",
+      "tag": "care"
+    },
+    {
+      "title": "アルツハイマー病を，脳だけで考えなくてもよいのかもしれない",
+      "url": "https://note.com/merry_lily/n/n8d474d45fc5e",
+      "date": "2026-05-19",
+      "category": "研究の読みもの",
+      "description": "APOEと末梢臓器の関係から病態を考える．",
+      "tag": "research"
+    },
+    {
+      "title": "アルツハイマー病は，血管から始まるのか",
+      "url": "https://note.com/merry_lily/n/nd726675f3aad",
+      "date": "2026-05-09",
+      "category": "バイオマーカー",
+      "description": "血管内皮とsyndecan-4からみる病態研究．",
+      "tag": "research"
+    },
+    {
+      "title": "血液検査で「タウのもつれ」まで見える時代へ",
+      "url": "https://note.com/merry_lily/n/n9df0bf85ccbe",
+      "date": "2026-05-08",
+      "category": "バイオマーカー",
+      "description": "新しい血液タウ関連バイオマーカーを解説．",
+      "tag": "research"
+    },
+    {
+      "title": "糖尿病・肥満治療薬は，アルツハイマー病にも効くのか",
+      "url": "https://note.com/merry_lily/n/n5fcca4d1fed2",
+      "date": "2026-05-04",
+      "category": "治療",
+      "description": "セマグルチド試験と創薬仮説の検証を考える．",
+      "tag": "research"
+    },
+    {
+      "title": "アルツハイマー病と睡眠．脳は夜のあいだに掃除をしているのかもしれない",
+      "url": "https://note.com/merry_lily/n/n5ea4ca2462ff",
+      "date": "2026-04-24",
+      "category": "予防・生活",
+      "description": "睡眠と脳内老廃物排出に関する研究を紹介．",
+      "tag": "care"
+    },
+    {
+      "title": "認知症専門医試験の勉強方法",
+      "url": "https://note.com/merry_lily/n/nc9b64785cbf0",
+      "date": "2026-04-12",
+      "category": "試験対策",
+      "description": "受験要件，試験の特徴，まず確認したい学習資料を整理．",
+      "tag": "guide"
+    }
+  ]
+}

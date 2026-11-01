@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#153f42">
+  <meta name="description" content="認知症研究の最新論文と臨床試験を，疾患・テーマ・募集状況から探せる情報サイト．PubMedとClinicalTrials.govの情報を整理し，専門家による解説記事につなぎます．">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dementia Atlas｜認知症研究を，見渡す．">
+  <meta property="og:description" content="最新論文と臨床試験，そして専門家の解説を一つに．">
+  <title>Dementia Atlas｜認知症研究を，見渡す．</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./data/site-data.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <div class="topline"><div class="page-shell topline-inner"><span class="topline-brand">EVIDENCE &amp; EXPLORATION</span><span class="topline-right"><span class="signal-dot" aria-hidden="true"></span> Public research intelligence <span class="topline-divider">/</span> 日本語</span></div></div>
+  <header class="site-header">
+    <div class="page-shell header-inner">
+      <a href="#home" class="brand" aria-label="Dementia Atlasのトップページ">
+        <span class="brand-mark"><svg viewBox="0 0 44 44" aria-hidden="true"><path d="M13 27c-6-6-4-14 3-16 3-6 13-4 15 1 6 2 8 9 4 14-2 3-6 3-8 7-1 2-5 3-8 0-3 1-6-2-6-6z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M21 12c-3 4-2 6 1 9-5 0-6 4-4 7m9-15c-2 5 3 8 0 11 3 1 4 4 2 7m-12-13 7 3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+        <span class="brand-copy"><strong>Dementia Atlas</strong><small>認知症リサーチ・アトラス</small></span>
+      </a>
+      <nav class="main-nav" aria-label="メインメニュー">
+        <button class="nav-link active" data-nav="papers" type="button">論文を探す</button>
+        <button class="nav-link" data-nav="trials" type="button">治験を探す</button>
+        <button class="nav-link" data-nav="articles" type="button">解説記事</button>
+      </nav>
+      <a class="header-note-link" href="https://note.com/merry_lily" target="_blank" rel="noopener noreferrer">noteを読む <span aria-hidden="true">↗</span></a>
+      <button id="mobile-menu-button" class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="メニューを開く"><span></span><span></span><span></span></button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <button type="button" data-nav="papers">新着論文</button><button type="button" data-nav="trials">臨床試験・治験</button><button type="button" data-nav="articles">解説・note</button>
+      <a href="https://note.com/merry_lily" target="_blank" rel="noopener noreferrer">noteプロフィール ↗</a>
+    </div>
+  </header>
+
+  <main id="home">
+    <div class="page-shell">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-text">
+          <div class="hero-eyebrow"><span class="eyebrow-line"></span> AN OPEN WINDOW INTO DEMENTIA RESEARCH</div>
+          <h1 id="hero-title">認知症研究のいまを，<br><em>見渡す．</em></h1>
+          <p>日々発表される論文と，世界各地で進む臨床試験．<br class="desktop-break">散らばった情報を集め，探しやすく整理しました．</p>
+          <div class="hero-actions"><button type="button" class="button button-dark" data-nav="papers">最新論文を見る <span>↗</span></button><button type="button" class="button button-outline" data-nav="trials">治験情報を探す <span>↗</span></button></div>
+          <div class="hero-source"><span class="source-circle">P</span> PubMed <span class="source-plus">＋</span> <span class="source-circle source-circle-navy">C</span> ClinicalTrials.gov <span class="source-info">公式データを整理</span></div>
+        </div>
+        <div class="hero-visual" aria-label="サイトの収録内容">
+          <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+          <div class="hero-coordinate top-coord">35° / 139° <span>SCIENCE</span></div>
+          <div class="hero-visual-card">
+            <div class="visual-card-head"><span>RESEARCH INDEX</span><span class="visual-lights"><i></i><i></i><i></i></span></div>
+            <div class="visual-rule"></div>
+            <span class="visual-kicker">YOUR RESEARCH COMPASS</span>
+            <div class="visual-main">Discover.<br><span>Connect.</span><br>Understand.</div>
+            <div class="visual-bottom"><div><span class="visual-dot"></span><span>Evidence in motion</span></div><strong>01 / 03</strong></div>
+          </div>
+          <div class="hero-coordinate bottom-coord">DATA INTO CONTEXT <span>↗</span></div>
+        </div>
+      </section>
+
+      <section class="summary-bar" aria-label="登録データの概要">
+        <div class="summary-intro"><span class="summary-label">THE LATEST SNAPSHOT</span><p>研究の現在地を，<br>ひと目で．</p></div>
+        <div class="summary-stat"><span id="stat-papers">—</span><small>自動選定した注目論文</small></div>
+        <div class="summary-stat"><span id="stat-trials">—</span><small>収録臨床試験</small></div>
+        <div class="summary-stat"><span id="stat-japan">—</span><small>日本に実施施設あり</small></div>
+        <div class="summary-asof"><span id="data-mode" class="data-mode">読み込み中</span><small id="data-updated">データを確認しています</small></div>
+      </section>
+
+      <section class="disease-section" aria-labelledby="disease-heading">
+        <div class="section-topline"><div><span class="section-kicker">EXPLORE BY CONDITION</span><h2 id="disease-heading">疾患別に探す<span class="period">．</span></h2></div><p>気になる疾患を選ぶと，<br>下の一覧が切り替わります．</p></div>
+        <div class="disease-grid" id="disease-grid" role="group" aria-label="疾患の絞り込み">
+          <button class="disease-card selected" type="button" data-disease="all"><span class="disease-num">01 / ALL</span><span class="disease-symbol">∞</span><strong>すべて</strong><small id="disease-count-all">— 件</small></button>
+          <button class="disease-card" type="button" data-disease="ad"><span class="disease-num">02 / AD</span><span class="disease-symbol">Aβ</span><strong>アルツハイマー病</strong><small id="disease-count-ad">— 件</small></button>
+          <button class="disease-card" type="button" data-disease="mci"><span class="disease-num">03 / MCI</span><span class="disease-symbol">M</span><strong>軽度認知障害</strong><small id="disease-count-mci">— 件</small></button>
+          <button class="disease-card" type="button" data-disease="dlb"><span class="disease-num">04 / DLB</span><span class="disease-symbol">α</span><strong>レビー小体型</strong><small id="disease-count-dlb">— 件</small></button>
+          <button class="disease-card" type="button" data-disease="ftd"><span class="disease-num">05 / FTD</span><span class="disease-symbol">τ</span><strong>前頭側頭葉変性症</strong><small id="disease-count-ftd">— 件</small></button>
+          <button class="disease-card" type="button" data-disease="vascular"><span class="disease-num">06 / VD</span><span class="disease-symbol">V</span><strong>血管性・その他</strong><small id="disease-count-vascular">— 件</small></button>
+        </div>
+      </section>
+
+      <section class="explore-section" id="explore" aria-labelledby="explore-heading">
+        <div class="section-topline explore-title"><div><span class="section-kicker">THE RESEARCH LIBRARY</span><h2 id="explore-heading">研究を探索する<span class="period">．</span></h2></div><p>検索・テーマ・進捗状況で絞り込み．<br>必要な情報へ，まっすぐ．</p></div>
+        <div class="library-bar">
+          <div class="tab-buttons" role="tablist" aria-label="コンテンツの種類">
+            <button class="tab-button active" type="button" role="tab" aria-selected="true" data-tab="papers">新着論文 <span id="tab-count-papers">0</span></button>
+            <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="trials">臨床試験・治験 <span id="tab-count-trials">0</span></button>
+            <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="articles">解説・note <span id="tab-count-articles">0</span></button>
+          </div>
+          <div class="search-wrap"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="10.7" cy="10.7" r="6.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m16 16 4.3 4.3" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><input id="search" type="search" autocomplete="off" placeholder="タイトル・PMID・NCT番号など" aria-label="キーワード検索"><kbd>⌕</kbd></div>
+        </div>
+        <div class="library-grid">
+          <aside class="filters" id="filters-panel" aria-label="絞り込み">
+            <div class="filter-header"><strong>FILTERS</strong><button type="button" id="clear-filters">リセット ↻</button></div>
+            <div class="filter-block"><label for="disease-select">疾患グループ</label><select id="disease-select"><option value="all">すべての疾患</option><option value="ad">アルツハイマー病</option><option value="mci">軽度認知障害（MCI）</option><option value="dlb">レビー小体型認知症</option><option value="ftd">前頭側頭葉変性症</option><option value="vascular">血管性・その他</option></select></div>
+            <div class="filter-block" id="studytype-filter"><label for="research-type-select">研究タイプ</label><select id="research-type-select"><option value="all">すべての研究</option><option value="trial">臨床試験</option><option value="guideline">診療指針</option><option value="systematic">系統的レビュー・メタ解析</option><option value="validation">外部検証</option><option value="cohort">コホート</option><option value="discovery">基礎・探索</option></select><p class="filter-hint">掲載基準は研究デザインなど．IFは一律の条件にしません． <a href="./about.html#selection">選定方針 ↗</a></p></div>
+            <div class="filter-block" id="topic-filter"><label for="topic-select">研究テーマ</label><select id="topic-select"><option value="all">すべてのテーマ</option><option value="treatment">治療・治験</option><option value="biomarker">バイオマーカー</option><option value="imaging">脳画像</option><option value="diagnosis">診断・評価</option><option value="prevention">予防・生活習慣</option><option value="care">ケア・社会</option><option value="pathology">病態・基礎</option><option value="other">その他</option></select></div>
+            <div class="filter-block" id="status-filter" hidden><label for="status-select">募集・実施状況</label><select id="status-select"><option value="all">すべての状況</option><option value="RECRUITING">募集中</option><option value="NOT_YET_RECRUITING">募集開始前</option><option value="ACTIVE_NOT_RECRUITING">実施中・募集終了</option><option value="ENROLLING_BY_INVITATION">招待者のみ</option><option value="COMPLETED">終了</option></select></div>
+            <div class="filter-block" id="mechanism-filter" hidden><label for="mechanism-select">治療標的・介入タイプ</label><select id="mechanism-select"><option value="all">すべての介入</option><option value="amyloid">抗アミロイドβ</option><option value="tau">抗タウ</option><option value="symptomatic">認知・行動症状</option><option value="inflammation">炎症・免疫</option><option value="gene">遺伝子・核酸</option><option value="non_drug">非薬物・機器</option><option value="other">その他</option></select></div>
+            <div class="filter-block" id="phase-filter" hidden><label for="phase-select">治験フェーズ</label><select id="phase-select"><option value="all">すべてのPhase</option><option value="PHASE1">Phase 1</option><option value="PHASE2">Phase 2</option><option value="PHASE3">Phase 3</option><option value="PHASE4">Phase 4</option><option value="NA">該当なし</option></select></div>
+            <div class="filter-block" id="japan-filter" hidden><label class="checkbox-label"><input id="japan-only" type="checkbox"><span>日本に実施施設あり</span></label><p class="filter-hint">施設ごとの募集状況は公式ページでご確認ください．</p></div>
+            <div class="filter-help"><span class="filter-help-icon">i</span><p>論文は研究デザイン・規模などから機械的に選定．質を保証するものではありません．</p></div>
+          </aside>
+          <div class="results-col">
+            <div class="results-heading"><div><span class="results-kicker" id="results-kicker">NEW PUBLICATIONS</span><h3 id="results-title">新着論文</h3><p class="results-subtitle" id="results-subtitle">公開された研究情報を分野別に整理しています．</p></div><div class="results-tools"><span id="result-total">— 件</span><select id="sort-select" aria-label="並び替え"><option value="recent">新しい順</option><option value="older">古い順</option><option value="title">タイトル順</option></select></div></div>
+            <div id="trial-advisory" class="trial-advisory" hidden><span class="advisory-icon">i</span><p><strong>治験の参加をご検討の方へ</strong><br>試験全体が「募集中」でも，日本の各施設が募集中とは限りません．適格性・募集可否は，必ず登録元の最新情報と実施施設にご確認ください．国内のjRCT・UMINのみの試験はこの一覧に含まれない場合があります．</p></div>
+            <div class="record-list" id="record-list" aria-live="polite"><div class="loading"><span class="loading-pulse"></span>情報を読み込んでいます</div></div>
+            <div id="more-wrap" class="more-wrap" hidden><button type="button" id="load-more" class="button button-outline">もっと表示する <span>↓</span></button></div>
+            <div class="data-footnote"><span id="source-footnote">Source: PubMed</span><span id="last-updated-detail">更新状況を確認中</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="note-feature" aria-labelledby="note-feature-title">
+        <div class="note-feature-main"><span class="section-kicker light">FROM THE EDITOR'S NOTEBOOK</span><h2 id="note-feature-title">研究の向こう側にある，<br>読みものも．</h2><p>データベースで情報を探し，解説記事でその背景を考える．<br>認知症を学ぶための，もう一つの入口です．</p><button class="button button-light" type="button" data-nav="articles">解説記事を読む <span>↗</span></button></div>
+        <div class="note-feature-art" aria-hidden="true"><span class="art-ring art-ring-one"></span><span class="art-ring art-ring-two"></span><span class="art-letter">a<span>β</span></span><span class="art-accent">RESEARCH<br>IN CONTEXT</span></div>
+      </section>
+
+      <section class="source-section" aria-labelledby="source-title"><div><span class="section-kicker">TRANSPARENT BY DESIGN</span><h2 id="source-title">一次情報に，<br>いつでも戻れる．</h2></div><div class="source-copy"><p>論文にはPMIDを，臨床試験にはNCT番号を表示しています．データは各登録機関の情報に基づきますが，診断や治療の判断を代替するものではありません．</p><div class="source-links"><a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener noreferrer">PubMed ↗</a><a href="https://clinicaltrials.gov/" target="_blank" rel="noopener noreferrer">ClinicalTrials.gov ↗</a><a href="https://jrct.mhlw.go.jp/" target="_blank" rel="noopener noreferrer">jRCT ↗</a><a href="https://rctportal.mhlw.go.jp/" target="_blank" rel="noopener noreferrer">JPRN ↗</a></div></div></section>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="page-shell footer-inner"><div><span class="footer-brand">Dementia Atlas<span>©</span></span><p>認知症研究を，見渡すための小さな羅針盤．</p></div><div class="footer-links"><a href="./about.html">このサイトについて</a><a href="./privacy.html">プライバシー</a><a href="https://note.com/merry_lily" target="_blank" rel="noopener noreferrer">編集者のnote ↗</a></div></div><div class="page-shell footer-bottom">本サイトは研究情報の案内を目的とし，診療・治験参加の推奨や医療上の助言は行いません．</div></footer>
+</body>
+</html>

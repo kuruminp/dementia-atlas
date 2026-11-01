@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "mode": "verified_sample",
+    "fetched_at": null,
+    "verified_at": "2026-11-01",
+    "source": "ClinicalTrials.gov",
+    "description": "公式ページ等を参照した初期サンプル．自動更新設定後はAPI由来のデータに切り替わります．"
+  },
+  "items": [
+    {
+      "id": "NCT07602582",
+      "title": "An Annual Dosing Study of Donanemab in Participants Who Completed Donanemab Study AACM (TRAILBLAZER-ALZ 3-EXT).",
+      "status": "RECRUITING",
+      "phases": [
+        "PHASE3"
+      ],
+      "disease": "ad",
+      "topic": "treatment",
+      "interventions": [
+        "Donanemab",
+        "Placebo"
+      ],
+      "mechanism": "amyloid",
+      "updated": "2026-07-07",
+      "has_japan_site": true,
+      "japan_recruiting": false,
+      "countries": [
+        "Japan",
+        "United States",
+        "Puerto Rico"
+      ],
+      "url": "https://clinicaltrials.gov/study/NCT07602582",
+      "source": "ClinicalTrials.gov",
+      "study_type": "INTERVENTIONAL"
+    },
+    {
+      "id": "NCT06976203",
+      "title": "A Study to Evaluate the Efficacy and Safety of KarXT + KarX-EC for Cognitive Impairment in Alzheimer's Disease (MINDSET 2).",
+      "status": "RECRUITING",
+      "phases": [
+        "PHASE3"
+      ],
+      "disease": "ad",
+      "topic": "treatment",
+      "interventions": [
+        "KarXT + KarX-EC"
+      ],
+      "mechanism": "symptomatic",
+      "updated": "2026-05-20",
+      "has_japan_site": true,
+      "japan_recruiting": true,
+      "countries": [
+        "Japan",
+        "Netherlands"
+      ],
+      "url": "https://clinicaltrials.gov/study/NCT06976203",
+      "source": "ClinicalTrials.gov",
+      "study_type": "INTERVENTIONAL"
+    },
+    {
+      "id": "NCT05980949",
+      "title": "Open-Label Extension Study to Assess the Long-Term Safety and Tolerability of KarXT in Subjects With Psychosis Associated With Alzheimer's Disease (ADEPT-3).",
+      "status": "RECRUITING",
+      "phases": [
+        "PHASE3"
+      ],
+      "disease": "ad",
+      "topic": "treatment",
+      "interventions": [
+        "KarXT"
+      ],
+      "mechanism": "symptomatic",
+      "updated": "2026-05-12",
+      "has_japan_site": true,
+      "japan_recruiting": true,
+      "countries": [
+        "Japan"
+      ],
+      "url": "https://clinicaltrials.gov/study/NCT05980949",
+      "source": "ClinicalTrials.gov",
+      "study_type": "INTERVENTIONAL"
+    },
+    {
+      "id": "NCT04468659",
+      "title": "AHEAD 3-45 Study: A Study to Evaluate Efficacy and Safety of Treatment With Lecanemab in Participants With Preclinical Alzheimer's Disease.",
+      "status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE3"
+      ],
+      "disease": "ad",
+      "topic": "treatment",
+      "interventions": [
+        "Lecanemab",
+        "Placebo"
+      ],
+      "mechanism": "amyloid",
+      "updated": "2026-06-04",
+      "has_japan_site": null,
+      "japan_recruiting": null,
+      "countries": [],
+      "url": "https://clinicaltrials.gov/study/NCT04468659",
+      "source": "ClinicalTrials.gov",
+      "study_type": "INTERVENTIONAL"
+    },
+    {
+      "id": "NCT05552157",
+      "title": "A Study of Potential Disease Modifying Treatments in Individuals at Risk for or With a Type of Early Onset AD Caused by a Genetic Mutation (DIAN-TU).",
+      "status": "RECRUITING",
+      "phases": [
+        "PHASE2",
+        "PHASE3"
+      ],
+      "disease": "ad",
+      "topic": "treatment",
+      "interventions": [
+        "Investigational therapies"
+      ],
+      "mechanism": "amyloid",
+      "updated": "2026-02-13",
+      "has_japan_site": null,
+      "japan_recruiting": null,
+      "countries": [],
+      "url": "https://clinicaltrials.gov/study/NCT05552157",
+      "source": "ClinicalTrials.gov",
+      "study_type": "INTERVENTIONAL"
+    },
+    {
+      "id": "NCT06887192",
+      "title": "A Study to Assess the Efficacy and Safety of ML-007C-MA for the Treatment of Alzheimer's Disease Psychosis.",
+      "status": "RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "disease": "ad",
+      "topic": "treatment",
+      "interventions": [
+        "ML-007C-MA"
+      ],
+      "mechanism": "symptomatic",
+      "updated": "2026-08-27",
+      "has_japan_site": null,
+      "japan_recruiting": null,
+      "countries": [],
+      "url": "https://clinicaltrials.gov/study/NCT06887192",
+      "source": "ClinicalTrials.gov",
+      "study_type": "INTERVENTIONAL"
+    },
+    {
+      "id": "NCT06604520",
+      "title": "Vortioxetine for the Treatment of Mood and Cognitive Symptoms in Frontotemporal Dementia.",
+      "status": "RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "disease": "ftd",
+      "topic": "treatment",
+      "interventions": [
+        "Vortioxetine"
+      ],
+      "mechanism": "symptomatic",
+      "updated": "2026-03-09",
+      "has_japan_site": null,
+      "japan_recruiting": null,
+      "countries": [],
+      "url": "https://clinicaltrials.gov/study/NCT06604520",
+      "source": "ClinicalTrials.gov",
+      "study_type": "INTERVENTIONAL"
+    },
+    {
+      "id": "NCT07646652",
+      "title": "Alpha-synuclein Education and Disclosure in Individuals With Preclinical and Symptomatic Lewy Body Disease.",
+      "status": "NOT_YET_RECRUITING",
+      "phases": [
+        "NA"
+      ],
+      "disease": "dlb",
+      "topic": "care",
+      "interventions": [
+        "LBD biomarker education"
+      ],
+      "mechanism": "non_drug",
+      "updated": "2026-06-15",
+      "has_japan_site": null,
+      "japan_recruiting": null,
+      "countries": [],
+      "url": "https://clinicaltrials.gov/study/NCT07646652",
+      "source": "ClinicalTrials.gov",
+      "study_type": "INTERVENTIONAL"
+    },
+    {
+      "id": "NCT03887455",
+      "title": "A Study to Confirm Safety and Efficacy of Lecanemab in Participants With Early Alzheimer's Disease (Clarity AD).",
+      "status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE3"
+      ],
+      "disease": "ad",
+      "topic": "treatment",
+      "interventions": [
+        "Lecanemab"
+      ],
+      "mechanism": "amyloid",
+      "updated": "2026-04-07",
+      "has_japan_site": null,
+      "japan_recruiting": null,
+      "countries": [],
+      "url": "https://clinicaltrials.gov/study/NCT03887455",
+      "source": "ClinicalTrials.gov",
+      "study_type": "INTERVENTIONAL"
+    }
+  ]
+}

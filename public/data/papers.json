@@ -1,0 +1,171 @@
+{
+  "meta": {
+    "mode": "verified_sample",
+    "fetched_at": null,
+    "verified_at": "2026-11-01",
+    "source": "PubMed",
+    "description": "公式ページ等を参照した初期サンプル．自動更新設定後はAPI由来のデータに切り替わります．"
+  },
+  "items": [
+    {
+      "id": "42904574",
+      "title": "Accelerated Epigenetic Aging in Frontotemporal Dementia Highlights Smoking, Inflammation, and Metabolic Signals.",
+      "journal": "Ann Neurol",
+      "date": "2026-10-21",
+      "disease": "ftd",
+      "topic": "pathology",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42904574/",
+      "source": "PubMed",
+      "research_type": "other",
+      "selection_signals": [],
+      "priority_score": 0
+    },
+    {
+      "id": "42890602",
+      "title": "Integration of blood-based biomarkers and genomic variants identifies individuals with mild cognitive impairment who benefit from multidomain intervention.",
+      "journal": "Alzheimers Dement (N Y)",
+      "date": "2026-10-16",
+      "disease": "mci",
+      "topic": "prevention",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42890602/",
+      "source": "PubMed",
+      "research_type": "other",
+      "selection_signals": [],
+      "priority_score": 0
+    },
+    {
+      "id": "42862762",
+      "title": "Symptom-Guided Blood Biomarker Testing for Alzheimer's Disease.",
+      "journal": "Dement Geriatr Cogn Disord",
+      "date": "2026-10-12",
+      "disease": "ad",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42862762/",
+      "source": "PubMed",
+      "research_type": "other",
+      "selection_signals": [],
+      "priority_score": 0
+    },
+    {
+      "id": "42862138",
+      "title": "Psychological impact of the use of blood-based biomarkers for mild cognitive impairment in primary care.",
+      "journal": "J Alzheimers Dis",
+      "date": "2026-10-12",
+      "disease": "mci",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42862138/",
+      "source": "PubMed",
+      "research_type": "other",
+      "selection_signals": [],
+      "priority_score": 0
+    },
+    {
+      "id": "42865756",
+      "title": "Frontotemporal lobar degeneration therapeutic development pipeline: 2026.",
+      "journal": "Alzheimers Dement (N Y)",
+      "date": "2026-10-11",
+      "disease": "ftd",
+      "topic": "treatment",
+      "publication_types": [
+        "Review"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42865756/",
+      "source": "PubMed",
+      "research_type": "other",
+      "selection_signals": [],
+      "priority_score": 0
+    },
+    {
+      "id": "42821126",
+      "title": "Multimodal PET-MRI profiling predicts dementia with Lewy bodies in isolated REM sleep behaviour disorder.",
+      "journal": "J Neurol",
+      "date": "2026-10-01",
+      "disease": "dlb",
+      "topic": "imaging",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42821126/",
+      "source": "PubMed",
+      "research_type": "other",
+      "selection_signals": [],
+      "priority_score": 0
+    },
+    {
+      "id": "42716046",
+      "title": "Neuroimaging in the era of biologically defined Alzheimer's disease and disease-modifying therapy.",
+      "journal": "Lancet Neurol",
+      "date": "2026-10",
+      "disease": "ad",
+      "topic": "imaging",
+      "publication_types": [
+        "Review"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42716046/",
+      "source": "PubMed",
+      "research_type": "other",
+      "selection_signals": [],
+      "priority_score": 0
+    },
+    {
+      "id": "42716045",
+      "title": "Fluid biomarkers in the evolving care landscape of Alzheimer's disease and related disorders.",
+      "journal": "Lancet Neurol",
+      "date": "2026-10",
+      "disease": "ad",
+      "topic": "biomarker",
+      "publication_types": [
+        "Review"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42716045/",
+      "source": "PubMed",
+      "research_type": "other",
+      "selection_signals": [],
+      "priority_score": 0
+    },
+    {
+      "id": "42861699",
+      "title": "Dementia with Lewy bodies and amyloid pathology: Eligible for anti-amyloid treatment or not?",
+      "journal": "Alzheimers Dement",
+      "date": "2026-10",
+      "disease": "dlb",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42861699/",
+      "source": "PubMed",
+      "research_type": "other",
+      "selection_signals": [],
+      "priority_score": 0
+    },
+    {
+      "id": "42785333",
+      "title": "Dynamic changes in plasma biomarkers of Alzheimer's disease in patients treated with lecanemab: a longitudinal cohort study.",
+      "journal": "Lancet Neurol",
+      "date": "2026-09-24",
+      "disease": "ad",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42785333/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [],
+      "priority_score": 0
+    }
+  ]
+}
