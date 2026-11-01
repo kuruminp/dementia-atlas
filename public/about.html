@@ -1,1 +1,178 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#153f42"><meta name="description" content="Dementia Atlasの運営方針・データの出典・免責事項．"><title>このサイトについて｜Dementia Atlas</title><link rel="stylesheet" href="./styles.css"><link rel="icon" href="./assets/favicon.svg" type="image/svg+xml"></head><body><div class="topline"><div class="page-shell topline-inner"><span class="topline-brand">EVIDENCE &amp; EXPLORATION</span></div></div><header class="site-header"><div class="page-shell header-inner"><a class="brand" href="./index.html"><span class="brand-mark" aria-hidden="true">D</span><span class="brand-copy"><strong>Dementia Atlas</strong><small>認知症リサーチ・アトラス</small></span></a><a class="header-note-link" style="display:inline-flex" href="./index.html">トップへ戻る ↗</a></div></header><main class="simple-main"><div class="page-shell simple-inner"><a class="back-link" href="./index.html">← トップページへ</a><h1>このサイトについて．</h1><p>Dementia Atlasは，認知症研究の新着論文と臨床試験の公開情報を，疾患やテーマごとに整理して探しやすくするためのサイトです．公開済みのnote記事へのリンクも掲載しています．</p><h2>情報源と更新</h2><p>論文情報は米国国立医学図書館のPubMed（E-utilities）から取得します．試験情報はClinicalTrials.govの公開APIから取得し，介入試験に限定しています．GitHub Actionsなどの定期実行環境が設定されていれば，原則，毎日午前0時（日本時間）に更新を開始する設定です．ただし，GitHub Actionsの実行開始は混雑時に遅れる場合があります．初期公開前のサンプルとAPIから更新したデータは，サイト上で区別して表示します．</p><p>臨床試験情報のうち，日本国内の実施施設の有無はClinicalTrials.govに登録された施設住所から判定します．jRCTやUMIN-CTRのみの登録試験を網羅するものではありません．国内の試験は<a href="https://jrct.mhlw.go.jp/" target="_blank" rel="noopener noreferrer">jRCT</a>，<a href="https://rctportal.mhlw.go.jp/" target="_blank" rel="noopener noreferrer">JPRN</a>もご確認ください．</p><h2 id="selection">論文の自動選定について</h2><p>掲載論文は，PubMedに登録された新着文献から機械的に一次選別します．ランダム化比較試験，系統的レビュー，診療指針，外部検証，多施設研究，大規模コホートなどの情報を参考にします．症例報告，研究計画書（プロトコル），一般的な編集記事は原則除外します．</p><p>1日最大3件，トップページには直近30件まで表示します．初回のデータ取得時は最大15件を掲載します．IFは選定の必須条件にしません．</p><p><strong>重要：論文の質，研究の正確性，結論の妥当性はこの自動選定で保証できません．掲載は治療効果の証明ではなく，一次文献の閲覧をお願いします．</strong></p><h2>自動分類の限界</h2><p>疾患と研究テーマは，登録情報のタイトルやキーワード等を用いて自動分類します．誤分類・重複・情報の反映遅れがあり得ます．試験全体の募集状況と各施設の募集状況は異なります．参加を検討するときは，必ず公式試験登録情報を確認してください．</p><h2>著作権・リンク</h2><p>外部の論文抄録全文や本文は転載せず，書誌情報および一次情報へのリンクを掲載しています．note記事は元のnoteページへ移動します．各リンク先の権利はそれぞれの権利者に帰属します．</p><h2>医学的免責事項</h2><p>本サイトの情報は教育・研究目的です．診断，治療方針，治験参加の適格性や安全性を判断する目的では使用しないでください．ご自身の診療方針や参加可否については担当医・治験実施施設にご相談ください．</p><h2>編集・お問い合わせ</h2><p>編集者の公開プロフィールと記事は，<a href="https://note.com/merry_lily" target="_blank" rel="noopener noreferrer">merry_lilyのnote</a>でご覧いただけます．運営上のお問い合わせはnoteのクリエイターへのお問い合わせ機能をご利用ください．</p></div></main><footer class="site-footer"><div class="page-shell footer-bottom">Dementia Atlas © 2026　<a href="./privacy.html">プライバシーポリシー</a></div></footer></body></html>
+
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#153f42">
+  <meta name="description" content="Dementia Atlasの情報源，更新方法，論文の自動選定方針について説明します．">
+  <title>このサイトについて｜Dementia Atlas</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+</head>
+
+<body>
+  <div class="topline">
+    <div class="page-shell topline-inner">
+      <span class="topline-brand">DEMENTIA ATLAS</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="page-shell header-inner">
+      <a class="brand" href="./index.html">
+        <span class="brand-mark" aria-hidden="true">D</span>
+        <span class="brand-copy">
+          <strong>Dementia Atlas</strong>
+          <small>認知症リサーチ・アトラス</small>
+        </span>
+      </a>
+      <a class="header-note-link" style="display:inline-flex" href="./index.html">
+        トップへ戻る ↗
+      </a>
+    </div>
+  </header>
+
+  <main class="simple-main">
+    <div class="page-shell simple-inner">
+      <a class="back-link" href="./index.html">← トップページへ</a>
+
+      <h1>このサイトについて</h1>
+
+      <p>
+        Dementia Atlasは，認知症に関連する研究論文や臨床試験の公開情報を，
+        疾患や研究テーマごとに整理した情報サイトです．
+        PubMedとClinicalTrials.govの情報を検索しやすくまとめ，
+        関連する解説記事も紹介しています．
+      </p>
+
+      <h2>情報源と更新方法</h2>
+
+      <p>
+        論文情報は，米国国立医学図書館が提供するPubMedから取得しています．
+        臨床試験情報はClinicalTrials.govの公開APIを利用しています．
+        掲載する試験は原則として介入試験を対象としています．
+      </p>
+
+      <p>
+        データはGitHub Actionsによって定期的に更新する仕組みです．
+        ただし，外部サービスの稼働状況や通信障害などによって，
+        更新が遅れたり，取得できなかったりする場合があります．
+        最新のデータ取得日時はトップページに表示しています．
+      </p>
+
+      <h2 id="selection">論文の自動選定について</h2>
+
+      <p>
+        掲載論文は，PubMedに登録された新着文献から，
+        研究デザインや研究規模などの書誌情報を参考に自動抽出しています．
+        ランダム化比較試験，系統的レビュー・メタ解析，
+        診療指針，外部検証研究，多施設研究，
+        コホート研究などを選定の参考としています．
+      </p>
+
+      <p>
+        症例報告，研究計画書，編集記事などは原則として除外しています．
+        通常の更新では1日最大3件を追加し，
+        一覧には最大30件を掲載する設計です．
+        初回のデータ取得時には，最大15件を収録します．
+      </p>
+
+      <p>
+        ジャーナルのImpact Factor（IF）は，
+        掲載の必須条件としていません．
+      </p>
+
+      <p>
+        <strong>
+          重要：この自動選定は，研究の科学的な質や結論の妥当性を
+          評価・保証するものではありません．
+          詳細な内容や解釈については，必ず原著論文をご確認ください．
+        </strong>
+      </p>
+
+      <h2>疾患・研究テーマの分類</h2>
+
+      <p>
+        疾患や研究テーマは，論文・試験登録情報に含まれる
+        タイトル，キーワードなどに基づいて機械的に分類しています．
+        複数の疾患に関係する研究もあるため，
+        分類が必ずしも研究内容の全体を反映するとは限りません．
+        誤分類や情報の更新遅れが生じる可能性があります．
+      </p>
+
+      <h2>臨床試験・治験情報について</h2>
+
+      <p>
+        臨床試験の登録情報，募集状況，実施施設などは，
+        ClinicalTrials.govに掲載されている情報に基づいています．
+      </p>
+
+      <p>
+        「日本に実施施設あり」という表示は，
+        登録情報に日本国内の実施施設が含まれることを意味します．
+        日本国内で現在参加者を募集していることを
+        必ずしも意味するものではありません．
+      </p>
+
+      <p>
+        また，本サイトは日本国内で実施される
+        すべての臨床試験を網羅しているわけではありません．
+        国内の試験については，
+        <a href="https://jrct.mhlw.go.jp/" target="_blank" rel="noopener noreferrer">jRCT</a>
+        や
+        <a href="https://rctportal.mhlw.go.jp/" target="_blank" rel="noopener noreferrer">JPRN</a>
+        もご確認ください．
+      </p>
+
+      <h2>解説記事について</h2>
+
+      <p>
+        研究情報に加えて，認知症研究の背景や関連する話題についての
+        公開済みnote記事を紹介しています．
+        記事の本文は各noteページでご覧いただけます．
+      </p>
+
+      <h2>著作権・外部リンク</h2>
+
+      <p>
+        本サイトは，論文の書誌情報と臨床試験の公開登録情報を整理し，
+        各情報源へのリンクを掲載しています．
+        外部サイトの論文本文や記事全文を転載するものではありません．
+        各リンク先のコンテンツの権利は，それぞれの権利者に帰属します．
+      </p>
+
+      <h2>医学的免責事項</h2>
+
+      <p>
+        本サイトは研究情報の提供を目的としており，
+        個別の患者に対する診断，治療方針の決定，
+        臨床試験への参加推奨を行うものではありません．
+      </p>
+
+      <p>
+        治療や臨床試験への参加を検討する際には，
+        担当医や治験実施施設にご相談ください．
+      </p>
+
+      <h2>編集・お問い合わせ</h2>
+
+      <p>
+        公開済みの解説記事や編集者のプロフィールについては，
+        <a href="https://note.com/merry_lily" target="_blank" rel="noopener noreferrer">
+          merry_lilyのnote
+        </a>
+        をご覧ください．
+        お問い合わせはnoteのクリエイターへのお問い合わせ機能をご利用ください．
+      </p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="page-shell footer-bottom">
+      Dementia Atlas © 2026
+      <a href="./privacy.html">プライバシーポリシー</a>
+    </div>
+  </footer>
+</body>
+</html>
