@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://dementia-atlas.pages.dev/sitemap.xml

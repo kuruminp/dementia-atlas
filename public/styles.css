@@ -18,3 +18,8 @@
 .tag-impact{background:#e0f0e8;color:#25634e;border:1px solid #b8ddc8;font-variant-numeric:tabular-nums}
 .tag-impact-low{background:#fff1e0;color:#966b32;font-variant-numeric:tabular-nums}
 .record-links{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+
+/* DEMENTIA_ATLAS_NATIVE_NOTE_V1 */
+.record-note-links{margin-top:14px;padding:13px 16px;background:#eef5ed;border:1px solid #d2e3d1;border-radius:9px;display:flex;flex-direction:column;gap:7px;font-size:13px}
+.record-note-links strong{color:#265b52;font-weight:700}
+.record-note-links a{color:#266f63;text-decoration:underline;text-underline-offset:3px}

@@ -1,0 +1,31 @@
+/* Dementia Atlas: accessible long-form research explanations */
+.article-shell{max-width:900px;padding-top:35px;padding-bottom:72px}
+.article-breadcrumb{font-size:12px;color:var(--muted);margin-bottom:36px}
+.article-breadcrumb a{color:#257466;text-decoration:none}
+.article-heading{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:34px}
+.article-kicker{letter-spacing:.16em;color:#427c65;text-transform:uppercase;font-size:12px;font-weight:700}
+.article-heading h1{font-size:clamp(26px,4vw,43px);line-height:1.55;letter-spacing:.025em;margin:13px 0 14px;font-weight:700}
+.note-muted{font-size:12px;color:#657674}
+.note-muted a{color:#28786a}
+.article-body{font-size:16px;line-height:2.05;letter-spacing:.018em;overflow-wrap:anywhere}
+.article-body p{margin:0 0 1.3em}
+.article-body h2{font-size:23px;line-height:1.5;margin:2.5em 0 .9em;border-left:4px solid #9abd9d;padding-left:16px}
+.article-body h3{font-size:19px;margin:2em 0 .65em}
+.article-body h4{font-size:17px;margin:1.8em 0 .5em}
+.article-body a,.article-references a{color:#256c68;text-underline-offset:3px}
+.article-body blockquote{background:#f2f6f2;border-left:3px solid #83a995;margin:26px 0;padding:15px 23px}
+.article-body figure{text-align:center;margin:28px 0}
+.article-body img{display:block;margin:auto;max-width:100%;height:auto;border-radius:8px}
+.article-body figcaption{font-size:12px;color:#657674;text-align:center}
+.article-body pre{overflow:auto;background:#f4f7f5;padding:16px;border-radius:8px}
+.article-body ul,.article-body ol{margin:1em 0 1.5em;padding-left:2em}
+.article-body table{width:100%;display:block;overflow-x:auto;border-collapse:collapse}
+.article-body td,.article-body th{border:1px solid #d7e1db;padding:8px 12px}
+.article-references,.source-panel{border-top:1px solid var(--line);margin-top:55px;padding-top:26px}
+.article-references h2,.source-panel h2{font-size:22px;margin:0 0 9px}
+.article-references ol{padding-left:23px}
+.article-references li{line-height:1.7;padding:6px 0}
+.source-panel{background:#f5f8f5;padding:26px 28px 30px;border-radius:12px;border-top:0}
+.source-button{display:inline-block;background:#153f42;color:#fff!important;border-radius:8px;padding:10px 19px;text-decoration:none;font-weight:600}
+.article-disclaimer{font-size:12px;color:var(--muted);padding-top:20px}
+@media (max-width:650px){.article-shell{padding-top:20px}.article-body{font-size:15px;line-height:1.95}.source-panel{padding:21px}.article-heading h1{font-size:27px}}

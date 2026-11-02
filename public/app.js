@@ -74,7 +74,7 @@
     articles: {
       label: '解説記事',
       title: '解説・note',
-      sub: '公開済みのnote記事をまとめています．',
+      sub: 'merry_lilyが公開した無料記事を，Dementia Atlas内でも全文掲載しています．',
       source: 'note'
     }
   };
@@ -152,11 +152,10 @@
   let filtered = [];
 
   function dataItems(type) {
-    return DATA &&
-      DATA[type] &&
-      Array.isArray(DATA[type].items)
-      ? DATA[type].items
-      : [];
+    const rows = DATA && DATA[type] && Array.isArray(DATA[type].items)
+      ? DATA[type].items : [];
+    return type === 'articles' ? rows.filter(row =>
+      row.access === 'free' && /^\.\/articles\/n[a-z0-9]{10,20}\.html$/i.test(row.local_url || '')) : rows;
   }
 
   function syncCounts() {
@@ -234,7 +233,6 @@
     const opts = notes
       ? [
           ['all', 'すべてのカテゴリ'],
-          ['試験対策', '試験対策'],
           ['研究の読みもの', '研究の読みもの'],
           ['バイオマーカー', 'バイオマーカー'],
           ['診療・生活', '診療・生活'],
@@ -477,6 +475,16 @@
     const kind =
       RESEARCH_TYPES[row.research_type] || '研究論文';
 
+    const linked = dataItems('articles')
+      .filter(a => Array.isArray(a.related_pmids)
+        && a.related_pmids.some(pmid => String(pmid) === id)
+        && /^\.\/articles\/n[a-z0-9]{10,20}\.html$/i.test(a.local_url || ''))
+      .slice(0, 3);
+    const noteLinks = linked.length ? `
+      <div class="record-note-links"><strong>この論文に言及した日本語記事</strong>
+      ${linked.map(a => `<a href="${esc(a.local_url)}">${esc(a.title)} ↗</a>`).join('')}
+      </div>` : '';
+
     return `
       <article class="record-card">
         <div class="record-head">
@@ -504,6 +512,7 @@
             aria-label="PMID ${id} の原文情報を見る"
           >PubMedで確認 ↗</a>
         </div>
+        ${noteLinks}
       </article>
     `;
   }
@@ -575,36 +584,31 @@
     `;
   }
 
+  // DEMENTIA_ATLAS_NATIVE_NOTE_V1
   function noteCard(row, index) {
-    const url = String(row.url || '');
-
-    if (
-      !/^https:\/\/note\.com\/merry_lily\/n\/n[a-z0-9]+$/i.test(url)
-    ) {
-      return '';
-    }
-
+    const source = String(row.url || '');
+    if (!/^https:\/\/note\.com\/merry_lily\/n\/n[a-z0-9]+$/i.test(source)) return '';
+    if (row.category === '試験対策' || /認知症専門医|専門医試験|試験対策/.test(row.title || '')) return '';
+    const hasLocal = /^\.\/articles\/n[a-z0-9]{10,20}\.html$/i.test(row.local_url || '');
+    if (!hasLocal || row.access !== 'free') return '';
+    const href = row.local_url;
+    const label = '全文を読む';
+    const meta = '<span class="tag tag-alt">このサイトで全文公開</span>';
+    const linkProps = '';
     return `
       <article class="record-card">
         <div class="record-head">
-          <div class="record-tags">
-            <span class="tag">${esc(row.category)}</span>
-            <span class="tag tag-neutral">merry_lilyのnote</span>
-          </div>
-          <span class="record-number">記事 ${String(index + 1).padStart(2, '0')}</span>
+          <div class="record-tags"><span class="tag">${esc(row.category || '研究解説')}</span>${meta}</div>
+          <span class="record-number">解説 ${String(index + 1).padStart(2, '0')}</span>
         </div>
-
         <h4 class="record-title">${esc(row.title)}</h4>
-
         <p class="record-desc">${esc(row.description || '')}</p>
-
         <div class="record-bottom">
           <small>${esc(dateFormat(row.date))} 公開</small>
-          <a
-            href="${esc(url)}"
-            target="_blank"
-            rel="noopener noreferrer"
-          >noteで読む ↗</a>
+          <div class="record-links">
+            <a href="${esc(href)}" ${linkProps}>${label} ↗</a>
+            ${hasLocal ? `<a href="${esc(source)}" target="_blank" rel="noopener noreferrer">元のnote ↗</a>` : ''}
+          </div>
         </div>
       </article>
     `;
@@ -769,7 +773,16 @@
   updateDictionaries();
   render();
 
-  if (location.hash === '#trials') {
+  const articlePmid = new URLSearchParams(location.search).get('paper');
+  if (/^\d{6,10}$/.test(articlePmid || '')) {
+    state.tab = 'papers';
+    state.search = articlePmid;
+    $('search').value = articlePmid;
+    updateDictionaries();
+    updateDiseaseCounts();
+    render();
+    $('explore').scrollIntoView({block: 'start'});
+  } else if (location.hash === '#trials') {
     chooseTab('trials', false);
   } else if (location.hash === '#articles') {
     chooseTab('articles', false);

@@ -2,465 +2,3358 @@
   "meta": {
     "mode": "curated",
     "source": "note",
-    "description": "Public note article links",
-    "fetched_at": "2026-11-01T15:26:38+00:00"
+    "description": "Verified free published note essays copied with author permission",
+    "fetched_at": "2026-11-02T02:11:59+00:00",
+    "policy": "price=0; published; non-exam; public details only"
   },
   "items": [
     {
+      "key": "nc4d5198bd38b",
       "title": "アルツハイマー病の遺伝的リスクは，DNAメチル化を介して現れるのか",
       "url": "https://note.com/merry_lily/n/nc4d5198bd38b",
       "date": "2026-10-21",
       "category": "研究の読みもの",
-      "description": "noteで公開した記事を読む．",
-      "tag": "research"
+      "description": "アルツハイマー病の発症リスクに関係する遺伝子として，最もよく知られているものの一つがAPOEです． 特にAPOE ε4という遺伝子型を持つ人では，アルツハイマー病のリスクが高くなることが知られています． しかし…",
+      "tag": "research",
+      "local_url": "./articles/nc4d5198bd38b.html",
+      "related_pmids": [
+        "42864517"
+      ],
+      "references": [
+        {
+          "pmid": "42864517",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42864517/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/s43587-026-01243-7",
+          "doi": "10.1038/s43587-026-01243-7",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
-      "title": "【2027年度受験向け】認知症専門医試験の勉強方法・最新版",
-      "url": "https://note.com/merry_lily/n/n970030fbda40",
-      "date": "2026-10-13",
-      "category": "試験対策",
-      "description": "2026年度試験の結果を踏まえ，ガイドラインの改訂点や学習の優先順位を整理．",
-      "tag": "guide"
-    },
-    {
-      "title": "同じアルツハイマー病でも，なぜ症状が違うのか？",
+      "key": "ne6d001063d7f",
+      "title": "同じアルツハイマー病でも，なぜ症状が違うのか？―600万個の細胞から見えてきた「個人差」の正体",
       "url": "https://note.com/merry_lily/n/ne6d001063d7f",
       "date": "2026-09-30",
       "category": "研究の読みもの",
       "description": "大規模な単一細胞データから見たアルツハイマー病の個人差．",
-      "tag": "research"
+      "tag": "research",
+      "local_url": "./articles/ne6d001063d7f.html",
+      "related_pmids": [
+        "42778763",
+        "40480991",
+        "35307206",
+        "31042697"
+      ],
+      "references": [
+        {
+          "pmid": "42778763",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42778763/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "40480991",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40480991/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "35307206",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35307206/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "31042697",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31042697/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/s41591-025-04128-1",
+          "doi": "10.1038/s41591-025-04128-1",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/s41597-025-04687-5",
+          "doi": "10.1038/s41597-025-04687-5",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1016/j.tins.2022.02.005",
+          "doi": "10.1016/j.tins.2022.02.005",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/s41586-019-1195-2",
+          "doi": "10.1038/s41586-019-1195-2",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "nabdd7ac86909",
       "title": "血液p-tau217は，症状がない人の未来をどこまで予測できるのか",
       "url": "https://note.com/merry_lily/n/nabdd7ac86909",
       "date": "2026-08-03",
       "category": "研究の読みもの",
-      "description": "noteで公開した記事を読む．",
-      "tag": "research"
+      "description": "アルツハイマー病の診断は，いま大きく変わっています． 以前は，もの忘れがあるかどうか，日常生活に支障があるかどうか，MRIで脳萎縮があるかどうか，というように，症状と臨床経過を中心に診断していました． しかし近…",
+      "tag": "research",
+      "local_url": "./articles/nabdd7ac86909.html",
+      "related_pmids": [
+        "42449500",
+        "29653606",
+        "38382645",
+        "41714746",
+        "40729527"
+      ],
+      "references": [
+        {
+          "pmid": "42449500",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42449500/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "29653606",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29653606/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "38382645",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38382645/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "41714746",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41714746/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "40729527",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40729527/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1001/jama.2026.12556",
+          "doi": "10.1001/jama.2026.12556",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1016/j.jalz.2018.02.018",
+          "doi": "10.1016/j.jalz.2018.02.018",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/s41591-024-02869-z",
+          "doi": "10.1038/s41591-024-02869-z",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/s41591-026-04206-y",
+          "doi": "10.1038/s41591-026-04206-y",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1002/alz.70535",
+          "doi": "10.1002/alz.70535",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "nc156827da6dd",
       "title": "記憶に必要なArcは，タウを運ぶ乗り物にもなるのか",
       "url": "https://note.com/merry_lily/n/nc156827da6dd",
       "date": "2026-07-21",
       "category": "研究の読みもの",
-      "description": "noteで公開した記事を読む．",
-      "tag": "research"
+      "description": "アルツハイマー病というと，多くの人がまず思い浮かべるのは，アミロイドβとタウだと思います． アミロイドβが脳にたまる． その後，タウが神経細胞の中で異常に変化する． 神経細胞の働きが障害される． そして，記憶や…",
+      "tag": "research",
+      "local_url": "./articles/nc156827da6dd.html",
+      "related_pmids": [
+        "42372723",
+        "1759558",
+        "26436904",
+        "29328916"
+      ],
+      "references": [
+        {
+          "pmid": "42372723",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42372723/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "1759558",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/1759558/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "26436904",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26436904/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "29328916",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29328916/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1016/j.cell.2026.06.008",
+          "doi": "10.1016/j.cell.2026.06.008",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1007/bf00308809",
+          "doi": "10.1007/bf00308809",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/nn.4132",
+          "doi": "10.1038/nn.4132",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1016/j.cell.2017.12.024",
+          "doi": "10.1016/j.cell.2017.12.024",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "n628953f3b99c",
       "title": "脳の免疫細胞は，アルツハイマー病の分かれ道を決めるのか",
       "url": "https://note.com/merry_lily/n/n628953f3b99c",
       "date": "2026-07-06",
       "category": "研究の読みもの",
       "description": "ミクログリアとアルツハイマー病の多様性について考える．",
-      "tag": "research"
+      "tag": "research",
+      "local_url": "./articles/n628953f3b99c.html",
+      "related_pmids": [
+        "29653606",
+        "31042697",
+        "30820047",
+        "39198642"
+      ],
+      "references": [
+        {
+          "pmid": "29653606",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29653606/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "31042697",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31042697/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "30820047",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30820047/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "39198642",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39198642/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/s41591-026-04393-8",
+          "doi": "10.1038/s41591-026-04393-8",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1016/j.jalz.2018.02.018",
+          "doi": "10.1016/j.jalz.2018.02.018",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/s41586-019-1195-2",
+          "doi": "10.1038/s41586-019-1195-2",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/s41588-019-0358-2",
+          "doi": "10.1038/s41588-019-0358-2",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/s41586-024-07871-6",
+          "doi": "10.1038/s41586-024-07871-6",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
-      "title": "レカネマブ・ドナネマブの違いを専門医試験目線で整理する",
-      "url": "https://note.com/merry_lily/n/n9eb551419093",
-      "date": "2026-07-05",
-      "category": "試験対策",
-      "description": "noteで公開した記事を読む．",
-      "tag": "research"
-    },
-    {
-      "title": "認知症専門医試験を受ける前に知っておきたいこと",
-      "url": "https://note.com/merry_lily/n/n2e54fd17c3c1",
-      "date": "2026-07-02",
-      "category": "試験対策",
-      "description": "noteで公開した記事を読む．",
-      "tag": "research"
-    },
-    {
+      "key": "n0559e7c95291",
       "title": "腸内細菌は，アルツハイマー病の早い段階から変わるのか",
       "url": "https://note.com/merry_lily/n/n0559e7c95291",
       "date": "2026-07-01",
       "category": "研究の読みもの",
-      "description": "noteで公開した記事を読む．",
-      "tag": "research"
+      "description": "アルツハイマー病というと，普通は脳の病気だと考えます． アミロイドβが脳にたまる． タウが神経細胞の中で異常に変化する． 神経炎症が起こる． シナプスが傷つく． そして，記憶や生活機能が少しずつ低下していく． …",
+      "tag": "research",
+      "local_url": "./articles/n0559e7c95291.html",
+      "related_pmids": [
+        "40164697",
+        "29051531",
+        "28176819",
+        "27776263",
+        "34622235"
+      ],
+      "references": [
+        {
+          "pmid": "40164697",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40164697/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "29051531",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29051531/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "28176819",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28176819/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "27776263",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27776263/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "34622235",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34622235/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/s41380-025-02973-7",
+          "doi": "10.1038/s41380-025-02973-7",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/s41598-017-13601-y",
+          "doi": "10.1038/s41598-017-13601-y",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/srep41802",
+          "doi": "10.1038/srep41802",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1016/j.neurobiolaging.2016.08.019",
+          "doi": "10.1016/j.neurobiolaging.2016.08.019",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1016/j.xcrm.2021.100398",
+          "doi": "10.1016/j.xcrm.2021.100398",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "n44592039d2c1",
       "title": "ドナネマブは，どの段階で使うと最も効果が大きいのか",
       "url": "https://note.com/merry_lily/n/n44592039d2c1",
       "date": "2026-06-30",
       "category": "研究の読みもの",
-      "description": "noteで公開した記事を読む．",
-      "tag": "research"
+      "description": "ドナネマブは，どの段階で使うと最も効果が大きいのか アルツハイマー病治療は，すでに「アミロイドを減らせるか」という段階から，「誰に，いつ，どのくらいの効果が期待できるのか」を考える段階に入っています． レカネマ…",
+      "tag": "research",
+      "local_url": "./articles/n44592039d2c1.html",
+      "related_pmids": [
+        "42273802",
+        "37459141",
+        "38934362"
+      ],
+      "references": [
+        {
+          "pmid": "42273802",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42273802/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "37459141",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37459141/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "38934362",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38934362/",
+          "doi": "",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "n5a29168cd955",
       "title": "血圧をどこまで下げるべきかは，体の状態で変わるのかもしれない",
       "url": "https://note.com/merry_lily/n/n5a29168cd955",
       "date": "2026-06-29",
       "category": "研究の読みもの",
-      "description": "noteで公開した記事を読む．",
-      "tag": "research"
+      "description": "高血圧は，脳卒中や心筋梗塞だけでなく，認知症とも関係します． 血圧が高い状態が長く続くと，脳の細い血管が傷つきます． 白質病変が増える． 微小梗塞が起こる． 脳血流の調節が乱れる． その結果，認知機能が少しずつ…",
+      "tag": "research",
+      "local_url": "./articles/n5a29168cd955.html",
+      "related_pmids": [],
+      "references": [
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1002/alz.71623",
+          "doi": "10.1002/alz.71623",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1001/jama.2018.21442",
+          "doi": "10.1001/jama.2018.21442",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1161/cir.0000000000001184",
+          "doi": "10.1161/cir.0000000000001184",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/s41591-025-03616-8",
+          "doi": "10.1038/s41591-025-03616-8",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1016/j.tjpad.2025.100112",
+          "doi": "10.1016/j.tjpad.2025.100112",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "n157934896fbc",
       "title": "アミロイドがたまりやすい人の遺伝子を，PETと剖検から探す",
       "url": "https://note.com/merry_lily/n/n157934896fbc",
       "date": "2026-06-27",
       "category": "研究の読みもの",
-      "description": "noteで公開した記事を読む．",
-      "tag": "research"
+      "description": "アルツハイマー病の研究では，アミロイドβという言葉をよく聞きます． アミロイドβが脳にたまる． その後，タウ病理が広がる． 神経細胞やシナプスが傷つく． そして，認知機能が少しずつ低下していく． もちろん，アル…",
+      "tag": "research",
+      "local_url": "./articles/n157934896fbc.html",
+      "related_pmids": [
+        "42334898",
+        "25443857",
+        "2011243",
+        "30820047",
+        "35379992"
+      ],
+      "references": [
+        {
+          "pmid": "42334898",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42334898/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "25443857",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25443857/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "2011243",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2011243/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "30820047",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30820047/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "35379992",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35379992/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1093/brain/awag216",
+          "doi": "10.1093/brain/awag216",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1016/j.jalz.2014.07.003",
+          "doi": "10.1016/j.jalz.2014.07.003",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1212/wnl.41.4.479",
+          "doi": "10.1212/wnl.41.4.479",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/s41588-019-0358-2",
+          "doi": "10.1038/s41588-019-0358-2",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/s41588-022-01024-z",
+          "doi": "10.1038/s41588-022-01024-z",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "n257c821e7bb1",
       "title": "グルコサミンは，アルツハイマー病の脳に影響するのか",
       "url": "https://note.com/merry_lily/n/n257c821e7bb1",
       "date": "2026-06-26",
       "category": "研究の読みもの",
-      "description": "noteで公開した記事を読む．",
-      "tag": "research"
+      "description": "グルコサミンという言葉を聞いたことがある人は多いと思います． 関節の健康のために飲むサプリメント． 膝や腰が気になる人が使う健康食品． 薬局や通販で簡単に買えるもの． そのようなイメージが強いかもしれません． …",
+      "tag": "research",
+      "local_url": "./articles/n257c821e7bb1.html",
+      "related_pmids": [
+        "42265388",
+        "18287270",
+        "34908231",
+        "10515789"
+      ],
+      "references": [
+        {
+          "pmid": "42265388",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42265388/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "18287270",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18287270/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "34908231",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34908231/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "10515789",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10515789/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/s42255-026-01538-4",
+          "doi": "10.1038/s42255-026-01538-4",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.2967/jnumed.107.045385",
+          "doi": "10.2967/jnumed.107.045385",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1002/alz.12523",
+          "doi": "10.1002/alz.12523",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1126/science.285.5435.1853",
+          "doi": "10.1126/science.285.5435.1853",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "n46b3726be7f6",
       "title": "アルツハイマー病研究で，「除外されたデータ」は何を語るのか",
       "url": "https://note.com/merry_lily/n/n46b3726be7f6",
       "date": "2026-06-25",
       "category": "研究の読みもの",
-      "description": "noteで公開した記事を読む．",
-      "tag": "research"
+      "description": "アルツハイマー病の研究では，画像検査がとても重要です． アミロイドPET． タウPET． MRI． 脳萎縮の評価． 白質病変や微小出血の評価． そして，抗アミロイド抗体薬の時代には，治療前後の安全性評価． 画像…",
+      "tag": "research",
+      "local_url": "./articles/n46b3726be7f6.html",
+      "related_pmids": [
+        "42339065",
+        "25443857",
+        "33527720",
+        "30555031",
+        "34590409"
+      ],
+      "references": [
+        {
+          "pmid": "42339065",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42339065/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "25443857",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25443857/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "33527720",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33527720/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "30555031",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30555031/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "34590409",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34590409/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1002/dad2.70389",
+          "doi": "10.1002/dad2.70389",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1016/j.jalz.2014.07.003",
+          "doi": "10.1016/j.jalz.2014.07.003",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1002/alz.12293",
+          "doi": "10.1002/alz.12293",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1016/j.jalz.2018.09.009",
+          "doi": "10.1016/j.jalz.2018.09.009",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1002/alz.12433",
+          "doi": "10.1002/alz.12433",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "n365bd59ebad6",
       "title": "大人の脳は，新しい神経細胞を作り続けているのか",
       "url": "https://note.com/merry_lily/n/n365bd59ebad6",
       "date": "2026-06-18",
       "category": "研究の読みもの",
-      "description": "noteで公開した記事を読む．",
-      "tag": "research"
+      "description": "アルツハイマー病というと，どうしても「失われていく病気」という印象が強いと思います． 記憶が失われる． 神経細胞が傷つく． 脳が萎縮する． 生活の自立が少しずつ難しくなる． たしかに，アルツハイマー病は神経変性…",
+      "tag": "research",
+      "local_url": "./articles/n365bd59ebad6.html",
+      "related_pmids": [
+        "41741649",
+        "9809557",
+        "23746839",
+        "29513649",
+        "30911133",
+        "29625071"
+      ],
+      "references": [
+        {
+          "pmid": "41741649",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41741649/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "9809557",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9809557/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "23746839",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23746839/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "29513649",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29513649/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "30911133",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30911133/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "29625071",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29625071/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/s41586-026-10169-4",
+          "doi": "10.1038/s41586-026-10169-4",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/3305",
+          "doi": "10.1038/3305",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1016/j.cell.2013.05.002",
+          "doi": "10.1016/j.cell.2013.05.002",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/nature25975",
+          "doi": "10.1038/nature25975",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/s41591-019-0375-9",
+          "doi": "10.1038/s41591-019-0375-9",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1016/j.stem.2018.03.015",
+          "doi": "10.1016/j.stem.2018.03.015",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "ne0519d58e075",
       "title": "アルツハイマー病を，血液でどこまで診断できるのか",
       "url": "https://note.com/merry_lily/n/ne0519d58e075",
       "date": "2026-06-03",
       "category": "研究の読みもの",
-      "description": "noteで公開した記事を読む．",
-      "tag": "research"
+      "description": "アルツハイマー病の診断は，いま大きく変わっています． 以前は，もの忘れがあるかどうか，日常生活に支障があるかどうか，MRIで脳萎縮があるかどうか，というように，症状と臨床経過を中心に診断していました． もちろん…",
+      "tag": "research",
+      "local_url": "./articles/ne0519d58e075.html",
+      "related_pmids": [
+        "31371569",
+        "38382645",
+        "39394841",
+        "42189519",
+        "41714746"
+      ],
+      "references": [
+        {
+          "pmid": "31371569",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31371569/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "38382645",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38382645/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "39394841",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39394841/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "42189519",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42189519/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "41714746",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41714746/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1212/wnl.0000000000008081",
+          "doi": "10.1212/wnl.0000000000008081",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/s41591-024-02869-z",
+          "doi": "10.1038/s41591-024-02869-z",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1002/alz.14315",
+          "doi": "10.1002/alz.14315",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1001/jamaneurol.2026.1405",
+          "doi": "10.1001/jamaneurol.2026.1405",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/s41591-026-04206-y",
+          "doi": "10.1038/s41591-026-04206-y",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "ne04e6bf3aa05",
       "title": "アルツハイマー病のステージを，血液でどこまで見られるのか",
       "url": "https://note.com/merry_lily/n/ne04e6bf3aa05",
       "date": "2026-06-02",
       "category": "研究の読みもの",
-      "description": "noteで公開した記事を読む．",
-      "tag": "research"
+      "description": "アルツハイマー病の診断は，いま大きく変わっています． 以前は，もの忘れがあるかどうか，日常生活に支障があるかどうか，画像で萎縮があるかどうか，というように，症状や臨床経過を中心に診断していました． もちろん，そ…",
+      "tag": "research",
+      "local_url": "./articles/ne04e6bf3aa05.html",
+      "related_pmids": [
+        "42189519",
+        "38934362",
+        "38382645",
+        "37443334",
+        "40164726",
+        "37459141"
+      ],
+      "references": [
+        {
+          "pmid": "42189519",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42189519/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "38934362",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38934362/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "38382645",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38382645/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "37443334",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37443334/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "40164726",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40164726/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "37459141",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37459141/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1001/jamaneurol.2026.1405",
+          "doi": "10.1001/jamaneurol.2026.1405",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1002/alz.13859",
+          "doi": "10.1002/alz.13859",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/s41591-024-02869-z",
+          "doi": "10.1038/s41591-024-02869-z",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/s41591-023-02443-z",
+          "doi": "10.1038/s41591-023-02443-z",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/s41591-025-03617-7",
+          "doi": "10.1038/s41591-025-03617-7",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1001/jama.2023.13239",
+          "doi": "10.1001/jama.2023.13239",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "n41427e9b4f57",
       "title": "アルツハイマー病治療を，臨床試験から実臨床へ届ける",
       "url": "https://note.com/merry_lily/n/n41427e9b4f57",
       "date": "2026-06-01",
       "category": "治療",
-      "description": "noteで公開した記事を読む．",
-      "tag": "research"
+      "description": "アルツハイマー病の治療は，いま大きく変わりつつあります． 長い間，アルツハイマー病の治療は，症状を少し和らげることが中心でした． 記憶や生活機能の低下を完全に止めることは難しく，病気そのものの進行に介入する治療…",
+      "tag": "research",
+      "local_url": "./articles/n41427e9b4f57.html",
+      "related_pmids": [
+        "35617937",
+        "40354064",
+        "40729527",
+        "41442134"
+      ],
+      "references": [
+        {
+          "pmid": "35617937",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35617937/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "40354064",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40354064/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "40729527",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40729527/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "41442134",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41442134/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1056/nejmoa2212948",
+          "doi": "10.1056/nejmoa2212948",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1001/jamaneurol.2025.1232",
+          "doi": "10.1001/jamaneurol.2025.1232",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1002/alz.70535",
+          "doi": "10.1002/alz.70535",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1002/alz70856_097511",
+          "doi": "10.1002/alz70856_097511",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "n5ae06d751cce",
       "title": "アルツハイマー病のリスクを，どう伝えるべきか",
       "url": "https://note.com/merry_lily/n/n5ae06d751cce",
       "date": "2026-05-30",
       "category": "研究の読みもの",
-      "description": "noteで公開した記事を読む．",
-      "tag": "research"
+      "description": "アルツハイマー病の研究は，とても大きく変わっています． 以前は，認知症の症状が出てから診断することが中心でした． もの忘れが目立つ． 日常生活に支障が出る． 家族が変化に気づく． そこで初めて，認知症かもしれな…",
+      "tag": "research",
+      "local_url": "./articles/n5ae06d751cce.html",
+      "related_pmids": [
+        "36178120",
+        "33337371",
+        "40327345",
+        "39949872"
+      ],
+      "references": [
+        {
+          "pmid": "36178120",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36178120/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "33337371",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33337371/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "40327345",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40327345/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "39949872",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39949872/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1002/alz.12781",
+          "doi": "10.1002/alz.12781",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.3233/jad-200993",
+          "doi": "10.3233/jad-200993",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1001/jamanetworkopen.2025.2919",
+          "doi": "10.1001/jamanetworkopen.2025.2919",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1002/trc2.70033",
+          "doi": "10.1002/trc2.70033",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "n70d56f7eda98",
       "title": "認知機能を，診察室の外で測る",
       "url": "https://note.com/merry_lily/n/n70d56f7eda98",
       "date": "2026-05-29",
       "category": "研究の読みもの",
-      "description": "noteで公開した記事を読む．",
-      "tag": "research"
+      "description": "アルツハイマー病の研究では，認知機能をどう測るかがとても重要です． 記憶検査をする． 注意や処理速度を測る． 言語や遂行機能を評価する． その結果を，アミロイド，タウ，MRI，PET，血液バイオマーカーと結びつ…",
+      "tag": "research",
+      "local_url": "./articles/n70d56f7eda98.html",
+      "related_pmids": [
+        "34517889",
+        "36062528",
+        "35037593",
+        "37079810",
+        "38282413",
+        "39586645"
+      ],
+      "references": [
+        {
+          "pmid": "34517889",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34517889/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "36062528",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36062528/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "35037593",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35037593/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "37079810",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37079810/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "38282413",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38282413/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "39586645",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39586645/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1186/s13195-021-00894-5",
+          "doi": "10.1186/s13195-021-00894-5",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1017/s135561772200042x",
+          "doi": "10.1017/s135561772200042x",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1080/13803395.2021.2009447",
+          "doi": "10.1080/13803395.2021.2009447",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1037/neu0000905",
+          "doi": "10.1037/neu0000905",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1017/s1355617723011475",
+          "doi": "10.1017/s1355617723011475",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1002/sim.10292",
+          "doi": "10.1002/sim.10292",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "nab9749614d0a",
       "title": "認知症を，「運転」という日常生活から見る",
       "url": "https://note.com/merry_lily/n/nab9749614d0a",
       "date": "2026-05-28",
       "category": "診療・生活",
       "description": "認知機能だけでなく，安全と自立の観点から運転を考える．",
-      "tag": "care"
+      "tag": "research",
+      "local_url": "./articles/nab9749614d0a.html",
+      "related_pmids": [
+        "9520920",
+        "20424254",
+        "22092029",
+        "32365315",
+        "41296993"
+      ],
+      "references": [
+        {
+          "pmid": "9520920",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9520920/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "20424254",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20424254/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "22092029",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22092029/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "32365315",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32365315/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "41296993",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41296993/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1093/gerona/53a.2.m135",
+          "doi": "10.1093/gerona/53a.2.m135",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1001/jama.2010.481",
+          "doi": "10.1001/jama.2010.481",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1111/j.1532-5415.2011.03657.x",
+          "doi": "10.1111/j.1532-5415.2011.03657.x",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.5014/ajot.2020.034389",
+          "doi": "10.5014/ajot.2020.034389",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1212/wnl.0000000000214440",
+          "doi": "10.1212/wnl.0000000000214440",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "nde4428f8a885",
       "title": "アルツハイマー病を，「発症する理由」だけでなく「発症しない理由」から考える",
       "url": "https://note.com/merry_lily/n/nde4428f8a885",
       "date": "2026-05-27",
       "category": "研究の読みもの",
-      "description": "noteで公開した記事を読む．",
-      "tag": "research"
+      "description": "アルツハイマー病の研究では，長い間，「なぜ病気になるのか」が問われてきました． なぜアミロイドβがたまるのか． なぜタウが広がるのか． なぜ神経細胞が傷つくのか． なぜ記憶や生活機能が失われていくのか． もちろ…",
+      "tag": "research",
+      "local_url": "./articles/nde4428f8a885.html",
+      "related_pmids": [
+        "33226734",
+        "40201594",
+        "39930140",
+        "31686034",
+        "37198481",
+        "38837526"
+      ],
+      "references": [
+        {
+          "pmid": "33226734",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33226734/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "40201594",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40201594/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "39930140",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39930140/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "31686034",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31686034/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "37198481",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37198481/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "38837526",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38837526/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1002/alz.12227",
+          "doi": "10.1002/alz.12227",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1002/dad2.70102",
+          "doi": "10.1002/dad2.70102",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/s41591-025-03494-0",
+          "doi": "10.1038/s41591-025-03494-0",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/s41591-019-0611-3",
+          "doi": "10.1038/s41591-019-0611-3",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/s41591-023-02318-3",
+          "doi": "10.1038/s41591-023-02318-3",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1002/alz.14041",
+          "doi": "10.1002/alz.14041",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "na26e6964cda2",
       "title": "若年発症アルツハイマー病の「見えない遺伝」を探す",
       "url": "https://note.com/merry_lily/n/na26e6964cda2",
       "date": "2026-05-26",
       "category": "研究の読みもの",
-      "description": "noteで公開した記事を読む．",
-      "tag": "research"
+      "description": "アルツハイマー病というと，多くの場合は高齢になってから発症する病気，という印象が強いかもしれません． でも，アルツハイマー病の中には，65歳未満で発症する若年発症アルツハイマー病があります． さらにその一部には…",
+      "tag": "research",
+      "local_url": "./articles/na26e6964cda2.html",
+      "related_pmids": [
+        "22472873",
+        "26303663",
+        "40556318",
+        "42127933"
+      ],
+      "references": [
+        {
+          "pmid": "22472873",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22472873/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "26303663",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26303663/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "40556318",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40556318/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "42127933",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42127933/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/mp.2012.15",
+          "doi": "10.1038/mp.2012.15",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/mp.2015.121",
+          "doi": "10.1038/mp.2015.121",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1002/alz.70377",
+          "doi": "10.1002/alz.70377",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1016/s1474-4422(26)00123-7",
+          "doi": "10.1016/s1474-4422(26)00123-7",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "n1995314a5ed9",
       "title": "アルツハイマー病を，発症してからではなく，発症前から治療できるのか",
       "url": "https://note.com/merry_lily/n/n1995314a5ed9",
       "date": "2026-05-25",
       "category": "治療",
-      "description": "noteで公開した記事を読む．",
-      "tag": "research"
+      "description": "アルツハイマー病というと，多くの場合は，もの忘れが目立つようになってから診断される病気，という印象が強いと思います． 同じ話を何度も聞く． 予定を忘れる． 財布や鍵の置き場所が分からなくなる． 家族が「最近少し…",
+      "tag": "research",
+      "local_url": "./articles/n1995314a5ed9.html",
+      "related_pmids": [
+        "30217935",
+        "34155411",
+        "40120616",
+        "41709913"
+      ],
+      "references": [
+        {
+          "pmid": "30217935",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30217935/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "34155411",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34155411/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "40120616",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40120616/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "41709913",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41709913/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1212/wnl.0000000000006277",
+          "doi": "10.1212/wnl.0000000000006277",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/s41591-021-01369-8",
+          "doi": "10.1038/s41591-021-01369-8",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1016/s1474-4422(25)00024-9",
+          "doi": "10.1016/s1474-4422(25)00024-9",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/s44400-025-00047-7",
+          "doi": "10.1038/s44400-025-00047-7",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "nda8fd98e87cd",
       "title": "タウを「動き」と「形」から見る",
       "url": "https://note.com/merry_lily/n/nda8fd98e87cd",
       "date": "2026-05-24",
       "category": "研究の読みもの",
-      "description": "noteで公開した記事を読む．",
-      "tag": "research"
+      "description": "アルツハイマー病というと，アミロイドβとタウがよく知られています． アミロイドβがたまり，その後にタウが広がり，神経細胞が傷ついていく． そのような流れとして，アルツハイマー病は説明されることが多いです． でも…",
+      "tag": "research",
+      "local_url": "./articles/nda8fd98e87cd.html",
+      "related_pmids": [
+        "29566794",
+        "37443334",
+        "40164726",
+        "32123385"
+      ],
+      "references": [
+        {
+          "pmid": "29566794",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29566794/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "37443334",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37443334/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "40164726",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40164726/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "32123385",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32123385/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1016/j.neuron.2018.02.015",
+          "doi": "10.1016/j.neuron.2018.02.015",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/s41591-023-02443-z",
+          "doi": "10.1038/s41591-023-02443-z",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/s41591-025-03617-7",
+          "doi": "10.1038/s41591-025-03617-7",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/s41591-020-0781-z",
+          "doi": "10.1038/s41591-020-0781-z",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "n4388d71562a5",
       "title": "アルツハイマー病は，症状が出る前からどのように進んでいくのか",
       "url": "https://note.com/merry_lily/n/n4388d71562a5",
       "date": "2026-05-23",
       "category": "研究の読みもの",
-      "description": "noteで公開した記事を読む．",
-      "tag": "research"
+      "description": "アルツハイマー病というと，多くの人は「もの忘れが目立つようになってから気づく病気」という印象を持っているかもしれません． 同じことを何度も聞く． 予定を忘れる． 財布や鍵の置き場所が分からなくなる． 家族が「最…",
+      "tag": "research",
+      "local_url": "./articles/n4388d71562a5.html",
+      "related_pmids": [
+        "41709913",
+        "22784036",
+        "8232972",
+        "30051512"
+      ],
+      "references": [
+        {
+          "pmid": "41709913",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41709913/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "22784036",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22784036/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "8232972",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8232972/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "30051512",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30051512/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/s44400-025-00047-7",
+          "doi": "10.1038/s44400-025-00047-7",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1056/nejmoa1202753",
+          "doi": "10.1056/nejmoa1202753",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1212/wnl.43.11.2412-a",
+          "doi": "10.1212/wnl.43.11.2412-a",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1111/joim.12816",
+          "doi": "10.1111/joim.12816",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "n101590ef8bc5",
       "title": "認知症を，病名ではなく「タンパク質の地図」として見る",
       "url": "https://note.com/merry_lily/n/n101590ef8bc5",
       "date": "2026-05-22",
       "category": "研究の読みもの",
-      "description": "noteで公開した記事を読む．",
-      "tag": "research"
+      "description": "アルツハイマー病というと，どうしてもアミロイドβとタウに注目しがちです． もちろん，それはとても重要です． アルツハイマー病の診断や治療開発は，Aβ42，total tau，phosphorylated tau…",
+      "tag": "research",
+      "local_url": "./articles/n101590ef8bc5.html",
+      "related_pmids": [
+        "41916283",
+        "37406134",
+        "40665052",
+        "30051512"
+      ],
+      "references": [
+        {
+          "pmid": "41916283",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41916283/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "37406134",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37406134/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "40665052",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40665052/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "30051512",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30051512/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1016/j.neuron.2026.02.035",
+          "doi": "10.1016/j.neuron.2026.02.035",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1126/scitranslmed.abq5923",
+          "doi": "10.1126/scitranslmed.abq5923",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/s41591-025-03833-1",
+          "doi": "10.1038/s41591-025-03833-1",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1111/joim.12816",
+          "doi": "10.1111/joim.12816",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "nd5b91159a6aa",
       "title": "睡眠時間は，長ければ長いほどよいわけではないのかもしれない",
       "url": "https://note.com/merry_lily/n/nd5b91159a6aa",
       "date": "2026-05-21",
       "category": "研究の読みもの",
-      "description": "noteで公開した記事を読む．",
-      "tag": "research"
+      "description": "睡眠は，脳の健康に大切だと言われます． よく眠ること． 睡眠不足を避けること． 規則正しい生活をすること． どれも，健康のために大切なことです． でも，睡眠について考えるとき，意外と難しい問いがあります． それ…",
+      "tag": "research",
+      "local_url": "./articles/nd5b91159a6aa.html",
+      "related_pmids": [
+        "39096926",
+        "28364458",
+        "24136970",
+        "29632177",
+        "32123385"
+      ],
+      "references": [
+        {
+          "pmid": "39096926",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39096926/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "28364458",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28364458/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "24136970",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24136970/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "29632177",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29632177/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "32123385",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32123385/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1002/alz.71499",
+          "doi": "10.1002/alz.71499",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1016/s0140-6736(24)01296-0",
+          "doi": "10.1016/s0140-6736(24)01296-0",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1093/sleep/zsw032",
+          "doi": "10.1093/sleep/zsw032",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1126/science.1241224",
+          "doi": "10.1126/science.1241224",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1073/pnas.1721694115",
+          "doi": "10.1073/pnas.1721694115",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/s41591-020-0755-1",
+          "doi": "10.1038/s41591-020-0755-1",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "n0575a9170fe6",
       "title": "認知症予防は，「何をするか」だけでなく「誰に届くか」が大切なのかもしれない",
       "url": "https://note.com/merry_lily/n/n0575a9170fe6",
       "date": "2026-05-20",
       "category": "予防・生活",
-      "description": "noteで公開した記事を読む．",
-      "tag": "research"
+      "description": "認知症予防というと，よく聞く言葉があります． 運動をしましょう． 食事に気をつけましょう． 頭を使いましょう． 血圧や糖尿病を管理しましょう． 人とのつながりを大切にしましょう． どれも大切なことです． でも，…",
+      "tag": "research",
+      "local_url": "./articles/n0575a9170fe6.html",
+      "related_pmids": [
+        "41222037",
+        "38646854",
+        "25771249",
+        "39096926"
+      ],
+      "references": [
+        {
+          "pmid": "41222037",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41222037/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "38646854",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38646854/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "25771249",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25771249/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "39096926",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39096926/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1002/alz.70822",
+          "doi": "10.1002/alz.70822",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1002/alz.13838",
+          "doi": "10.1002/alz.13838",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1016/s0140-6736(15)60461-5",
+          "doi": "10.1016/s0140-6736(15)60461-5",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1016/s0140-6736(24)01296-0",
+          "doi": "10.1016/s0140-6736(24)01296-0",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "n8d474d45fc5e",
       "title": "アルツハイマー病を，脳だけで考えなくてもよいのかもしれない",
       "url": "https://note.com/merry_lily/n/n8d474d45fc5e",
       "date": "2026-05-19",
       "category": "研究の読みもの",
       "description": "APOEと末梢臓器の関係から病態を考える．",
-      "tag": "research"
+      "tag": "research",
+      "local_url": "./articles/n8d474d45fc5e.html",
+      "related_pmids": [
+        "42097136",
+        "33340485",
+        "31686034",
+        "38899694",
+        "35915180"
+      ],
+      "references": [
+        {
+          "pmid": "42097136",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42097136/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "33340485",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33340485/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "31686034",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31686034/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "38899694",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38899694/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "35915180",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35915180/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1016/j.neuron.2026.04.027",
+          "doi": "10.1016/j.neuron.2026.04.027",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1016/s1474-4422(20)30412-9",
+          "doi": "10.1016/s1474-4422(20)30412-9",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/s41591-019-0611-3",
+          "doi": "10.1038/s41591-019-0611-3",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1056/nejmoa2308583",
+          "doi": "10.1056/nejmoa2308583",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/s41593-022-01127-0",
+          "doi": "10.1038/s41593-022-01127-0",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "n87618757d4b7",
       "title": "アルツハイマー病は，症状が出る20年前から始まっているのかもしれない",
       "url": "https://note.com/merry_lily/n/n87618757d4b7",
       "date": "2026-05-17",
       "category": "研究の読みもの",
-      "description": "noteで公開した記事を読む．",
-      "tag": "research"
+      "description": "アルツハイマー病というと，もの忘れが目立つようになってから気づく病気，という印象が強いかもしれません． たとえば，同じ話を何度もしてしまう． 予定を忘れてしまう． 財布や鍵をどこに置いたか分からなくなる． 家族…",
+      "tag": "research",
+      "local_url": "./articles/n87618757d4b7.html",
+      "related_pmids": [
+        "41709913",
+        "22784036"
+      ],
+      "references": [
+        {
+          "pmid": "41709913",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41709913/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "22784036",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22784036/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/s44400-025-00047-7",
+          "doi": "10.1038/s44400-025-00047-7",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1056/nejmoa1202753",
+          "doi": "10.1056/nejmoa1202753",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "n0d74daa6a957",
       "title": "同じ遺伝子変異を持っていても，発症の時期が違うのはなぜか",
       "url": "https://note.com/merry_lily/n/n0d74daa6a957",
       "date": "2026-05-15",
       "category": "研究の読みもの",
-      "description": "noteで公開した記事を読む．",
-      "tag": "research"
+      "description": "アルツハイマー病というと，多くの場合は高齢になってから発症する病気，という印象が強いかもしれません． でも，アルツハイマー病の中には，より若い年齢で発症し，家系の中で受け継がれるタイプがあります． これは，常染…",
+      "tag": "research",
+      "local_url": "./articles/n0d74daa6a957.html",
+      "related_pmids": [],
+      "references": [
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1016/s1474-4422(26)00123-7",
+          "doi": "10.1016/s1474-4422(26)00123-7",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "nc81d869ee740",
       "title": "アルツハイマー病は，脳が縮む前から始まっているのか",
       "url": "https://note.com/merry_lily/n/nc81d869ee740",
       "date": "2026-05-14",
       "category": "研究の読みもの",
-      "description": "noteで公開した記事を読む．",
-      "tag": "research"
+      "description": "最新MRI研究から見える「見えない神経ダメージ」 アルツハイマー病というと，多くの人は「脳が萎縮する病気」というイメージを持っているかもしれません． 実際，MRIで海馬や大脳皮質の萎縮を見ることは，認知症診療で…",
+      "tag": "research",
+      "local_url": "./articles/nc81d869ee740.html",
+      "related_pmids": [
+        "42125540"
+      ],
+      "references": [
+        {
+          "pmid": "42125540",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42125540/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1002/dad2.70355",
+          "doi": "10.1002/dad2.70355",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/s41586-023-06120-6",
+          "doi": "10.1038/s41586-023-06120-6",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "n4eb37368e833",
       "title": "脳の細胞を「アミロイド掃除係」に変えることはできるのか",
       "url": "https://note.com/merry_lily/n/n4eb37368e833",
       "date": "2026-05-13",
       "category": "研究の読みもの",
-      "description": "noteで公開した記事を読む．",
-      "tag": "research"
+      "description": "WashU発・CARアストロサイト研究から考えるアルツハイマー病治療の未来 アルツハイマー病の治療は，ここ数年で大きく変わりました． レカネマブやドナネマブのような抗アミロイド抗体薬によって，脳にたまるアミロイ…",
+      "tag": "research",
+      "local_url": "./articles/n4eb37368e833.html",
+      "related_pmids": [
+        "41785364"
+      ],
+      "references": [
+        {
+          "pmid": "41785364",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41785364/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1126/science.ads3972",
+          "doi": "10.1126/science.ads3972",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "n55a66bfeb149",
       "title": "アルツハイマー病の臨床試験は，もっと小さく，早くできるのか",
       "url": "https://note.com/merry_lily/n/n55a66bfeb149",
       "date": "2026-05-12",
       "category": "治療",
-      "description": "noteで公開した記事を読む．",
-      "tag": "research"
+      "description": "SLIM法から考える，血液バイオマーカー時代の試験デザイン アルツハイマー病の研究では，いま血液バイオマーカーが大きな注目を集めています． これまで，アルツハイマー病の病理を調べるには，アミロイドPETやタウP…",
+      "tag": "research",
+      "local_url": "./articles/n55a66bfeb149.html",
+      "related_pmids": [
+        "41122812",
+        "37459141"
+      ],
+      "references": [
+        {
+          "pmid": "41122812",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41122812/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "37459141",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37459141/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1002/alz.70787",
+          "doi": "10.1002/alz.70787",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1001/jama.2023.13239",
+          "doi": "10.1001/jama.2023.13239",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "n784116cdff9d",
       "title": "帯状疱疹ワクチンは，認知症を遠ざけるのか",
       "url": "https://note.com/merry_lily/n/n784116cdff9d",
       "date": "2026-05-11",
       "category": "研究の読みもの",
-      "description": "noteで公開した記事を読む．",
-      "tag": "research"
+      "description": "Nature論文から考える，感染症・免疫・脳の意外なつながり アルツハイマー病や認知症の予防というと，多くの人はまず生活習慣を思い浮かべるかもしれません． 運動すること． 血圧や糖尿病を管理すること． よく眠る…",
+      "tag": "research",
+      "local_url": "./articles/n784116cdff9d.html",
+      "related_pmids": [
+        "40175543"
+      ],
+      "references": [
+        {
+          "pmid": "40175543",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40175543/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/s41586-025-08800-x",
+          "doi": "10.1038/s41586-025-08800-x",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/s41591-024-03201-5",
+          "doi": "10.1038/s41591-024-03201-5",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "ne941ccc5014c",
       "title": "アルツハイマー病は，症状が出る前に遅らせられるのか",
       "url": "https://note.com/merry_lily/n/ne941ccc5014c",
       "date": "2026-05-10",
       "category": "研究の読みもの",
-      "description": "noteで公開した記事を読む．",
-      "tag": "research"
+      "description": "家族性アルツハイマー病の長期研究から見えてきたこと アルツハイマー病の治療は，ここ数年で大きく変わってきました． レカネマブやドナネマブのように，脳にたまるアミロイドを減らす薬が登場し，早期アルツハイマー病の進…",
+      "tag": "research",
+      "local_url": "./articles/ne941ccc5014c.html",
+      "related_pmids": [
+        "40120616",
+        "34155411"
+      ],
+      "references": [
+        {
+          "pmid": "40120616",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40120616/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "34155411",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34155411/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1016/s1474-4422(25)00024-9",
+          "doi": "10.1016/s1474-4422(25)00024-9",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/s41591-021-01369-8",
+          "doi": "10.1038/s41591-021-01369-8",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "nd726675f3aad",
       "title": "アルツハイマー病は，血管から始まるのか",
       "url": "https://note.com/merry_lily/n/nd726675f3aad",
       "date": "2026-05-09",
       "category": "バイオマーカー",
       "description": "血管内皮とsyndecan-4からみる病態研究．",
-      "tag": "research"
+      "tag": "research",
+      "local_url": "./articles/nd726675f3aad.html",
+      "related_pmids": [
+        "42098850",
+        "39085945",
+        "29653606"
+      ],
+      "references": [
+        {
+          "pmid": "42098850",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42098850/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "39085945",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39085945/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "29653606",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29653606/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1186/s13195-026-02043-2",
+          "doi": "10.1186/s13195-026-02043-2",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "n9df0bf85ccbe",
       "title": "血液検査で「タウのもつれ」まで見える時代へ",
       "url": "https://note.com/merry_lily/n/n9df0bf85ccbe",
       "date": "2026-05-08",
       "category": "バイオマーカー",
       "description": "新しい血液タウ関連バイオマーカーを解説．",
-      "tag": "research"
+      "tag": "research",
+      "local_url": "./articles/n9df0bf85ccbe.html",
+      "related_pmids": [
+        "40164726",
+        "41051312"
+      ],
+      "references": [
+        {
+          "pmid": "40164726",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40164726/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "41051312",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41051312/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/s41591-025-03617-7",
+          "doi": "10.1038/s41591-025-03617-7",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1093/brain/awaf375",
+          "doi": "10.1093/brain/awaf375",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "n42b44da6c1d9",
       "title": "研究参加の「謝礼」は，人を集めるのか，遠ざけるのか",
       "url": "https://note.com/merry_lily/n/n42b44da6c1d9",
       "date": "2026-05-07",
       "category": "研究の読みもの",
-      "description": "noteで公開した記事を読む．",
-      "tag": "research"
+      "description": "アルツハイマー病縦断研究から考える，金銭的補償と参加の倫理 アルツハイマー病研究というと，多くの人は新しい薬，血液バイオマーカー，アミロイドPET，タウPET，あるいは遺伝子研究を思い浮かべるかもしれません． …",
+      "tag": "research",
+      "local_url": "./articles/n42b44da6c1d9.html",
+      "related_pmids": [
+        "42084109"
+      ],
+      "references": [
+        {
+          "pmid": "42084109",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42084109/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1002/alz.71356",
+          "doi": "10.1002/alz.71356",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "n2bc4bd425647",
       "title": "リチウムは，軽度認知障害の進行を遅らせるのか",
       "url": "https://note.com/merry_lily/n/n2bc4bd425647",
       "date": "2026-05-06",
       "category": "研究の読みもの",
-      "description": "noteで公開した記事を読む．",
-      "tag": "research"
+      "description": "2026年JAMA Neurology論文から考える「安価な再利用薬」の可能性 アルツハイマー病の治療と聞くと，最近はレカネマブやドナネマブのような抗アミロイド抗体薬を思い浮かべる人が多いと思います．これらは，…",
+      "tag": "research",
+      "local_url": "./articles/n2bc4bd425647.html",
+      "related_pmids": [
+        "41770546",
+        "30947755",
+        "26402004"
+      ],
+      "references": [
+        {
+          "pmid": "41770546",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41770546/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "30947755",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30947755/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "26402004",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26402004/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1001/jamaneurol.2026.0072",
+          "doi": "10.1001/jamaneurol.2026.0072",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1192/bjp.2019.76",
+          "doi": "10.1192/bjp.2019.76",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "n69e7497d83d9",
       "title": "アルツハイマー病は「生まれつきの遺伝子」だけで説明できるのか",
       "url": "https://note.com/merry_lily/n/n69e7497d83d9",
       "date": "2026-05-05",
       "category": "研究の読みもの",
-      "description": "noteで公開した記事を読む．",
-      "tag": "research"
+      "description": "脳の中で後天的に生じる「体細胞変異」という新しい視点 アルツハイマー病の遺伝と聞くと，多くの人は APOE ε4 や，家族性アルツハイマー病に関わる APP，PSEN1，PSEN2 などを思い浮かべるかもしれま…",
+      "tag": "research",
+      "local_url": "./articles/n69e7497d83d9.html",
+      "related_pmids": [
+        "41986690",
+        "35444284",
+        "31300647"
+      ],
+      "references": [
+        {
+          "pmid": "41986690",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41986690/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "35444284",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35444284/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "31300647",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31300647/",
+          "doi": "",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "n5fcca4d1fed2",
       "title": "糖尿病・肥満治療薬は，アルツハイマー病にも効くのか",
       "url": "https://note.com/merry_lily/n/n5fcca4d1fed2",
       "date": "2026-05-04",
       "category": "治療",
       "description": "セマグルチド試験と創薬仮説の検証を考える．",
-      "tag": "research"
+      "tag": "research",
+      "local_url": "./articles/n5fcca4d1fed2.html",
+      "related_pmids": [
+        "41865758"
+      ],
+      "references": [
+        {
+          "pmid": "41865758",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41865758/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1016/s0140-6736(26)00459-9",
+          "doi": "10.1016/s0140-6736(26)00459-9",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1186/s13195-024-01666-7",
+          "doi": "10.1186/s13195-024-01666-7",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "ne199bcee2399",
       "title": "アルツハイマー病治療は，免疫を動かせば変わるのか",
       "url": "https://note.com/merry_lily/n/ne199bcee2399",
       "date": "2026-05-03",
       "category": "治療",
-      "description": "noteで公開した記事を読む．",
-      "tag": "research"
+      "description": "TREM2作動性抗体AL002の第2相試験から考えること アルツハイマー病の治療開発は，いま大きく広がっています． これまでは，アミロイドβやタウが中心的な標的でした．実際，レカネマブやドナネマブのような抗アミ…",
+      "tag": "research",
+      "local_url": "./articles/ne199bcee2399.html",
+      "related_pmids": [
+        "41787076",
+        "23150934",
+        "23150908"
+      ],
+      "references": [
+        {
+          "pmid": "41787076",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41787076/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "23150934",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23150934/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "23150908",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23150908/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/s41591-026-04273-1",
+          "doi": "10.1038/s41591-026-04273-1",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "n1c534f99ba1e",
       "title": "アルツハイマー病に強い脳は，何が違うのか",
       "url": "https://note.com/merry_lily/n/n1c534f99ba1e",
       "date": "2026-05-02",
       "category": "研究の読みもの",
-      "description": "noteで公開した記事を読む．",
-      "tag": "research"
+      "description": "2026年Nature論文から考える「神経新生」と認知レジリエンス アルツハイマー病の研究では，アミロイドβやタウが中心的に語られてきました． もちろん，これらは非常に重要です． アミロイドβが蓄積し，タウ病理…",
+      "tag": "research",
+      "local_url": "./articles/n1c534f99ba1e.html",
+      "related_pmids": [
+        "41741649",
+        "31130513"
+      ],
+      "references": [
+        {
+          "pmid": "41741649",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41741649/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "31130513",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31130513/",
+          "doi": "",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "na5471d93d943",
       "title": "認知症の人にとって，テレビは「刺激」か「ケア」か",
       "url": "https://note.com/merry_lily/n/na5471d93d943",
       "date": "2026-05-01",
       "category": "研究の読みもの",
-      "description": "noteで公開した記事を読む．",
-      "tag": "research"
+      "description": "Therapeutic TVという新しい認知症ケアの考え方 認知症のある方と暮らしていると，日常の中で「どう関わればよいのか」と迷う場面がたくさんあります． 会話が続かない． 落ち着かない時間がある． 水分摂取…",
+      "tag": "research",
+      "local_url": "./articles/na5471d93d943.html",
+      "related_pmids": [
+        "37844601",
+        "40656845",
+        "25452601",
+        "30033623",
+        "30820029"
+      ],
+      "references": [
+        {
+          "pmid": "37844601",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37844601/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "40656845",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40656845/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "25452601",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25452601/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "30033623",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30033623/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "30820029",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30820029/",
+          "doi": "",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "nb52552fb900a",
       "title": "アミロイドを取り除くと，タウはどう変わるのか",
       "url": "https://note.com/merry_lily/n/nb52552fb900a",
       "date": "2026-04-30",
       "category": "研究の読みもの",
-      "description": "noteで公開した記事を読む．",
-      "tag": "research"
+      "description": "抗アミロイド抗体薬時代に考える「タウ・バイオマーカー」の読み方 アルツハイマー病の治療は，いま大きく変わりつつあります． レカネマブやドナネマブのような抗アミロイド抗体薬が登場し，アミロイドβを標的にして病気の…",
+      "tag": "research",
+      "local_url": "./articles/nb52552fb900a.html",
+      "related_pmids": [
+        "40985290",
+        "34155411",
+        "32161412"
+      ],
+      "references": [
+        {
+          "pmid": "40985290",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40985290/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "34155411",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34155411/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "32161412",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32161412/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1002/alz.70689",
+          "doi": "10.1002/alz.70689",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/s41591-021-01369-8",
+          "doi": "10.1038/s41591-021-01369-8",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/s41591-020-0781-z",
+          "doi": "10.1038/s41591-020-0781-z",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "n1956b2c9c1db",
       "title": "アルツハイマー病治療薬は，実臨床で誰に届いているのか",
       "url": "https://note.com/merry_lily/n/n1956b2c9c1db",
       "date": "2026-04-29",
       "category": "治療",
-      "description": "noteで公開した記事を読む．",
-      "tag": "research"
+      "description": "AD-DMTのリアルワールドエビデンスから見える次の課題 アルツハイマー病の治療は，いま大きく変わりつつあります． これまでの治療薬は，認知症の症状を一時的に支えることを目的とするものが中心でした．しかし近年，…",
+      "tag": "research",
+      "local_url": "./articles/n1956b2c9c1db.html",
+      "related_pmids": [
+        "36449413",
+        "37459141",
+        "41160347"
+      ],
+      "references": [
+        {
+          "pmid": "36449413",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36449413/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "37459141",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37459141/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "41160347",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41160347/",
+          "doi": "",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "n27ee7e30b489",
       "title": "認知症予防は「何か一つ」ではなく，「組み合わせ」の時代へ",
       "url": "https://note.com/merry_lily/n/n27ee7e30b489",
       "date": "2026-04-28",
       "category": "予防・生活",
-      "description": "noteで公開した記事を読む．",
-      "tag": "research"
+      "description": "US POINTER試験から考える，これからの脳の健康 認知症予防というと，よく聞かれる質問があります． 「何を食べればよいですか」 「どんな運動をすればよいですか」 「脳トレは効果がありますか」 「サプリメン…",
+      "tag": "research",
+      "local_url": "./articles/n27ee7e30b489.html",
+      "related_pmids": [
+        "40720610"
+      ],
+      "references": [
+        {
+          "pmid": "40720610",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40720610/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1001/jama.2025.12923",
+          "doi": "10.1001/jama.2025.12923",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "n64d727555c2e",
       "title": "アルツハイマー病治療は「次の段階」へ",
       "url": "https://note.com/merry_lily/n/n64d727555c2e",
       "date": "2026-04-27",
       "category": "治療",
-      "description": "noteで公開した記事を読む．",
-      "tag": "research"
+      "description": "Jeffrey Cummings先生が語る2026年の臨床試験パイプライン アルツハイマー病の治療開発は，いま大きな転換点にあります． これまでアルツハイマー病は，「治療が難しい病気」「進行を止められない病気」…",
+      "tag": "research",
+      "local_url": "./articles/n64d727555c2e.html",
+      "related_pmids": [
+        "40463637",
+        "36449413",
+        "37459141",
+        "41449440",
+        "37902726"
+      ],
+      "references": [
+        {
+          "pmid": "40463637",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40463637/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "36449413",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36449413/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "37459141",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37459141/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "41449440",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41449440/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "37902726",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37902726/",
+          "doi": "",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "nf767486ba403",
       "title": "「もの忘れ」はどこから病気なのか",
       "url": "https://note.com/merry_lily/n/nf767486ba403",
       "date": "2026-04-26",
       "category": "研究の読みもの",
-      "description": "noteで公開した記事を読む．",
-      "tag": "research"
+      "description": "早期アルツハイマー病を見逃さないために 「最近，言葉が出てこない」 「人の名前を忘れることが増えた」 「これは年齢のせいなのか，それともアルツハイマー病の始まりなのか」 こうした不安は，多くの人が一度は感じるも…",
+      "tag": "research",
+      "local_url": "./articles/nf767486ba403.html",
+      "related_pmids": [
+        "21514250",
+        "21514249",
+        "21889116",
+        "39448784",
+        "31285787",
+        "28592453",
+        "35908251",
+        "38265856"
+      ],
+      "references": [
+        {
+          "pmid": "21514250",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21514250/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "21514249",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21514249/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "21889116",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21889116/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "39448784",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39448784/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "31285787",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31285787/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "28592453",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28592453/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "35908251",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35908251/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "38265856",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38265856/",
+          "doi": "",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "n0310054f9807",
       "title": "歯周病菌を標的にしたアルツハイマー病治療？",
       "url": "https://note.com/merry_lily/n/n0310054f9807",
       "date": "2026-04-25",
       "category": "治療",
-      "description": "noteで公開した記事を読む．",
-      "tag": "research"
+      "description": "SPRING試験と P. gingivalis 仮説について アルツハイマー病の治療というと，近年はアミロイドβを標的とした抗体薬が注目されています．一方で，少し異なる角度からアルツハイマー病に迫る研究も進んで…",
+      "tag": "research",
+      "local_url": "./articles/n0310054f9807.html",
+      "related_pmids": [
+        "32533852",
+        "30746447",
+        "26963387",
+        "36003033"
+      ],
+      "references": [
+        {
+          "pmid": "32533852",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32533852/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "30746447",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30746447/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "26963387",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26963387/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "36003033",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36003033/",
+          "doi": "",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "n5ea4ca2462ff",
       "title": "アルツハイマー病と睡眠．脳は夜のあいだに掃除をしているのかもしれない",
       "url": "https://note.com/merry_lily/n/n5ea4ca2462ff",
       "date": "2026-04-24",
       "category": "予防・生活",
       "description": "睡眠と脳内老廃物排出に関する研究を紹介．",
-      "tag": "care"
+      "tag": "research",
+      "local_url": "./articles/n5ea4ca2462ff.html",
+      "related_pmids": [
+        "41593094",
+        "41981905"
+      ],
+      "references": [
+        {
+          "pmid": "41593094",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41593094/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "41981905",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41981905/",
+          "doi": "",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "n4199da5b10df",
       "title": "アルツハイマー病は，何歳から始まるのか",
       "url": "https://note.com/merry_lily/n/n4199da5b10df",
       "date": "2026-04-23",
       "category": "研究の読みもの",
-      "description": "noteで公開した記事を読む．",
-      "tag": "research"
+      "description": "アルツハイマー病というと，「もの忘れが始まってからの病気」という印象が強いかもしれません． でも最近は，治療の話題が広がる一方で，「病気をどれだけ早く見つけられるか」がこれまで以上に大切になっています［1，2］…",
+      "tag": "research",
+      "local_url": "./articles/n4199da5b10df.html",
+      "related_pmids": [
+        "38365360",
+        "37202517",
+        "38382645",
+        "41586468"
+      ],
+      "references": [
+        {
+          "pmid": "38365360",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38365360/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "37202517",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37202517/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "38382645",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38382645/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "41586468",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41586468/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1002/ana.78163",
+          "doi": "10.1002/ana.78163",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "n4c486491b3ab",
       "title": "アルツハイマー病は，血液の中の「かたち」からわかるようになるのかもしれない",
       "url": "https://note.com/merry_lily/n/n4c486491b3ab",
       "date": "2026-04-22",
       "category": "研究の読みもの",
-      "description": "noteで公開した記事を読む．",
-      "tag": "research"
+      "description": "アルツハイマー病の診断というと，これまでは髄液検査やPETなど，少し負担の大きい検査が必要というイメージが強かったように思います．でも最近は，血液検査だけで病気のサインを見つけようという研究が，とても大きく進ん…",
+      "tag": "research",
+      "local_url": "./articles/n4c486491b3ab.html",
+      "related_pmids": [
+        "37202517",
+        "38382645",
+        "41760935",
+        "41784652"
+      ],
+      "references": [
+        {
+          "pmid": "37202517",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37202517/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "38382645",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38382645/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "41760935",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41760935/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "41784652",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41784652/",
+          "doi": "",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     },
     {
+      "key": "n5b43769869c9",
       "title": "アルツハイマー病は，血液検査でどこまでわかるのか",
       "url": "https://note.com/merry_lily/n/n5b43769869c9",
       "date": "2026-04-21",
       "category": "バイオマーカー",
-      "description": "noteで公開した記事を読む．",
-      "tag": "research"
-    },
-    {
-      "title": "認知症専門医試験の勉強方法",
-      "url": "https://note.com/merry_lily/n/nc9b64785cbf0",
-      "date": "2026-04-12",
-      "category": "試験対策",
-      "description": "受験要件，試験の特徴，まず確認したい学習資料を整理．",
-      "tag": "guide"
+      "description": "ここ1〜2年で，アルツハイマー病の診療は少しずつ変わってきています． これまでは，アルツハイマー病の背景にあるアミロイド病理をしっかり確かめようと思うと，髄液検査やアミロイドPETのような，やや負担の大きい検査…",
+      "tag": "research",
+      "local_url": "./articles/n5b43769869c9.html",
+      "related_pmids": [
+        "40140924",
+        "40618130",
+        "39778288"
+      ],
+      "references": [
+        {
+          "pmid": "40140924",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40140924/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "40618130",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40618130/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "39778288",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39778288/",
+          "doi": "",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
     }
   ]
 }
