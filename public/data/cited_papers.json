@@ -1,0 +1,1843 @@
+{
+  "meta": {
+    "source": "PubMed E-utilities",
+    "role": "references cited in the site's free author-written essays",
+    "last_updated": "2026-11-02T02:53:19+00:00",
+    "separate_from_new_100": true
+  },
+  "items": [
+    {
+      "id": "1759558",
+      "title": "Neuropathological stageing of Alzheimer-related changes.",
+      "journal": "Acta neuropathologica",
+      "year": "1991",
+      "doi": "10.1007/BF00308809",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/1759558/",
+      "local_url": "./papers/1759558.html",
+      "article_keys": [
+        "nc156827da6dd"
+      ]
+    },
+    {
+      "id": "2011243",
+      "title": "The Consortium to Establish a Registry for Alzheimer's Disease (CERAD). Part II. Standardization of the neuropathologic assessment of Alzheimer's disease.",
+      "journal": "Neurology",
+      "year": "1991",
+      "doi": "10.1212/wnl.41.4.479",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/2011243/",
+      "local_url": "./papers/2011243.html",
+      "article_keys": [
+        "n157934896fbc"
+      ]
+    },
+    {
+      "id": "8232972",
+      "title": "The Clinical Dementia Rating (CDR): current version and scoring rules.",
+      "journal": "Neurology",
+      "year": "1993",
+      "doi": "10.1212/wnl.43.11.2412-a",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/8232972/",
+      "local_url": "./papers/8232972.html",
+      "article_keys": [
+        "n4388d71562a5"
+      ]
+    },
+    {
+      "id": "9520920",
+      "title": "Differentiating drivers with dementia of the Alzheimer type from healthy older persons with a Traffic Sign Naming test.",
+      "journal": "The journals of gerontology. Series A, Biological sciences and medical sciences",
+      "year": "1998",
+      "doi": "10.1093/gerona/53a.2.m135",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/9520920/",
+      "local_url": "./papers/9520920.html",
+      "article_keys": [
+        "nab9749614d0a"
+      ]
+    },
+    {
+      "id": "9809557",
+      "title": "Neurogenesis in the adult human hippocampus.",
+      "journal": "Nature medicine",
+      "year": "1998",
+      "doi": "10.1038/3305",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/9809557/",
+      "local_url": "./papers/9809557.html",
+      "article_keys": [
+        "n365bd59ebad6"
+      ]
+    },
+    {
+      "id": "10515789",
+      "title": "Regulation of \"nutraceuticals\".",
+      "journal": "Science (New York, N.Y.)",
+      "year": "1999",
+      "doi": "10.1126/science.285.5435.1853",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/10515789/",
+      "local_url": "./papers/10515789.html",
+      "article_keys": [
+        "n257c821e7bb1"
+      ]
+    },
+    {
+      "id": "18287270",
+      "title": "Multicenter standardized 18F-FDG PET diagnosis of mild cognitive impairment, Alzheimer's disease, and other dementias.",
+      "journal": "Journal of nuclear medicine : official publication, Society of Nuclear Medicine",
+      "year": "2008",
+      "doi": "10.2967/jnumed.107.045385",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/18287270/",
+      "local_url": "./papers/18287270.html",
+      "article_keys": [
+        "n257c821e7bb1"
+      ]
+    },
+    {
+      "id": "20424254",
+      "title": "The older adult driver with cognitive impairment: \"It's a very frustrating life\".",
+      "journal": "JAMA",
+      "year": "2010",
+      "doi": "10.1001/jama.2010.481",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/20424254/",
+      "local_url": "./papers/20424254.html",
+      "article_keys": [
+        "nab9749614d0a"
+      ]
+    },
+    {
+      "id": "21514249",
+      "title": "The diagnosis of mild cognitive impairment due to Alzheimer's disease: recommendations from the National Institute on Aging-Alzheimer's Association workgroups on diagnostic guidelines for Alzheimer's disease.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "year": "2011",
+      "doi": "10.1016/j.jalz.2011.03.008",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/21514249/",
+      "local_url": "./papers/21514249.html",
+      "article_keys": [
+        "nf767486ba403"
+      ]
+    },
+    {
+      "id": "21514250",
+      "title": "The diagnosis of dementia due to Alzheimer's disease: recommendations from the National Institute on Aging-Alzheimer's Association workgroups on diagnostic guidelines for Alzheimer's disease.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "year": "2011",
+      "doi": "10.1016/j.jalz.2011.03.005",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/21514250/",
+      "local_url": "./papers/21514250.html",
+      "article_keys": [
+        "nf767486ba403"
+      ]
+    },
+    {
+      "id": "21889116",
+      "title": "Neuropsychiatric symptoms in Alzheimer's disease.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "year": "2011",
+      "doi": "10.1016/j.jalz.2011.05.2410",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/21889116/",
+      "local_url": "./papers/21889116.html",
+      "article_keys": [
+        "nf767486ba403"
+      ]
+    },
+    {
+      "id": "22092029",
+      "title": "Predicting road test performance in drivers with dementia.",
+      "journal": "Journal of the American Geriatrics Society",
+      "year": "2011",
+      "doi": "10.1111/j.1532-5415.2011.03657.x",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/22092029/",
+      "local_url": "./papers/22092029.html",
+      "article_keys": [
+        "nab9749614d0a"
+      ]
+    },
+    {
+      "id": "22472873",
+      "title": "High frequency of potentially pathogenic SORL1 mutations in autosomal dominant early-onset Alzheimer disease.",
+      "journal": "Molecular psychiatry",
+      "year": "2012",
+      "doi": "10.1038/mp.2012.15",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/22472873/",
+      "local_url": "./papers/22472873.html",
+      "article_keys": [
+        "na26e6964cda2"
+      ]
+    },
+    {
+      "id": "22784036",
+      "title": "Clinical and biomarker changes in dominantly inherited Alzheimer's disease.",
+      "journal": "The New England journal of medicine",
+      "year": "2012",
+      "doi": "10.1056/NEJMoa1202753",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/22784036/",
+      "local_url": "./papers/22784036.html",
+      "article_keys": [
+        "n4388d71562a5",
+        "n87618757d4b7"
+      ]
+    },
+    {
+      "id": "23150908",
+      "title": "Variant of TREM2 associated with the risk of Alzheimer's disease.",
+      "journal": "The New England journal of medicine",
+      "year": "2013",
+      "doi": "10.1056/NEJMoa1211103",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/23150908/",
+      "local_url": "./papers/23150908.html",
+      "article_keys": [
+        "ne199bcee2399"
+      ]
+    },
+    {
+      "id": "23150934",
+      "title": "TREM2 variants in Alzheimer's disease.",
+      "journal": "The New England journal of medicine",
+      "year": "2013",
+      "doi": "10.1056/NEJMoa1211851",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/23150934/",
+      "local_url": "./papers/23150934.html",
+      "article_keys": [
+        "ne199bcee2399"
+      ]
+    },
+    {
+      "id": "23746839",
+      "title": "Dynamics of hippocampal neurogenesis in adult humans.",
+      "journal": "Cell",
+      "year": "2013",
+      "doi": "10.1016/j.cell.2013.05.002",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/23746839/",
+      "local_url": "./papers/23746839.html",
+      "article_keys": [
+        "n365bd59ebad6"
+      ]
+    },
+    {
+      "id": "24136970",
+      "title": "Sleep drives metabolite clearance from the adult brain.",
+      "journal": "Science (New York, N.Y.)",
+      "year": "2013",
+      "doi": "10.1126/science.1241224",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/24136970/",
+      "local_url": "./papers/24136970.html",
+      "article_keys": [
+        "nd5b91159a6aa"
+      ]
+    },
+    {
+      "id": "25443857",
+      "title": "The Centiloid Project: standardizing quantitative amyloid plaque estimation by PET.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "year": "2015",
+      "doi": "10.1016/j.jalz.2014.07.003",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/25443857/",
+      "local_url": "./papers/25443857.html",
+      "article_keys": [
+        "n157934896fbc",
+        "n46b3726be7f6"
+      ]
+    },
+    {
+      "id": "25452601",
+      "title": "Non-pharmacological interventions for agitation in dementia: systematic review of randomised controlled trials.",
+      "journal": "The British journal of psychiatry : the journal of mental science",
+      "year": "2014",
+      "doi": "10.1192/bjp.bp.113.141119",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/25452601/",
+      "local_url": "./papers/25452601.html",
+      "article_keys": [
+        "na5471d93d943"
+      ]
+    },
+    {
+      "id": "25771249",
+      "title": "A 2 year multidomain intervention of diet, exercise, cognitive training, and vascular risk monitoring versus control to prevent cognitive decline in at-risk elderly people (FINGER): a randomised controlled trial.",
+      "journal": "Lancet (London, England)",
+      "year": "2015",
+      "doi": "10.1016/S0140-6736(15)60461-5",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/25771249/",
+      "local_url": "./papers/25771249.html",
+      "article_keys": [
+        "n0575a9170fe6"
+      ]
+    },
+    {
+      "id": "26303663",
+      "title": "SORL1 rare variants: a major risk factor for familial early-onset Alzheimer's disease.",
+      "journal": "Molecular psychiatry",
+      "year": "2016",
+      "doi": "10.1038/mp.2015.121",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/26303663/",
+      "local_url": "./papers/26303663.html",
+      "article_keys": [
+        "na26e6964cda2"
+      ]
+    },
+    {
+      "id": "26402004",
+      "title": "Lithium as a Treatment for Alzheimer's Disease: A Systematic Review and Meta-Analysis.",
+      "journal": "Journal of Alzheimer's disease : JAD",
+      "year": "2015",
+      "doi": "10.3233/JAD-150437",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/26402004/",
+      "local_url": "./papers/26402004.html",
+      "article_keys": [
+        "n2bc4bd425647"
+      ]
+    },
+    {
+      "id": "26436904",
+      "title": "Depletion of microglia and inhibition of exosome synthesis halt tau propagation.",
+      "journal": "Nature neuroscience",
+      "year": "2015",
+      "doi": "10.1038/nn.4132",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/26436904/",
+      "local_url": "./papers/26436904.html",
+      "article_keys": [
+        "nc156827da6dd"
+      ]
+    },
+    {
+      "id": "26963387",
+      "title": "Periodontitis and Cognitive Decline in Alzheimer's Disease.",
+      "journal": "PloS one",
+      "year": "2016",
+      "doi": "10.1371/journal.pone.0151081",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/26963387/",
+      "local_url": "./papers/26963387.html",
+      "article_keys": [
+        "n0310054f9807"
+      ]
+    },
+    {
+      "id": "27776263",
+      "title": "Association of brain amyloidosis with pro-inflammatory gut bacterial taxa and peripheral inflammation markers in cognitively impaired elderly.",
+      "journal": "Neurobiology of aging",
+      "year": "2017",
+      "doi": "10.1016/j.neurobiolaging.2016.08.019",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/27776263/",
+      "local_url": "./papers/27776263.html",
+      "article_keys": [
+        "n0559e7c95291"
+      ]
+    },
+    {
+      "id": "28176819",
+      "title": "Reduction of Abeta amyloid pathology in APPPS1 transgenic mice in the absence of gut microbiota.",
+      "journal": "Scientific reports",
+      "year": "2017",
+      "doi": "10.1038/srep41802",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/28176819/",
+      "local_url": "./papers/28176819.html",
+      "article_keys": [
+        "n0559e7c95291"
+      ]
+    },
+    {
+      "id": "28364458",
+      "title": "Sleep, Cognitive impairment, and Alzheimer's disease: A Systematic Review and Meta-Analysis.",
+      "journal": "Sleep",
+      "year": "2017",
+      "doi": "10.1093/sleep/zsw032",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/28364458/",
+      "local_url": "./papers/28364458.html",
+      "article_keys": [
+        "nd5b91159a6aa"
+      ]
+    },
+    {
+      "id": "28592453",
+      "title": "Diagnosis and management of dementia with Lewy bodies: Fourth consensus report of the DLB Consortium.",
+      "journal": "Neurology",
+      "year": "2017",
+      "doi": "10.1212/WNL.0000000000004058",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/28592453/",
+      "local_url": "./papers/28592453.html",
+      "article_keys": [
+        "nf767486ba403"
+      ]
+    },
+    {
+      "id": "29051531",
+      "title": "Gut microbiome alterations in Alzheimer's disease.",
+      "journal": "Scientific reports",
+      "year": "2017",
+      "doi": "10.1038/s41598-017-13601-y",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/29051531/",
+      "local_url": "./papers/29051531.html",
+      "article_keys": [
+        "n0559e7c95291"
+      ]
+    },
+    {
+      "id": "29328916",
+      "title": "The Neuronal Gene Arc Encodes a Repurposed Retrotransposon Gag Protein that Mediates Intercellular RNA Transfer.",
+      "journal": "Cell",
+      "year": "2018",
+      "doi": "10.1016/j.cell.2017.12.024",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/29328916/",
+      "local_url": "./papers/29328916.html",
+      "article_keys": [
+        "nc156827da6dd"
+      ]
+    },
+    {
+      "id": "29513649",
+      "title": "Human hippocampal neurogenesis drops sharply in children to undetectable levels in adults.",
+      "journal": "Nature",
+      "year": "2018",
+      "doi": "10.1038/nature25975",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/29513649/",
+      "local_url": "./papers/29513649.html",
+      "article_keys": [
+        "n365bd59ebad6"
+      ]
+    },
+    {
+      "id": "29566794",
+      "title": "Tau Kinetics in Neurons and the Human Central Nervous System.",
+      "journal": "Neuron",
+      "year": "2018",
+      "doi": "10.1016/j.neuron.2018.02.015",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/29566794/",
+      "local_url": "./papers/29566794.html",
+      "article_keys": [
+        "nda8fd98e87cd"
+      ]
+    },
+    {
+      "id": "29625071",
+      "title": "Human Hippocampal Neurogenesis Persists throughout Aging.",
+      "journal": "Cell stem cell",
+      "year": "2018",
+      "doi": "10.1016/j.stem.2018.03.015",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/29625071/",
+      "local_url": "./papers/29625071.html",
+      "article_keys": [
+        "n365bd59ebad6"
+      ]
+    },
+    {
+      "id": "29632177",
+      "title": "β-Amyloid accumulation in the human brain after one night of sleep deprivation.",
+      "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+      "year": "2018",
+      "doi": "10.1073/pnas.1721694115",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/29632177/",
+      "local_url": "./papers/29632177.html",
+      "article_keys": [
+        "nd5b91159a6aa"
+      ]
+    },
+    {
+      "id": "29653606",
+      "title": "NIA-AA Research Framework: Toward a biological definition of Alzheimer's disease.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "year": "2018",
+      "doi": "10.1016/j.jalz.2018.02.018",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/29653606/",
+      "local_url": "./papers/29653606.html",
+      "article_keys": [
+        "nabdd7ac86909",
+        "n628953f3b99c",
+        "nd726675f3aad"
+      ]
+    },
+    {
+      "id": "30033623",
+      "title": "Music-based therapeutic interventions for people with dementia.",
+      "journal": "The Cochrane database of systematic reviews",
+      "year": "2018",
+      "doi": "10.1002/14651858.CD003477.pub4",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/30033623/",
+      "local_url": "./papers/30033623.html",
+      "article_keys": [
+        "na5471d93d943"
+      ]
+    },
+    {
+      "id": "30051512",
+      "title": "Biomarkers for Alzheimer's disease: current status and prospects for the future.",
+      "journal": "Journal of internal medicine",
+      "year": "2018",
+      "doi": "10.1111/joim.12816",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/30051512/",
+      "local_url": "./papers/30051512.html",
+      "article_keys": [
+        "n4388d71562a5",
+        "n101590ef8bc5"
+      ]
+    },
+    {
+      "id": "30217935",
+      "title": "Longitudinal cognitive and biomarker changes in dominantly inherited Alzheimer disease.",
+      "journal": "Neurology",
+      "year": "2018",
+      "doi": "10.1212/WNL.0000000000006277",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/30217935/",
+      "local_url": "./papers/30217935.html",
+      "article_keys": [
+        "n1995314a5ed9"
+      ]
+    },
+    {
+      "id": "30555031",
+      "title": "Perspectives on ethnic and racial disparities in Alzheimer's disease and related dementias: Update and areas of immediate need.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "year": "2019",
+      "doi": "10.1016/j.jalz.2018.09.009",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/30555031/",
+      "local_url": "./papers/30555031.html",
+      "article_keys": [
+        "n46b3726be7f6"
+      ]
+    },
+    {
+      "id": "30746447",
+      "title": "Porphyromonas gingivalis in Alzheimer's disease brains: Evidence for disease causation and treatment with small-molecule inhibitors.",
+      "journal": "Science advances",
+      "year": "2019",
+      "doi": "10.1126/sciadv.aau3333",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/30746447/",
+      "local_url": "./papers/30746447.html",
+      "article_keys": [
+        "n0310054f9807"
+      ]
+    },
+    {
+      "id": "30820029",
+      "title": "Television viewing and cognitive decline in older age: findings from the English Longitudinal Study of Ageing.",
+      "journal": "Scientific reports",
+      "year": "2019",
+      "doi": "10.1038/s41598-019-39354-4",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/30820029/",
+      "local_url": "./papers/30820029.html",
+      "article_keys": [
+        "na5471d93d943"
+      ]
+    },
+    {
+      "id": "30820047",
+      "title": "Genetic meta-analysis of diagnosed Alzheimer's disease identifies new risk loci and implicates Aβ, tau, immunity and lipid processing.",
+      "journal": "Nature genetics",
+      "year": "2019",
+      "doi": "10.1038/s41588-019-0358-2",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/30820047/",
+      "local_url": "./papers/30820047.html",
+      "article_keys": [
+        "n628953f3b99c",
+        "n157934896fbc"
+      ]
+    },
+    {
+      "id": "30911133",
+      "title": "Adult hippocampal neurogenesis is abundant in neurologically healthy subjects and drops sharply in patients with Alzheimer's disease.",
+      "journal": "Nature medicine",
+      "year": "2019",
+      "doi": "10.1038/s41591-019-0375-9",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/30911133/",
+      "local_url": "./papers/30911133.html",
+      "article_keys": [
+        "n365bd59ebad6"
+      ]
+    },
+    {
+      "id": "30947755",
+      "title": "Clinical and biological effects of long-term lithium treatment in older adults with amnestic mild cognitive impairment: randomised clinical trial.",
+      "journal": "The British journal of psychiatry : the journal of mental science",
+      "year": "2019",
+      "doi": "10.1192/bjp.2019.76",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/30947755/",
+      "local_url": "./papers/30947755.html",
+      "article_keys": [
+        "n2bc4bd425647"
+      ]
+    },
+    {
+      "id": "31042697",
+      "title": "Single-cell transcriptomic analysis of Alzheimer's disease.",
+      "journal": "Nature",
+      "year": "2019",
+      "doi": "10.1038/s41586-019-1195-2",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/31042697/",
+      "local_url": "./papers/31042697.html",
+      "article_keys": [
+        "ne6d001063d7f",
+        "n628953f3b99c"
+      ]
+    },
+    {
+      "id": "31130513",
+      "title": "Human Hippocampal Neurogenesis Persists in Aged Adults and Alzheimer's Disease Patients.",
+      "journal": "Cell stem cell",
+      "year": "2019",
+      "doi": "10.1016/j.stem.2019.05.003",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/31130513/",
+      "local_url": "./papers/31130513.html",
+      "article_keys": [
+        "n1c534f99ba1e"
+      ]
+    },
+    {
+      "id": "31285787",
+      "title": "Normal-pressure hydrocephalus: A critical review.",
+      "journal": "Dementia & neuropsychologia",
+      "year": "2019",
+      "doi": "10.1590/1980-57642018dn13-020001",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/31285787/",
+      "local_url": "./papers/31285787.html",
+      "article_keys": [
+        "nf767486ba403"
+      ]
+    },
+    {
+      "id": "31300647",
+      "title": "Brain somatic mutations observed in Alzheimer's disease associated with aging and dysregulation of tau phosphorylation.",
+      "journal": "Nature communications",
+      "year": "2019",
+      "doi": "10.1038/s41467-019-11000-7",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/31300647/",
+      "local_url": "./papers/31300647.html",
+      "article_keys": [
+        "n69e7497d83d9"
+      ]
+    },
+    {
+      "id": "31371569",
+      "title": "High-precision plasma β-amyloid 42/40 predicts current and future brain amyloidosis.",
+      "journal": "Neurology",
+      "year": "2019",
+      "doi": "10.1212/WNL.0000000000008081",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/31371569/",
+      "local_url": "./papers/31371569.html",
+      "article_keys": [
+        "ne0519d58e075"
+      ]
+    },
+    {
+      "id": "31686034",
+      "title": "Resistance to autosomal dominant Alzheimer's disease in an APOE3 Christchurch homozygote: a case report.",
+      "journal": "Nature medicine",
+      "year": "2019",
+      "doi": "10.1038/s41591-019-0611-3",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/31686034/",
+      "local_url": "./papers/31686034.html",
+      "article_keys": [
+        "nde4428f8a885",
+        "n8d474d45fc5e"
+      ]
+    },
+    {
+      "id": "32123385",
+      "title": "Plasma P-tau181 in Alzheimer's disease: relationship to other biomarkers, differential diagnosis, neuropathology and longitudinal progression to Alzheimer's dementia.",
+      "journal": "Nature medicine",
+      "year": "2020",
+      "doi": "10.1038/s41591-020-0755-1",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/32123385/",
+      "local_url": "./papers/32123385.html",
+      "article_keys": [
+        "nda8fd98e87cd",
+        "nd5b91159a6aa"
+      ]
+    },
+    {
+      "id": "32161412",
+      "title": "A soluble phosphorylated tau signature links tau, amyloid and the evolution of stages of dominantly inherited Alzheimer's disease.",
+      "journal": "Nature medicine",
+      "year": "2020",
+      "doi": "10.1038/s41591-020-0781-z",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/32161412/",
+      "local_url": "./papers/32161412.html",
+      "article_keys": [
+        "nb52552fb900a"
+      ]
+    },
+    {
+      "id": "32365315",
+      "title": "Validity and Reliability of the Traffic Sign Naming Test (TSNT) and Written Exam for Driving Decisions (WEDD) as Measures of Fitness to Drive Among Older Adults.",
+      "journal": "The American journal of occupational therapy : official publication of the American Occupational Therapy Association",
+      "year": "2020",
+      "doi": "10.5014/ajot.2020.034389",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/32365315/",
+      "local_url": "./papers/32365315.html",
+      "article_keys": [
+        "nab9749614d0a"
+      ]
+    },
+    {
+      "id": "32533852",
+      "title": "Porphyromonas gingivalis and Alzheimer disease: Recent findings and potential therapies.",
+      "journal": "Journal of periodontology",
+      "year": "2020",
+      "doi": "10.1002/JPER.20-0104",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/32533852/",
+      "local_url": "./papers/32533852.html",
+      "article_keys": [
+        "n0310054f9807"
+      ]
+    },
+    {
+      "id": "33226734",
+      "title": "Dominantly inherited Alzheimer's disease in Latin America: Genetic heterogeneity and clinical phenotypes.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "year": "2021",
+      "doi": "10.1002/alz.12227",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/33226734/",
+      "local_url": "./papers/33226734.html",
+      "article_keys": [
+        "nde4428f8a885"
+      ]
+    },
+    {
+      "id": "33337371",
+      "title": "Communicating 5-Year Risk of Alzheimer's Disease Dementia: Development and Evaluation of Materials that Incorporate Multiple Genetic and Biomarker Research Results.",
+      "journal": "Journal of Alzheimer's disease : JAD",
+      "year": "2021",
+      "doi": "10.3233/JAD-200993",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/33337371/",
+      "local_url": "./papers/33337371.html",
+      "article_keys": [
+        "n5ae06d751cce"
+      ]
+    },
+    {
+      "id": "33340485",
+      "title": "APOE and Alzheimer's disease: advances in genetics, pathophysiology, and therapeutic approaches.",
+      "journal": "The Lancet. Neurology",
+      "year": "2021",
+      "doi": "10.1016/S1474-4422(20)30412-9",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/33340485/",
+      "local_url": "./papers/33340485.html",
+      "article_keys": [
+        "n8d474d45fc5e"
+      ]
+    },
+    {
+      "id": "33527720",
+      "title": "Generalizability of findings from a clinical sample to a community-based sample: A comparison of ADNI and ARIC.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "year": "2021",
+      "doi": "10.1002/alz.12293",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/33527720/",
+      "local_url": "./papers/33527720.html",
+      "article_keys": [
+        "n46b3726be7f6"
+      ]
+    },
+    {
+      "id": "34155411",
+      "title": "A trial of gantenerumab or solanezumab in dominantly inherited Alzheimer's disease.",
+      "journal": "Nature medicine",
+      "year": "2021",
+      "doi": "10.1038/s41591-021-01369-8",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/34155411/",
+      "local_url": "./papers/34155411.html",
+      "article_keys": [
+        "n1995314a5ed9",
+        "ne941ccc5014c",
+        "nb52552fb900a"
+      ]
+    },
+    {
+      "id": "34517889",
+      "title": "Is comprehensiveness critical? Comparing short and long format cognitive assessments in preclinical Alzheimer disease.",
+      "journal": "Alzheimer's research & therapy",
+      "year": "2021",
+      "doi": "10.1186/s13195-021-00894-5",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/34517889/",
+      "local_url": "./papers/34517889.html",
+      "article_keys": [
+        "n70d56f7eda98"
+      ]
+    },
+    {
+      "id": "34590409",
+      "title": "Diversity in Alzheimer's disease drug trials: The importance of eligibility criteria.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "year": "2022",
+      "doi": "10.1002/alz.12433",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/34590409/",
+      "local_url": "./papers/34590409.html",
+      "article_keys": [
+        "n46b3726be7f6"
+      ]
+    },
+    {
+      "id": "34622235",
+      "title": "Identification of Faecalibacterium prausnitzii strains for gut microbiome-based intervention in Alzheimer's-type dementia.",
+      "journal": "Cell reports. Medicine",
+      "year": "2021",
+      "doi": "10.1016/j.xcrm.2021.100398",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/34622235/",
+      "local_url": "./papers/34622235.html",
+      "article_keys": [
+        "n0559e7c95291"
+      ]
+    },
+    {
+      "id": "34908231",
+      "title": "In situ spatial glycomic imaging of mouse and human Alzheimer's disease brains.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "year": "2022",
+      "doi": "10.1002/alz.12523",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/34908231/",
+      "local_url": "./papers/34908231.html",
+      "article_keys": [
+        "n257c821e7bb1"
+      ]
+    },
+    {
+      "id": "35037593",
+      "title": "Sharper in the morning: Cognitive time of day effects revealed with high-frequency smartphone testing.",
+      "journal": "Journal of clinical and experimental neuropsychology",
+      "year": "2021",
+      "doi": "10.1080/13803395.2021.2009447",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/35037593/",
+      "local_url": "./papers/35037593.html",
+      "article_keys": [
+        "n70d56f7eda98"
+      ]
+    },
+    {
+      "id": "35307206",
+      "title": "Translational approaches to understanding resilience to Alzheimer's disease.",
+      "journal": "Trends in neurosciences",
+      "year": "2022",
+      "doi": "10.1016/j.tins.2022.02.005",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/35307206/",
+      "local_url": "./papers/35307206.html",
+      "article_keys": [
+        "ne6d001063d7f"
+      ]
+    },
+    {
+      "id": "35379992",
+      "title": "New insights into the genetic etiology of Alzheimer's disease and related dementias.",
+      "journal": "Nature genetics",
+      "year": "2022",
+      "doi": "10.1038/s41588-022-01024-z",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/35379992/",
+      "local_url": "./papers/35379992.html",
+      "article_keys": [
+        "n157934896fbc"
+      ]
+    },
+    {
+      "id": "35444284",
+      "title": "Somatic genomic changes in single Alzheimer's disease neurons.",
+      "journal": "Nature",
+      "year": "2022",
+      "doi": "10.1038/s41586-022-04640-1",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/35444284/",
+      "local_url": "./papers/35444284.html",
+      "article_keys": [
+        "n69e7497d83d9"
+      ]
+    },
+    {
+      "id": "35617937",
+      "title": "Evaluating interhemispheric synchronization and cortical activity in acute stroke patients using optical hemodynamic oscillations.",
+      "journal": "Journal of neural engineering",
+      "year": "2022",
+      "doi": "10.1088/1741-2552/ac73b4",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/35617937/",
+      "local_url": "./papers/35617937.html",
+      "article_keys": [
+        "n41427e9b4f57"
+      ]
+    },
+    {
+      "id": "35908251",
+      "title": "The Alzheimer's Association appropriate use recommendations for blood biomarkers in Alzheimer's disease.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "year": "2022",
+      "doi": "10.1002/alz.12756",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/35908251/",
+      "local_url": "./papers/35908251.html",
+      "article_keys": [
+        "nf767486ba403"
+      ]
+    },
+    {
+      "id": "35915180",
+      "title": "Peripheral apoE4 enhances Alzheimer's pathology and impairs cognition by compromising cerebrovascular function.",
+      "journal": "Nature neuroscience",
+      "year": "2022",
+      "doi": "10.1038/s41593-022-01127-0",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/35915180/",
+      "local_url": "./papers/35915180.html",
+      "article_keys": [
+        "n8d474d45fc5e"
+      ]
+    },
+    {
+      "id": "36003033",
+      "title": "COR388 (atuzaginstat): an investigational gingipain inhibitor for the treatment of Alzheimer disease.",
+      "journal": "Expert opinion on investigational drugs",
+      "year": "2022",
+      "doi": "10.1080/13543784.2022.2117605",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/36003033/",
+      "local_url": "./papers/36003033.html",
+      "article_keys": [
+        "n0310054f9807"
+      ]
+    },
+    {
+      "id": "36062528",
+      "title": "Unsupervised high-frequency smartphone-based cognitive assessments are reliable, valid, and feasible in older adults at risk for Alzheimer's disease.",
+      "journal": "Journal of the International Neuropsychological Society : JINS",
+      "year": "2023",
+      "doi": "10.1017/S135561772200042X",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/36062528/",
+      "local_url": "./papers/36062528.html",
+      "article_keys": [
+        "n70d56f7eda98"
+      ]
+    },
+    {
+      "id": "36178120",
+      "title": "A flexible modeling approach for biomarker-based computation of absolute risk of Alzheimer's disease dementia.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "year": "2023",
+      "doi": "10.1002/alz.12781",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/36178120/",
+      "local_url": "./papers/36178120.html",
+      "article_keys": [
+        "n5ae06d751cce"
+      ]
+    },
+    {
+      "id": "36449413",
+      "title": "Lecanemab in Early Alzheimer's Disease.",
+      "journal": "The New England journal of medicine",
+      "year": "2023",
+      "doi": "10.1056/NEJMoa2212948",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/36449413/",
+      "local_url": "./papers/36449413.html",
+      "article_keys": [
+        "n1956b2c9c1db",
+        "n64d727555c2e"
+      ]
+    },
+    {
+      "id": "37079810",
+      "title": "Relationships between hourly cognitive variability and risk of Alzheimer's disease revealed with mixed-effects location scale models.",
+      "journal": "Neuropsychology",
+      "year": "2024",
+      "doi": "10.1037/neu0000905",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/37079810/",
+      "local_url": "./papers/37079810.html",
+      "article_keys": [
+        "n70d56f7eda98"
+      ]
+    },
+    {
+      "id": "37198481",
+      "title": "A temperate Earth-sized planet with tidal heating transiting an M6 star.",
+      "journal": "Nature",
+      "year": "2023",
+      "doi": "10.1038/s41586-023-05934-8",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/37198481/",
+      "local_url": "./papers/37198481.html",
+      "article_keys": [
+        "nde4428f8a885"
+      ]
+    },
+    {
+      "id": "37202517",
+      "title": "Blood biomarkers for Alzheimer's disease in clinical practice and trials.",
+      "journal": "Nature aging",
+      "year": "2023",
+      "doi": "10.1038/s43587-023-00403-3",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/37202517/",
+      "local_url": "./papers/37202517.html",
+      "article_keys": [
+        "n4199da5b10df",
+        "n4c486491b3ab"
+      ]
+    },
+    {
+      "id": "37406134",
+      "title": "Proteomics of brain, CSF, and plasma identifies molecular signatures for distinguishing sporadic and genetic Alzheimer's disease.",
+      "journal": "Science translational medicine",
+      "year": "2023",
+      "doi": "10.1126/scitranslmed.abq5923",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/37406134/",
+      "local_url": "./papers/37406134.html",
+      "article_keys": [
+        "n101590ef8bc5"
+      ]
+    },
+    {
+      "id": "37443334",
+      "title": "CSF MTBR-tau243 is a specific biomarker of tau tangle pathology in Alzheimer's disease.",
+      "journal": "Nature medicine",
+      "year": "2023",
+      "doi": "10.1038/s41591-023-02443-z",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/37443334/",
+      "local_url": "./papers/37443334.html",
+      "article_keys": [
+        "ne04e6bf3aa05",
+        "nda8fd98e87cd"
+      ]
+    },
+    {
+      "id": "37459141",
+      "title": "Donanemab in Early Symptomatic Alzheimer Disease: The TRAILBLAZER-ALZ 2 Randomized Clinical Trial.",
+      "journal": "JAMA",
+      "year": "2023",
+      "doi": "10.1001/jama.2023.13239",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/37459141/",
+      "local_url": "./papers/37459141.html",
+      "article_keys": [
+        "n44592039d2c1",
+        "ne04e6bf3aa05",
+        "n55a66bfeb149",
+        "n1956b2c9c1db",
+        "n64d727555c2e"
+      ]
+    },
+    {
+      "id": "37844601",
+      "title": "The Perspective of Nurses and Healthcare Providers on the use of Television Videos with People with Moderate to Severe Dementia.",
+      "journal": "The Canadian journal of nursing research = Revue canadienne de recherche en sciences infirmieres",
+      "year": "2024",
+      "doi": "10.1177/08445621231208220",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/37844601/",
+      "local_url": "./papers/37844601.html",
+      "article_keys": [
+        "na5471d93d943"
+      ]
+    },
+    {
+      "id": "37902726",
+      "title": "Exploratory Tau Biomarker Results From a Multiple Ascending-Dose Study of BIIB080 in Alzheimer Disease: A Randomized Clinical Trial.",
+      "journal": "JAMA neurology",
+      "year": "2023",
+      "doi": "10.1001/jamaneurol.2023.3861",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/37902726/",
+      "local_url": "./papers/37902726.html",
+      "article_keys": [
+        "n64d727555c2e"
+      ]
+    },
+    {
+      "id": "38265856",
+      "title": "Health Care Professional-Supported Co-Design of a Mime Therapy-Based Serious Game for Facial Rehabilitation.",
+      "journal": "JMIR serious games",
+      "year": "2024",
+      "doi": "10.2196/52661",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/38265856/",
+      "local_url": "./papers/38265856.html",
+      "article_keys": [
+        "nf767486ba403"
+      ]
+    },
+    {
+      "id": "38282413",
+      "title": "Naturalistic assessment of reaction time variability in older adults at risk for Alzheimer's disease.",
+      "journal": "Journal of the International Neuropsychological Society : JINS",
+      "year": "2024",
+      "doi": "10.1017/S1355617723011475",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/38282413/",
+      "local_url": "./papers/38282413.html",
+      "article_keys": [
+        "n70d56f7eda98"
+      ]
+    },
+    {
+      "id": "38365360",
+      "title": "Dementia diagnosis in the anti-amyloid era.",
+      "journal": "The Lancet. Neurology",
+      "year": "2024",
+      "doi": "10.1016/S1474-4422(24)00041-3",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/38365360/",
+      "local_url": "./papers/38365360.html",
+      "article_keys": [
+        "n4199da5b10df"
+      ]
+    },
+    {
+      "id": "38382645",
+      "title": "Highly accurate blood test for Alzheimer's disease is similar or superior to clinical cerebrospinal fluid tests.",
+      "journal": "Nature medicine",
+      "year": "2024",
+      "doi": "10.1038/s41591-024-02869-z",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/38382645/",
+      "local_url": "./papers/38382645.html",
+      "article_keys": [
+        "nabdd7ac86909",
+        "ne0519d58e075",
+        "ne04e6bf3aa05",
+        "n4199da5b10df",
+        "n4c486491b3ab"
+      ]
+    },
+    {
+      "id": "38646854",
+      "title": "Japan-Multimodal Intervention Trial for the Prevention of Dementia: A randomized controlled trial.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "year": "2024",
+      "doi": "10.1002/alz.13838",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/38646854/",
+      "local_url": "./papers/38646854.html",
+      "article_keys": [
+        "n0575a9170fe6"
+      ]
+    },
+    {
+      "id": "38837526",
+      "title": "Social determinants of health but not global genetic ancestry predict dementia prevalence in Latin America.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "year": "2024",
+      "doi": "10.1002/alz.14041",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/38837526/",
+      "local_url": "./papers/38837526.html",
+      "article_keys": [
+        "nde4428f8a885"
+      ]
+    },
+    {
+      "id": "38899694",
+      "title": "APOE3 Christchurch Heterozygosity and Autosomal Dominant Alzheimer's Disease.",
+      "journal": "The New England journal of medicine",
+      "year": "2024",
+      "doi": "10.1056/NEJMoa2308583",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/38899694/",
+      "local_url": "./papers/38899694.html",
+      "article_keys": [
+        "n8d474d45fc5e"
+      ]
+    },
+    {
+      "id": "38934362",
+      "title": "Revised criteria for diagnosis and staging of Alzheimer's disease: Alzheimer's Association Workgroup.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "year": "2024",
+      "doi": "10.1002/alz.13859",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/38934362/",
+      "local_url": "./papers/38934362.html",
+      "article_keys": [
+        "n44592039d2c1",
+        "ne04e6bf3aa05"
+      ]
+    },
+    {
+      "id": "39085945",
+      "title": "Assessing blood-brain barrier dysfunction and its association with Alzheimer's pathology, cognitive impairment and neuroinflammation.",
+      "journal": "Alzheimer's research & therapy",
+      "year": "2024",
+      "doi": "10.1186/s13195-024-01529-1",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39085945/",
+      "local_url": "./papers/39085945.html",
+      "article_keys": [
+        "nd726675f3aad"
+      ]
+    },
+    {
+      "id": "39096926",
+      "title": "Dementia prevention, intervention, and care: 2024 report of the Lancet standing Commission.",
+      "journal": "Lancet (London, England)",
+      "year": "2024",
+      "doi": "10.1016/S0140-6736(24)01296-0",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39096926/",
+      "local_url": "./papers/39096926.html",
+      "article_keys": [
+        "nd5b91159a6aa",
+        "n0575a9170fe6"
+      ]
+    },
+    {
+      "id": "39198642",
+      "title": "Cellular communities reveal trajectories of brain ageing and Alzheimer's disease.",
+      "journal": "Nature",
+      "year": "2024",
+      "doi": "10.1038/s41586-024-07871-6",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39198642/",
+      "local_url": "./papers/39198642.html",
+      "article_keys": [
+        "n628953f3b99c"
+      ]
+    },
+    {
+      "id": "39394841",
+      "title": "Head-to-head comparison of leading blood tests for Alzheimer's disease pathology.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "year": "2024",
+      "doi": "10.1002/alz.14315",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39394841/",
+      "local_url": "./papers/39394841.html",
+      "article_keys": [
+        "ne0519d58e075"
+      ]
+    },
+    {
+      "id": "39448784",
+      "title": "The unique role of anosognosia in the clinical progression of Alzheimer's disease: a disorder-network perspective.",
+      "journal": "Communications biology",
+      "year": "2024",
+      "doi": "10.1038/s42003-024-07076-7",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39448784/",
+      "local_url": "./papers/39448784.html",
+      "article_keys": [
+        "nf767486ba403"
+      ]
+    },
+    {
+      "id": "39586645",
+      "title": "Unlocking Cognitive Analysis Potential in Alzheimer's Disease Clinical Trials: Investigating Hierarchical Linear Models for Analyzing Novel Measurement Burst Design Data.",
+      "journal": "Statistics in medicine",
+      "year": "2024",
+      "doi": "10.1002/sim.10292",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39586645/",
+      "local_url": "./papers/39586645.html",
+      "article_keys": [
+        "n70d56f7eda98"
+      ]
+    },
+    {
+      "id": "39778288",
+      "title": "A blood test for Alzheimer's disease: a decade of progress and success.",
+      "journal": "EBioMedicine",
+      "year": "2025",
+      "doi": "10.1016/j.ebiom.2024.105545",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39778288/",
+      "local_url": "./papers/39778288.html",
+      "article_keys": [
+        "n5b43769869c9"
+      ]
+    },
+    {
+      "id": "39930140",
+      "title": "Longitudinal analysis of a dominantly inherited Alzheimer disease mutation carrier protected from dementia.",
+      "journal": "Nature medicine",
+      "year": "2025",
+      "doi": "10.1038/s41591-025-03494-0",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39930140/",
+      "local_url": "./papers/39930140.html",
+      "article_keys": [
+        "nde4428f8a885"
+      ]
+    },
+    {
+      "id": "39949872",
+      "title": "Assessing the clinical meaningfulness of slowing CDR-SB progression with disease-modifying therapies for Alzheimer's disease.",
+      "journal": "Alzheimer's & dementia (New York, N. Y.)",
+      "year": "2025",
+      "doi": "10.1002/trc2.70033",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39949872/",
+      "local_url": "./papers/39949872.html",
+      "article_keys": [
+        "n5ae06d751cce"
+      ]
+    },
+    {
+      "id": "40120616",
+      "title": "Safety and efficacy of long-term gantenerumab treatment in dominantly inherited Alzheimer's disease: an open-label extension of the phase 2/3 multicentre, randomised, double-blind, placebo-controlled platform DIAN-TU trial.",
+      "journal": "The Lancet. Neurology",
+      "year": "2025",
+      "doi": "10.1016/S1474-4422(25)00024-9",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40120616/",
+      "local_url": "./papers/40120616.html",
+      "article_keys": [
+        "n1995314a5ed9",
+        "ne941ccc5014c"
+      ]
+    },
+    {
+      "id": "40140924",
+      "title": "Diagnostic performance of plasma p-tau217 in a memory clinic cohort using the Lumipulse automated platform.",
+      "journal": "Alzheimer's research & therapy",
+      "year": "2025",
+      "doi": "10.1186/s13195-025-01719-5",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40140924/",
+      "local_url": "./papers/40140924.html",
+      "article_keys": [
+        "n5b43769869c9"
+      ]
+    },
+    {
+      "id": "40164697",
+      "title": "Metagenomic analysis characterizes stage-specific gut microbiota in Alzheimer's disease.",
+      "journal": "Molecular psychiatry",
+      "year": "2025",
+      "doi": "10.1038/s41380-025-02973-7",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40164697/",
+      "local_url": "./papers/40164697.html",
+      "article_keys": [
+        "n0559e7c95291"
+      ]
+    },
+    {
+      "id": "40164726",
+      "title": "Plasma MTBR-tau243 biomarker identifies tau tangle pathology in Alzheimer's disease.",
+      "journal": "Nature medicine",
+      "year": "2025",
+      "doi": "10.1038/s41591-025-03617-7",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40164726/",
+      "local_url": "./papers/40164726.html",
+      "article_keys": [
+        "ne04e6bf3aa05",
+        "nda8fd98e87cd",
+        "n9df0bf85ccbe"
+      ]
+    },
+    {
+      "id": "40175543",
+      "title": "A natural experiment on the effect of herpes zoster vaccination on dementia.",
+      "journal": "Nature",
+      "year": "2025",
+      "doi": "10.1038/s41586-025-08800-x",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40175543/",
+      "local_url": "./papers/40175543.html",
+      "article_keys": [
+        "n784116cdff9d"
+      ]
+    },
+    {
+      "id": "40201594",
+      "title": "Impact of genetic counseling and testing in individuals at high risk of familial Alzheimer's disease from Latin America: a non-randomized controlled trial.",
+      "journal": "Alzheimer's & dementia (Amsterdam, Netherlands)",
+      "year": "2025",
+      "doi": "10.1002/dad2.70102",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40201594/",
+      "local_url": "./papers/40201594.html",
+      "article_keys": [
+        "nde4428f8a885"
+      ]
+    },
+    {
+      "id": "40327345",
+      "title": "Research Participant Interest in Learning Results of Biomarker Tests for Alzheimer Disease.",
+      "journal": "JAMA network open",
+      "year": "2025",
+      "doi": "10.1001/jamanetworkopen.2025.2919",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40327345/",
+      "local_url": "./papers/40327345.html",
+      "article_keys": [
+        "n5ae06d751cce"
+      ]
+    },
+    {
+      "id": "40354064",
+      "title": "Lecanemab Treatment in a Specialty Memory Clinic.",
+      "journal": "JAMA neurology",
+      "year": "2025",
+      "doi": "10.1001/jamaneurol.2025.1232",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40354064/",
+      "local_url": "./papers/40354064.html",
+      "article_keys": [
+        "n41427e9b4f57"
+      ]
+    },
+    {
+      "id": "40463637",
+      "title": "Alzheimer's disease drug development pipeline: 2025.",
+      "journal": "Alzheimer's & dementia (New York, N. Y.)",
+      "year": "2025",
+      "doi": "10.1002/trc2.70098",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40463637/",
+      "local_url": "./papers/40463637.html",
+      "article_keys": [
+        "n64d727555c2e"
+      ]
+    },
+    {
+      "id": "40480991",
+      "title": "Population-scale cross-disorder atlas of the human prefrontal cortex at single-cell resolution.",
+      "journal": "Scientific data",
+      "year": "2025",
+      "doi": "10.1038/s41597-025-04687-5",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40480991/",
+      "local_url": "./papers/40480991.html",
+      "article_keys": [
+        "ne6d001063d7f"
+      ]
+    },
+    {
+      "id": "40556318",
+      "title": "Novel early-onset Alzheimer-associated genes influence risk through dysregulation of glutamate, immune activation, and intracellular signaling pathways.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "year": "2025",
+      "doi": "10.1002/alz.70377",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40556318/",
+      "local_url": "./papers/40556318.html",
+      "article_keys": [
+        "na26e6964cda2"
+      ]
+    },
+    {
+      "id": "40618130",
+      "title": "Prospective evaluation of plasma pTau217 stability for the detection of Alzheimer's disease in a tertiary memory clinic.",
+      "journal": "Alzheimer's research & therapy",
+      "year": "2025",
+      "doi": "10.1186/s13195-025-01779-7",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40618130/",
+      "local_url": "./papers/40618130.html",
+      "article_keys": [
+        "n5b43769869c9"
+      ]
+    },
+    {
+      "id": "40656845",
+      "title": "The perceived impacts of using dementia-friendly videos to support the psychosocial needs of people with moderate to severe dementia in care settings: A qualitative exploratory study.",
+      "journal": "Digital health",
+      "year": "2025",
+      "doi": "10.1177/20552076251357490",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40656845/",
+      "local_url": "./papers/40656845.html",
+      "article_keys": [
+        "na5471d93d943"
+      ]
+    },
+    {
+      "id": "40665052",
+      "title": "Shared and disease-specific pathways in frontotemporal dementia and Alzheimer's and Parkinson's diseases.",
+      "journal": "Nature medicine",
+      "year": "2025",
+      "doi": "10.1038/s41591-025-03833-1",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40665052/",
+      "local_url": "./papers/40665052.html",
+      "article_keys": [
+        "n101590ef8bc5"
+      ]
+    },
+    {
+      "id": "40720610",
+      "title": "Structured vs Self-Guided Multidomain Lifestyle Interventions for Global Cognitive Function: The US POINTER Randomized Clinical Trial.",
+      "journal": "JAMA",
+      "year": "2025",
+      "doi": "10.1001/jama.2025.12923",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40720610/",
+      "local_url": "./papers/40720610.html",
+      "article_keys": [
+        "n27ee7e30b489"
+      ]
+    },
+    {
+      "id": "40729527",
+      "title": "Alzheimer's Association Clinical Practice Guideline on the use of blood-based biomarkers in the diagnostic workup of suspected Alzheimer's disease within specialized care settings.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "year": "2025",
+      "doi": "10.1002/alz.70535",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40729527/",
+      "local_url": "./papers/40729527.html",
+      "article_keys": [
+        "nabdd7ac86909",
+        "n41427e9b4f57"
+      ]
+    },
+    {
+      "id": "40985290",
+      "title": "The relationship of soluble tau species with Alzheimer's disease amyloid plaque removal and tau pathology.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "year": "2025",
+      "doi": "10.1002/alz.70689",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40985290/",
+      "local_url": "./papers/40985290.html",
+      "article_keys": [
+        "nb52552fb900a"
+      ]
+    },
+    {
+      "id": "41051312",
+      "title": "Reference proteins to improve Core 1 and Core 2 Alzheimer's disease CSF and plasma biomarkers.",
+      "journal": "Brain : a journal of neurology",
+      "year": "2026",
+      "doi": "10.1093/brain/awaf375",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41051312/",
+      "local_url": "./papers/41051312.html",
+      "article_keys": [
+        "n9df0bf85ccbe"
+      ]
+    },
+    {
+      "id": "41122812",
+      "title": "Seeking optimal repeated fluid biomarker assessments to enhance precision and statistical power in clinical trials: SLIM method.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "year": "2025",
+      "doi": "10.1002/alz.70787",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41122812/",
+      "local_url": "./papers/41122812.html",
+      "article_keys": [
+        "n55a66bfeb149"
+      ]
+    },
+    {
+      "id": "41160347",
+      "title": "Initial Real-World Evidence for Lecanemab in the United States.",
+      "journal": "Drugs & aging",
+      "year": "2026",
+      "doi": "10.1007/s40266-025-01261-x",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41160347/",
+      "local_url": "./papers/41160347.html",
+      "article_keys": [
+        "n1956b2c9c1db"
+      ]
+    },
+    {
+      "id": "41222037",
+      "title": "Efficacy of a multidomain intervention in older adults with vascular risks: The Japan-Multimodal Intervention Trial for the Prevention of Dementia (J-MINT).",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "year": "2025",
+      "doi": "10.1002/alz.70822",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41222037/",
+      "local_url": "./papers/41222037.html",
+      "article_keys": [
+        "n0575a9170fe6"
+      ]
+    },
+    {
+      "id": "41296993",
+      "title": "Association of Daily Driving Behaviors With Mild Cognitive Impairment in Older Adults Followed Over 10 Years.",
+      "journal": "Neurology",
+      "year": "2025",
+      "doi": "10.1212/WNL.0000000000214440",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41296993/",
+      "local_url": "./papers/41296993.html",
+      "article_keys": [
+        "nab9749614d0a"
+      ]
+    },
+    {
+      "id": "41586468",
+      "title": "When Does Alzheimer's Disease Start? Plasma Aβ42/40 Assays Show Steep Changes at Aβ-PET Centiloid 15, Mean Age of 66 Years.",
+      "journal": "Annals of neurology",
+      "year": "2026",
+      "doi": "10.1002/ana.78163",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41586468/",
+      "local_url": "./papers/41586468.html",
+      "article_keys": [
+        "n4199da5b10df"
+      ]
+    },
+    {
+      "id": "41593094",
+      "title": "The glymphatic system clears amyloid beta and tau from brain to plasma in humans.",
+      "journal": "Nature communications",
+      "year": "2026",
+      "doi": "10.1038/s41467-026-68374-8",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41593094/",
+      "local_url": "./papers/41593094.html",
+      "article_keys": [
+        "n5ea4ca2462ff"
+      ]
+    },
+    {
+      "id": "41709913",
+      "title": "15 years of longitudinal genetic, clinical, cognitive, imaging, and biochemical measures in DIAN.",
+      "journal": "NPJ dementia",
+      "year": "2026",
+      "doi": "10.1038/s44400-025-00047-7",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41709913/",
+      "local_url": "./papers/41709913.html",
+      "article_keys": [
+        "n1995314a5ed9",
+        "n4388d71562a5",
+        "n87618757d4b7"
+      ]
+    },
+    {
+      "id": "41714746",
+      "title": "Predicting onset of symptomatic Alzheimer's disease with plasma p-tau217 clocks.",
+      "journal": "Nature medicine",
+      "year": "2026",
+      "doi": "10.1038/s41591-026-04206-y",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41714746/",
+      "local_url": "./papers/41714746.html",
+      "article_keys": [
+        "nabdd7ac86909",
+        "ne0519d58e075"
+      ]
+    },
+    {
+      "id": "41741649",
+      "title": "Human hippocampal neurogenesis in adulthood, ageing and Alzheimer's disease.",
+      "journal": "Nature",
+      "year": "2026",
+      "doi": "10.1038/s41586-026-10169-4",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41741649/",
+      "local_url": "./papers/41741649.html",
+      "article_keys": [
+        "n365bd59ebad6",
+        "n1c534f99ba1e"
+      ]
+    },
+    {
+      "id": "41760935",
+      "title": "Structural signature of plasma proteins classifies the status of Alzheimer's disease.",
+      "journal": "Nature aging",
+      "year": "2026",
+      "doi": "10.1038/s43587-026-01078-2",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41760935/",
+      "local_url": "./papers/41760935.html",
+      "article_keys": [
+        "n4c486491b3ab"
+      ]
+    },
+    {
+      "id": "41770546",
+      "title": "Low-Dose Lithium for Mild Cognitive Impairment: A Pilot Randomized Clinical Trial.",
+      "journal": "JAMA neurology",
+      "year": "2026",
+      "doi": "10.1001/jamaneurol.2026.0072",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41770546/",
+      "local_url": "./papers/41770546.html",
+      "article_keys": [
+        "n2bc4bd425647"
+      ]
+    },
+    {
+      "id": "41784652",
+      "title": "Plasma p-tau217 assays effectively predict amyloid status but lack precision for tau staging in Alzheimer's disease.",
+      "journal": "Journal of neurology",
+      "year": "2026",
+      "doi": "10.1007/s00415-026-13726-z",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41784652/",
+      "local_url": "./papers/41784652.html",
+      "article_keys": [
+        "n4c486491b3ab"
+      ]
+    },
+    {
+      "id": "41785364",
+      "title": "Targeting amyloid-β pathology by chimeric antigen receptor astrocyte (CAR-A) therapy.",
+      "journal": "Science (New York, N.Y.)",
+      "year": "2026",
+      "doi": "10.1126/science.ads3972",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41785364/",
+      "local_url": "./papers/41785364.html",
+      "article_keys": [
+        "n4eb37368e833"
+      ]
+    },
+    {
+      "id": "41787076",
+      "title": "The TREM2 agonistic antibody AL002 in early Alzheimer's disease: a phase 2 randomized trial.",
+      "journal": "Nature medicine",
+      "year": "2026",
+      "doi": "10.1038/s41591-026-04273-1",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41787076/",
+      "local_url": "./papers/41787076.html",
+      "article_keys": [
+        "ne199bcee2399"
+      ]
+    },
+    {
+      "id": "41865758",
+      "title": "Efficacy and safety of oral semaglutide 14 mg (flexible dose) in early-stage symptomatic Alzheimer's disease (evoke and evoke+): two phase 3, randomised, placebo-controlled trials.",
+      "journal": "Lancet (London, England)",
+      "year": "2026",
+      "doi": "10.1016/S0140-6736(26)00459-9",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41865758/",
+      "local_url": "./papers/41865758.html",
+      "article_keys": [
+        "n5fcca4d1fed2"
+      ]
+    },
+    {
+      "id": "41916283",
+      "title": "Large-scale CSF and plasma proteomics reveal immune, synaptic, and extracellular matrix disruptions across neurodegenerative diseases.",
+      "journal": "Neuron",
+      "year": "2026",
+      "doi": "10.1016/j.neuron.2026.02.035",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41916283/",
+      "local_url": "./papers/41916283.html",
+      "article_keys": [
+        "n101590ef8bc5"
+      ]
+    },
+    {
+      "id": "41981905",
+      "title": "Sleep-Dependent Clearance of Brain Metabolites via the Glymphatic System: Implications for Alzheimer's Pathophysiology.",
+      "journal": "Brain and behavior",
+      "year": "2026",
+      "doi": "10.1002/brb3.71374",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41981905/",
+      "local_url": "./papers/41981905.html",
+      "article_keys": [
+        "n5ea4ca2462ff"
+      ]
+    },
+    {
+      "id": "41986690",
+      "title": "Somatic mosaicism in ALS and FTD identifies focal mutations associated with widespread degeneration.",
+      "journal": "Nature genetics",
+      "year": "2026",
+      "doi": "10.1038/s41588-026-02570-6",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41986690/",
+      "local_url": "./papers/41986690.html",
+      "article_keys": [
+        "n69e7497d83d9"
+      ]
+    },
+    {
+      "id": "42084109",
+      "title": "The impact of learning about financial compensation on enrollment in Alzheimer's disease longitudinal research.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "year": "2026",
+      "doi": "10.1002/alz.71356",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42084109/",
+      "local_url": "./papers/42084109.html",
+      "article_keys": [
+        "n42b44da6c1d9"
+      ]
+    },
+    {
+      "id": "42097136",
+      "title": "Hepatic expression of APOE3 Christchurch mitigates APOE4-related Alzheimer's disease pathologies in mice.",
+      "journal": "Neuron",
+      "year": "2026",
+      "doi": "10.1016/j.neuron.2026.04.027",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42097136/",
+      "local_url": "./papers/42097136.html",
+      "article_keys": [
+        "n8d474d45fc5e"
+      ]
+    },
+    {
+      "id": "42098850",
+      "title": "Early syndecan-4 upregulation predicts cognitive and pathological trajectories in Alzheimer disease.",
+      "journal": "Alzheimer's research & therapy",
+      "year": "2026",
+      "doi": "10.1186/s13195-026-02043-2",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42098850/",
+      "local_url": "./papers/42098850.html",
+      "article_keys": [
+        "nd726675f3aad"
+      ]
+    },
+    {
+      "id": "42125540",
+      "title": "Novel insights into early Alzheimer's disease: quantitative gradient recalled echo MRI reveals preatrophic neuronal and myelin injury concurrent with emerging amyloid pathology.",
+      "journal": "Alzheimer's & dementia (Amsterdam, Netherlands)",
+      "year": "2026",
+      "doi": "10.1002/dad2.70355",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42125540/",
+      "local_url": "./papers/42125540.html",
+      "article_keys": [
+        "nc81d869ee740"
+      ]
+    },
+    {
+      "id": "42127933",
+      "title": "Identification of genetic modifiers of autosomal dominant Alzheimer's disease: a genome-wide association study.",
+      "journal": "The Lancet. Neurology",
+      "year": "2026",
+      "doi": "10.1016/S1474-4422(26)00123-7",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42127933/",
+      "local_url": "./papers/42127933.html",
+      "article_keys": [
+        "na26e6964cda2"
+      ]
+    },
+    {
+      "id": "42189519",
+      "title": "Plasma eMTBR-tau243 and %p-tau217 for Biological Staging of Alzheimer Disease.",
+      "journal": "JAMA neurology",
+      "year": "2026",
+      "doi": "10.1001/jamaneurol.2026.1405",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42189519/",
+      "local_url": "./papers/42189519.html",
+      "article_keys": [
+        "ne0519d58e075",
+        "ne04e6bf3aa05"
+      ]
+    },
+    {
+      "id": "42265388",
+      "title": "Hyperglycosylation is a metabolic driver of Alzheimer's disease.",
+      "journal": "Nature metabolism",
+      "year": "2026",
+      "doi": "10.1038/s42255-026-01538-4",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42265388/",
+      "local_url": "./papers/42265388.html",
+      "article_keys": [
+        "n257c821e7bb1"
+      ]
+    },
+    {
+      "id": "42273802",
+      "title": "Donanemab treatment effect by baseline tau burden and disease severity: Observations from the TRAILBLAZER-ALZ 2 trial.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "year": "2026",
+      "doi": "10.1002/alz.71577",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42273802/",
+      "local_url": "./papers/42273802.html",
+      "article_keys": [
+        "n44592039d2c1"
+      ]
+    },
+    {
+      "id": "42334898",
+      "title": "Combining post-mortem and neuroimaging measures of brain amyloidosis to accelerate genomic discovery.",
+      "journal": "Brain : a journal of neurology",
+      "year": "2026",
+      "doi": "10.1093/brain/awag216",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42334898/",
+      "local_url": "./papers/42334898.html",
+      "article_keys": [
+        "n157934896fbc"
+      ]
+    },
+    {
+      "id": "42339065",
+      "title": "Features predicting data exclusion in imaging studies of Alzheimer's disease.",
+      "journal": "Alzheimer's & dementia (Amsterdam, Netherlands)",
+      "year": "2026",
+      "doi": "10.1002/dad2.70389",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42339065/",
+      "local_url": "./papers/42339065.html",
+      "article_keys": [
+        "n46b3726be7f6"
+      ]
+    },
+    {
+      "id": "42372723",
+      "title": "Arc mediates intercellular tau transmission via extracellular vesicles.",
+      "journal": "Cell",
+      "year": "2026",
+      "doi": "10.1016/j.cell.2026.06.008",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42372723/",
+      "local_url": "./papers/42372723.html",
+      "article_keys": [
+        "nc156827da6dd"
+      ]
+    },
+    {
+      "id": "42449500",
+      "title": "Prognostic Value of Blood-Based P-Tau217 Levels for Progression to Cognitive Impairment.",
+      "journal": "JAMA",
+      "year": "2026",
+      "doi": "10.1001/jama.2026.12556",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42449500/",
+      "local_url": "./papers/42449500.html",
+      "article_keys": [
+        "nabdd7ac86909"
+      ]
+    },
+    {
+      "id": "42778763",
+      "title": "AI-based characterization of Alzheimer's disease phenotypes from population-scale single-cell data.",
+      "journal": "Nature medicine",
+      "year": "2026",
+      "doi": "10.1038/s41591-025-04128-1",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42778763/",
+      "local_url": "./papers/42778763.html",
+      "article_keys": [
+        "ne6d001063d7f"
+      ]
+    },
+    {
+      "id": "42864517",
+      "title": "Brain DNA methylation, APOE genotype and Alzheimer's disease neuropathology in a large postmortem cohort.",
+      "journal": "Nature aging",
+      "year": "2026",
+      "doi": "10.1038/s43587-026-01243-7",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42864517/",
+      "local_url": "./papers/42864517.html",
+      "article_keys": [
+        "nc4d5198bd38b"
+      ]
+    }
+  ]
+}
