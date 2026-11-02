@@ -1,0 +1,417 @@
+name: Enable cumulative PubMed archive (fixed one-time)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dementia-atlas-archive-migration
+  cancel-in-progress: false
+
+jobs:
+  enable-archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout current main branch
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Upgrade archive and validate local data
+        shell: bash
+        run: |
+          python - <<'PY'
+          #!/usr/bin/env python3
+          """Upgrade kuruminp/dementia-atlas to an append-only, searchable PubMed archive.
+          
+          Run this script from the root of a clean clone of the dementia-atlas repository.
+          It modifies only the listed source files. It does not contact GitHub or NCBI.
+          """
+          from pathlib import Path
+          import argparse
+          import re
+          import sys
+          
+          NEW_MERGE = '''def merge_curated(previous, candidates, *, today, last_fetched_at=None, bootstrap=False):
+              """Preserve every archived PMID and add all newly qualified PubMed records.
+          
+              No daily quota or maximum archive size is imposed. Metadata from a later
+              PubMed fetch refreshes existing records without changing their first
+              selection date. An identical second run adds zero records.
+              """
+              today_date = _date(today) or dt.date.today()
+              archive = {}
+              for row in previous:
+                  pmid = str(row.get('id') or '').strip()
+                  if re.fullmatch(r'\\d+', pmid):
+                      archive[pmid] = {**row, 'id': pmid}
+          
+              added = 0
+              for row in candidates:
+                  pmid = str(row.get('id') or '').strip()
+                  if not re.fullmatch(r'\\d+', pmid):
+                      continue
+                  if row.get('priority_score', 0) < MIN_PRIORITY_SCORE:
+                      continue
+                  entered = _date(row.get('pubmed_entry_date')) or _date(row.get('date'))
+                  if entered and entered > today_date + dt.timedelta(days=1):
+                      continue
+                  if pmid in archive:
+                      existing = archive[pmid]
+                      archive[pmid] = {
+                          **existing, **row, 'id': pmid,
+                          'selected_on': existing.get('selected_on') or today,
+                      }
+                  else:
+                      archive[pmid] = {**row, 'id': pmid, 'selected_on': today}
+                      added += 1
+          
+              records = sorted(
+                  archive.values(),
+                  key=lambda row: (
+                      row.get('pubmed_entry_date') or row.get('date') or
+                      row.get('selected_on') or '', row['id']
+                  ),
+                  reverse=True,
+              )
+              return records, added
+          '''
+          
+          NEW_ESearch_AND_FETCH = '''def pubmed_esearch(query, limit, *, lookback_days=14):
+              """Get *all* matching PubMed IDs in the EDAT window, page by page.
+          
+              Fail instead of silently losing records if a configured safety limit is
+              exceeded. PubMed ESearch does not support retrieving beyond its first
+              10,000 results via retstart/retmax.
+              """
+              if not 1 <= limit <= 9999:
+                  raise ValueError('PubMed ID retrieval limit must be between 1 and 9999')
+              ids = []
+              total = None
+              while total is None or len(ids) < total:
+                  params = {
+                      'db': 'pubmed', 'term': query, 'sort': 'pub_date',
+                      'retmax': str(min(500, limit - len(ids))),
+                      'retstart': str(len(ids)), 'retmode': 'json',
+                      'reldate': str(lookback_days), 'datetype': 'edat',
+                      'tool': 'dementia_atlas',
+                  }
+                  if os.getenv('NCBI_EMAIL'):
+                      params['email'] = os.environ['NCBI_EMAIL']
+                  response = fetch(NCBI + 'esearch.fcgi?' + urlencode(params))
+                  payload = response.get('esearchresult', {})
+                  if total is None:
+                      total = int(payload.get('count', 0))
+                      if total > limit:
+                          raise RuntimeError(
+                              f'PubMed returned {total} matches in the last {lookback_days} days '
+                              f'(configured maximum {limit}). No archive changes made; '
+                              'increase --papers or shorten the date window.'
+                          )
+                  page = payload.get('idlist') or []
+                  if not page and len(ids) < total:
+                      raise RuntimeError('PubMed ESearch returned an incomplete ID list')
+                  ids.extend(page)
+                  if len(ids) < total:
+                      time.sleep(0.45)
+              if len(ids) != total:
+                  raise RuntimeError('PubMed ESearch pagination produced an incomplete list')
+              return ids
+          
+          
+          def fetch_pubmed(limit, lookback_days=14):
+              # This query includes Alzheimer disease and the other dementia subtypes.
+              # Metadata screening is applied only after we retrieve all matching IDs.
+              query = ('("Alzheimer Disease"[MeSH Terms] OR Alzheimer*[Title/Abstract] '
+                       'OR dementia[Title/Abstract] OR "mild cognitive impairment"[Title/Abstract] '
+                       'OR "frontotemporal dementia"[Title/Abstract] OR "Lewy body dementia"[Title/Abstract] '
+                       'OR "vascular cognitive impairment"[Title/Abstract]) '
+                       'NOT ("case reports"[Publication Type] OR "preprint"[Publication Type])')
+              ids = pubmed_esearch(query, limit, lookback_days=lookback_days)
+              if not ids:
+                  raise RuntimeError('PubMed returned no matching records; retain previous data')
+              records = []
+              for i in range(0, len(ids), 60):
+                  chunk = ids[i:i + 60]
+                  params = {
+                      'db': 'pubmed', 'id': ','.join(chunk),
+                      'retmode': 'xml', 'tool': 'dementia_atlas',
+                  }
+                  if os.getenv('NCBI_EMAIL'):
+                      params['email'] = os.environ['NCBI_EMAIL']
+                  payload = fetch(NCBI + 'efetch.fcgi?' + urlencode(params), expect='xml')
+                  records.extend(parse_pubmed_xml(payload))
+                  if i + 60 < len(ids):
+                      time.sleep(0.45)
+              by_id = {row['id']: row for row in records}
+              # Do not silently discard IDs on a partial EFetch response.
+              if len(by_id) != len(set(ids)):
+                  missing = set(ids) - set(by_id)
+                  raise RuntimeError(f'PubMed EFetch missing {len(missing)} requested PMIDs')
+              return [by_id[pmid] for pmid in ids]
+          
+          
+          '''
+          
+          NEW_TEST_SECTION = '''    def test_append_only_and_idempotent(self):
+                  rows = []
+                  for i in range(25):
+                      rows.append({
+                          'id': str(9000 + i), 'title': f'Paper {i}',
+                          'priority_score': 10, 'pubmed_entry_date': '2026-11-01',
+                          'disease': 'ad', 'topic': 'treatment', 'research_type': 'trial'
+                      })
+                  selected, added = merge_curated([], rows, today='2026-11-02')
+                  self.assertEqual(added, 25)
+                  self.assertEqual(len(selected), 25)
+                  selected_again, added_again = merge_curated(
+                      selected, rows, today='2026-11-02'
+                  )
+                  self.assertEqual(added_again, 0)
+                  self.assertEqual(len({r['id'] for r in selected_again}), 25)
+                  self.assertTrue(all(r['selected_on'] == '2026-11-02' for r in selected_again))
+          
+              def test_more_than_100_and_older_records_survive(self):
+                  previous = [
+                      {'id': str(10000 + i), 'title': 'Historical',
+                       'priority_score': 8, 'pubmed_entry_date': '2025-02-01',
+                       'selected_on': '2025-02-01'}
+                      for i in range(125)
+                  ]
+                  incoming = [
+                      {'id': str(20000 + i), 'title': 'New',
+                       'priority_score': 9, 'pubmed_entry_date': '2026-11-01'}
+                      for i in range(20)
+                  ]
+                  archive, added = merge_curated(previous, incoming, today='2026-11-02')
+                  self.assertEqual(added, 20)
+                  self.assertEqual(len(archive), 145)
+                  self.assertTrue({r['id'] for r in previous}.issubset({r['id'] for r in archive}))
+          
+              def test_existing_metadata_updates_without_resetting_selection_date(self):
+                  previous = [{
+                      'id': '999', 'title': 'Old title', 'priority_score': 8,
+                      'selected_on': '2026-10-01', 'date': '2026-10-01'
+                  }]
+                  incoming = [{
+                      'id': '999', 'title': 'Updated title', 'priority_score': 10,
+                      'pubmed_entry_date': '2026-10-01'
+                  }]
+                  archive, added = merge_curated(previous, incoming, today='2026-11-02')
+                  self.assertEqual((len(archive), added), (1, 0))
+                  self.assertEqual(archive[0]['title'], 'Updated title')
+                  self.assertEqual(archive[0]['selected_on'], '2026-10-01')
+          
+              def test_low_priority_or_future_records_not_added(self):
+                  bad = [
+                      {'id': '1', 'priority_score': 3},
+                      {'id': '2', 'priority_score': 10, 'pubmed_entry_date': '2026-12-01'},
+                  ]
+                  selected, added = merge_curated([], bad, today='2026-11-02')
+                  self.assertEqual((selected, added), ([], 0))
+          
+              def test_pubmed_esearch_pages_and_fails_on_truncation(self):
+                  from unittest.mock import patch
+                  from urllib.parse import urlparse, parse_qs
+                  from update_data import pubmed_esearch
+                  ids = [str(i + 10000) for i in range(505)]
+                  calls = []
+          
+                  def fake_fetch(url, **kwargs):
+                      params = parse_qs(urlparse(url).query)
+                      start = int(params['retstart'][0])
+                      size = int(params['retmax'][0])
+                      calls.append(start)
+                      return {'esearchresult': {
+                          'count': str(len(ids)), 'idlist': ids[start:start + size]
+                      }}
+          
+                  with patch('update_data.fetch', side_effect=fake_fetch):
+                      self.assertEqual(pubmed_esearch('alzheimer', 600), ids)
+                  self.assertEqual(calls, [0, 500])
+                  with patch('update_data.fetch', side_effect=fake_fetch):
+                      with self.assertRaisesRegex(RuntimeError, 'configured maximum'):
+                          pubmed_esearch('alzheimer', 500)
+          
+          '''
+          
+          
+          def replace_once(content: str, before: str, after: str, label: str):
+              count = content.count(before)
+              if count != 1:
+                  raise RuntimeError(f'Expected exactly one occurrence ({count}): {label}')
+              return content.replace(before, after)
+          
+          
+          def replace_section(content: str, start: str, end: str, new: str, label: str):
+              a = content.find(start)
+              b = content.find(end, a + len(start))
+              if a < 0 or b < 0 or content.find(start, a + 1) >= 0:
+                  raise RuntimeError(f'Cannot locate unique source block: {label}')
+              return content[:a] + new + content[b:]
+          
+          
+          def upgrade(root: Path):
+              changes = {}
+          
+              def put(path, content):
+                  target = root / path
+                  if not target.exists():
+                      raise FileNotFoundError(target)
+                  original = target.read_text(encoding='utf-8')
+                  if original == content:
+                      raise RuntimeError(f'No change: {path}')
+                  changes[path] = content
+          
+              path = 'scripts/curate_papers.py'
+              src = (root / path).read_text(encoding='utf-8')
+              src = replace_section(src, 'MAX_PAPERS_PER_DAY = 3\n', 'MIN_PRIORITY_SCORE = 7\n', '', path + ' limits')
+              # In this repository, merge_curated is the final function in the module.
+              src = src[:src.index('def merge_curated(')] + NEW_MERGE
+              put(path, src)
+          
+              path = 'scripts/update_data.py'
+              src = (root / path).read_text(encoding='utf-8')
+              src = replace_once(src, 'from curate_papers import (assess_paper, merge_curated, MAX_PAPERS_PER_DAY, MAX_DISPLAYED_PAPERS)', 'from curate_papers import assess_paper, merge_curated', path + ' import')
+              src = replace_section(src, 'def pubmed_esearch(', 'def classify_mechanism(', NEW_ESearch_AND_FETCH, path + ' pubmed')
+              src = replace_once(src, "ap.add_argument('--papers',type=int,default=450)", "ap.add_argument('--papers',type=int,default=9000)", path + ' cli')
+              src = replace_once(src,
+                  "bootstrap = (previous.get('meta',{}).get('mode') != 'api' or previous.get('meta',{}).get('display_limit',30) < MAX_DISPLAYED_PAPERS)\n            candidates = fetch_pubmed(args.papers)\n            items, added = merge_curated(\n                [] if bootstrap else previous['items'], candidates,\n                today=today, bootstrap=bootstrap,\n                last_fetched_at=previous.get('meta',{}).get('fetched_at'))",
+                  "bootstrap = previous.get('meta', {}).get('mode') != 'api'\n            lookback_days = 30 if bootstrap else 14\n            candidates = fetch_pubmed(args.papers, lookback_days=lookback_days)\n            items, added = merge_curated(\n                previous.get('items', []), candidates, today=today, bootstrap=bootstrap)\n            old_ids = {str(p['id']) for p in previous.get('items', [])}\n            new_ids = {str(p['id']) for p in items}\n            if not old_ids.issubset(new_ids):\n                raise RuntimeError('Existing PMIDs disappeared; previous data retained')",
+                  path + ' main')
+              src = replace_once(src,
+                  "'daily_limit':MAX_PAPERS_PER_DAY,\n                    'display_limit':MAX_DISPLAYED_PAPERS,\n                    'newly_added':added,",
+                  "'archive_count':len(items),\n                    'lookback_days':lookback_days,\n                    'newly_added':added,",
+                  path + ' metadata')
+              src = replace_once(src, "print(f'[OK] papers: {len(items)} shown; {added} added today',flush=True)", "print(f'[OK] papers: {len(items)} archived; {added} new records',flush=True)", path + ' log')
+              put(path, src)
+          
+              path = 'tests/test_update_data.py'
+              src = (root / path).read_text(encoding='utf-8')
+              src = replace_once(src,
+                  'from curate_papers import (assess_paper,extract_sample_size,balance_select,merge_curated,\n                           MAX_PAPERS_PER_DAY,MAX_DISPLAYED_PAPERS)',
+                  'from curate_papers import assess_paper, extract_sample_size, balance_select, merge_curated', path + ' imports')
+              src = replace_section(src, '    def test_balance_and_daily_cap(self):', '    def test_schedule(self):', NEW_TEST_SECTION, path + ' tests')
+              # The old test asserts that older eligible papers may not be imported.
+              # Under an accumulating archive, backfill is permitted and retained.
+              src = replace_once(src,
+                  '    def test_no_old_papers_promoted_daily(self):',
+                  '    def test_older_papers_can_be_backfilled(self):',
+                  path + ' backfill test name')
+              src = replace_once(src,
+                  '        self.assertEqual(added,0)\n        self.assertEqual(selected,[])',
+                  "        self.assertEqual(added,1)\n        self.assertEqual([r['id'] for r in selected],['1'])",
+                  path + ' backfill expectations')
+              put(path, src)
+          
+              path = '.github/workflows/update.yml'
+              src = (root / path).read_text(encoding='utf-8')
+              src = replace_section(src,
+                  '      - name: Expand paper archive and fix tests\n',
+                  '      - name: Run tests\n', '', path + ' obsolete migration')
+              src = replace_once(src, '  workflow_dispatch:\n  schedule:',
+                  "  workflow_dispatch:\n  push:\n    branches: [main]\n    paths:\n      - '.github/workflows/update.yml'\n      - 'scripts/update_data.py'\n      - 'scripts/curate_papers.py'\n  schedule:", path + ' triggers')
+              src = replace_once(src,
+                  'run: python scripts/update_data.py --papers 900 --trials 200',
+                  'run: python scripts/update_data.py --papers 9000 --trials 200', path + ' updater command')
+              src = replace_once(src,
+                  'git add scripts/curate_papers.py scripts/update_data.py tests/test_update_data.py public/about.html public/data/',
+                  'git add public/data/', path + ' git add')
+              src = replace_once(src,
+                  'git commit -m "Expand PubMed archive and sync note articles"',
+                  'git commit -m "Update cumulative PubMed archive and note articles"', path + ' commit')
+              marker = '          PY\n\n          git config user.name'
+              before = '''          # Archive invariant: no previously committed PMID may disappear.
+                    import subprocess
+                    old = json.loads(subprocess.check_output(
+                        ['git', 'show', 'HEAD:public/data/papers.json'], text=True
+                    ))
+                    new = json.loads((root / 'papers.json').read_text(encoding='utf-8'))
+                    original_ids = {str(row['id']) for row in old['items']}
+                    current_ids = [str(row['id']) for row in new['items']]
+                    if len(current_ids) != len(set(current_ids)):
+                        raise SystemExit('Duplicate PMID in the cumulative archive')
+                    if not original_ids.issubset(set(current_ids)):
+                        raise SystemExit('Some previously stored PMIDs were lost')
+                    print(f'[CHECK] preserved {len(original_ids)} prior PMIDs')
+          '''
+              src = replace_once(src, marker, before + marker, path + ' archive guard')
+              put(path, src)
+          
+              path = 'public/about.html'
+              src = (root / path).read_text(encoding='utf-8')
+              src = replace_once(src,
+                  '        通常の更新では1日最大3件を追加し，\n        一覧には最大100件を掲載する設計です．\n        初回のデータ取得時には，最大100件を収録します．',
+                  '        新しく選定された論文をPMIDで重複除去して追加し，\n        過去に収録した論文は100件を超えても削除せず保存します．\n        収録した論文は新しい順に閲覧でき，サイト内で全件検索できます．\n        PubMedの全論文を網羅したデータベースではなく，\n        自動選定された論文を更新ごとに蓄積するアーカイブです．', path + ' description')
+              put(path, src)
+          
+              path = 'public/app.js'
+              src = (root / path).read_text(encoding='utf-8')
+              src = replace_once(src,
+                  "label: '新着論文',\n      title: '新着論文',\n      sub: 'PubMedの書誌情報に基づいて自動抽出した論文を掲載しています．掲載は研究の質を評価したものではありません．',",
+                  "label: '論文アーカイブ',\n      title: '論文アーカイブ',\n      sub: 'PubMedから選定した新着論文を蓄積し，過去の収録論文も検索できます．掲載は研究の質を評価したものではありません．',",
+                  path + ' ui')
+              put(path, src)
+          
+              path = 'public/index.html'
+              src = (root / path).read_text(encoding='utf-8')
+              src = replace_once(src,
+                  '<button type="button" data-nav="papers">新着論文</button>',
+                  '<button type="button" data-nav="papers">論文アーカイブ</button>', path + ' mobile')
+              src = replace_once(src,
+                  '<span class="results-kicker" id="results-kicker">新着論文</span>\n                <h3 id="results-title">新着論文</h3>',
+                  '<span class="results-kicker" id="results-kicker">論文アーカイブ</span>\n                <h3 id="results-title">論文アーカイブ</h3>', path + ' section')
+              put(path, src)
+          
+              # All pattern checks must pass before any file is changed.
+              for path, content in changes.items():
+                  (root / path).write_text(content, encoding='utf-8')
+                  print(f'[UPDATED] {path}')
+              print('[DONE] 7 files changed. Run: python -m unittest discover -s tests -v')
+              print('        Run: python scripts/update_data.py --offline-check')
+          
+          
+          def main():
+              ap = argparse.ArgumentParser()
+              ap.add_argument('repository', nargs='?', default='.', help='Path to dementia-atlas repository root')
+              args = ap.parse_args()
+              root = Path(args.repository).resolve()
+              if not (root / 'scripts' / 'update_data.py').exists():
+                  raise SystemExit('Run from the dementia-atlas repository root, or pass its directory path.')
+              upgrade(root)
+          
+          
+          if __name__ == '__main__':
+              main()
+          PY
+          python -m unittest discover -s tests -v
+          python scripts/update_data.py --offline-check
+
+      - name: Fetch current PubMed records and build cumulative archive
+        shell: bash
+        run: |
+          python scripts/update_data.py --papers 9000 --trials 200
+          python -m unittest discover -s tests -v
+
+      - name: Commit the upgrade and remove temporary workflows
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          rm -f .github/workflows/enable_archive.yml
+          rm -f .github/workflows/enable_archive_fixed.yml
+          git add -A
+          if git diff --cached --quiet; then
+            echo 'No changed files after applying the archive upgrade.'
+            exit 1
+          fi
+          git commit -m "Enable cumulative PubMed archive with PMID deduplication"
+          git push origin HEAD:main
