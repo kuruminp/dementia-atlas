@@ -1,16 +1,108 @@
 {
   "meta": {
     "mode": "api",
-    "fetched_at": "2026-11-02T06:48:16+00:00",
+    "fetched_at": "2026-11-02T15:46:54+00:00",
     "verified_at": null,
     "source": "PubMed",
     "description": "Metadata-based research prioritization; not scientific appraisal.",
     "selection_method": "metadata_quality_v1",
-    "archive_count": 176,
+    "archive_count": 180,
     "lookback_days": 14,
-    "newly_added": 76
+    "newly_added": 4
   },
   "items": [
+    {
+      "id": "42968246",
+      "title": "Intake of ETAS® Improves Cognitive Function in Healthy Middle-Aged and Older Adults: A Randomized, Double-Blind, Placebo-Controlled Trial.",
+      "journal": "Journal of nutritional science and vitaminology",
+      "date": "2026",
+      "pubmed_entry_date": "2026-11-01",
+      "disease": "other",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article",
+        "Randomized Controlled Trial"
+      ],
+      "doi": "10.3177/jnsv.72.415",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42968246/",
+      "source": "PubMed",
+      "research_type": "trial",
+      "selection_signals": [
+        "rct"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-03"
+    },
+    {
+      "id": "42968239",
+      "title": "Integrated clinical and transcriptomic analysis reveals miRNA-mediated mechanisms linking hearing loss to cognitive decline in Alzheimer's disease.",
+      "journal": "Journal of Alzheimer's disease : JAD",
+      "date": "2026-11-01",
+      "pubmed_entry_date": "2026-11-01",
+      "disease": "ad",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1177/13872877261501149",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42968239/",
+      "source": "PubMed",
+      "research_type": "validation",
+      "selection_signals": [
+        "validation",
+        "independent"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-03"
+    },
+    {
+      "id": "42968143",
+      "title": "Association of platelet count with incident motoric cognitive risk syndrome among Chinese adults aged 60 years or older: a national prospective cohort study.",
+      "journal": "Thrombosis journal",
+      "date": "2026-08-05",
+      "pubmed_entry_date": "2026-11-01",
+      "disease": "other",
+      "topic": "other",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1186/s12959-026-00908-y",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42968143/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 7,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-03"
+    },
+    {
+      "id": "42968018",
+      "title": "Eyes-open resting-state EEG microstate analysis using ratio-normalized parameters across four- and seven-class solutions in healthy controls, mild cognitive impairment, and Alzheimer's disease.",
+      "journal": "Journal of Alzheimer's disease : JAD",
+      "date": "2026-11-01",
+      "pubmed_entry_date": "2026-11-01",
+      "disease": "ad",
+      "topic": "other",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1177/13872877261501861",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42968018/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "independent"
+      ],
+      "priority_score": 7,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-03"
+    },
     {
       "id": "42966490",
       "title": "Feasibility of an 8-week lifestyle intervention combining exercise, diet, cognitive training, and social engagement in individuals with mild cognitive impairment: a pilot randomized controlled trial.",
