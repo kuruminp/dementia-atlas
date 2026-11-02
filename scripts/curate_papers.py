@@ -6,10 +6,6 @@ No proprietary JIF data, LLMs, or patient information are required.
 import datetime as dt
 import re
 
-MAX_PAPERS_PER_DAY = 3
-MAX_PAPERS_ON_FIRST_RUN = 100
-MAX_DISPLAYED_PAPERS = 100
-FRESH_ENTRY_DAYS = 4
 MIN_PRIORITY_SCORE = 7
 
 DEMENTIA_TERMS = re.compile(
@@ -208,33 +204,45 @@ def balance_select(candidates, count, *, day):
 
 
 def merge_curated(previous, candidates, *, today, last_fetched_at=None, bootstrap=False):
-    """At most 3 additions on normal days; keep a 30-paper display archive."""
+    """Preserve every archived PMID and add all newly qualified PubMed records.
+
+    No daily quota or maximum archive size is imposed. Metadata from a later
+    PubMed fetch refreshes existing records without changing their first
+    selection date. An identical second run adds zero records.
+    """
     today_date = _date(today) or dt.date.today()
-    previous = [dict(p) for p in previous if p.get('id')]
-    seen = {p['id'] for p in previous}
-    fresh = []
-    for p in candidates:
-        if p.get('id') in seen or p.get('priority_score',0) < MIN_PRIORITY_SCORE:
+    archive = {}
+    for row in previous:
+        pmid = str(row.get('id') or '').strip()
+        if re.fullmatch(r'\d+', pmid):
+            archive[pmid] = {**row, 'id': pmid}
+
+    added = 0
+    for row in candidates:
+        pmid = str(row.get('id') or '').strip()
+        if not re.fullmatch(r'\d+', pmid):
             continue
-        entered = _date(p.get('pubmed_entry_date')) or _date(p.get('date'))
-        if not bootstrap and (not entered or (today_date-entered).days > FRESH_ENTRY_DAYS):
+        if row.get('priority_score', 0) < MIN_PRIORITY_SCORE:
             continue
+        entered = _date(row.get('pubmed_entry_date')) or _date(row.get('date'))
         if entered and entered > today_date + dt.timedelta(days=1):
             continue
-        fresh.append(p)
-    quota = MAX_PAPERS_ON_FIRST_RUN if bootstrap else max(0, MAX_PAPERS_PER_DAY - sum(p.get('selected_on') == today for p in previous))
-    if bootstrap:
-        # Initial import should be more recent than the 120-day search window.
-        fresh = [p for p in fresh if not (_date(p.get('pubmed_entry_date')) or _date(p.get('date'))) or
-                 (today_date - (_date(p.get('pubmed_entry_date')) or _date(p.get('date')))).days <= 120]
-    selected = balance_select(fresh,quota,day=today)
-    for p in selected:
-        p['selected_on'] = today
-    records = selected + previous
-    unique = {}
-    for p in records:
-        if p['id'] not in unique:
-            unique[p['id']] = p
-    result = sorted(unique.values(),key=lambda x:(x.get('selected_on') or x.get('date') or '',
-                                                        x.get('pubmed_entry_date') or '',x['id']),reverse=True)
-    return result[:MAX_DISPLAYED_PAPERS],len(selected)
+        if pmid in archive:
+            existing = archive[pmid]
+            archive[pmid] = {
+                **existing, **row, 'id': pmid,
+                'selected_on': existing.get('selected_on') or today,
+            }
+        else:
+            archive[pmid] = {**row, 'id': pmid, 'selected_on': today}
+            added += 1
+
+    records = sorted(
+        archive.values(),
+        key=lambda row: (
+            row.get('pubmed_entry_date') or row.get('date') or
+            row.get('selected_on') or '', row['id']
+        ),
+        reverse=True,
+    )
+    return records, added

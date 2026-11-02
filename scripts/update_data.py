@@ -17,7 +17,7 @@ from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 import xml.etree.ElementTree as ET
-from curate_papers import (assess_paper, merge_curated, MAX_PAPERS_PER_DAY, MAX_DISPLAYED_PAPERS)
+from curate_papers import assess_paper, merge_curated
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / 'public' / 'data'
@@ -158,50 +158,78 @@ def parse_pubmed_xml(payload):
     return records
 
 
-def pubmed_esearch(query, limit):
-    params = {'db':'pubmed','term':query,'sort':'pub_date','retmax':str(limit),'retmode':'json',
-              'reldate':'120','datetype':'edat','tool':'dementia_atlas'}
-    if os.getenv('NCBI_EMAIL'):
-        params['email'] = os.environ['NCBI_EMAIL']
-    response = fetch(NCBI+'esearch.fcgi?'+urlencode(params))
-    return response.get('esearchresult',{}).get('idlist',[])
+def pubmed_esearch(query, limit, *, lookback_days=14):
+    """Get *all* matching PubMed IDs in the EDAT window, page by page.
+
+    Fail instead of silently losing records if a configured safety limit is
+    exceeded. PubMed ESearch does not support retrieving beyond its first
+    10,000 results via retstart/retmax.
+    """
+    if not 1 <= limit <= 9999:
+        raise ValueError('PubMed ID retrieval limit must be between 1 and 9999')
+    ids = []
+    total = None
+    while total is None or len(ids) < total:
+        params = {
+            'db': 'pubmed', 'term': query, 'sort': 'pub_date',
+            'retmax': str(min(500, limit - len(ids))),
+            'retstart': str(len(ids)), 'retmode': 'json',
+            'reldate': str(lookback_days), 'datetype': 'edat',
+            'tool': 'dementia_atlas',
+        }
+        if os.getenv('NCBI_EMAIL'):
+            params['email'] = os.environ['NCBI_EMAIL']
+        response = fetch(NCBI + 'esearch.fcgi?' + urlencode(params))
+        payload = response.get('esearchresult', {})
+        if total is None:
+            total = int(payload.get('count', 0))
+            if total > limit:
+                raise RuntimeError(
+                    f'PubMed returned {total} matches in the last {lookback_days} days '
+                    f'(configured maximum {limit}). No archive changes made; '
+                    'increase --papers or shorten the date window.'
+                )
+        page = payload.get('idlist') or []
+        if not page and len(ids) < total:
+            raise RuntimeError('PubMed ESearch returned an incomplete ID list')
+        ids.extend(page)
+        if len(ids) < total:
+            time.sleep(0.45)
+    if len(ids) != total:
+        raise RuntimeError('PubMed ESearch pagination produced an incomplete list')
+    return ids
 
 
-def fetch_pubmed(limit, priority_limit=260):
-    # Broad discovery catches studies whose publication types have not yet been indexed.
+def fetch_pubmed(limit, lookback_days=14):
+    # This query includes Alzheimer disease and the other dementia subtypes.
+    # Metadata screening is applied only after we retrieve all matching IDs.
     query = ('("Alzheimer Disease"[MeSH Terms] OR Alzheimer*[Title/Abstract] '
              'OR dementia[Title/Abstract] OR "mild cognitive impairment"[Title/Abstract] '
              'OR "frontotemporal dementia"[Title/Abstract] OR "Lewy body dementia"[Title/Abstract] '
              'OR "vascular cognitive impairment"[Title/Abstract]) '
              'NOT ("case reports"[Publication Type] OR "preprint"[Publication Type])')
-    ids = pubmed_esearch(query,limit)
+    ids = pubmed_esearch(query, limit, lookback_days=lookback_days)
     if not ids:
         raise RuntimeError('PubMed returned no matching records; retain previous data')
-    # Quality indicators in PubMed are not restricted to a fixed set of journals.
-    evidence = ('("randomized controlled trial"[Publication Type] OR '
-                '"meta-analysis"[Publication Type] OR "systematic review"[Publication Type] OR '
-                '"practice guideline"[Publication Type] OR "validation study"[Publication Type] OR '
-                '"multicenter study"[Publication Type] OR random*[Title/Abstract] OR '
-                '"external validation"[Title/Abstract] OR "longitudinal cohort"[Title/Abstract] OR '
-                '"population-based"[Title/Abstract] OR "multicenter"[Title/Abstract])')
-    priority_ids = pubmed_esearch(f'({query}) AND {evidence}',priority_limit)
-    # Rare diseases get a separate window to avoid being drowned out by AD papers.
-    rare = ('("frontotemporal dementia"[Title/Abstract] OR "Lewy body dementia"[Title/Abstract] '
-            'OR "dementia with lewy bodies"[Title/Abstract] OR "vascular dementia"[Title/Abstract])')
-    rare_ids = pubmed_esearch(rare,100)
-    ids = list(dict.fromkeys(ids+priority_ids+rare_ids))
     records = []
-    for i in range(0,len(ids),60):
-        chunk = ids[i:i+60]
-        params = {'db':'pubmed','id':','.join(chunk),'retmode':'xml','tool':'dementia_atlas'}
+    for i in range(0, len(ids), 60):
+        chunk = ids[i:i + 60]
+        params = {
+            'db': 'pubmed', 'id': ','.join(chunk),
+            'retmode': 'xml', 'tool': 'dementia_atlas',
+        }
         if os.getenv('NCBI_EMAIL'):
             params['email'] = os.environ['NCBI_EMAIL']
-        xml = fetch(NCBI+'efetch.fcgi?'+urlencode(params),expect='xml')
-        records.extend(parse_pubmed_xml(xml))
-        if i+60<len(ids):
-            time.sleep(0.5)
-    byid = {p['id']:p for p in records}
-    return [byid[pid] for pid in ids if pid in byid]
+        payload = fetch(NCBI + 'efetch.fcgi?' + urlencode(params), expect='xml')
+        records.extend(parse_pubmed_xml(payload))
+        if i + 60 < len(ids):
+            time.sleep(0.45)
+    by_id = {row['id']: row for row in records}
+    # Do not silently discard IDs on a partial EFetch response.
+    if len(by_id) != len(set(ids)):
+        missing = set(ids) - set(by_id)
+        raise RuntimeError(f'PubMed EFetch missing {len(missing)} requested PMIDs')
+    return [by_id[pmid] for pmid in ids]
 
 
 def classify_mechanism(title, interventions, types):
@@ -296,7 +324,7 @@ def build_site_data():
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--offline-check',action='store_true',help='Validate current data and rebuild the local JS bundle')
-    ap.add_argument('--papers',type=int,default=450)
+    ap.add_argument('--papers',type=int,default=9000)
     ap.add_argument('--trials',type=int,default=200)
     args=ap.parse_args()
     DATA.mkdir(parents=True,exist_ok=True)
@@ -306,12 +334,15 @@ def main():
         today = (now + dt.timedelta(hours=9)).date().isoformat()
         try:
             previous = read_json('papers')
-            bootstrap = (previous.get('meta',{}).get('mode') != 'api' or previous.get('meta',{}).get('display_limit',30) < MAX_DISPLAYED_PAPERS)
-            candidates = fetch_pubmed(args.papers)
+            bootstrap = previous.get('meta', {}).get('mode') != 'api'
+            lookback_days = 30 if bootstrap else 14
+            candidates = fetch_pubmed(args.papers, lookback_days=lookback_days)
             items, added = merge_curated(
-                [] if bootstrap else previous['items'], candidates,
-                today=today, bootstrap=bootstrap,
-                last_fetched_at=previous.get('meta',{}).get('fetched_at'))
+                previous.get('items', []), candidates, today=today, bootstrap=bootstrap)
+            old_ids = {str(p['id']) for p in previous.get('items', [])}
+            new_ids = {str(p['id']) for p in items}
+            if not old_ids.issubset(new_ids):
+                raise RuntimeError('Existing PMIDs disappeared; previous data retained')
             if not items:
                 raise RuntimeError('No qualifying papers found on initial import')
             save_json('papers',{
@@ -319,11 +350,11 @@ def main():
                     'mode':'api','fetched_at':now_iso,'verified_at':None,
                     'source':'PubMed','description':'Metadata-based research prioritization; not scientific appraisal.',
                     'selection_method':'metadata_quality_v1',
-                    'daily_limit':MAX_PAPERS_PER_DAY,
-                    'display_limit':MAX_DISPLAYED_PAPERS,
+                    'archive_count':len(items),
+                    'lookback_days':lookback_days,
                     'newly_added':added,
                 }, 'items':items})
-            print(f'[OK] papers: {len(items)} shown; {added} added today',flush=True)
+            print(f'[OK] papers: {len(items)} archived; {added} new records',flush=True)
         except Exception as exc:
             print(f'[WARN] papers: {exc}; keeping previous records',file=sys.stderr,flush=True)
         try:

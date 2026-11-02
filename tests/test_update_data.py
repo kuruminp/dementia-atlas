@@ -6,8 +6,7 @@ import unittest
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
 from update_data import parse_pubmed_xml,parse_clinical_trial,classify_disease,classify_topic
-from curate_papers import (assess_paper,extract_sample_size,balance_select,merge_curated,
-                           MAX_PAPERS_PER_DAY,MAX_DISPLAYED_PAPERS)
+from curate_papers import assess_paper, extract_sample_size, balance_select, merge_curated
 
 class PipelineTests(unittest.TestCase):
     def test_local_data(self):
@@ -49,30 +48,85 @@ class PipelineTests(unittest.TestCase):
         row=assess_paper('External validation of Alzheimer blood biomarkers','We validated in an independent cohort of 553 patients.',['Journal Article'],'','Journal X')
         self.assertEqual(row['research_type'],'validation')
 
-    def test_balance_and_daily_cap(self):
-        rows=[]
-        for i in range(20):
-            rows.append({'id':str(9000+i),'title':f'Paper {i}', 'priority_score':10+(i%3),
-                         'pubmed_entry_date':'2026-11-01','disease':'ad' if i%4 else 'dlb',
-                         'topic':'treatment' if i%3 else 'biomarker','research_type':'trial'})
-        today='2026-11-01'
-        selected,added=merge_curated([],rows,today=today,bootstrap=False)
-        self.assertEqual(added,MAX_PAPERS_PER_DAY)
-        self.assertEqual(len(selected),MAX_PAPERS_PER_DAY)
-        selected_again,added_again=merge_curated(selected,rows,today=today,bootstrap=False)
-        self.assertEqual(added_again,0)
-        self.assertEqual(len({r['id'] for r in selected_again}),3)
-        self.assertTrue(all('selected_on' in r for r in selected_again))
-        past=[{'id':str(10000+i),'priority_score':8,'selected_on':'2026-09-01','title':'x'} for i in range(50)]
-        archive,added=merge_curated(past,[],today=today,bootstrap=False)
-        self.assertEqual(len(archive),min(50,MAX_DISPLAYED_PAPERS))
+    def test_append_only_and_idempotent(self):
+        rows = []
+        for i in range(25):
+            rows.append({
+                'id': str(9000 + i), 'title': f'Paper {i}',
+                'priority_score': 10, 'pubmed_entry_date': '2026-11-01',
+                'disease': 'ad', 'topic': 'treatment', 'research_type': 'trial'
+            })
+        selected, added = merge_curated([], rows, today='2026-11-02')
+        self.assertEqual(added, 25)
+        self.assertEqual(len(selected), 25)
+        selected_again, added_again = merge_curated(
+            selected, rows, today='2026-11-02'
+        )
+        self.assertEqual(added_again, 0)
+        self.assertEqual(len({r['id'] for r in selected_again}), 25)
+        self.assertTrue(all(r['selected_on'] == '2026-11-02' for r in selected_again))
 
-    def test_no_old_papers_promoted_daily(self):
-        old={'id':'1','priority_score':100,'pubmed_entry_date':'2026-09-01',
-             'date':'2026-09-01','topic':'treatment','disease':'ad'}
-        selected,added=merge_curated([], [old],today='2026-11-01',bootstrap=False)
-        self.assertEqual(added,0)
-        self.assertEqual(selected,[])
+    def test_more_than_100_and_older_records_survive(self):
+        previous = [
+            {'id': str(10000 + i), 'title': 'Historical',
+             'priority_score': 8, 'pubmed_entry_date': '2025-02-01',
+             'selected_on': '2025-02-01'}
+            for i in range(125)
+        ]
+        incoming = [
+            {'id': str(20000 + i), 'title': 'New',
+             'priority_score': 9, 'pubmed_entry_date': '2026-11-01'}
+            for i in range(20)
+        ]
+        archive, added = merge_curated(previous, incoming, today='2026-11-02')
+        self.assertEqual(added, 20)
+        self.assertEqual(len(archive), 145)
+        self.assertTrue({r['id'] for r in previous}.issubset({r['id'] for r in archive}))
+
+    def test_existing_metadata_updates_without_resetting_selection_date(self):
+        previous = [{
+            'id': '999', 'title': 'Old title', 'priority_score': 8,
+            'selected_on': '2026-10-01', 'date': '2026-10-01'
+        }]
+        incoming = [{
+            'id': '999', 'title': 'Updated title', 'priority_score': 10,
+            'pubmed_entry_date': '2026-10-01'
+        }]
+        archive, added = merge_curated(previous, incoming, today='2026-11-02')
+        self.assertEqual((len(archive), added), (1, 0))
+        self.assertEqual(archive[0]['title'], 'Updated title')
+        self.assertEqual(archive[0]['selected_on'], '2026-10-01')
+
+    def test_low_priority_or_future_records_not_added(self):
+        bad = [
+            {'id': '1', 'priority_score': 3},
+            {'id': '2', 'priority_score': 10, 'pubmed_entry_date': '2026-12-01'},
+        ]
+        selected, added = merge_curated([], bad, today='2026-11-02')
+        self.assertEqual((selected, added), ([], 0))
+
+    def test_pubmed_esearch_pages_and_fails_on_truncation(self):
+        from unittest.mock import patch
+        from urllib.parse import urlparse, parse_qs
+        from update_data import pubmed_esearch
+        ids = [str(i + 10000) for i in range(505)]
+        calls = []
+
+        def fake_fetch(url, **kwargs):
+            params = parse_qs(urlparse(url).query)
+            start = int(params['retstart'][0])
+            size = int(params['retmax'][0])
+            calls.append(start)
+            return {'esearchresult': {
+                'count': str(len(ids)), 'idlist': ids[start:start + size]
+            }}
+
+        with patch('update_data.fetch', side_effect=fake_fetch):
+            self.assertEqual(pubmed_esearch('alzheimer', 600), ids)
+        self.assertEqual(calls, [0, 500])
+        with patch('update_data.fetch', side_effect=fake_fetch):
+            with self.assertRaisesRegex(RuntimeError, 'configured maximum'):
+                pubmed_esearch('alzheimer', 500)
 
     def test_schedule(self):
         w=(ROOT/'.github'/'workflows'/'update.yml').read_text(encoding='utf-8')

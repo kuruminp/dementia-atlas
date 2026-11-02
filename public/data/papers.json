@@ -1,84 +1,16 @@
 {
   "meta": {
     "mode": "api",
-    "fetched_at": "2026-11-01T15:26:04+00:00",
+    "fetched_at": "2026-11-02T06:48:16+00:00",
     "verified_at": null,
     "source": "PubMed",
     "description": "Metadata-based research prioritization; not scientific appraisal.",
     "selection_method": "metadata_quality_v1",
-    "daily_limit": 3,
-    "display_limit": 100,
-    "newly_added": 3
+    "archive_count": 176,
+    "lookback_days": 14,
+    "newly_added": 76
   },
   "items": [
-    {
-      "id": "42960521",
-      "title": "The Association of Amyloid-β and Tau With Synaptic Dysfunction in Alzheimer's Disease.",
-      "journal": "Annals of clinical and translational neurology",
-      "date": "2026-10-30",
-      "pubmed_entry_date": "2026-10-30",
-      "disease": "ad",
-      "topic": "biomarker",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "doi": "10.1002/acn3.70558",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42960521/",
-      "source": "PubMed",
-      "research_type": "cohort",
-      "selection_signals": [
-        "cohort",
-        "independent"
-      ],
-      "priority_score": 8,
-      "journal_tiebreak": 0,
-      "selected_on": "2026-11-02"
-    },
-    {
-      "id": "42959361",
-      "title": "A multidomain, nurse-led, mobile health-supported intervention for dementia risk reduction in primary care (HAPPI MIND): a pragmatic, single-blind, two-arm, cluster randomised controlled trial.",
-      "journal": "The Lancet regional health. Western Pacific",
-      "date": "2026-10-20",
-      "pubmed_entry_date": "2026-10-30",
-      "disease": "other",
-      "topic": "treatment",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "doi": "10.1016/j.lanwpc.2026.102000",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42959361/",
-      "source": "PubMed",
-      "research_type": "trial",
-      "selection_signals": [
-        "rct"
-      ],
-      "priority_score": 10,
-      "journal_tiebreak": 0,
-      "selected_on": "2026-11-02"
-    },
-    {
-      "id": "42957174",
-      "title": "The Effects of Virtual Reality Group Reminiscence Therapy on Agitation, Cognition, Depression and Social Function in Patients With Alzheimer's Disease.",
-      "journal": "Psychogeriatrics : the official journal of the Japanese Psychogeriatric Society",
-      "date": "2026-11",
-      "pubmed_entry_date": "2026-10-29",
-      "disease": "ad",
-      "topic": "treatment",
-      "publication_types": [
-        "Journal Article",
-        "Randomized Controlled Trial"
-      ],
-      "doi": "10.1111/psyg.70196",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42957174/",
-      "source": "PubMed",
-      "research_type": "trial",
-      "selection_signals": [
-        "rct"
-      ],
-      "priority_score": 10,
-      "journal_tiebreak": 0,
-      "selected_on": "2026-11-02"
-    },
     {
       "id": "42966490",
       "title": "Feasibility of an 8-week lifestyle intervention combining exercise, diet, cognitive training, and social engagement in individuals with mild cognitive impairment: a pilot randomized controlled trial.",
@@ -100,6 +32,28 @@
       "priority_score": 10,
       "journal_tiebreak": 0,
       "selected_on": "2026-11-01"
+    },
+    {
+      "id": "42966208",
+      "title": "Promoting resilience in primary caregivers of people with dementia through health programmes: a systematic review.",
+      "journal": "Geriatric nursing (New York, N.Y.)",
+      "date": "2026-10-31",
+      "pubmed_entry_date": "2026-10-31",
+      "disease": "other",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1016/j.gerinurse.2026.104426",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42966208/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
     },
     {
       "id": "42965691",
@@ -126,6 +80,51 @@
       "selected_on": "2026-11-01"
     },
     {
+      "id": "42965018",
+      "title": "Decoding Parkinson's disease: a systematic review of qEEG biomarkers across clinical domains.",
+      "journal": "Clinical neurophysiology practice",
+      "date": "2026-10-19",
+      "pubmed_entry_date": "2026-10-31",
+      "disease": "other",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.1016/j.cnp.2026.10.007",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42965018/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42964942",
+      "title": "Ultra-processed food exposure and cognitive outcomes: a systematic review of observational studies.",
+      "journal": "BMJ nutrition, prevention & health",
+      "date": "2026-05-04",
+      "pubmed_entry_date": "2026-10-31",
+      "disease": "other",
+      "topic": "diagnosis",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1136/bmjnph-2025-001325",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42964942/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
       "id": "42964515",
       "title": "A multimodal digital NeuroMarker platform with composite and domain-level validity for identification of mild cognitive impairment: a cross-sectional study.",
       "journal": "EClinicalMedicine",
@@ -147,6 +146,29 @@
       "priority_score": 8,
       "journal_tiebreak": 0,
       "selected_on": "2026-11-01"
+    },
+    {
+      "id": "42963335",
+      "title": "Tau positron emission tomography harmonization using the CenTauR approach: General conversion equations, relevant cut-points, and external validation.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "date": "2026-10",
+      "pubmed_entry_date": "2026-10-30",
+      "disease": "ad",
+      "topic": "imaging",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1002/alz.71886",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42963335/",
+      "source": "PubMed",
+      "research_type": "validation",
+      "selection_signals": [
+        "validation",
+        "independent"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
     },
     {
       "id": "42961136",
@@ -195,6 +217,52 @@
       "selected_on": "2026-11-01"
     },
     {
+      "id": "42960616",
+      "title": "Periodontal disease, biomarkers of ADRD risk, and cognitive functioning.",
+      "journal": "Journal of periodontology",
+      "date": "2026-10-30",
+      "pubmed_entry_date": "2026-10-30",
+      "disease": "ad",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1002/jper.70210",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42960616/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 7,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42960521",
+      "title": "The Association of Amyloid-β and Tau With Synaptic Dysfunction in Alzheimer's Disease.",
+      "journal": "Annals of clinical and translational neurology",
+      "date": "2026-10-30",
+      "pubmed_entry_date": "2026-10-30",
+      "disease": "ad",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1002/acn3.70558",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42960521/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "independent"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
       "id": "42959399",
       "title": "Sex Differences in Domain-Specific Cognitive Trajectories and Dementia Risk: Evidence From the Whitehall II Cohort.",
       "journal": "Journal of aging research",
@@ -216,6 +284,28 @@
       "priority_score": 8,
       "journal_tiebreak": 0,
       "selected_on": "2026-11-01"
+    },
+    {
+      "id": "42959361",
+      "title": "A multidomain, nurse-led, mobile health-supported intervention for dementia risk reduction in primary care (HAPPI MIND): a pragmatic, single-blind, two-arm, cluster randomised controlled trial.",
+      "journal": "The Lancet regional health. Western Pacific",
+      "date": "2026-10-20",
+      "pubmed_entry_date": "2026-10-30",
+      "disease": "other",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1016/j.lanwpc.2026.102000",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42959361/",
+      "source": "PubMed",
+      "research_type": "trial",
+      "selection_signals": [
+        "rct"
+      ],
+      "priority_score": 10,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
     },
     {
       "id": "42959148",
@@ -243,6 +333,29 @@
       "selected_on": "2026-11-01"
     },
     {
+      "id": "42959105",
+      "title": "Effects of physical activity on cognitive function in healthy older women: a systematic review and meta-analysis.",
+      "journal": "Frontiers in aging neuroscience",
+      "date": "2026-10-15",
+      "pubmed_entry_date": "2026-10-30",
+      "disease": "other",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review"
+      ],
+      "doi": "10.3389/fnagi.2026.1928056",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42959105/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
       "id": "42959097",
       "title": "Cognitive transfer and durability of computerised cognitive training in older adults with mild cognitive impairment: a systematic review and meta-analysis of randomised controlled trials.",
       "journal": "Frontiers in aging neuroscience",
@@ -264,6 +377,144 @@
       "priority_score": 10,
       "journal_tiebreak": 0,
       "selected_on": "2026-11-01"
+    },
+    {
+      "id": "42958586",
+      "title": "The impact of structural variation on Alzheimer's disease in the Alzheimer's disease sequencing project.",
+      "journal": "Genome biology",
+      "date": "2026-08-07",
+      "pubmed_entry_date": "2026-10-30",
+      "disease": "ad",
+      "topic": "diagnosis",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1186/s13059-026-04206-8",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42958586/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42958434",
+      "title": "Neuropathological and vascular determinants of cerebral amyloid angiopathy risk: evidence from the NACC cohort.",
+      "journal": "Alzheimer's research & therapy",
+      "date": "2026-08-01",
+      "pubmed_entry_date": "2026-10-30",
+      "disease": "ftd",
+      "topic": "pathology",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1186/s13195-026-02064-x",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42958434/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42958051",
+      "title": "A creative dance-supported CO-OP intervention for older adults with mild cognitive impairment: an assessor-blinded, external pilot randomised controlled trial.",
+      "journal": "BMC geriatrics",
+      "date": "2026-08-01",
+      "pubmed_entry_date": "2026-10-30",
+      "disease": "mci",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article",
+        "Randomized Controlled Trial"
+      ],
+      "doi": "10.1186/s12877-026-08082-6",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42958051/",
+      "source": "PubMed",
+      "research_type": "trial",
+      "selection_signals": [
+        "rct"
+      ],
+      "priority_score": 10,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42957926",
+      "title": "Cognitive frailty independently predicts hip fracture risk in older Chinese adults: a 10-year prospective analysis.",
+      "journal": "Aging clinical and experimental research",
+      "date": "2026-08-04",
+      "pubmed_entry_date": "2026-10-30",
+      "disease": "mci",
+      "topic": "care",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1007/s40520-026-03464-7",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42957926/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 7,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42957174",
+      "title": "The Effects of Virtual Reality Group Reminiscence Therapy on Agitation, Cognition, Depression and Social Function in Patients With Alzheimer's Disease.",
+      "journal": "Psychogeriatrics : the official journal of the Japanese Psychogeriatric Society",
+      "date": "2026-11",
+      "pubmed_entry_date": "2026-10-29",
+      "disease": "ad",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article",
+        "Randomized Controlled Trial"
+      ],
+      "doi": "10.1111/psyg.70196",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42957174/",
+      "source": "PubMed",
+      "research_type": "trial",
+      "selection_signals": [
+        "rct"
+      ],
+      "priority_score": 10,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42956415",
+      "title": "Towards improving Alzheimer's intervention: a machine learning approach for biomarker detection through combining MEG and MRI pipelines.",
+      "journal": "Journal of neural engineering",
+      "date": "2026-10-29",
+      "pubmed_entry_date": "2026-10-29",
+      "disease": "ad",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1088/1741-2552/aebb66",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42956415/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "independent"
+      ],
+      "priority_score": 7,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
     },
     {
       "id": "42955660",
@@ -382,6 +633,29 @@
       "selected_on": "2026-11-01"
     },
     {
+      "id": "42952734",
+      "title": "Plasma IL-6 as a shared inflammatory marker of cognitive impairment across racially and ethnically diverse older adults: matched analyses from the HABS-HD study.",
+      "journal": "Frontiers in dementia",
+      "date": "2026-10-14",
+      "pubmed_entry_date": "2026-10-29",
+      "disease": "other",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.3389/frdem.2026.1930196",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42952734/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 7,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
       "id": "42951866",
       "title": "Evaluating the Association Between PPI Use and Dementia Risk Considering Methodological Choices: An Updated Meta-Analysis.",
       "journal": "Clinical pharmacology and therapeutics",
@@ -429,6 +703,28 @@
       "priority_score": 12,
       "journal_tiebreak": 0,
       "selected_on": "2026-11-01"
+    },
+    {
+      "id": "42951114",
+      "title": "The Effects of Blueberry Consumption on Cerebral Blood Flow and Brain Glutathione Levels in Older Adults: A Double-Blind Randomized, Placebo-Controlled Trial.",
+      "journal": "The American journal of clinical nutrition",
+      "date": "2026-10-28",
+      "pubmed_entry_date": "2026-10-28",
+      "disease": "ad",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1016/j.ajcnut.2026.101613",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42951114/",
+      "source": "PubMed",
+      "research_type": "trial",
+      "selection_signals": [
+        "rct"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
     },
     {
       "id": "42950712",
@@ -523,6 +819,99 @@
       "selected_on": "2026-11-01"
     },
     {
+      "id": "42949226",
+      "title": "Loneliness as a pathway linking hearing decline to cognitive aging: Longitudinal and genetic evidence.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "date": "2026-10",
+      "pubmed_entry_date": "2026-10-28",
+      "disease": "other",
+      "topic": "pathology",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1002/alz.71950",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42949226/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 7,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42948906",
+      "title": "The underlying neurobiology of social isolation and loneliness in middle-older adults: A systematic review.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "date": "2026-10",
+      "pubmed_entry_date": "2026-10-28",
+      "disease": "other",
+      "topic": "imaging",
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review",
+        "Review"
+      ],
+      "doi": "10.1002/alz.71921",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42948906/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42948654",
+      "title": "Exercise and white matter hyperintensities: a randomized clinical trial.",
+      "journal": "Brain communications",
+      "date": "2026-10-08",
+      "pubmed_entry_date": "2026-10-28",
+      "disease": "vascular",
+      "topic": "imaging",
+      "publication_types": [
+        "Clinical Trial",
+        "Journal Article"
+      ],
+      "doi": "10.1093/braincomms/fcag381",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42948654/",
+      "source": "PubMed",
+      "research_type": "trial",
+      "selection_signals": [
+        "rct"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42948157",
+      "title": "Heterogeneous progression of AT(N) biomarkers in data-driven subtypes of Alzheimer's disease.",
+      "journal": "Frontiers in aging neuroscience",
+      "date": "2026-10-13",
+      "pubmed_entry_date": "2026-10-28",
+      "disease": "ad",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.3389/fnagi.2026.1902282",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42948157/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
       "id": "42948010",
       "title": "Bipolar disorder and risk of all-cause and specific dementia: a systematic review and meta-analysis.",
       "journal": "Frontiers in aging neuroscience",
@@ -545,6 +934,30 @@
       "priority_score": 12,
       "journal_tiebreak": 0,
       "selected_on": "2026-11-01"
+    },
+    {
+      "id": "42947278",
+      "title": "Caregiver positivity as a psychosocial modifier of lecanemab-related outcomes in Alzheimer's disease: A multicenter longitudinal study in China.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "date": "2026-10",
+      "pubmed_entry_date": "2026-10-28",
+      "disease": "ad",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article",
+        "Multicenter Study"
+      ],
+      "doi": "10.1002/alz.71894",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42947278/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "multicenter"
+      ],
+      "priority_score": 7,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
     },
     {
       "id": "42947071",
@@ -595,6 +1008,103 @@
       "selected_on": "2026-11-01"
     },
     {
+      "id": "42944683",
+      "title": "Simpson's Paradox, Amyloid Paradox, and Racial Differences.",
+      "journal": "JAMA network open",
+      "date": "2026-10-01",
+      "pubmed_entry_date": "2026-10-27",
+      "disease": "ad",
+      "topic": "imaging",
+      "publication_types": [
+        "Journal Article",
+        "Multicenter Study"
+      ],
+      "doi": "10.1001/jamanetworkopen.2026.40868",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42944683/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "multicenter",
+        "large_sample"
+      ],
+      "priority_score": 10,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42943397",
+      "title": "Integrated Genetic and Multi-Omic Analyses Reveal Oral Microbial Associations with Brain Structure and Alzheimer's Disease.",
+      "journal": "Microorganisms",
+      "date": "2026-09-24",
+      "pubmed_entry_date": "2026-10-27",
+      "disease": "ad",
+      "topic": "pathology",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.3390/microorganisms14102157",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42943397/",
+      "source": "PubMed",
+      "research_type": "validation",
+      "selection_signals": [
+        "validation",
+        "independent"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42942883",
+      "title": "Impact of GLP-1 Receptor Agonists on Cognitive Performance in Adults at Risk of Alzheimer's Disease: A Systematic Review and Meta-Analysis of Randomized Controlled Trials.",
+      "journal": "Nutrients",
+      "date": "2026-10-09",
+      "pubmed_entry_date": "2026-10-27",
+      "disease": "ad",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review",
+        "Meta-Analysis",
+        "Review"
+      ],
+      "doi": "10.3390/nu18203312",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42942883/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic",
+        "large_sample"
+      ],
+      "priority_score": 12,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42942300",
+      "title": "Cognitive Outcomes Following Physical Activity Interventions Incorporating Co-Design: A Systematic Review of Randomised Controlled Trials.",
+      "journal": "Life (Basel, Switzerland)",
+      "date": "2026-10-14",
+      "pubmed_entry_date": "2026-10-27",
+      "disease": "other",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.3390/life16101714",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42942300/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
       "id": "42941947",
       "title": "Integrative Genetic and Transcriptomic Analysis Reveals Candidate Molecular Differences Among Dementia with Lewy Bodies, Alzheimer's Disease, and Parkinson's Disease Dementia.",
       "journal": "International journal of molecular sciences",
@@ -615,6 +1125,288 @@
       "priority_score": 7,
       "journal_tiebreak": 0,
       "selected_on": "2026-11-01"
+    },
+    {
+      "id": "42941768",
+      "title": "Diagnostic and Predictive CSF Biomarkers in Idiopathic Normal Pressure Hydrocephalus (iNPH): A Systematic Review.",
+      "journal": "International journal of molecular sciences",
+      "date": "2026-10-10",
+      "pubmed_entry_date": "2026-10-27",
+      "disease": "ad",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review",
+        "Review"
+      ],
+      "doi": "10.3390/ijms27208986",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42941768/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42940174",
+      "title": "MTHFR C677T and Brain MRI Patterns Across Cognitive and Vascular Disorders: A Systematic Review.",
+      "journal": "Biomedicines",
+      "date": "2026-10-17",
+      "pubmed_entry_date": "2026-10-27",
+      "disease": "ad",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.3390/biomedicines14102368",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42940174/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic",
+        "large_sample"
+      ],
+      "priority_score": 11,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42939722",
+      "title": "Chromosome 14 MicroRNA Cluster Members in Brain-Derived Extracellular Vesicles Can Be Genotype-Associated Biomarker Candidates for Alzheimer's Disease and Frontotemporal Dementia.",
+      "journal": "Biomolecules",
+      "date": "2026-10-09",
+      "pubmed_entry_date": "2026-10-27",
+      "disease": "ftd",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.3390/biom16101468",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42939722/",
+      "source": "PubMed",
+      "research_type": "validation",
+      "selection_signals": [
+        "validation",
+        "independent"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42939380",
+      "title": "Cerebral Hemodynamic Patterns in People with Subjective Cognitive Decline: A Systematic Review Based on Functional Near-Infrared Spectroscopy.",
+      "journal": "Brain sciences",
+      "date": "2026-10-20",
+      "pubmed_entry_date": "2026-10-27",
+      "disease": "ad",
+      "topic": "other",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.3390/brainsci16101130",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42939380/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42939346",
+      "title": "Glial Contributions to Pain in Neurodegenerative Disease Models: A Systematic Review of Microglial and Astrocytic Evidence.",
+      "journal": "Brain sciences",
+      "date": "2026-10-10",
+      "pubmed_entry_date": "2026-10-27",
+      "disease": "other",
+      "topic": "pathology",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.3390/brainsci16101093",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42939346/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic",
+        "independent"
+      ],
+      "priority_score": 10,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42939320",
+      "title": "Numerical Cognition in Neurodegenerative Disorders: A Systematic Review of Patterns of Preservation and Impairment.",
+      "journal": "Brain sciences",
+      "date": "2026-10-04",
+      "pubmed_entry_date": "2026-10-27",
+      "disease": "other",
+      "topic": "other",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.3390/brainsci16101067",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42939320/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42939285",
+      "title": "Perioperative Predictors and Temporal Trajectories of Postoperative Cognitive Decline After Carotid Endarterectomy: A Prospective Cohort Study.",
+      "journal": "Brain sciences",
+      "date": "2026-09-27",
+      "pubmed_entry_date": "2026-10-27",
+      "disease": "vascular",
+      "topic": "other",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.3390/brainsci16101032",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42939285/",
+      "source": "PubMed",
+      "research_type": "validation",
+      "selection_signals": [
+        "validation",
+        "independent"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42936906",
+      "title": "Pathway-specific polygenic risk scores modify the association between amyloid and tau PET accumulation in patients with Alzheimer's disease.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "date": "2026-10",
+      "pubmed_entry_date": "2026-10-27",
+      "disease": "ad",
+      "topic": "imaging",
+      "publication_types": [
+        "Journal Article",
+        "Meta-Analysis"
+      ],
+      "doi": "10.1002/alz.71939",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42936906/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42934864",
+      "title": "Phase 3 randomized trial of latozinemab in frontotemporal dementia due to GRN mutations.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "date": "2026-10",
+      "pubmed_entry_date": "2026-10-27",
+      "disease": "ftd",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article",
+        "Randomized Controlled Trial",
+        "Clinical Trial, Phase III"
+      ],
+      "doi": "10.1002/alz.71947",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42934864/",
+      "source": "PubMed",
+      "research_type": "trial",
+      "selection_signals": [
+        "rct"
+      ],
+      "priority_score": 10,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42934846",
+      "title": "Real-world clinical, biomarker, and imaging outcomes of lecanemab in Alzheimer's disease: a multicenter longitudinal cohort study in Jiangsu, China.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "date": "2026-10",
+      "pubmed_entry_date": "2026-10-27",
+      "disease": "ad",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article",
+        "Multicenter Study",
+        "Observational Study"
+      ],
+      "doi": "10.1002/alz.71936",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42934846/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "multicenter"
+      ],
+      "priority_score": 7,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42934834",
+      "title": "Brains for dementia research at 18: Commitment to impact the value of human post-mortem tissue.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "date": "2026-10",
+      "pubmed_entry_date": "2026-10-27",
+      "disease": "other",
+      "topic": "other",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1002/alz.71956",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42934834/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42934789",
+      "title": "Implementing Australia's psychotropic clinical practice guidelines in residential aged care: the EMBRACE helix counterbalanced randomised controlled trial comparing knowledge brokers with pharmacist education and passive distribution.",
+      "journal": "Implementation science : IS",
+      "date": "2026-07-29",
+      "pubmed_entry_date": "2026-10-27",
+      "disease": "other",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article",
+        "Randomized Controlled Trial"
+      ],
+      "doi": "10.1186/s13012-026-01526-y",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42934789/",
+      "source": "PubMed",
+      "research_type": "guideline",
+      "selection_signals": [
+        "guideline"
+      ],
+      "priority_score": 10,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
     },
     {
       "id": "42934475",
@@ -639,6 +1431,100 @@
       "selected_on": "2026-11-01"
     },
     {
+      "id": "42933590",
+      "title": "Eating difficulty, dental status, and functional vulnerability in relation to cognitive outcomes across four ageing cohorts.",
+      "journal": "Journal of dentistry",
+      "date": "2026-10-26",
+      "pubmed_entry_date": "2026-10-26",
+      "disease": "other",
+      "topic": "other",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1016/j.jdent.2026.107129",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42933590/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 7,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42931758",
+      "title": "[Research Designs and Collaboration within the Dutch Academic Research Networks for Long-Term Care: January 2012-January 2024].",
+      "journal": "Tijdschrift voor gerontologie en geriatrie",
+      "date": "2026-09-17",
+      "pubmed_entry_date": "2026-10-26",
+      "disease": "other",
+      "topic": "other",
+      "publication_types": [
+        "English Abstract",
+        "Journal Article",
+        "Systematic Review"
+      ],
+      "doi": "10.54195/tgg25354",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42931758/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42930895",
+      "title": "Primary Non-Adherence and Associated Factors in Patients with Atrial Fibrillation in Germany: A Retrospective Cohort Study.",
+      "journal": "Journal of cardiovascular development and disease",
+      "date": "2026-10-03",
+      "pubmed_entry_date": "2026-10-26",
+      "disease": "other",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.3390/jcdd13100499",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42930895/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 7,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42930485",
+      "title": "Therapeutic Potential of Marine Natural Products Against Alzheimer's Disease: Molecular Mechanisms, Druggability Evaluation and Clinical Translation Barriers.",
+      "journal": "Marine drugs",
+      "date": "2026-10-10",
+      "pubmed_entry_date": "2026-10-26",
+      "disease": "ad",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review",
+        "Review"
+      ],
+      "doi": "10.3390/md24100356",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42930485/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
       "id": "42930444",
       "title": "Association Between Periodontal Disease and Cognitive Impairment: A Systematic Review and Meta-Analysis.",
       "journal": "Dentistry journal",
@@ -660,6 +1546,75 @@
       "priority_score": 8,
       "journal_tiebreak": 0,
       "selected_on": "2026-11-01"
+    },
+    {
+      "id": "42930017",
+      "title": "Identifying Mild Cognitive Impairment from Routinely Collected Physical, Functional and Psychosocial Measures in Community-Dwelling Older Adults: A Comparative Machine-Learning and Regression Modelling Study in the Northern Japanese ORANGE Registry.",
+      "journal": "Geriatrics (Basel, Switzerland)",
+      "date": "2026-10-01",
+      "pubmed_entry_date": "2026-10-26",
+      "disease": "mci",
+      "topic": "other",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.3390/geriatrics11050138",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42930017/",
+      "source": "PubMed",
+      "research_type": "validation",
+      "selection_signals": [
+        "validation",
+        "independent"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42929995",
+      "title": "Genetic Polymorphisms in SORL1, CLU, BIN1, and VDR Are Associated with Mild Cognitive Impairment and Dementia in a Russian Population.",
+      "journal": "Diseases (Basel, Switzerland)",
+      "date": "2026-10-03",
+      "pubmed_entry_date": "2026-10-26",
+      "disease": "mci",
+      "topic": "pathology",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.3390/diseases14100368",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42929995/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "independent"
+      ],
+      "priority_score": 7,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42928439",
+      "title": "Blood transcriptomic signatures of vascular risk in Alzheimer's disease.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "date": "2026-10",
+      "pubmed_entry_date": "2026-10-26",
+      "disease": "ad",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1002/alz.71930",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42928439/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "independent"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
     },
     {
       "id": "42928319",
@@ -733,6 +1688,78 @@
       "selected_on": "2026-11-01"
     },
     {
+      "id": "42925286",
+      "title": "Sex differences in exercise-induced pro-inflammatory cytokine responses relevant to Alzheimer's disease: A systematic review and meta-analysis.",
+      "journal": "Journal of Alzheimer's disease : JAD",
+      "date": "2026-10-24",
+      "pubmed_entry_date": "2026-10-24",
+      "disease": "ad",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.1177/13872877261500635",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42925286/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic",
+        "large_sample"
+      ],
+      "priority_score": 12,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42924973",
+      "title": "Spatial Signatures of Retinal Neurodegeneration in Glaucoma, Alzheimer's Disease, and Carotid Stenosis.",
+      "journal": "Translational vision science & technology",
+      "date": "2026-10-05",
+      "pubmed_entry_date": "2026-10-24",
+      "disease": "ad",
+      "topic": "other",
+      "publication_types": [
+        "Journal Article",
+        "Multicenter Study"
+      ],
+      "doi": "10.1167/tvst.15.10.38",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42924973/",
+      "source": "PubMed",
+      "research_type": "validation",
+      "selection_signals": [
+        "validation",
+        "multicenter",
+        "independent"
+      ],
+      "priority_score": 14,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42924830",
+      "title": "Plasma Angiotensin-Converting Enzyme as a Prioritized Candidate Target for Alzheimer's Disease: Evidence From Proteome-Wide Mendelian Randomization and a Large Prospective Cohort Study.",
+      "journal": "Journal of the American Heart Association",
+      "date": "2026-10-23",
+      "pubmed_entry_date": "2026-10-24",
+      "disease": "ad",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1161/JAHA.124.038766",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42924830/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "independent"
+      ],
+      "priority_score": 7,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
       "id": "42924505",
       "title": "Independent Validation of the volBrain CognitiveTree Automated MRI Pipeline in Alzheimer's Disease Diagnosis.",
       "journal": "Clinical anatomy (New York, N.Y.)",
@@ -778,6 +1805,30 @@
       "selected_on": "2026-11-01"
     },
     {
+      "id": "42922092",
+      "title": "Associations Between the Brain Care Score and Structural Brain Changes and Cognitive Impairment Using Data From the Hamburg City Health Study.",
+      "journal": "European journal of neurology",
+      "date": "2026-10",
+      "pubmed_entry_date": "2026-10-24",
+      "disease": "other",
+      "topic": "imaging",
+      "publication_types": [
+        "Journal Article",
+        "Observational Study"
+      ],
+      "doi": "10.1111/ene.70796",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42922092/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 7,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
       "id": "42921532",
       "title": "Optimizing exercise prescriptions for older adults with mild cognitive impairment: a dose-response network meta-analysis of modality-dose combinations on executive function.",
       "journal": "PeerJ",
@@ -801,6 +1852,29 @@
       "selected_on": "2026-11-01"
     },
     {
+      "id": "42921107",
+      "title": "Evaluation of harmonization methods to mitigate assay and cohort effects in plasma p-tau217.",
+      "journal": "Alzheimer's & dementia (Amsterdam, Netherlands)",
+      "date": "2026-10-23",
+      "pubmed_entry_date": "2026-10-24",
+      "disease": "ad",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1002/dad2.70518",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42921107/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "multicenter"
+      ],
+      "priority_score": 7,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
       "id": "42921033",
       "title": "A Phase 2a randomized trial of once- versus twice-daily remote ischemic conditioning in vascular cognitive impairment (TRIC-VCI).",
       "journal": "Alzheimer's & dementia (New York, N. Y.)",
@@ -821,6 +1895,52 @@
       "priority_score": 10,
       "journal_tiebreak": 0,
       "selected_on": "2026-11-01"
+    },
+    {
+      "id": "42920665",
+      "title": "TSC1-mTORC1 signaling in Alzheimer's disease: an integrated bioinformatic analysis linking gene expression to neuropathology.",
+      "journal": "Frontiers in aging neuroscience",
+      "date": "2026-10-09",
+      "pubmed_entry_date": "2026-10-24",
+      "disease": "ad",
+      "topic": "care",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.3389/fnagi.2026.1920487",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42920665/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "independent"
+      ],
+      "priority_score": 7,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42920443",
+      "title": "A machine learning model for predicting cognitive improvement after scalp cluster needling therapy in patients with post-stroke mild cognitive impairment.",
+      "journal": "Frontiers in neurology",
+      "date": "2026-10-09",
+      "pubmed_entry_date": "2026-10-24",
+      "disease": "mci",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.3389/fneur.2026.1884682",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42920443/",
+      "source": "PubMed",
+      "research_type": "validation",
+      "selection_signals": [
+        "validation",
+        "independent"
+      ],
+      "priority_score": 10,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
     },
     {
       "id": "42920282",
@@ -939,6 +2059,29 @@
       "selected_on": "2026-11-01"
     },
     {
+      "id": "42918257",
+      "title": "The entorhinal cortex atrophy score for diagnostic distinction between phases of the Alzheimer's disease continuum.",
+      "journal": "Arquivos de neuro-psiquiatria",
+      "date": "2026-10-23",
+      "pubmed_entry_date": "2026-10-23",
+      "disease": "ad",
+      "topic": "diagnosis",
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review"
+      ],
+      "doi": "10.1055/s-0046-1829131",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42918257/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 10,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
       "id": "42913442",
       "title": "Feasibility of a Co-Designed Personalized Cognitive Reablement Program Delivered via Digital Voice Assistants for Older Adults Living With Early-Stage Dementia or Mild Cognitive Impairment: Pilot Randomized Controlled Trial.",
       "journal": "JMIR aging",
@@ -960,6 +2103,216 @@
       "priority_score": 10,
       "journal_tiebreak": 0,
       "selected_on": "2026-11-01"
+    },
+    {
+      "id": "42911872",
+      "title": "Exercise-based cardiac rehabilitation after stroke and the risk of incident dementia: an observational study from a global federated network.",
+      "journal": "European stroke journal",
+      "date": "2026-10-05",
+      "pubmed_entry_date": "2026-10-23",
+      "disease": "other",
+      "topic": "prevention",
+      "publication_types": [
+        "Journal Article",
+        "Observational Study"
+      ],
+      "doi": "10.1093/esj/aakag127",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42911872/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42911504",
+      "title": "Cerebrospinal Fluid Biomarker Ratio Concordance with Amyloid Positron-Emission Tomography: A Diagnostic Test Accuracy Meta-analysis.",
+      "journal": "Neurology and therapy",
+      "date": "2026-10-22",
+      "pubmed_entry_date": "2026-10-23",
+      "disease": "ad",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1007/s40120-026-01056-1",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42911504/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic",
+        "large_sample"
+      ],
+      "priority_score": 11,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42911262",
+      "title": "Glial-specific polygenic risk and mediterranean diet impact cognitive performance and dementia-related outcomes in the elderly.",
+      "journal": "European archives of psychiatry and clinical neuroscience",
+      "date": "2026-10-22",
+      "pubmed_entry_date": "2026-10-23",
+      "disease": "ad",
+      "topic": "prevention",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1007/s00406-026-02413-9",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42911262/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42911078",
+      "title": "Clusters of modifiable dementia risk factors at mid-life and late-life and their association with incident dementia: A prospective cohort study of 246,968 adults.",
+      "journal": "Journal of Alzheimer's disease : JAD",
+      "date": "2026-10-22",
+      "pubmed_entry_date": "2026-10-23",
+      "disease": "other",
+      "topic": "other",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1177/13872877261498431",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42911078/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42910638",
+      "title": "Outdoor extreme heat-related dementia risk and the role of socioeconomic disparities: evidence from 20 years of data on US older adults.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "date": "2026-10",
+      "pubmed_entry_date": "2026-10-23",
+      "disease": "other",
+      "topic": "care",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1002/alz.71857",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42910638/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42910247",
+      "title": "Astrocyte-enriched and cilia-related genetic signatures in dementia: A whole-exome sequencing study.",
+      "journal": "General psychiatry",
+      "date": "2026-10-21",
+      "pubmed_entry_date": "2026-10-23",
+      "disease": "ad",
+      "topic": "care",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1002/gps3.70062",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42910247/",
+      "source": "PubMed",
+      "research_type": "validation",
+      "selection_signals": [
+        "validation",
+        "independent"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42909731",
+      "title": "Automated PET tracer classification in multi-site, multi-cohort studies using deep learning.",
+      "journal": "EJNMMI research",
+      "date": "2026-07-28",
+      "pubmed_entry_date": "2026-10-23",
+      "disease": "ad",
+      "topic": "imaging",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1186/s13550-026-01486-w",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42909731/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "multicenter",
+        "large_sample"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42909304",
+      "title": "Joint modeling approaches for predicting conversion from mild cognitive impairment to Alzheimer's disease: A systematic review (1999-2025).",
+      "journal": "Belitung nursing journal",
+      "date": "2026-10-21",
+      "pubmed_entry_date": "2026-10-23",
+      "disease": "ad",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.33546/bnj.4651",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42909304/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic",
+        "independent"
+      ],
+      "priority_score": 11,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42907949",
+      "title": "Feasibility of a multidimensional interdisciplinary rehabilitation program for people with dementia and their informal primary caregivers - a randomized pilot trial with a caregiver focus.",
+      "journal": "BMC geriatrics",
+      "date": "2026-10-21",
+      "pubmed_entry_date": "2026-10-22",
+      "disease": "other",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article",
+        "Randomized Controlled Trial"
+      ],
+      "doi": "10.1186/s12877-026-08532-1",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42907949/",
+      "source": "PubMed",
+      "research_type": "trial",
+      "selection_signals": [
+        "rct"
+      ],
+      "priority_score": 10,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
     },
     {
       "id": "42907679",
@@ -987,6 +2340,51 @@
       "selected_on": "2026-11-01"
     },
     {
+      "id": "42907596",
+      "title": "SOFEx: A Self-Organized Feature Extraction Approach for Detecting Mild Cognitive Impairment and Alzheimer's Disease using EEG Datasets.",
+      "journal": "Brain topography",
+      "date": "2026-10-22",
+      "pubmed_entry_date": "2026-10-22",
+      "disease": "ad",
+      "topic": "diagnosis",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1007/s10548-026-01263-x",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42907596/",
+      "source": "PubMed",
+      "research_type": "validation",
+      "selection_signals": [
+        "validation",
+        "independent"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42906637",
+      "title": "Cognitive outcomes of low-dose whole-brain radiation therapy in mild Alzheimer's disease: A multicenter, randomized, sham-controlled phase II clinical trial.",
+      "journal": "Radiotherapy and oncology : journal of the European Society for Therapeutic Radiology and Oncology",
+      "date": "2026-10-21",
+      "pubmed_entry_date": "2026-10-22",
+      "disease": "ad",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1016/j.radonc.2026.111833",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42906637/",
+      "source": "PubMed",
+      "research_type": "trial",
+      "selection_signals": [
+        "rct"
+      ],
+      "priority_score": 10,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
       "id": "42905283",
       "title": "Clinical performance and decision thresholds of an automated plasma p-tau217 assay for amyloid pathology in a Taiwanese memory clinic.",
       "journal": "Journal of neurology",
@@ -1008,6 +2406,76 @@
       "priority_score": 9,
       "journal_tiebreak": 0,
       "selected_on": "2026-11-01"
+    },
+    {
+      "id": "42905229",
+      "title": "Memantine in the treatment of dementia: a nationwide real-world analysis.",
+      "journal": "GeroScience",
+      "date": "2026-10-21",
+      "pubmed_entry_date": "2026-10-22",
+      "disease": "other",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1007/s11357-026-02584-2",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42905229/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42905162",
+      "title": "Serum p-tau181 and p-tau217 levels in adolescents and adults with 5q spinal muscular atrophy.",
+      "journal": "Journal of neurology",
+      "date": "2026-10-21",
+      "pubmed_entry_date": "2026-10-22",
+      "disease": "ad",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article",
+        "Multicenter Study"
+      ],
+      "doi": "10.1007/s00415-026-14194-1",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42905162/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "multicenter"
+      ],
+      "priority_score": 7,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42904923",
+      "title": "Serum β-synuclein predicts dementia conversion and mortality beyond amyloid-β and phospho-tau.",
+      "journal": "Brain : a journal of neurology",
+      "date": "2026-10-21",
+      "pubmed_entry_date": "2026-10-22",
+      "disease": "ad",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1093/brain/awag361",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42904923/",
+      "source": "PubMed",
+      "research_type": "validation",
+      "selection_signals": [
+        "validation",
+        "independent"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
     },
     {
       "id": "42904808",
@@ -1055,6 +2523,240 @@
       "selected_on": "2026-11-01"
     },
     {
+      "id": "42903333",
+      "title": "Association of statin use with reduced risk of Alzheimer's disease: findings in UK Biobank.",
+      "journal": "Frontiers in aging neuroscience",
+      "date": "2026-10-06",
+      "pubmed_entry_date": "2026-10-22",
+      "disease": "ad",
+      "topic": "other",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.3389/fnagi.2026.1961033",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42903333/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42903032",
+      "title": "Efficacy of acupuncture for sleep disorders in amnestic mild cognitive impairment: a randomized controlled trial with fMRI.",
+      "journal": "Frontiers in neurology",
+      "date": "2026-10-06",
+      "pubmed_entry_date": "2026-10-22",
+      "disease": "mci",
+      "topic": "imaging",
+      "publication_types": [
+        "Journal Article",
+        "Randomized Controlled Trial"
+      ],
+      "doi": "10.3389/fneur.2026.1913478",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42903032/",
+      "source": "PubMed",
+      "research_type": "trial",
+      "selection_signals": [
+        "rct"
+      ],
+      "priority_score": 10,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42901263",
+      "title": "Effectiveness of exercise training on hippocampal mitochondrial regulation in Alzheimer's disease: A mechanistic systematic review.",
+      "journal": "Experimental neurology",
+      "date": "2026-10-20",
+      "pubmed_entry_date": "2026-10-20",
+      "disease": "ad",
+      "topic": "prevention",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.1016/j.expneurol.2026.116070",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42901263/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42900635",
+      "title": "Cross-cultural adaptation and psychometric validation of the Turkish version of Abbey Pain Scale in dementia patients.",
+      "journal": "Agri : Agri (Algoloji) Dernegi'nin Yayin organidir = The journal of the Turkish Society of Algology",
+      "date": "2026-09-27",
+      "pubmed_entry_date": "2026-10-20",
+      "disease": "other",
+      "topic": "other",
+      "publication_types": [
+        "Journal Article",
+        "Validation Study"
+      ],
+      "doi": "10.5606/agri.2026.97",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42900635/",
+      "source": "PubMed",
+      "research_type": "validation",
+      "selection_signals": [
+        "validation"
+      ],
+      "priority_score": 7,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42899920",
+      "title": "[Efficacy and clinical significance of choline alfoscerate in pre-dementia cognitive impairment. (A systematic review and meta-analysis of three randomized trials)].",
+      "journal": "Zhurnal nevrologii i psikhiatrii imeni S.S. Korsakova",
+      "date": "2026",
+      "pubmed_entry_date": "2026-10-20",
+      "disease": "mci",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article",
+        "Meta-Analysis",
+        "Systematic Review",
+        "English Abstract"
+      ],
+      "doi": "10.17116/jnevro202612609175",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42899920/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42899365",
+      "title": "A Data-Driven Operational Definition of Square-Wave Jerks and Its Diagnostic Utility in Progressive Supranuclear Palsy.",
+      "journal": "European journal of neurology",
+      "date": "2026-10",
+      "pubmed_entry_date": "2026-10-20",
+      "disease": "ad",
+      "topic": "diagnosis",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1111/ene.70790",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42899365/",
+      "source": "PubMed",
+      "research_type": "validation",
+      "selection_signals": [
+        "validation",
+        "independent"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42898608",
+      "title": "Examination of Alzheimer Disease and Antidementia Medications' Effect on Age-Related Macular Degeneration.",
+      "journal": "Journal of vitreoretinal diseases",
+      "date": "2026-10-17",
+      "pubmed_entry_date": "2026-10-20",
+      "disease": "ad",
+      "topic": "other",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1177/24741264261490775",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42898608/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42898305",
+      "title": "Association of childhood meat consumption with late-life cognitive function: mediation by adult education and moderation by parental literacy.",
+      "journal": "Frontiers in public health",
+      "date": "2026-10-05",
+      "pubmed_entry_date": "2026-10-20",
+      "disease": "mci",
+      "topic": "other",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.3389/fpubh.2026.1878281",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42898305/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 7,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42898005",
+      "title": "Real-World Patient Eligibility for Alzheimer's Disease Anti-Amyloid Therapy in Seven Swedish Memory Clinics.",
+      "journal": "European journal of neurology",
+      "date": "2026-10",
+      "pubmed_entry_date": "2026-10-20",
+      "disease": "ad",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article",
+        "Multicenter Study"
+      ],
+      "doi": "10.1111/ene.70786",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42898005/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "multicenter",
+        "large_sample"
+      ],
+      "priority_score": 10,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42897700",
+      "title": "A Two-Stage Plasma Biomarker Algorithm Reduces Amyloid PET Use and the p-Tau217 Gray Zone.",
+      "journal": "Annals of clinical and translational neurology",
+      "date": "2026-10-19",
+      "pubmed_entry_date": "2026-10-20",
+      "disease": "ad",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1002/acn3.70560",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42897700/",
+      "source": "PubMed",
+      "research_type": "validation",
+      "selection_signals": [
+        "validation",
+        "independent"
+      ],
+      "priority_score": 10,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
       "id": "42897366",
       "title": "Identification of Succinylation-Related Transcriptional Signatures in Alzheimer's Disease: Integrated Bioinformatics Analysis and Clinical Validation.",
       "journal": "Molecular neurobiology",
@@ -1099,6 +2801,76 @@
       "priority_score": 7,
       "journal_tiebreak": 0,
       "selected_on": "2026-11-01"
+    },
+    {
+      "id": "42896464",
+      "title": "The association of seven dietary patterns and the risk of dementia: a systematic review and meta-analysis of prospective cohort studies.",
+      "journal": "Psychiatry research",
+      "date": "2026-10-14",
+      "pubmed_entry_date": "2026-10-19",
+      "disease": "other",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1016/j.psychres.2026.117531",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42896464/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic",
+        "large_sample"
+      ],
+      "priority_score": 12,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42895713",
+      "title": "Comparing operational definitions of screening-based cognitive impairment in the Tohoku Medical Megabank cohort: Focus on digital engagement.",
+      "journal": "Journal of Alzheimer's disease : JAD",
+      "date": "2026-10-19",
+      "pubmed_entry_date": "2026-10-19",
+      "disease": "other",
+      "topic": "prevention",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1177/13872877261498425",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42895713/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "independent",
+        "large_sample"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
+    },
+    {
+      "id": "42895276",
+      "title": "Prevalence and determinants of probable dementia in rural India: a cross-sectional study in the APCAPS cohort.",
+      "journal": "Journal of global health",
+      "date": "2026-10-19",
+      "pubmed_entry_date": "2026-10-19",
+      "disease": "other",
+      "topic": "diagnosis",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.7189/jogh.16.04339",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42895276/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-02"
     },
     {
       "id": "42894569",
