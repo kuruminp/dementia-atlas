@@ -1,0 +1,766 @@
+name: Sync free research articles from note
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '40 0 * * *'
+      timezone: 'Asia/Tokyo'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dementia-atlas-note-installer
+  cancel-in-progress: false
+
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Add note article integration
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p scripts tests public/articles
+          if [ ! -f scripts/sync_note_articles.py ]; then
+          cat > scripts/sync_note_articles.py <<'NOTE_SCRIPT_END'
+          #!/usr/bin/env python3
+          """Generate local pages for verified public/free merry_lily note essays.
+          
+          Run AFTER existing 'Update note article links' and before data commit.
+          Public read-only note endpoints are undocumented and may change. Fail closed:
+          never publish a note unless its public detail confirms price=0, status=published.
+          No login credentials, draft endpoints or premium contents are requested.
+          """
+          from __future__ import annotations
+          
+          import datetime as dt
+          import html
+          import json
+          import re
+          import sys
+          import time
+          from html.parser import HTMLParser
+          from pathlib import Path
+          from urllib.error import HTTPError, URLError
+          from urllib.parse import urlparse, urlencode
+          from urllib.request import Request, urlopen
+          
+          ROOT = Path(__file__).resolve().parents[1]
+          DATA_DIR = ROOT / 'public' / 'data'
+          PUBLIC = ROOT / 'public'
+          PAGES = PUBLIC / 'articles'
+          ACCOUNT = 'merry_lily'
+          SITE_URL = 'https://dementia-atlas.pages.dev'
+          NOTE_KEY = re.compile(r'^n[a-z0-9]{10,20}$', re.I)
+          PMID_URL = re.compile(r'(?:https?://)?(?:www\.)?pubmed\.ncbi\.nlm\.nih\.gov/(\d{6,10})(?:/|\b)', re.I)
+          PMID_TEXT = re.compile(r'\bPMID\s*[:：#]?\s*(\d{6,10})\b', re.I)
+          DOI_REGEX = re.compile(r'10\.\d{4,9}/[-._;()/:A-Za-z0-9]+', re.I)
+          EXCLUDE = re.compile(r'認知症専門医|専門医試験|専門医の勉強|専門医対策|試験対策', re.I)
+          SOURCE_NOTE = re.compile(r'^https://note\.com/merry_lily/n/(n[a-z0-9]{10,20})/?$', re.I)
+          PER_NOTE_SLEEP = 0.2
+          GENERATED_MARKER = '<!-- DEMENTIA_ATLAS_GENERATED_FREE_NOTE -->'
+          
+          
+          def normalize_doi(value: str) -> str:
+              return str(value or '').strip().lower().removeprefix('https://doi.org/').rstrip('.,;:!?)]}。．，')
+          
+          
+          class SafeNoteHTML(HTMLParser):
+              """Allowlist sanitizer for *public* note HTML. Never pass through scripts."""
+              ALLOWED = {'p', 'h2', 'h3', 'h4', 'strong', 'b', 'em', 'i', 'u', 's', 'a',
+                         'ul', 'ol', 'li', 'blockquote', 'pre', 'code', 'br', 'hr',
+                         'figure', 'figcaption', 'img', 'div', 'span',
+                         'table', 'thead', 'tbody', 'tr', 'th', 'td', 'sup', 'sub'}
+              VOID = {'img', 'br', 'hr'}
+              DROP_CONTENT = {'script', 'style', 'iframe', 'object', 'embed', 'svg',
+                              'form', 'button', 'input', 'template', 'noscript'}
+          
+              def __init__(self):
+                  super().__init__(convert_charrefs=True)
+                  self.output: list[str] = []
+                  self.open_tags: list[str] = []
+                  self.drop_depth = 0
+          
+              def handle_starttag(self, tag, attrs):
+                  tag = tag.lower()
+                  if self.drop_depth or tag in self.DROP_CONTENT:
+                      if tag in self.DROP_CONTENT:
+                          self.drop_depth += 1
+                      return
+                  if tag not in self.ALLOWED:
+                      return
+                  attrs = dict(attrs)
+                  safe: list[tuple[str, str]] = []
+                  if tag == 'a':
+                      url = str(attrs.get('href') or '').strip()
+                      if url.startswith(('https://', 'http://')):
+                          safe.extend([('href', url), ('target', '_blank'), ('rel', 'noopener noreferrer')])
+                  if tag == 'img':
+                      url = str(attrs.get('src') or attrs.get('data-src') or '').strip()
+                      if not url.startswith('https://'):
+                          return
+                      safe.extend([('src', url), ('alt', str(attrs.get('alt') or '')[:250]), ('loading', 'lazy')])
+                  at = ''.join(f' {k}="{html.escape(v, quote=True)}"' for k, v in safe)
+                  self.output.append(f'<{tag}{at}>')
+                  if tag not in self.VOID:
+                      self.open_tags.append(tag)
+          
+              def handle_endtag(self, tag):
+                  tag = tag.lower()
+                  if self.drop_depth:
+                      if tag in self.DROP_CONTENT:
+                          self.drop_depth -= 1
+                      return
+                  if tag in self.ALLOWED and tag in self.open_tags:
+                      while self.open_tags:
+                          last = self.open_tags.pop()
+                          self.output.append(f'</{last}>')
+                          if last == tag:
+                              break
+          
+              def handle_data(self, data):
+                  if not self.drop_depth:
+                      self.output.append(html.escape(data))
+          
+              def get_html(self):
+                  while self.open_tags:
+                      self.output.append(f'</{self.open_tags.pop()}>')
+                  return ''.join(self.output)
+          
+          
+          def sanitize_body(raw: str) -> str:
+              raw = str(raw or '')
+              if '<' not in raw or '>' not in raw:
+                  blocks = [p.strip() for p in re.split(r'\n\s*\n', raw) if p.strip()]
+                  return '\n'.join('<p>' + html.escape(p).replace('\n', '<br>') + '</p>' for p in blocks)
+              parser = SafeNoteHTML()
+              parser.feed(raw)
+              return parser.get_html()
+          
+          
+          def public_url(url: str) -> str | None:
+              match = SOURCE_NOTE.fullmatch(str(url or '').strip())
+              return f'https://note.com/{ACCOUNT}/n/{match.group(1)}' if match else None
+          
+          
+          def is_excluded(item: dict) -> bool:
+              title = str(item.get('title') or item.get('name') or '')
+              return bool(EXCLUDE.search(title) or item.get('category') == '試験対策')
+          
+          
+          def is_public_free(note: dict, key: str) -> bool:
+              """Do not publish if ANY required free/public signal is ambiguous."""
+              if not isinstance(note, dict):
+                  return False
+              if note.get('status') != 'published':
+                  return False
+              if str(note.get('key') or '') != key:
+                  return False
+              price = note.get('price')
+              if isinstance(price, bool) or price is None:
+                  return False
+              if str(price).strip() != '0':
+                  return False
+              if note.get('separator') not in (None, ''):
+                  return False
+              if note.get('pay_body') not in (None, ''):
+                  return False
+              if any(note.get(k) for k in ('is_limited', 'isLimited', 'is_members_only',
+                                           'isMembershipOnly', 'circle_permissions')):
+                  return False
+              owner = note.get('user') or note.get('creator') or {}
+              if isinstance(owner, dict) and owner.get('urlname') not in (None, ACCOUNT):
+                  return False
+              body = note.get('body')
+              if not isinstance(body, str) or len(re.sub(r'<[^>]+>', '', body).strip()) < 80:
+                  return False
+              return True
+          
+          
+          def fetch_public_listing(max_pages: int = 30) -> list[dict]:
+              """Add newly published notes without waiting for the other update workflow.
+          
+              This is a public, undocumented endpoint. Failure falls back to prior links.
+              """
+              collected = {}
+              for page in range(1, max_pages + 1):
+                  url = f'https://note.com/api/v2/creators/{ACCOUNT}/contents?' + urlencode({'kind': 'note', 'page': page})
+                  req = Request(url, headers={
+                      'User-Agent': 'Mozilla/5.0 (compatible; DementiaAtlas/1.0)',
+                      'Accept': 'application/json',
+                  })
+                  with urlopen(req, timeout=18) as response:
+                      payload = json.load(response)
+                  data = payload.get('data') or {}
+                  rows = data.get('contents') or []
+                  if not rows:
+                      break
+                  for row in rows:
+                      if not isinstance(row, dict):
+                          continue
+                      key = str(row.get('key') or row.get('noteKey') or '')
+                      link = public_url(row.get('noteUrl') or f'https://note.com/{ACCOUNT}/n/{key}')
+                      title = str(row.get('name') or row.get('title') or '').strip()
+                      if link and title:
+                          collected[link] = {
+                              'url': link, 'title': title,
+                              'date': str(row.get('publishAt') or row.get('publish_at') or '')[:10],
+                              'price': row.get('price'),
+                          }
+                  if data.get('isLastPage') or data.get('is_last_page'):
+                      break
+                  time.sleep(PER_NOTE_SLEEP)
+              return list(collected.values())
+          
+          
+          def request_note(key: str, *, attempts: int = 2, sleep=PER_NOTE_SLEEP) -> dict:
+              # Public, unauthenticated, read-only endpoint. Never request draft or paid endpoints.
+              url = f'https://note.com/api/v3/notes/{key}'
+              for n in range(attempts):
+                  try:
+                      req = Request(url, headers={
+                          'User-Agent': 'Mozilla/5.0 (compatible; DementiaAtlas/1.0)',
+                          'Accept': 'application/json',
+                      })
+                      with urlopen(req, timeout=18) as response:
+                          response_data = json.load(response)
+                      result = response_data.get('data') or {}
+                      time.sleep(sleep)
+                      return result
+                  except (HTTPError, URLError, TimeoutError, ValueError, OSError) as exc:
+                      if n == attempts - 1:
+                          raise RuntimeError(f'{key}: {type(exc).__name__}: {exc}') from exc
+                      time.sleep(1.25)
+              return {}
+          
+          
+          def extract_citations(body: str, papers_by_doi: dict[str, dict], papers_by_id: dict[str, dict]):
+              text = html.unescape(body or '')
+              pmids = list(dict.fromkeys(PMID_URL.findall(text) + PMID_TEXT.findall(text)))
+              dois = [normalize_doi(d) for d in DOI_REGEX.findall(text)]
+              dois = list(dict.fromkeys(d for d in dois if d))
+              for doi in dois:
+                  row = papers_by_doi.get(doi)
+                  if row and row['id'] not in pmids:
+                      pmids.append(row['id'])
+              # Exact full-title references are accepted; thematic/semantic guesses are not.
+              plain = re.sub(r'\s+', ' ', re.sub(r'<[^>]*>', ' ', text)).casefold()
+              for pmid, paper in papers_by_id.items():
+                  title = re.sub(r'\s+', ' ', str(paper.get('title') or '')).strip().casefold()
+                  if len(title) >= 30 and title in plain and pmid not in pmids:
+                      pmids.append(pmid)
+              references = []
+              for pmid in pmids[:30]:
+                  row = papers_by_id.get(pmid)
+                  references.append({
+                      'pmid': pmid, 'title': row.get('title') if row else '',
+                      'url': f'https://pubmed.ncbi.nlm.nih.gov/{pmid}/',
+                      'doi': row.get('doi') if row else '',
+                      'in_catalog': bool(row),
+                  })
+              pmid_dois = {normalize_doi(r.get('doi')) for r in references if r.get('doi')}
+              for doi in dois:
+                  if doi not in pmid_dois and doi not in papers_by_doi:
+                      references.append({'pmid': '', 'title': '',
+                                         'url': f'https://doi.org/{doi}', 'doi': doi, 'in_catalog': False})
+              return pmids[:30], references[:35]
+          
+          
+          def make_page(item: dict, body: str, refs: list[dict]) -> str:
+              key = item['key']
+              title = html.escape(item['title'])
+              original = html.escape(item['url'], quote=True)
+              description = html.escape(item.get('description') or item['title'], quote=True)
+              date = html.escape(item.get('date') or '')
+              citation_links = ''
+              for ref in refs:
+                  refurl = html.escape(ref['url'], quote=True)
+                  reftitle = html.escape(ref.get('title') or ('PMID ' + ref['pmid'] if ref['pmid'] else 'DOI ' + ref['doi']))
+                  inside = ''
+                  if ref.get('pmid') and ref.get('in_catalog'):
+                      pmid = html.escape(ref['pmid'])
+                      inside = f'　<a href="../index.html?paper={pmid}#papers">サイト内の論文一覧で見る ↗</a>'
+                  citation_links += f'<li><a target="_blank" rel="noopener noreferrer" href="{refurl}">{reftitle}</a>{inside}</li>' 
+              refs_html = (f'<section class="article-references"><h2>記事から参照できる研究</h2>'
+                           f'<p class="note-muted">PMID・DOIの記載から機械的に抽出しています．</p>'
+                           f'<ol>{citation_links}</ol></section>') if citation_links else ''
+              return f'''<!doctype html>
+          {GENERATED_MARKER}
+          <html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+          <title>{title}｜Dementia Atlas</title>
+          <meta name="description" content="{description[:180]}">
+          <meta property="og:title" content="{title}"><meta property="og:type" content="article">
+          <link rel="canonical" href="{SITE_URL}/articles/{key}.html">
+          <link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="./article.css">
+          </head><body>
+          <div class="topline"><div class="page-shell topline-inner"><span class="topline-brand">DEMENTIA ATLAS</span><span>研究解説</span></div></div>
+          <header class="site-header"><div class="page-shell header-inner"><a class="brand" href="../index.html"><span class="brand-mark">D</span><span class="brand-copy"><strong>Dementia Atlas</strong><small>認知症リサーチ・アトラス</small></span></a><a class="header-note-link" href="../index.html#articles">解説一覧へ ←</a></div></header>
+          <main class="page-shell article-shell"><nav class="article-breadcrumb"><a href="../index.html">トップ</a> ／ <a href="../index.html#articles">研究解説</a></nav>
+          <article><header class="article-heading"><p class="article-kicker">医学・研究の解説</p><h1>{title}</h1>
+          <p class="note-muted">{date} 公開 ／ 執筆：<a href="https://note.com/{ACCOUNT}" target="_blank" rel="noopener noreferrer">merry_lily</a></p></header>
+          <div class="article-body">{body}</div></article>
+          {refs_html}
+          <section class="source-panel"><h2>元の記事</h2><p>この記事は執筆者がnoteで公開した無料記事を，Dementia Atlasにも掲載したものです．</p>
+          <p><a class="source-button" href="{original}" target="_blank" rel="noopener noreferrer">元の記事をnoteで読む ↗</a></p></section>
+          <p class="article-disclaimer">研究情報の紹介を目的とした記事です．診療・治療方針の決定には一次資料と担当医の判断をご確認ください．</p>
+          </main><footer class="site-footer"><div class="page-shell footer-bottom">Dementia Atlas © 2026　<a href="../about.html">サイトについて</a>　<a href="../privacy.html">プライバシーポリシー</a></div></footer>
+          </body></html>'''
+          
+          
+          def derive_excerpt(markup: str, original: str) -> str:
+              plain = re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]*>', ' ', markup))).strip()
+              # Existing hand-written descriptions are preferred to generic placeholders.
+              old = str(original or '')
+              if old and old != 'noteで公開した記事を読む．':
+                  return old
+              return plain[:105] + ('…' if len(plain) > 105 else '')
+          
+          
+          def synchronize(candidates: list[dict], get_detail, papers: list[dict]):
+              papers_by_id = {str(p['id']): p for p in papers if str(p.get('id', '')).isdigit()}
+              papers_by_doi = {normalize_doi(p.get('doi')): p for p in papers if p.get('doi')}
+              entries, pages, skipped = [], {}, {'excluded': 0, 'paid_or_unverified': 0, 'fetch_error': 0}
+              for row in candidates:
+                  if is_excluded(row):
+                      skipped['excluded'] += 1
+                      continue
+                  source = public_url(row.get('url'))
+                  if not source:
+                      continue
+                  key = source.rstrip('/').split('/')[-1]
+                  if not NOTE_KEY.fullmatch(key):
+                      continue
+                  if row.get('price') not in (None, 0, '0'):
+                      skipped['paid_or_unverified'] += 1
+                      continue
+                  try:
+                      detail = get_detail(key)
+                  except Exception as exc:
+                      print(f'[WARN] public note detail: {exc}', file=sys.stderr, flush=True)
+                      skipped['fetch_error'] += 1
+                      continue
+                  if not is_public_free(detail, key):
+                      skipped['paid_or_unverified'] += 1
+                      continue
+                  title = str(detail.get('name') or row.get('title') or '').strip()
+                  if is_excluded({'title': title, 'category': row.get('category')}):
+                      skipped['excluded'] += 1
+                      continue
+                  raw = detail['body']
+                  body = sanitize_body(raw)
+                  if not body.strip():
+                      skipped['paid_or_unverified'] += 1
+                      continue
+                  pmids, refs = extract_citations(raw, papers_by_doi, papers_by_id)
+                  date = str(row.get('date') or detail.get('publish_at') or detail.get('publishAt') or '')[:10]
+                  item = {
+                      'key': key, 'title': title, 'url': source, 'date': date,
+                      'category': row.get('category') or '研究の読みもの',
+                      'description': derive_excerpt(body, row.get('description', '')),
+                      'tag': 'research', 'local_url': f'./articles/{key}.html',
+                      'related_pmids': pmids, 'references': refs,
+                      'source': 'note/merry_lily', 'access': 'free',
+                  }
+                  pages[key] = make_page(item, body, refs)
+                  entries.append(item)
+              entries.sort(key=lambda x: (x['date'], x['key']), reverse=True)
+              return entries, pages, skipped
+          
+          
+          def main():
+              from update_data import read_json, save_json, build_site_data
+              notes = read_json('articles')
+              papers = read_json('papers')
+              candidates = {public_url(item.get('url')): item for item in notes.get('items', []) if public_url(item.get('url'))}
+              try:
+                  fresh = fetch_public_listing()
+                  for entry in fresh:
+                      old = candidates.get(entry['url'], {})
+                      candidates[entry['url']] = {**old, **entry,
+                          'description': old.get('description') or 'noteで公開した記事を読む．',
+                          'category': old.get('category') or '研究の読みもの'}
+                  print(f'[OK] public note listing: {len(fresh)} entries', flush=True)
+              except Exception as exc:
+                  print(f'[WARN] public note listing unavailable; using prior links: {exc}', file=sys.stderr, flush=True)
+              if not candidates:
+                  raise RuntimeError('No note source links; refusing to overwrite the archive')
+              entries, pages, skipped = synchronize(list(candidates.values()), request_note, papers['items'])
+              if not entries:
+                  raise RuntimeError('No confirmed free notes; prior files remain unchanged')
+              PAGES.mkdir(parents=True, exist_ok=True)
+              for path in PAGES.glob('n*.html'):
+                  if NOTE_KEY.fullmatch(path.stem) and GENERATED_MARKER in path.read_text(encoding='utf-8')[:200]:
+                      if path.stem not in pages:
+                          path.unlink()
+              for key, markup in pages.items():
+                  path = PAGES / (key + '.html')
+                  if not path.exists() or path.read_text(encoding='utf-8') != markup:
+                      path.write_text(markup, encoding='utf-8')
+              save_json('articles', {'meta': {
+                  'mode': 'curated', 'source': 'note',
+                  'description': 'Verified free published note essays copied with author permission',
+                  'fetched_at': dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds'),
+                  'policy': 'price=0; published; non-exam; public details only',
+              }, 'items': entries})
+              counts = build_site_data()
+              # Search engines can discover the new native article pages.
+              import xml.etree.ElementTree as ET
+              urlset = ET.Element('urlset', xmlns='http://www.sitemaps.org/schemas/sitemap/0.9')
+              for path, date in [('',''), ('about.html',''), ('privacy.html','')] + [
+                  (f'articles/{a["key"]}.html', a.get('date') or '') for a in entries
+              ]:
+                  url = ET.SubElement(urlset, 'url')
+                  ET.SubElement(url, 'loc').text = SITE_URL + '/' + path
+                  if date:
+                      ET.SubElement(url, 'lastmod').text = date
+              xml = ET.tostring(urlset, encoding='unicode', xml_declaration=False)
+              (PUBLIC / 'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n' + xml + '\n', encoding='utf-8')
+              robots = PUBLIC / 'robots.txt'
+              previous_robots = robots.read_text(encoding='utf-8') if robots.exists() else 'User-agent: *\nAllow: /\n'
+              sitemap_line = 'Sitemap: ' + SITE_URL + '/sitemap.xml'
+              if sitemap_line not in previous_robots:
+                  robots.write_text(previous_robots.rstrip() + '\n\n' + sitemap_line + '\n', encoding='utf-8')
+              print(f'[OK] local full-text articles: {len(entries)}; excluded: {skipped}', flush=True)
+              print(f'[OK] site data: {counts}', flush=True)
+          
+          
+          if __name__ == '__main__':
+              main()
+          NOTE_SCRIPT_END
+          fi
+          if [ ! -f public/articles/article.css ]; then
+          cat > public/articles/article.css <<'NOTE_CSS_END'
+          /* Dementia Atlas: accessible long-form research explanations */
+          .article-shell{max-width:900px;padding-top:35px;padding-bottom:72px}
+          .article-breadcrumb{font-size:12px;color:var(--muted);margin-bottom:36px}
+          .article-breadcrumb a{color:#257466;text-decoration:none}
+          .article-heading{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:34px}
+          .article-kicker{letter-spacing:.16em;color:#427c65;text-transform:uppercase;font-size:12px;font-weight:700}
+          .article-heading h1{font-size:clamp(26px,4vw,43px);line-height:1.55;letter-spacing:.025em;margin:13px 0 14px;font-weight:700}
+          .note-muted{font-size:12px;color:#657674}
+          .note-muted a{color:#28786a}
+          .article-body{font-size:16px;line-height:2.05;letter-spacing:.018em;overflow-wrap:anywhere}
+          .article-body p{margin:0 0 1.3em}
+          .article-body h2{font-size:23px;line-height:1.5;margin:2.5em 0 .9em;border-left:4px solid #9abd9d;padding-left:16px}
+          .article-body h3{font-size:19px;margin:2em 0 .65em}
+          .article-body h4{font-size:17px;margin:1.8em 0 .5em}
+          .article-body a,.article-references a{color:#256c68;text-underline-offset:3px}
+          .article-body blockquote{background:#f2f6f2;border-left:3px solid #83a995;margin:26px 0;padding:15px 23px}
+          .article-body figure{text-align:center;margin:28px 0}
+          .article-body img{display:block;margin:auto;max-width:100%;height:auto;border-radius:8px}
+          .article-body figcaption{font-size:12px;color:#657674;text-align:center}
+          .article-body pre{overflow:auto;background:#f4f7f5;padding:16px;border-radius:8px}
+          .article-body ul,.article-body ol{margin:1em 0 1.5em;padding-left:2em}
+          .article-body table{width:100%;display:block;overflow-x:auto;border-collapse:collapse}
+          .article-body td,.article-body th{border:1px solid #d7e1db;padding:8px 12px}
+          .article-references,.source-panel{border-top:1px solid var(--line);margin-top:55px;padding-top:26px}
+          .article-references h2,.source-panel h2{font-size:22px;margin:0 0 9px}
+          .article-references ol{padding-left:23px}
+          .article-references li{line-height:1.7;padding:6px 0}
+          .source-panel{background:#f5f8f5;padding:26px 28px 30px;border-radius:12px;border-top:0}
+          .source-button{display:inline-block;background:#153f42;color:#fff!important;border-radius:8px;padding:10px 19px;text-decoration:none;font-weight:600}
+          .article-disclaimer{font-size:12px;color:var(--muted);padding-top:20px}
+          @media (max-width:650px){.article-shell{padding-top:20px}.article-body{font-size:15px;line-height:1.95}.source-panel{padding:21px}.article-heading h1{font-size:27px}}
+          NOTE_CSS_END
+          fi
+          if [ ! -f install_note_integration.py ]; then
+          cat > install_note_integration.py <<'NOTE_INSTALLER_END'
+          #!/usr/bin/env python3
+          """Apply the free-note crosslink integration to an existing dementia-atlas checkout.
+          
+          Run from the dementia-atlas repository root. Package's scripts/ and
+          public/articles/article.css must be copied before running this installer.
+          """
+          from pathlib import Path
+          import sys
+          
+          ROOT = Path.cwd()
+          APP = ROOT / 'public' / 'app.js'
+          SENTINEL = 'DEMENTIA_ATLAS_NATIVE_NOTE_V1'
+          
+          
+          def replace_once(text, old, new, label):
+              if old not in text:
+                  raise RuntimeError(f'Cannot find expected {label}; stop rather than damage existing site')
+              if text.count(old) != 1:
+                  raise RuntimeError(f'Found ambiguous {label}: {text.count(old)} copies')
+              return text.replace(old, new, 1)
+          
+          
+          def patch_app(content):
+              if SENTINEL in content:
+                  return content
+              # Only change article display and exact PMID crosslinks; existing searches remain.
+              start_paper = content.index('  function paperCard(row) {')
+              start_trial = content.index('  function trialCard(row) {', start_paper)
+              part = content[start_paper:start_trial]
+          
+              anchor = "    return `\n      <article class=\"record-card\">"
+              if anchor not in part:
+                  raise RuntimeError('Cannot patch paper cards in this app.js version')
+              with_links = '''    const linked = dataItems('articles')
+                .filter(a => Array.isArray(a.related_pmids)
+                  && a.related_pmids.some(pmid => String(pmid) === id)
+                  && /^\\.\\/articles\\/n[a-z0-9]{10,20}\\.html$/i.test(a.local_url || ''))
+                .slice(0, 3);
+              const noteLinks = linked.length ? `
+                <div class="record-note-links"><strong>この論文に言及した日本語記事</strong>
+                ${linked.map(a => `<a href="${esc(a.local_url)}">${esc(a.title)} ↗</a>`).join('')}
+                </div>` : '';
+          
+          '''
+              part = replace_once(part, anchor, with_links + anchor, 'paper card return')
+              part = replace_once(part, '''        </div>
+                </article>
+              `;''', '''        </div>
+                  ${noteLinks}
+                </article>
+              `;''', 'paper card footer')
+              content = content[:start_paper] + part + content[start_trial:]
+          
+              start_note = content.index('  function noteCard(row, index) {')
+              end_note = content.index('  function render() {', start_note)
+              replacement = '''  // DEMENTIA_ATLAS_NATIVE_NOTE_V1
+            function noteCard(row, index) {
+              const source = String(row.url || '');
+              if (!/^https:\\/\\/note\\.com\\/merry_lily\\/n\\/n[a-z0-9]+$/i.test(source)) return '';
+              if (row.category === '試験対策' || /認知症専門医|専門医試験|試験対策/.test(row.title || '')) return '';
+              const hasLocal = /^\\.\\/articles\\/n[a-z0-9]{10,20}\\.html$/i.test(row.local_url || '');
+              if (!hasLocal || row.access !== 'free') return '';
+              const href = row.local_url;
+              const label = '全文を読む';
+              const meta = '<span class="tag tag-alt">このサイトで全文公開</span>';
+              const linkProps = '';
+              return `
+                <article class="record-card">
+                  <div class="record-head">
+                    <div class="record-tags"><span class="tag">${esc(row.category || '研究解説')}</span>${meta}</div>
+                    <span class="record-number">解説 ${String(index + 1).padStart(2, '0')}</span>
+                  </div>
+                  <h4 class="record-title">${esc(row.title)}</h4>
+                  <p class="record-desc">${esc(row.description || '')}</p>
+                  <div class="record-bottom">
+                    <small>${esc(dateFormat(row.date))} 公開</small>
+                    <div class="record-links">
+                      <a href="${esc(href)}" ${linkProps}>${label} ↗</a>
+                      ${hasLocal ? `<a href="${esc(source)}" target="_blank" rel="noopener noreferrer">元のnote ↗</a>` : ''}
+                    </div>
+                  </div>
+                </article>
+              `;
+            }
+          
+          '''
+              content = content[:start_note] + replacement + content[end_note:]
+              content = content.replace("sub: '公開済みのnote記事をまとめています．'", "sub: 'merry_lilyが公開した無料記事を，Dementia Atlas内でも全文掲載しています．'")
+              content = content.replace("          ['試験対策', '試験対策'],\n", '')
+              # Hide paid/unverified links if the original paper workflow refreshes all note links.
+              old_data = """  function dataItems(type) {
+              return DATA &&
+                DATA[type] &&
+                Array.isArray(DATA[type].items)
+                ? DATA[type].items
+                : [];
+            }"""
+              safe_data = r"""  function dataItems(type) {
+              const rows = DATA && DATA[type] && Array.isArray(DATA[type].items)
+                ? DATA[type].items : [];
+              return type === 'articles' ? rows.filter(row =>
+                row.access === 'free' && /^\.\/articles\/n[a-z0-9]{10,20}\.html$/i.test(row.local_url || '')) : rows;
+            }"""
+              content = replace_once(content, old_data, safe_data, 'free-only article data')
+              # Open the exact PubMed record when arriving from a local explanatory article.
+              original = "  if (location.hash === '#trials') {"
+              deep_link = r"""  const articlePmid = new URLSearchParams(location.search).get('paper');
+            if (/^\d{6,10}$/.test(articlePmid || '')) {
+              state.tab = 'papers';
+              state.search = articlePmid;
+              $('search').value = articlePmid;
+              updateDictionaries();
+              updateDiseaseCounts();
+              render();
+              $('explore').scrollIntoView({block: 'start'});
+            } else if (location.hash === '#trials') {"""
+              content = replace_once(content, original, deep_link, 'PubMed deep link')
+              return content
+          
+          
+          def patch_about(source):
+              marker = 'merry_lilyが無料公開した研究記事'
+              if marker in source:
+                  return source
+              anchor = '<h2>解説記事について</h2>'
+              addition = '''<h2>解説記事について</h2>
+                <p>merry_lilyが無料公開した研究記事は，執筆者の了承のもとDementia Atlasにも全文を掲載しています．有料記事，認知症専門医試験の対策記事は掲載対象外です．</p>
+                <p>論文へのリンクは，記事に記載されたPMID・DOIとの厳密な一致から自動生成しています．掲載論文にないものは原典に直接リンクします．自動照合には限界があるため，出典は原文で確認してください．</p>'''
+              return replace_once(source, anchor, addition, 'about article policy')
+          
+          
+          def patch_privacy(source):
+              marker = '<!-- DEMENTIA_ATLAS_PRIVACY_AD_READY_V1 -->'
+              if marker in source:
+                  return source
+              start = source.index('      <h2>Cookie・アクセス解析・広告</h2>')
+              end = source.index('      <h2>外部サイトへのリンク</h2>', start)
+              replacement = '''      <!-- DEMENTIA_ATLAS_PRIVACY_AD_READY_V1 -->
+                <h2>Cookie・アクセス解析・広告について</h2>
+                <p>本サイトでは，今後Google AdSenseによる広告配信を導入する場合があります．導入した場合，Googleおよび第三者広告配信事業者がCookieや識別子を利用し，広告の配信や効果測定などを行うことがあります．</p>
+                <p>Googleが広告配信のために利用する情報については，<a href="https://policies.google.com/technologies/partner-sites?hl=ja" target="_blank" rel="noopener noreferrer">Googleのパートナーサイトでのデータ利用</a>をご覧ください．広告のパーソナライズは<a href="https://myadcenter.google.com/" target="_blank" rel="noopener noreferrer">マイアドセンター</a>で管理できます．</p>
+                <p>現在の広告・解析機能の導入状況に応じて本ポリシーを更新し，必要な場合は同意管理を実装します．広告と医学的な編集内容は独立しており，広告掲載は特定の商品・治療を推奨するものではありません．</p>
+                <p>記事中に外部サイトが提供する画像やリンクが含まれる場合，その配信元で通信情報が処理される可能性があります．</p>
+          
+          '''
+              return source[:start] + replacement + source[end:]
+          
+          
+          def patch_styles(source):
+              marker = '/* DEMENTIA_ATLAS_NATIVE_NOTE_V1 */'
+              if marker in source:
+                  return source
+              return source.rstrip() + '\n\n' + '''/* DEMENTIA_ATLAS_NATIVE_NOTE_V1 */
+          .record-note-links{margin-top:14px;padding:13px 16px;background:#eef5ed;border:1px solid #d2e3d1;border-radius:9px;display:flex;flex-direction:column;gap:7px;font-size:13px}
+          .record-note-links strong{color:#265b52;font-weight:700}
+          .record-note-links a{color:#266f63;text-decoration:underline;text-underline-offset:3px}
+          '''
+          
+          
+          def main():
+              for p in (APP, ROOT / 'scripts' / 'sync_note_articles.py',
+                        ROOT / 'public' / 'articles' / 'article.css'):
+                  if not p.is_file():
+                      raise SystemExit(f'Missing {p}; copy the package files into repository first.')
+              app_old = APP.read_text(encoding='utf-8')
+              about = ROOT / 'public' / 'about.html'
+              privacy = ROOT / 'public' / 'privacy.html'
+              styles = ROOT / 'public' / 'styles.css'
+              app_new = patch_app(app_old)
+              other = {about: patch_about(about.read_text(encoding='utf-8')),
+                       privacy: patch_privacy(privacy.read_text(encoding='utf-8')),
+                       styles: patch_styles(styles.read_text(encoding='utf-8'))}
+              # Do not change any file until all patches have been verified.
+              APP.write_text(app_new, encoding='utf-8')
+              for path, content in other.items():
+                  path.write_text(content, encoding='utf-8')
+              print('Updated app.js, about.html, privacy.html, styles.css')
+              print('Now run: python -m unittest discover -s tests -v')
+              print('The separate note workflow handles future daily syncs.')
+          
+          
+          if __name__ == '__main__':
+              main()
+          NOTE_INSTALLER_END
+          fi
+          if [ ! -f tests/test_sync_note_articles.py ]; then
+          cat > tests/test_sync_note_articles.py <<'NOTE_TESTS_END'
+          import sys
+          import unittest
+          from pathlib import Path
+          
+          sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
+          from sync_note_articles import (
+              is_public_free, is_excluded, sanitize_body, extract_citations,
+              synchronize, normalize_doi, public_url, make_page,
+          )
+          
+          KEY = 'nabcdef1234567'
+          BODY = '<h2>研究の背景</h2><p>' + ('アルツハイマー病の研究結果を慎重に読み解きます．' * 8) + '</p>' + '<p>PMID: 42965691 DOI: 10.1007/s00330-026-13016-2</p>'
+          
+          
+          def detail(*, price=0, status='published', title='脳画像による認知症研究', body=BODY, **kw):
+              return {'key': KEY, 'price': price, 'status': status, 'name': title,
+                      'body': body, 'separator': None, 'user': {'urlname': 'merry_lily'}, **kw}
+          
+          
+          class NoteIntegrationTests(unittest.TestCase):
+              def test_free_public_passes(self):
+                  self.assertTrue(is_public_free(detail(), KEY))
+          
+              def test_paid_draft_membership_and_uncertain_blocked(self):
+                  self.assertFalse(is_public_free(detail(price=500), KEY))
+                  self.assertFalse(is_public_free(detail(price=None), KEY))
+                  self.assertFalse(is_public_free(detail(status='draft'), KEY))
+                  self.assertFalse(is_public_free(detail(separator='paragraph-id'), KEY))
+                  self.assertFalse(is_public_free(detail(pay_body='<p>Paid material</p>'), KEY))
+                  self.assertFalse(is_public_free(detail(circle_permissions=[12]), KEY))
+                  self.assertFalse(is_public_free(detail(user={'urlname': 'someone-else'}), KEY))
+                  self.assertFalse(is_public_free({'price': 0, 'body': BODY, 'status': 'published'}, KEY))
+          
+              def test_specialist_articles_excluded(self):
+                  for title in ('認知症専門医試験の勉強方法', 'レカネマブを専門医試験目線で解説', '専門医対策記事'):
+                      self.assertTrue(is_excluded({'title': title}))
+                  self.assertTrue(is_excluded({'title': '一般タイトル', 'category': '試験対策'}))
+                  self.assertFalse(is_excluded({'title': '血液p-tau217の研究'}))
+          
+              def test_only_merry_lily_urls(self):
+                  self.assertEqual(public_url(f'https://note.com/merry_lily/n/{KEY}'), f'https://note.com/merry_lily/n/{KEY}')
+                  self.assertIsNone(public_url(f'https://note.com/unrelated/n/{KEY}'))
+                  self.assertIsNone(public_url(f'https://evil.example/n/{KEY}'))
+          
+              def test_html_sanitization(self):
+                  source = '<h2>安全な見出し</h2><script>bad()</script><p onclick="bad()">本文<a href="javascript:alert(1)">危険</a></p><a href="https://pubmed.ncbi.nlm.nih.gov/42965691/">論文</a><img src="javascript:bad()"><img src="https://assets.st-note.com/x.png" onerror="bad()">'
+                  result = sanitize_body(source)
+                  for unwanted in ('<script', 'bad()', 'onclick=', 'javascript:', 'onerror='):
+                      self.assertNotIn(unwanted, result)
+                  self.assertIn('安全な見出し', result)
+                  self.assertIn('https://pubmed.ncbi.nlm.nih.gov/42965691/', result)
+                  self.assertIn('https://assets.st-note.com/x.png', result)
+          
+              def test_pmid_doi_exact_links(self):
+                  p = {'id': '42965691', 'title': 'Original paper title', 'doi': '10.1007/s00330-026-13016-2'}
+                  ids, refs = extract_citations(BODY, {normalize_doi(p['doi']): p}, {'42965691': p})
+                  self.assertEqual(ids, ['42965691'])
+                  self.assertEqual(len(refs), 1)
+                  self.assertEqual(refs[0]['title'], 'Original paper title')
+          
+              def test_sync_free_only_and_create_local_page(self):
+                  rows = [
+                      {'url': f'https://note.com/merry_lily/n/{KEY}', 'title': '脳画像による認知症研究', 'date': '2026-10-01', 'category': '研究の読みもの'},
+                      {'url': 'https://note.com/merry_lily/n/n1111111111111', 'title': '専門医試験対策', 'category': '試験対策'},
+                      {'url': 'https://note.com/merry_lily/n/n2222222222222', 'title': '有料の研究', 'price': 500, 'category': '研究の読みもの'},
+                  ]
+                  paper = {'id': '42965691', 'title': 'Original paper title', 'doi': '10.1007/s00330-026-13016-2'}
+                  got, pages, skipped = synchronize(rows, lambda key: detail(), [paper])
+                  self.assertEqual(len(got), 1)
+                  self.assertEqual(skipped['excluded'], 1)
+                  self.assertEqual(skipped['paid_or_unverified'], 1)
+                  self.assertEqual(got[0]['local_url'], f'./articles/{KEY}.html')
+                  self.assertEqual(got[0]['related_pmids'], ['42965691'])
+                  self.assertIn('元の記事をnoteで読む', pages[KEY])
+                  self.assertIn('Original paper title', pages[KEY])
+                  self.assertIn('https://pubmed.ncbi.nlm.nih.gov/42965691/', pages[KEY])
+          
+              def test_premium_detail_cannot_publish(self):
+                  rows = [{'url': f'https://note.com/merry_lily/n/{KEY}', 'title': '認知症の最新研究'}]
+                  got, pages, skipped = synchronize(rows, lambda key: detail(price=1500), [])
+                  self.assertEqual(got, [])
+                  self.assertEqual(pages, {})
+                  self.assertEqual(skipped['paid_or_unverified'], 1)
+          
+          
+          if __name__ == '__main__':
+              unittest.main()
+          NOTE_TESTS_END
+          fi
+          python install_note_integration.py
+          node --check public/app.js
+          python -m unittest discover -s tests -v
+          python scripts/sync_note_articles.py
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add scripts/sync_note_articles.py install_note_integration.py tests/test_sync_note_articles.py
+          git add public/app.js public/about.html public/privacy.html public/styles.css
+          git add public/data/ public/articles/ public/sitemap.xml public/robots.txt
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish free merry_lily articles on Dementia Atlas with PubMed crosslinks"
+            git push origin HEAD:main
+          fi
