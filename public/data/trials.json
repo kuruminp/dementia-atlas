@@ -1,12 +1,158 @@
 {
   "meta": {
     "mode": "api",
-    "fetched_at": "2026-11-02T15:46:54+00:00",
+    "fetched_at": "2026-11-03T15:35:20+00:00",
     "verified_at": null,
     "source": "ClinicalTrials.gov",
     "description": "Official trial registration data; mechanical categorization."
   },
   "items": [
+    {
+      "id": "NCT07914218",
+      "title": "Rural Veteran and Care Partner Walking Program",
+      "status": "RECRUITING",
+      "phases": [
+        "NA"
+      ],
+      "disease": "mci",
+      "topic": "treatment",
+      "interventions": [
+        "Telerehabilitation Physical Activity Behavioral Intervention"
+      ],
+      "mechanism": "non_drug",
+      "updated": "2026-11-03",
+      "has_japan_site": false,
+      "japan_recruiting": false,
+      "japan_recruiting_now": false,
+      "countries": [
+        "United States"
+      ],
+      "url": "https://clinicaltrials.gov/study/NCT07914218",
+      "source": "ClinicalTrials.gov",
+      "study_type": "INTERVENTIONAL"
+    },
+    {
+      "id": "NCT07911826",
+      "title": "Targeting Sleep and Slow-Wave Activity to Enhance Cognition in MCI",
+      "status": "NOT_YET_RECRUITING",
+      "phases": [
+        "NA"
+      ],
+      "disease": "mci",
+      "topic": "treatment",
+      "interventions": [
+        "active intervention",
+        "Control Intervention"
+      ],
+      "mechanism": "non_drug",
+      "updated": "2026-11-03",
+      "has_japan_site": false,
+      "japan_recruiting": false,
+      "japan_recruiting_now": false,
+      "countries": [],
+      "url": "https://clinicaltrials.gov/study/NCT07911826",
+      "source": "ClinicalTrials.gov",
+      "study_type": "INTERVENTIONAL"
+    },
+    {
+      "id": "NCT07906769",
+      "title": "Automated Language Analysis in Neurodegenerative Diseases: Application of Artificial Intelligence Models",
+      "status": "RECRUITING",
+      "phases": [
+        "NA"
+      ],
+      "disease": "ftd",
+      "topic": "diagnosis",
+      "interventions": [
+        "Speech and language Test to support clinical diagnosis"
+      ],
+      "mechanism": "non_drug",
+      "updated": "2026-11-03",
+      "has_japan_site": false,
+      "japan_recruiting": false,
+      "japan_recruiting_now": false,
+      "countries": [
+        "Italy"
+      ],
+      "url": "https://clinicaltrials.gov/study/NCT07906769",
+      "source": "ClinicalTrials.gov",
+      "study_type": "INTERVENTIONAL"
+    },
+    {
+      "id": "NCT07799584",
+      "title": "Temporal Interference Stimulation Combined With Tai Chi for Mild Cognitive Impairment",
+      "status": "RECRUITING",
+      "phases": [
+        "NA"
+      ],
+      "disease": "mci",
+      "topic": "other",
+      "interventions": [
+        "Active Transcranial Temporal Interference Stimulation",
+        "Placebo Transcranial Temporal Interference Stimulation",
+        "Tai Chi Training"
+      ],
+      "mechanism": "symptomatic",
+      "updated": "2026-11-03",
+      "has_japan_site": false,
+      "japan_recruiting": false,
+      "japan_recruiting_now": false,
+      "countries": [
+        "China"
+      ],
+      "url": "https://clinicaltrials.gov/study/NCT07799584",
+      "source": "ClinicalTrials.gov",
+      "study_type": "INTERVENTIONAL"
+    },
+    {
+      "id": "NCT07741773",
+      "title": "Assessing Treatment With High-phenolic EVOO Supplements for Neurovascular Activity",
+      "status": "NOT_YET_RECRUITING",
+      "phases": [
+        "NA"
+      ],
+      "disease": "mci",
+      "topic": "treatment",
+      "interventions": [
+        "EVOO-phenolics dietary supplement"
+      ],
+      "mechanism": "non_drug",
+      "updated": "2026-11-03",
+      "has_japan_site": false,
+      "japan_recruiting": false,
+      "japan_recruiting_now": false,
+      "countries": [
+        "United States"
+      ],
+      "url": "https://clinicaltrials.gov/study/NCT07741773",
+      "source": "ClinicalTrials.gov",
+      "study_type": "INTERVENTIONAL"
+    },
+    {
+      "id": "NCT07733726",
+      "title": "Oral Motor and Cognitive Dual-Task Training (OMCDT) Program for Improving Oral and Cognitive Functions Among People With Oral Frailty",
+      "status": "RECRUITING",
+      "phases": [
+        "NA"
+      ],
+      "disease": "mci",
+      "topic": "prevention",
+      "interventions": [
+        "Oral Motor and Cognitive Dual-Task Training (OMCDT)",
+        "Oral motor exercise"
+      ],
+      "mechanism": "non_drug",
+      "updated": "2026-11-03",
+      "has_japan_site": false,
+      "japan_recruiting": false,
+      "japan_recruiting_now": false,
+      "countries": [
+        "Hong Kong"
+      ],
+      "url": "https://clinicaltrials.gov/study/NCT07733726",
+      "source": "ClinicalTrials.gov",
+      "study_type": "INTERVENTIONAL"
+    },
     {
       "id": "NCT07721467",
       "title": "Neuroplasticity Enhancement From Cognitive Training Reinforced by Psilocybin",
@@ -21,7 +167,7 @@
         "Cognitive Training"
       ],
       "mechanism": "other",
-      "updated": "2026-11-02",
+      "updated": "2026-11-03",
       "has_japan_site": false,
       "japan_recruiting": false,
       "japan_recruiting_now": false,
@@ -29,6 +175,30 @@
         "United States"
       ],
       "url": "https://clinicaltrials.gov/study/NCT07721467",
+      "source": "ClinicalTrials.gov",
+      "study_type": "INTERVENTIONAL"
+    },
+    {
+      "id": "NCT07692542",
+      "title": "Network-Guided Individualized TMS for BPSD in Alzheimer's Disease: A Double-blind Randomized Controlled Trial",
+      "status": "RECRUITING",
+      "phases": [
+        "NA"
+      ],
+      "disease": "ad",
+      "topic": "treatment",
+      "interventions": [
+        "transcranial magnetic stimulation"
+      ],
+      "mechanism": "non_drug",
+      "updated": "2026-11-03",
+      "has_japan_site": false,
+      "japan_recruiting": false,
+      "japan_recruiting_now": false,
+      "countries": [
+        "China"
+      ],
+      "url": "https://clinicaltrials.gov/study/NCT07692542",
       "source": "ClinicalTrials.gov",
       "study_type": "INTERVENTIONAL"
     },
@@ -46,7 +216,7 @@
         "18F-florbetaben"
       ],
       "mechanism": "symptomatic",
-      "updated": "2026-11-02",
+      "updated": "2026-11-03",
       "has_japan_site": false,
       "japan_recruiting": false,
       "japan_recruiting_now": false,
@@ -54,6 +224,237 @@
         "United States"
       ],
       "url": "https://clinicaltrials.gov/study/NCT07169630",
+      "source": "ClinicalTrials.gov",
+      "study_type": "INTERVENTIONAL"
+    },
+    {
+      "id": "NCT07066137",
+      "title": "Motor Learning in Health and Movement Disorders: Role of Physical Activity and Advanced Devices",
+      "status": "RECRUITING",
+      "phases": [
+        "NA"
+      ],
+      "disease": "ad",
+      "topic": "other",
+      "interventions": [
+        "CAREN",
+        "Control group"
+      ],
+      "mechanism": "non_drug",
+      "updated": "2026-11-03",
+      "has_japan_site": false,
+      "japan_recruiting": false,
+      "japan_recruiting_now": false,
+      "countries": [
+        "Italy"
+      ],
+      "url": "https://clinicaltrials.gov/study/NCT07066137",
+      "source": "ClinicalTrials.gov",
+      "study_type": "INTERVENTIONAL"
+    },
+    {
+      "id": "NCT07037550",
+      "title": "Effectiveness of Strength-based Intervention for Elderly With Dementia Living in the Community",
+      "status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "NA"
+      ],
+      "disease": "ad",
+      "topic": "treatment",
+      "interventions": [
+        "Strength-based intervention"
+      ],
+      "mechanism": "non_drug",
+      "updated": "2026-11-03",
+      "has_japan_site": false,
+      "japan_recruiting": false,
+      "japan_recruiting_now": false,
+      "countries": [
+        "Hong Kong"
+      ],
+      "url": "https://clinicaltrials.gov/study/NCT07037550",
+      "source": "ClinicalTrials.gov",
+      "study_type": "INTERVENTIONAL"
+    },
+    {
+      "id": "NCT07011745",
+      "title": "A Phase 3 Study to Evaluate the Safety and Efficacy of KarXT + KarX-EC for the Treatment of Agitation Associated With Alzheimer's Disease",
+      "status": "RECRUITING",
+      "phases": [
+        "PHASE3"
+      ],
+      "disease": "ad",
+      "topic": "treatment",
+      "interventions": [
+        "Xanomeline/Trospium Chloride Capsule",
+        "Xanomeline Enteric Capsule"
+      ],
+      "mechanism": "symptomatic",
+      "updated": "2026-11-03",
+      "has_japan_site": false,
+      "japan_recruiting": false,
+      "japan_recruiting_now": false,
+      "countries": [
+        "Argentina",
+        "Chile",
+        "Czechia",
+        "France",
+        "Germany",
+        "Hungary",
+        "Israel",
+        "Italy",
+        "Poland",
+        "Puerto Rico",
+        "South Korea",
+        "Ukraine",
+        "United Kingdom",
+        "United States"
+      ],
+      "url": "https://clinicaltrials.gov/study/NCT07011745",
+      "source": "ClinicalTrials.gov",
+      "study_type": "INTERVENTIONAL"
+    },
+    {
+      "id": "NCT06651567",
+      "title": "A Study to Assess the Efficacy and Safety of ITI-1284 in the Treatment of Agitation Associated With Alzheimer's Dementia",
+      "status": "RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "disease": "ad",
+      "topic": "treatment",
+      "interventions": [
+        "ITI-1284"
+      ],
+      "mechanism": "symptomatic",
+      "updated": "2026-11-03",
+      "has_japan_site": false,
+      "japan_recruiting": false,
+      "japan_recruiting_now": false,
+      "countries": [
+        "Bulgaria",
+        "Croatia",
+        "Czechia",
+        "Romania",
+        "Serbia",
+        "Slovakia",
+        "Spain",
+        "United States"
+      ],
+      "url": "https://clinicaltrials.gov/study/NCT06651567",
+      "source": "ClinicalTrials.gov",
+      "study_type": "INTERVENTIONAL"
+    },
+    {
+      "id": "NCT06544616",
+      "title": "A Study of JNJ-64042056 in Participants With Preclinical Alzheimer's Disease",
+      "status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "disease": "ad",
+      "topic": "other",
+      "interventions": [
+        "JNJ-64042056"
+      ],
+      "mechanism": "other",
+      "updated": "2026-11-03",
+      "has_japan_site": true,
+      "japan_recruiting": false,
+      "japan_recruiting_now": false,
+      "countries": [
+        "Australia",
+        "Belgium",
+        "France",
+        "Germany",
+        "Japan",
+        "Spain",
+        "Sweden",
+        "United Kingdom",
+        "United States"
+      ],
+      "url": "https://clinicaltrials.gov/study/NCT06544616",
+      "source": "ClinicalTrials.gov",
+      "study_type": "INTERVENTIONAL"
+    },
+    {
+      "id": "NCT06540833",
+      "title": "A Study to Assess the Efficacy and Safety of ITI-1284 in the Treatment of Psychosis Associated With Alzheimer's Disease",
+      "status": "RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "disease": "ad",
+      "topic": "treatment",
+      "interventions": [
+        "ITI-1284"
+      ],
+      "mechanism": "symptomatic",
+      "updated": "2026-11-03",
+      "has_japan_site": false,
+      "japan_recruiting": false,
+      "japan_recruiting_now": false,
+      "countries": [
+        "Bulgaria",
+        "Croatia",
+        "Czechia",
+        "Italy",
+        "Poland",
+        "Romania",
+        "Serbia",
+        "Slovakia",
+        "Spain",
+        "United States"
+      ],
+      "url": "https://clinicaltrials.gov/study/NCT06540833",
+      "source": "ClinicalTrials.gov",
+      "study_type": "INTERVENTIONAL"
+    },
+    {
+      "id": "NCT06452407",
+      "title": "Evaluating the Feasibility of elleFA App Implementation",
+      "status": "RECRUITING",
+      "phases": [
+        "NA"
+      ],
+      "disease": "other",
+      "topic": "other",
+      "interventions": [
+        "Implementation of elleFA smartphone application"
+      ],
+      "mechanism": "non_drug",
+      "updated": "2026-11-03",
+      "has_japan_site": false,
+      "japan_recruiting": false,
+      "japan_recruiting_now": false,
+      "countries": [
+        "Canada"
+      ],
+      "url": "https://clinicaltrials.gov/study/NCT06452407",
+      "source": "ClinicalTrials.gov",
+      "study_type": "INTERVENTIONAL"
+    },
+    {
+      "id": "NCT05929924",
+      "title": "Does EVOO Induce Gene and Metabolic Changes in Healthy Subjects",
+      "status": "COMPLETED",
+      "phases": [
+        "NA"
+      ],
+      "disease": "ad",
+      "topic": "other",
+      "interventions": [
+        "Extra virgin olive oil"
+      ],
+      "mechanism": "non_drug",
+      "updated": "2026-11-03",
+      "has_japan_site": false,
+      "japan_recruiting": false,
+      "japan_recruiting_now": false,
+      "countries": [
+        "United States"
+      ],
+      "url": "https://clinicaltrials.gov/study/NCT05929924",
       "source": "ClinicalTrials.gov",
       "study_type": "INTERVENTIONAL"
     },
@@ -187,30 +588,6 @@
         "United States"
       ],
       "url": "https://clinicaltrials.gov/study/NCT04396873",
-      "source": "ClinicalTrials.gov",
-      "study_type": "INTERVENTIONAL"
-    },
-    {
-      "id": "NCT07906769",
-      "title": "Automated Language Analysis in Neurodegenerative Diseases: Application of Artificial Intelligence Models",
-      "status": "RECRUITING",
-      "phases": [
-        "NA"
-      ],
-      "disease": "ftd",
-      "topic": "diagnosis",
-      "interventions": [
-        "Speech and language Test to support clinical diagnosis"
-      ],
-      "mechanism": "non_drug",
-      "updated": "2026-10-30",
-      "has_japan_site": false,
-      "japan_recruiting": false,
-      "japan_recruiting_now": false,
-      "countries": [
-        "Italy"
-      ],
-      "url": "https://clinicaltrials.gov/study/NCT07906769",
       "source": "ClinicalTrials.gov",
       "study_type": "INTERVENTIONAL"
     },
@@ -2240,31 +2617,6 @@
       "study_type": "INTERVENTIONAL"
     },
     {
-      "id": "NCT07388186",
-      "title": "Benefits of Strength Training in Informal Caregivers of Patients With Alzheimer's Disease",
-      "status": "COMPLETED",
-      "phases": [
-        "NA"
-      ],
-      "disease": "ad",
-      "topic": "care",
-      "interventions": [
-        "Progressive Muscle Relaxation",
-        "Functional Strength Training"
-      ],
-      "mechanism": "non_drug",
-      "updated": "2026-10-16",
-      "has_japan_site": false,
-      "japan_recruiting": false,
-      "japan_recruiting_now": false,
-      "countries": [
-        "Spain"
-      ],
-      "url": "https://clinicaltrials.gov/study/NCT07388186",
-      "source": "ClinicalTrials.gov",
-      "study_type": "INTERVENTIONAL"
-    },
-    {
       "id": "NCT07105371",
       "title": "Patients With ALS and Other Motor Disorders Will be Treated With Umbilical or Placental Mesenchymal Cell Exosome Solution",
       "status": "COMPLETED",
@@ -2364,43 +2716,6 @@
       "study_type": "INTERVENTIONAL"
     },
     {
-      "id": "NCT06126224",
-      "title": "A Study to Assess Efficacy and Safety of KarXT for the Treatment of Psychosis Associated With Alzheimer's Disease (ADEPT-2)",
-      "status": "RECRUITING",
-      "phases": [
-        "PHASE3"
-      ],
-      "disease": "ad",
-      "topic": "treatment",
-      "interventions": [
-        "KarXT"
-      ],
-      "mechanism": "symptomatic",
-      "updated": "2026-10-16",
-      "has_japan_site": false,
-      "japan_recruiting": false,
-      "japan_recruiting_now": false,
-      "countries": [
-        "Belgium",
-        "Canada",
-        "Chile",
-        "China",
-        "Greece",
-        "Hungary",
-        "Mexico",
-        "Peru",
-        "Poland",
-        "South Korea",
-        "Switzerland",
-        "Turkey (Türkiye)",
-        "United Kingdom",
-        "United States"
-      ],
-      "url": "https://clinicaltrials.gov/study/NCT06126224",
-      "source": "ClinicalTrials.gov",
-      "study_type": "INTERVENTIONAL"
-    },
-    {
       "id": "NCT05980949",
       "title": "Open-Label Extension Study to Assess the Long-Term Safety and Tolerability of KarXT in Subjects With Psychosis Associated With Alzheimer's Disease (ADEPT-3)",
       "status": "RECRUITING",
@@ -2479,30 +2794,6 @@
       "study_type": "INTERVENTIONAL"
     },
     {
-      "id": "NCT07838155",
-      "title": "A Study of Donanemab (LY3002813) in Participants With Early Symptomatic Alzheimer's Disease",
-      "status": "NOT_YET_RECRUITING",
-      "phases": [
-        "PHASE4"
-      ],
-      "disease": "ad",
-      "topic": "treatment",
-      "interventions": [
-        "Donanemab"
-      ],
-      "mechanism": "amyloid",
-      "updated": "2026-10-15",
-      "has_japan_site": false,
-      "japan_recruiting": false,
-      "japan_recruiting_now": false,
-      "countries": [
-        "India"
-      ],
-      "url": "https://clinicaltrials.gov/study/NCT07838155",
-      "source": "ClinicalTrials.gov",
-      "study_type": "INTERVENTIONAL"
-    },
-    {
       "id": "NCT07498426",
       "title": "A Study to Evaluate the Efficacy of NIO752 in Participants With Progressive Supranuclear Palsy",
       "status": "RECRUITING",
@@ -2534,119 +2825,6 @@
         "United States"
       ],
       "url": "https://clinicaltrials.gov/study/NCT07498426",
-      "source": "ClinicalTrials.gov",
-      "study_type": "INTERVENTIONAL"
-    },
-    {
-      "id": "NCT07011732",
-      "title": "A Phase 3 Study to Evaluate the Safety and Efficacy of KarXT + KarX-EC for the Treatment of Agitation Associated With Alzheimer's Disease (ADAGIO-1)",
-      "status": "RECRUITING",
-      "phases": [
-        "PHASE3"
-      ],
-      "disease": "ad",
-      "topic": "treatment",
-      "interventions": [
-        "Xanomeline/Trospium Chloride Capsule",
-        "Xanomeline Enteric Capsule"
-      ],
-      "mechanism": "symptomatic",
-      "updated": "2026-10-15",
-      "has_japan_site": true,
-      "japan_recruiting": true,
-      "japan_recruiting_now": true,
-      "countries": [
-        "Argentina",
-        "Brazil",
-        "Bulgaria",
-        "Canada",
-        "China",
-        "Croatia",
-        "Greece",
-        "India",
-        "Japan",
-        "Mexico",
-        "Portugal",
-        "Romania",
-        "Spain",
-        "Taiwan",
-        "United States"
-      ],
-      "url": "https://clinicaltrials.gov/study/NCT07011732",
-      "source": "ClinicalTrials.gov",
-      "study_type": "INTERVENTIONAL"
-    },
-    {
-      "id": "NCT07873463",
-      "title": "Flutemetamol F 18 Injection Formulation Comparison",
-      "status": "NOT_YET_RECRUITING",
-      "phases": [
-        "PHASE2"
-      ],
-      "disease": "other",
-      "topic": "other",
-      "interventions": [
-        "GE-287",
-        "Vizamyl"
-      ],
-      "mechanism": "other",
-      "updated": "2026-10-14",
-      "has_japan_site": false,
-      "japan_recruiting": false,
-      "japan_recruiting_now": false,
-      "countries": [
-        "United States"
-      ],
-      "url": "https://clinicaltrials.gov/study/NCT07873463",
-      "source": "ClinicalTrials.gov",
-      "study_type": "INTERVENTIONAL"
-    },
-    {
-      "id": "NCT07872956",
-      "title": "Feasibility Study of a Co-Designed Gamified Medical Yoga App for Home-Based Cancer Rehabilitation",
-      "status": "RECRUITING",
-      "phases": [
-        "NA"
-      ],
-      "disease": "other",
-      "topic": "other",
-      "interventions": [
-        "Medical yoga"
-      ],
-      "mechanism": "non_drug",
-      "updated": "2026-10-14",
-      "has_japan_site": false,
-      "japan_recruiting": false,
-      "japan_recruiting_now": false,
-      "countries": [
-        "Sweden"
-      ],
-      "url": "https://clinicaltrials.gov/study/NCT07872956",
-      "source": "ClinicalTrials.gov",
-      "study_type": "INTERVENTIONAL"
-    },
-    {
-      "id": "NCT07868718",
-      "title": "Peer Support for Family Caregivers of Older Adults Living With Dementia",
-      "status": "NOT_YET_RECRUITING",
-      "phases": [
-        "PHASE2"
-      ],
-      "disease": "ad",
-      "topic": "care",
-      "interventions": [
-        "Peer Support",
-        "Usual Care"
-      ],
-      "mechanism": "non_drug",
-      "updated": "2026-10-14",
-      "has_japan_site": false,
-      "japan_recruiting": false,
-      "japan_recruiting_now": false,
-      "countries": [
-        "United States"
-      ],
-      "url": "https://clinicaltrials.gov/study/NCT07868718",
       "source": "ClinicalTrials.gov",
       "study_type": "INTERVENTIONAL"
     },
@@ -4119,30 +4297,6 @@
       "study_type": "INTERVENTIONAL"
     },
     {
-      "id": "NCT07836114",
-      "title": "Virtual Outreach and Individualized Coaching Extension",
-      "status": "NOT_YET_RECRUITING",
-      "phases": [
-        "NA"
-      ],
-      "disease": "mci",
-      "topic": "other",
-      "interventions": [
-        "Virtual Outreach and Individualized Coaching Extension"
-      ],
-      "mechanism": "non_drug",
-      "updated": "2026-09-23",
-      "has_japan_site": false,
-      "japan_recruiting": false,
-      "japan_recruiting_now": false,
-      "countries": [
-        "United States"
-      ],
-      "url": "https://clinicaltrials.gov/study/NCT07836114",
-      "source": "ClinicalTrials.gov",
-      "study_type": "INTERVENTIONAL"
-    },
-    {
       "id": "NCT06745583",
       "title": "A Phase 2 Study to Assess the Safety of EI-1071 and the Effects of EI-1071 on Neuroinflammation in Alzheimer's Disease Patients",
       "status": "COMPLETED",
@@ -4163,30 +4317,6 @@
         "Taiwan"
       ],
       "url": "https://clinicaltrials.gov/study/NCT06745583",
-      "source": "ClinicalTrials.gov",
-      "study_type": "INTERVENTIONAL"
-    },
-    {
-      "id": "NCT07835399",
-      "title": "Efficacy and Safety of Photobiomodulation Therapy in Patients With Mild Cognitive Impairment and Mild Alzheimer's Disease",
-      "status": "RECRUITING",
-      "phases": [
-        "NA"
-      ],
-      "disease": "ad",
-      "topic": "treatment",
-      "interventions": [
-        "Photobiomodulation"
-      ],
-      "mechanism": "symptomatic",
-      "updated": "2026-09-22",
-      "has_japan_site": false,
-      "japan_recruiting": false,
-      "japan_recruiting_now": false,
-      "countries": [
-        "China"
-      ],
-      "url": "https://clinicaltrials.gov/study/NCT07835399",
       "source": "ClinicalTrials.gov",
       "study_type": "INTERVENTIONAL"
     },
@@ -4212,105 +4342,6 @@
         "Italy"
       ],
       "url": "https://clinicaltrials.gov/study/NCT07375771",
-      "source": "ClinicalTrials.gov",
-      "study_type": "INTERVENTIONAL"
-    },
-    {
-      "id": "NCT07661355",
-      "title": "Comparing Two Acute Care Transition Programs for Older Adults and Their Family Caregivers",
-      "status": "RECRUITING",
-      "phases": [
-        "NA"
-      ],
-      "disease": "other",
-      "topic": "care",
-      "interventions": [
-        "Patient-Centered Program",
-        "Family Caregiver Enhanced Program"
-      ],
-      "mechanism": "non_drug",
-      "updated": "2026-09-21",
-      "has_japan_site": false,
-      "japan_recruiting": false,
-      "japan_recruiting_now": false,
-      "countries": [
-        "United States"
-      ],
-      "url": "https://clinicaltrials.gov/study/NCT07661355",
-      "source": "ClinicalTrials.gov",
-      "study_type": "INTERVENTIONAL"
-    },
-    {
-      "id": "NCT07602283",
-      "title": "Music for Pain and Dementia",
-      "status": "RECRUITING",
-      "phases": [
-        "NA"
-      ],
-      "disease": "ad",
-      "topic": "other",
-      "interventions": [
-        "Drumming session",
-        "Music-listening session"
-      ],
-      "mechanism": "non_drug",
-      "updated": "2026-09-21",
-      "has_japan_site": false,
-      "japan_recruiting": false,
-      "japan_recruiting_now": false,
-      "countries": [
-        "United States"
-      ],
-      "url": "https://clinicaltrials.gov/study/NCT07602283",
-      "source": "ClinicalTrials.gov",
-      "study_type": "INTERVENTIONAL"
-    },
-    {
-      "id": "NCT07543341",
-      "title": "Adapting Behavioral Interventions for Dementia to Address NCDs and Mental Health",
-      "status": "COMPLETED",
-      "phases": [
-        "NA"
-      ],
-      "disease": "other",
-      "topic": "treatment",
-      "interventions": [
-        "BECOME-D Intervention"
-      ],
-      "mechanism": "non_drug",
-      "updated": "2026-09-21",
-      "has_japan_site": false,
-      "japan_recruiting": false,
-      "japan_recruiting_now": false,
-      "countries": [
-        "Nepal"
-      ],
-      "url": "https://clinicaltrials.gov/study/NCT07543341",
-      "source": "ClinicalTrials.gov",
-      "study_type": "INTERVENTIONAL"
-    },
-    {
-      "id": "NCT07243600",
-      "title": "Improving Neurological Health With Acetylcholine Via Neuroplasticity-based Computerized Exercise in Mild Cognitive Impairment",
-      "status": "RECRUITING",
-      "phases": [
-        "NA"
-      ],
-      "disease": "mci",
-      "topic": "prevention",
-      "interventions": [
-        "Computerized speed-based cognitive training",
-        "Computerized executive function cognitive training"
-      ],
-      "mechanism": "symptomatic",
-      "updated": "2026-09-21",
-      "has_japan_site": false,
-      "japan_recruiting": false,
-      "japan_recruiting_now": false,
-      "countries": [
-        "Canada"
-      ],
-      "url": "https://clinicaltrials.gov/study/NCT07243600",
       "source": "ClinicalTrials.gov",
       "study_type": "INTERVENTIONAL"
     },
@@ -5208,31 +5239,6 @@
         "United States"
       ],
       "url": "https://clinicaltrials.gov/study/NCT05331144",
-      "source": "ClinicalTrials.gov",
-      "study_type": "INTERVENTIONAL"
-    },
-    {
-      "id": "NCT06066710",
-      "title": "Propranolol in Primary Progressive Aphasia",
-      "status": "RECRUITING",
-      "phases": [
-        "EARLY_PHASE1"
-      ],
-      "disease": "ftd",
-      "topic": "imaging",
-      "interventions": [
-        "Propranolol",
-        "Magnetic Resonance Imaging (MRI)"
-      ],
-      "mechanism": "other",
-      "updated": "2026-07-17",
-      "has_japan_site": false,
-      "japan_recruiting": false,
-      "japan_recruiting_now": false,
-      "countries": [
-        "United States"
-      ],
-      "url": "https://clinicaltrials.gov/study/NCT06066710",
       "source": "ClinicalTrials.gov",
       "study_type": "INTERVENTIONAL"
     }

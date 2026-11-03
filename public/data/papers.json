@@ -1,16 +1,176 @@
 {
   "meta": {
     "mode": "api",
-    "fetched_at": "2026-11-02T15:46:54+00:00",
+    "fetched_at": "2026-11-03T15:35:20+00:00",
     "verified_at": null,
     "source": "PubMed",
     "description": "Metadata-based research prioritization; not scientific appraisal.",
     "selection_method": "metadata_quality_v1",
-    "archive_count": 180,
+    "archive_count": 187,
     "lookback_days": 14,
-    "newly_added": 4
+    "newly_added": 7
   },
   "items": [
+    {
+      "id": "42973291",
+      "title": "Artificial Intelligence-integrated Multimodal Neural Biomarkers for Early Risk Stratification in Preclinical Alzheimer's Disease.",
+      "journal": "Current neurovascular research",
+      "date": "2026-10-22",
+      "pubmed_entry_date": "2026-11-03",
+      "disease": "ad",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.2174/0115672026526687261020043332",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42973291/",
+      "source": "PubMed",
+      "research_type": "validation",
+      "selection_signals": [
+        "validation",
+        "independent"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-04"
+    },
+    {
+      "id": "42971073",
+      "title": "Comparative Population Impact of Oral Health and Established Modifiable Risk Factors for Dementia: A 9-Year Population-Based Cohort Study.",
+      "journal": "Journal of the American Medical Directors Association",
+      "date": "2026-11-02",
+      "pubmed_entry_date": "2026-11-02",
+      "disease": "other",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1016/j.jamda.2026.106536",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42971073/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-04"
+    },
+    {
+      "id": "42970778",
+      "title": "AI-Assisted Analysis of Spontaneous Affective Facial Responses for Cognitive Status Assessment in Older Adults: Exploratory Feasibility Study.",
+      "journal": "JMIR formative research",
+      "date": "2026-11-02",
+      "pubmed_entry_date": "2026-11-02",
+      "disease": "other",
+      "topic": "other",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.2196/94422",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42970778/",
+      "source": "PubMed",
+      "research_type": "validation",
+      "selection_signals": [
+        "validation",
+        "independent"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-04"
+    },
+    {
+      "id": "42970316",
+      "title": "Corrigendum to \"Neuropsychological Profiles in Genetic Frontotemporal Dementia: A Meta-Analysis and Systematic Review\".",
+      "journal": "Aging and disease",
+      "date": "2026-10-22",
+      "pubmed_entry_date": "2026-11-02",
+      "disease": "ftd",
+      "topic": "pathology",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.14336/AD.2026.0920-C",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42970316/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-04"
+    },
+    {
+      "id": "42970282",
+      "title": "Delirium and Long-Term Cognitive Trajectories in Cognitively Unimpaired Adults.",
+      "journal": "JAMA neurology",
+      "date": "2026-11-02",
+      "pubmed_entry_date": "2026-11-02",
+      "disease": "mci",
+      "topic": "other",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1001/jamaneurol.2026.4001",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42970282/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 7,
+      "journal_tiebreak": 1,
+      "selected_on": "2026-11-04"
+    },
+    {
+      "id": "42969860",
+      "title": "Six-Month Music Practice Versus Psychomotor Interventions in Mild Cognitive Impairment: Behavioral and Hippocampal Outcomes.",
+      "journal": "Annals of the New York Academy of Sciences",
+      "date": "2026-11",
+      "pubmed_entry_date": "2026-11-02",
+      "disease": "mci",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article",
+        "Randomized Controlled Trial"
+      ],
+      "doi": "10.1111/nyas.70433",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42969860/",
+      "source": "PubMed",
+      "research_type": "trial",
+      "selection_signals": [
+        "rct"
+      ],
+      "priority_score": 10,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-04"
+    },
+    {
+      "id": "42969441",
+      "title": "Educational Attainment and Cohort Differences in Dementia Prevalence: A Counterfactual Decomposition Analysis.",
+      "journal": "Epidemiology (Cambridge, Mass.)",
+      "date": "2026-11-02",
+      "pubmed_entry_date": "2026-11-02",
+      "disease": "other",
+      "topic": "other",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1097/EDE.0000000000002062",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42969441/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-04"
+    },
     {
       "id": "42968246",
       "title": "Intake of ETAS® Improves Cognitive Function in Healthy Middle-Aged and Older Adults: A Randomized, Double-Blind, Placebo-Controlled Trial.",
