@@ -1,0 +1,384 @@
+name: Dementia Atlas - Google Search SEO
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/seo_indexing.yml'
+  schedule:
+    # 02:30 JST: after the article-sync and citation-link workflows.
+    - cron: '30 17 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dementia-atlas-seo-indexing
+  cancel-in-progress: false
+
+jobs:
+  update-seo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Checkout latest main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: true
+
+      - name: Python environment
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Generate crawlable article index and complete sitemap
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat > /tmp/dementia_seo_build.py <<'PY_BUILD'
+          #!/usr/bin/env python3
+          """Build Google-discoverable HTML indexes for Dementia Atlas.
+          
+          Reads only the repository's existing public files and verified free article metadata.
+          Idempotent; does not fetch unverified content or touch GitHub workflows.
+          """
+          from __future__ import annotations
+          
+          import datetime as dt
+          import html
+          import json
+          import re
+          import sys
+          import xml.etree.ElementTree as ET
+          from pathlib import Path
+          
+          SITE = "https://dementia-atlas.pages.dev"
+          SITE_URL = SITE + "/"
+          NAME = "Dementia Atlas"
+          MARKER_START = "<!-- DEMENTIA_ATLAS_SEO_ARTICLES_BEGIN -->"
+          MARKER_END = "<!-- DEMENTIA_ATLAS_SEO_ARTICLES_END -->"
+          SITEMAP_NS = "http://www.sitemaps.org/schemas/sitemap/0.9"
+          ARTICLE_NAME = re.compile(r"n[a-z0-9]{10,20}\.html", re.I)
+          PAPER_NAME = re.compile(r"\d{6,10}\.html")
+          
+          
+          def safe(s: object) -> str:
+              return html.escape(str(s or ""), quote=True)
+          
+          
+          def valid_date(raw: object) -> str:
+              value = str(raw or "")[:10]
+              try:
+                  return dt.date.fromisoformat(value).isoformat()
+              except ValueError:
+                  return ""
+          
+          
+          def write_if_changed(path: Path, content: str) -> bool:
+              path.parent.mkdir(parents=True, exist_ok=True)
+              if path.exists() and path.read_text(encoding="utf-8") == content:
+                  return False
+              path.write_text(content, encoding="utf-8")
+              return True
+          
+          
+          def read_validated_articles(public: Path) -> list[dict]:
+              obj = json.loads((public / "data/articles.json").read_text(encoding="utf-8"))
+              result: dict[str, dict] = {}
+              for row in obj.get("items", []):
+                  if not isinstance(row, dict) or row.get("access") != "free":
+                      continue
+                  local = str(row.get("local_url") or "")
+                  name = local.removeprefix("./articles/")
+                  if not local.startswith("./articles/") or not ARTICLE_NAME.fullmatch(name):
+                      continue
+                  if not (public / "articles" / name).is_file():
+                      # Do not publish links to pages not yet generated or removed.
+                      continue
+                  title = str(row.get("title") or "").strip()
+                  if not title:
+                      continue
+                  item = dict(row)
+                  item["filename"] = name
+                  item["title"] = title
+                  item["date"] = valid_date(row.get("date"))
+                  result[name] = item
+              if not result:
+                  raise RuntimeError("No verified free note pages found; SEO files left unchanged")
+              return sorted(result.values(), key=lambda x: (x["date"], x["filename"]), reverse=True)
+          
+          
+          def render_index(articles: list[dict]) -> str:
+              items = []
+              for row in articles:
+                  excerpt = re.sub(r"\s+", " ", str(row.get("description") or "")).strip()
+                  if len(excerpt) > 155:
+                      excerpt = excerpt[:155].rstrip() + "…"
+                  date = f'<time datetime="{safe(row["date"])}">{safe(row["date"])}</time>' if row["date"] else ""
+                  items.append(
+                      '<li class="article-directory-item">'
+                      f'<a href="./{safe(row["filename"])}">{safe(row["title"])}</a>'
+                      f'<p class="article-directory-meta">{date}　{safe(row.get("category") or "研究の読みもの")}</p>'
+                      f'<p class="article-directory-description">{safe(excerpt)}</p>'
+                      '</li>'
+                  )
+              description = (
+                  "Dementia Atlasの無料公開研究解説記事一覧．アルツハイマー病，認知症，"
+                  "バイオマーカー，治療，予防，神経科学などの記事をテーマ別に探せます．"
+              )
+              return f'''<!doctype html>
+          <html lang="ja">
+          <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <meta name="description" content="{safe(description)}">
+          <link rel="canonical" href="{SITE}/articles/">
+          <meta property="og:type" content="website">
+          <meta property="og:title" content="認知症研究の解説記事一覧｜Dementia Atlas">
+          <meta property="og:description" content="{safe(description)}">
+          <meta property="og:url" content="{SITE}/articles/">
+          <title>認知症研究の解説記事一覧｜Dementia Atlas</title>
+          <link rel="stylesheet" href="../styles.css">
+          <style>
+          .article-directory{{max-width:920px;margin:42px auto 88px}}
+          .article-directory h1{{font-size:clamp(26px,4.5vw,40px);line-height:1.5;margin:20px 0}}
+          .article-directory .lead{{line-height:1.95;color:#516366}}
+          .article-directory ul{{list-style:none;padding:0;margin:22px 0}}
+          .article-directory-item{{border-bottom:1px solid #dbe5df;padding:20px 0}}
+          .article-directory-item>a{{color:#1c5e55;font-weight:700;line-height:1.6;font-size:17px}}
+          .article-directory-meta{{font-size:12px;color:#637a75;margin:8px 0}}
+          .article-directory-description{{line-height:1.8;color:#45585a;margin:8px 0;font-size:14px}}
+          .article-directory .breadcrumb a{{color:#266d62}}
+          </style>
+          </head>
+          <body>
+          <div class="topline"><div class="page-shell topline-inner"><span class="topline-brand">DEMENTIA ATLAS</span></div></div>
+          <header class="site-header"><div class="page-shell header-inner"><a href="../index.html" class="brand"><span class="brand-mark">D</span><span class="brand-copy"><strong>Dementia Atlas</strong><small>認知症リサーチ・アトラス</small></span></a><a href="../index.html" class="header-note-link">トップへ戻る</a></div></header>
+          <main class="page-shell article-directory">
+          <nav class="breadcrumb" aria-label="パンくず"><a href="../index.html">トップページ</a> ／ 研究解説記事一覧</nav>
+          <h1>認知症研究の解説記事一覧</h1>
+          <p class="lead">アルツハイマー病をはじめとする認知症研究の話題を，公開済みの日本語記事から探せます．記事は執筆者が無料公開したものです．原著論文や診療上の判断については一次情報をご確認ください．</p>
+          <p class="lead">現在，{len(articles)}件の無料研究解説記事を掲載しています．</p>
+          <ul>\n{chr(10).join(items)}\n</ul>
+          <p class="lead">データの出典・記事の取扱いについては<a href="../about.html">このサイトについて</a>をご覧ください．</p>
+          </main>
+          <footer class="site-footer"><div class="page-shell footer-bottom">Dementia Atlas　<a href="../about.html">このサイトについて</a> ／ <a href="../privacy.html">プライバシーポリシー</a></div></footer>
+          </body></html>
+          '''
+          
+          
+          def inject_canonical(source: str, url: str, *, is_home: bool = False) -> str:
+              """Preserve unknown Search Console verification meta and other head content."""
+              existing = re.findall(r'<link\s+[^>]*rel=["\']canonical["\'][^>]*>', source, re.I)
+              if existing:
+                  if len(existing) == 1 and f'href="{url}"' in existing[0]:
+                      return source
+                  raise RuntimeError(f"Unexpected existing canonical on {url}; edit manually")
+              if source.lower().count("</head>") != 1:
+                  raise RuntimeError(f"Cannot locate unique </head> for {url}")
+              addition = f'<link rel="canonical" href="{url}">\n'
+              if is_home:
+                  addition += f'<meta property="og:url" content="{url}">\n'
+                  website = {
+                      "@context": "https://schema.org", "@type": "WebSite",
+                      "name": NAME, "url": SITE_URL, "inLanguage": "ja",
+                      "description": "認知症の研究論文・臨床試験・日本語解説記事を探す情報サイト",
+                  }
+                  addition += '<script type="application/ld+json">' + json.dumps(website, ensure_ascii=False) + '</script>\n'
+              return re.sub(r'</head>', lambda m: addition + m.group(0), source, count=1, flags=re.I)
+          
+          
+          def render_home_preview(articles: list[dict]) -> str:
+              entries = []
+              for row in articles[:8]:
+                  entries.append(
+                      f'<li style="padding:10px 0;border-bottom:1px solid #dbe5df;">'
+                      f'<a style="color:#26645b;line-height:1.7;font-weight:650;" '
+                      f'href="./articles/{safe(row["filename"])}">{safe(row["title"])}</a>'
+                      f'<span style="display:block;color:#6a7b79;font-size:12px;">{safe(row["date"])}</span>'
+                      '</li>'
+                  )
+              return f'''{MARKER_START}
+          <section class="seo-recent-articles" aria-labelledby="seo-articles-heading" style="margin:48px 0 54px;">
+          <span class="section-kicker">RESEARCH ARTICLES</span>
+          <h2 id="seo-articles-heading" style="margin:12px 0 12px;">研究解説の新着記事</h2>
+          <p style="color:#53676b;line-height:1.8;">公開中の日本語解説記事を，タイトルから直接読むことができます．</p>
+          <ul style="list-style:none;margin:10px 0 20px;padding:0;">\n{chr(10).join(entries)}\n</ul>
+          <p><a href="./articles/" style="font-weight:700;color:#26645b;">すべての研究解説記事を見る ↗</a></p>
+          </section>
+          {MARKER_END}'''
+          
+          
+          def update_home(home: str, articles: list[dict]) -> str:
+              home = inject_canonical(home, SITE_URL, is_home=True)
+              preview = render_home_preview(articles)
+              if MARKER_START in home or MARKER_END in home:
+                  if home.count(MARKER_START) != 1 or home.count(MARKER_END) != 1:
+                      raise RuntimeError("SEO home markers are inconsistent")
+                  expr = re.escape(MARKER_START) + r'.*?' + re.escape(MARKER_END)
+                  home = re.sub(expr, lambda _: preview, home, count=1, flags=re.S)
+              else:
+                  # The official site has one source-information block near the bottom.
+                  marker = '<section class="source-section"'
+                  if home.count(marker) != 1:
+                      raise RuntimeError("Cannot locate unique home section; refusing to edit")
+                  home = home.replace(marker, preview + '\n\n      ' + marker, 1)
+              return home
+          
+          
+          def make_sitemap(public: Path, articles: list[dict], paper_files: list[Path]) -> str:
+              fetched = None
+              try:
+                  p = json.loads((public / "data/papers.json").read_text(encoding="utf-8"))
+                  fetched = valid_date((p.get("meta") or {}).get("fetched_at"))
+              except (FileNotFoundError, ValueError, TypeError):
+                  pass
+              entries: list[tuple[str, str]] = [
+                  ("/", fetched or ""), ("/about.html", ""), ("/privacy.html", ""),
+                  ("/articles/", ""),
+              ]
+              if (public / "papers/index.html").is_file():
+                  entries.append(("/papers/", ""))
+              for item in articles:
+                  entries.append((f'/articles/{item["filename"]}', item["date"]))
+              for file in paper_files:
+                  entries.append((f"/papers/{file.name}", ""))
+              ET.register_namespace("", SITEMAP_NS)
+              root = ET.Element(f'{{{SITEMAP_NS}}}urlset')
+              for path, date in entries:
+                  el = ET.SubElement(root, f'{{{SITEMAP_NS}}}url')
+                  ET.SubElement(el, f'{{{SITEMAP_NS}}}loc').text = SITE + path
+                  if date:
+                      ET.SubElement(el, f'{{{SITEMAP_NS}}}lastmod').text = date
+              ET.indent(root, space='  ')
+              return '<?xml version="1.0" encoding="UTF-8"?>\n' + ET.tostring(root, encoding="unicode") + '\n'
+          
+          
+          def build(root: Path):
+              public = root / "public"
+              if not (public / "index.html").exists() or not (public / "data/articles.json").exists():
+                  raise RuntimeError("Run in the Dementia Atlas repository root")
+              articles = read_validated_articles(public)
+              paper_dir = public / "papers"
+              papers = sorted((p for p in paper_dir.glob("*.html") if PAPER_NAME.fullmatch(p.name)), key=lambda p: p.name) if paper_dir.exists() else []
+          
+              # Build all outputs in memory before changing any file.
+              outputs = {
+                  public / "articles/index.html": render_index(articles),
+                  public / "index.html": update_home((public / "index.html").read_text(encoding="utf-8"), articles),
+                  public / "about.html": inject_canonical((public / "about.html").read_text(encoding="utf-8"), SITE + "/about.html"),
+                  public / "privacy.html": inject_canonical((public / "privacy.html").read_text(encoding="utf-8"), SITE + "/privacy.html"),
+                  public / "sitemap.xml": make_sitemap(public, articles, papers),
+                  public / "robots.txt": f"User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n",
+              }
+              for path, content in outputs.items():
+                  print(("[UPDATED] " if write_if_changed(path, content) else "[UNCHANGED] ") + str(path.relative_to(root)), flush=True)
+              print(f"[SEO] {len(articles)} public articles and {len(papers)} cited-paper pages in sitemap", flush=True)
+          
+          
+          def main():
+              root = Path(sys.argv[1] if len(sys.argv) > 1 else ".").resolve()
+              build(root)
+          
+          
+          if __name__ == "__main__":
+              main()
+          PY_BUILD
+          python /tmp/dementia_seo_build.py .
+          # Run twice to prove that repeated scheduled runs are idempotent.
+          sha256sum public/index.html public/articles/index.html public/about.html public/privacy.html public/sitemap.xml public/robots.txt > /tmp/seo_sha256.txt
+          python /tmp/dementia_seo_build.py .
+          sha256sum -c /tmp/seo_sha256.txt
+
+      - name: Validate links, public pages and sitemap
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat > /tmp/dementia_seo_verify.py <<'PY_VERIFY'
+          #!/usr/bin/env python3
+          """Validate SEO artifacts before committing or publishing them."""
+          import json
+          import re
+          import sys
+          import xml.etree.ElementTree as ET
+          from html.parser import HTMLParser
+          from pathlib import Path
+          
+          SITE = 'https://dementia-atlas.pages.dev'
+          ROOT = Path(sys.argv[1] if len(sys.argv) > 1 else '.').resolve()
+          p = ROOT / 'public'
+          
+          class Links(HTMLParser):
+              def __init__(self):
+                  super().__init__()
+                  self.links = []
+              def handle_starttag(self, tag, attrs):
+                  if tag == 'a':
+                      self.links += [v for k,v in attrs if k == 'href']
+          
+          obj = json.loads((p/'data/articles.json').read_text(encoding='utf-8'))
+          articles = [row for row in obj['items'] if row.get('access') == 'free' and re.fullmatch(r'\./articles/n[a-z0-9]{10,20}\.html',str(row.get('local_url','')),re.I) and (p/row['local_url'].removeprefix('./')).is_file()]
+          assert articles, 'No public article pages found'
+          article_pages={SITE+'/'+r['local_url'].removeprefix('./') for r in articles}
+          paper_pages={SITE+'/papers/'+f.name for f in (p/'papers').glob('*.html') if re.fullmatch(r'\d{6,10}\.html',f.name)}
+          xml=ET.parse(p/'sitemap.xml').getroot()
+          locations=[x.text for x in xml.findall('.//{*}loc')]
+          assert len(locations) == len(set(locations)), 'Repeated URLs in sitemap'
+          assert article_pages.issubset(set(locations)), 'Missing verified article page in sitemap'
+          assert paper_pages.issubset(set(locations)), 'Missing cited paper page in sitemap'
+          assert SITE+'/articles/' in locations, 'Missing static directory'
+          assert SITE+'/' in locations, 'Missing homepage'
+          assert SITE+'/404.html' not in locations, '404 must not be indexed'
+          assert all(u.startswith(SITE+'/') for u in locations), 'Off-site URL in sitemap'
+          index=(p/'index.html').read_text(encoding='utf-8')
+          links=Links();links.feed(index)
+          assert './articles/' in links.links, 'Home has no static link to article directory'
+          assert sum(l.startswith('./articles/n') for l in links.links)>=min(8,len(articles)), 'Home is missing latest article links'
+          assert index.count('<!-- DEMENTIA_ATLAS_SEO_ARTICLES_BEGIN -->')==1, 'Duplicate homepage preview'
+          assert index.count('<!-- DEMENTIA_ATLAS_SEO_ARTICLES_END -->')==1, 'Duplicate homepage preview'
+          assert f'<link rel="canonical" href="{SITE}/">' in index, 'Home canonical missing'
+          assert 'application/ld+json' in index, 'Home structured data missing'
+          for name, canonical in [('about.html',SITE+'/about.html'),('privacy.html',SITE+'/privacy.html'),('articles/index.html',SITE+'/articles/')]:
+              content=(p/name).read_text(encoding='utf-8')
+              assert f'<link rel="canonical" href="{canonical}">' in content, f'Missing canonical {name}'
+          directory=(p/'articles/index.html').read_text(encoding='utf-8')
+          assert directory.count('class="article-directory-item"')==len(articles), 'Not every article is listed'
+          assert 'Sitemap: '+SITE+'/sitemap.xml' in (p/'robots.txt').read_text(encoding='utf-8')
+          header=(p/'_headers').read_text(encoding='utf-8') if (p/'_headers').is_file() else ''
+          assert not re.search(r'x-robots-tag\s*:\s*noindex',header,re.I), 'Global noindex header detected'
+          print(f'[OK] SEO: {len(articles)} free articles; {len(paper_pages)} cited papers; {len(locations)} sitemap entries')
+          print('[OK] Canonical tags, static crawlable links, index page and robots directives')
+          PY_VERIFY
+          python /tmp/dementia_seo_verify.py .
+          python - <<'PY_SEO_IMPORTANT'
+          from pathlib import Path
+          import re
+          # Ensure that no source and no GitHub workflow configuration were modified by the builder.
+          for name in ('scripts/update_data.py', 'scripts/sync_note_articles.py', 'scripts/build_cited_papers.py'):
+              assert Path(name).is_file(), name
+          assert Path('public/data/papers.json').is_file()
+          assert Path('public/data/articles.json').is_file()
+          print('[OK] Core data and updater scripts remain untouched')
+          PY_SEO_IMPORTANT
+
+      - name: Commit search files only - do not touch workflow definitions
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- public/index.html public/about.html public/privacy.html public/articles/index.html public/sitemap.xml public/robots.txt
+          if git diff --cached --name-only | grep -q '^\.github/workflows/'; then
+            echo 'Refusing to stage workflow changes' >&2
+            exit 1
+          fi
+          if git diff --cached --quiet; then
+            echo '[OK] SEO is already current; no commit necessary'
+          else
+            git commit -m 'Improve Dementia Atlas discovery by search engines'
+            git pull --rebase origin main
+            git push origin HEAD:main
+            echo '[OK] SEO changes committed to main'
+          fi
