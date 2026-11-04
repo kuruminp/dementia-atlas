@@ -1,16 +1,267 @@
 {
   "meta": {
     "mode": "api",
-    "fetched_at": "2026-11-03T15:35:20+00:00",
+    "fetched_at": "2026-11-04T15:43:12+00:00",
     "verified_at": null,
     "source": "PubMed",
     "description": "Metadata-based research prioritization; not scientific appraisal.",
     "selection_method": "metadata_quality_v1",
-    "archive_count": 187,
+    "archive_count": 198,
     "lookback_days": 14,
-    "newly_added": 7
+    "newly_added": 11
   },
   "items": [
+    {
+      "id": "42979031",
+      "title": "Remote versus in-person cognitive testing: the impact of visit modality on longitudinal cognitive outcomes in older adults.",
+      "journal": "Alzheimer's & dementia (Amsterdam, Netherlands)",
+      "date": "2026-11-02",
+      "pubmed_entry_date": "2026-11-04",
+      "disease": "ad",
+      "topic": "other",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1002/dad2.70530",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42979031/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 7,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-05"
+    },
+    {
+      "id": "42978421",
+      "title": "Cerebral amyloid PET in obstructive sleep apnoea: a systematic review and exploratory meta-analysis.",
+      "journal": "Nuclear medicine communications",
+      "date": "2026-11-04",
+      "pubmed_entry_date": "2026-11-04",
+      "disease": "ad",
+      "topic": "imaging",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1097/MNM.0000000000002256",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42978421/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-05"
+    },
+    {
+      "id": "42976719",
+      "title": "Clusters of Health Service and Psychotropic Use and Mortality Risk in People With Dementia: An Australian Cohort Study.",
+      "journal": "Journal of the American Medical Directors Association",
+      "date": "2026-09-22",
+      "pubmed_entry_date": "2026-11-03",
+      "disease": "other",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1016/j.jamda.2026.106502",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42976719/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-05"
+    },
+    {
+      "id": "42976517",
+      "title": "Survival analysis of spontaneous speech for predicting mild cognitive impairment-to-dementia conversion.",
+      "journal": "The journal of prevention of Alzheimer's disease",
+      "date": "2026-11-03",
+      "pubmed_entry_date": "2026-11-03",
+      "disease": "mci",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1016/j.tjpad.2026.100692",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42976517/",
+      "source": "PubMed",
+      "research_type": "validation",
+      "selection_signals": [
+        "validation",
+        "independent"
+      ],
+      "priority_score": 10,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-05"
+    },
+    {
+      "id": "42976393",
+      "title": "The healthcare cost of multimorbidity in older patients with atrial fibrillation: A retrospective cohort study in an Italian local health unit.",
+      "journal": "Health policy (Amsterdam, Netherlands)",
+      "date": "2026-10-22",
+      "pubmed_entry_date": "2026-11-03",
+      "disease": "other",
+      "topic": "care",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1016/j.healthpol.2026.105808",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42976393/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 7,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-05"
+    },
+    {
+      "id": "42975960",
+      "title": "Evaluating the Interaction of Alzheimer Biomarker Burden and α-Synuclein Status on Cognitive Trajectories in Parkinson Disease: Methodological Challenges and Power Estimates.",
+      "journal": "Alzheimer disease and associated disorders",
+      "date": "2026-11-04",
+      "pubmed_entry_date": "2026-11-03",
+      "disease": "ad",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1097/WAD.0000000000000762",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42975960/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "independent"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-05"
+    },
+    {
+      "id": "42975900",
+      "title": "Spousal Traumatic Brain Injury and Risk of Mortality, Dementia, and Cardiovascular Events.",
+      "journal": "JAMA network open",
+      "date": "2026-11-02",
+      "pubmed_entry_date": "2026-11-03",
+      "disease": "other",
+      "topic": "care",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1001/jamanetworkopen.2026.41851",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42975900/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-05"
+    },
+    {
+      "id": "42974696",
+      "title": "Clock Drawing Test Performance in Rural Vietnam: Reliability and Concurrent Validity Relative to the Mini-Mental State Examination in a Community-Based Sample.",
+      "journal": "Geriatrics & gerontology international",
+      "date": "2026-11",
+      "pubmed_entry_date": "2026-11-03",
+      "disease": "other",
+      "topic": "diagnosis",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1111/ggi.70876",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42974696/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-05"
+    },
+    {
+      "id": "42973746",
+      "title": "Socio-clinical profiles and life satisfaction (LS) in individuals with emerging cognitive disorders (MCI or iSCCs) a multicenter cross-sectional study in French university-affiliated memory clinics.",
+      "journal": "Journal of public health research",
+      "date": "2026-09-18",
+      "pubmed_entry_date": "2026-11-03",
+      "disease": "mci",
+      "topic": "other",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1177/22799036261487220",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42973746/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 7,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-05"
+    },
+    {
+      "id": "42973732",
+      "title": "Feasibility and engagement of a multidomain mobile intervention for mild cognitive impairment: A pilot randomised controlled trial with app-log analysis.",
+      "journal": "Digital health",
+      "date": "2026-09-18",
+      "pubmed_entry_date": "2026-11-03",
+      "disease": "mci",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1177/20552076261480623",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42973732/",
+      "source": "PubMed",
+      "research_type": "trial",
+      "selection_signals": [
+        "rct"
+      ],
+      "priority_score": 10,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-05"
+    },
+    {
+      "id": "42973578",
+      "title": "Acupuncture for vascular dementia: an overview of systematic reviews and meta-analysis.",
+      "journal": "Frontiers in neuroscience",
+      "date": "2026-10-19",
+      "pubmed_entry_date": "2026-11-03",
+      "disease": "vascular",
+      "topic": "other",
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review"
+      ],
+      "doi": "10.3389/fnins.2026.1796611",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42973578/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-05"
+    },
     {
       "id": "42973291",
       "title": "Artificial Intelligence-integrated Multimodal Neural Biomarkers for Early Risk Stratification in Preclinical Alzheimer's Disease.",
@@ -1997,7 +2248,8 @@
       "disease": "ad",
       "topic": "biomarker",
       "publication_types": [
-        "Journal Article"
+        "Journal Article",
+        "Observational Study"
       ],
       "doi": "10.1161/JAHA.124.038766",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42924830/",
