@@ -1,13 +1,20 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://dementia-atlas.pages.dev/</loc>
+    <lastmod>2026-11-04</lastmod>
   </url>
   <url>
     <loc>https://dementia-atlas.pages.dev/about.html</loc>
   </url>
   <url>
     <loc>https://dementia-atlas.pages.dev/privacy.html</loc>
+  </url>
+  <url>
+    <loc>https://dementia-atlas.pages.dev/articles/</loc>
+  </url>
+  <url>
+    <loc>https://dementia-atlas.pages.dev/papers/</loc>
   </url>
   <url>
     <loc>https://dementia-atlas.pages.dev/articles/nc4d5198bd38b.html</loc>
@@ -222,28 +229,16 @@
     <lastmod>2026-04-21</lastmod>
   </url>
   <url>
-    <loc>https://dementia-atlas.pages.dev/papers/</loc>
+    <loc>https://dementia-atlas.pages.dev/papers/10515789.html</loc>
   </url>
   <url>
     <loc>https://dementia-atlas.pages.dev/papers/1759558.html</loc>
   </url>
   <url>
-    <loc>https://dementia-atlas.pages.dev/papers/2011243.html</loc>
-  </url>
-  <url>
-    <loc>https://dementia-atlas.pages.dev/papers/8232972.html</loc>
-  </url>
-  <url>
-    <loc>https://dementia-atlas.pages.dev/papers/9520920.html</loc>
-  </url>
-  <url>
-    <loc>https://dementia-atlas.pages.dev/papers/9809557.html</loc>
-  </url>
-  <url>
-    <loc>https://dementia-atlas.pages.dev/papers/10515789.html</loc>
-  </url>
-  <url>
     <loc>https://dementia-atlas.pages.dev/papers/18287270.html</loc>
+  </url>
+  <url>
+    <loc>https://dementia-atlas.pages.dev/papers/2011243.html</loc>
   </url>
   <url>
     <loc>https://dementia-atlas.pages.dev/papers/20424254.html</loc>
@@ -673,5 +668,14 @@
   </url>
   <url>
     <loc>https://dementia-atlas.pages.dev/papers/42864517.html</loc>
+  </url>
+  <url>
+    <loc>https://dementia-atlas.pages.dev/papers/8232972.html</loc>
+  </url>
+  <url>
+    <loc>https://dementia-atlas.pages.dev/papers/9520920.html</loc>
+  </url>
+  <url>
+    <loc>https://dementia-atlas.pages.dev/papers/9809557.html</loc>
   </url>
 </urlset>
