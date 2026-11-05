@@ -1,16 +1,226 @@
 {
   "meta": {
     "mode": "api",
-    "fetched_at": "2026-11-04T15:43:12+00:00",
+    "fetched_at": "2026-11-05T15:47:04+00:00",
     "verified_at": null,
     "source": "PubMed",
     "description": "Metadata-based research prioritization; not scientific appraisal.",
     "selection_method": "metadata_quality_v1",
-    "archive_count": 198,
+    "archive_count": 207,
     "lookback_days": 14,
-    "newly_added": 11
+    "newly_added": 9
   },
   "items": [
+    {
+      "id": "42982757",
+      "title": "Intergenerational educational attainment and risk for incident dementia in a U.S. community-based cohort study: Findings from the Atherosclerosis Risk in Communities (ARIC) Neurocognitive Study.",
+      "journal": "Journal of Alzheimer's disease : JAD",
+      "date": "2026-11-04",
+      "pubmed_entry_date": "2026-11-04",
+      "disease": "ad",
+      "topic": "diagnosis",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1177/13872877261500432",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42982757/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-06"
+    },
+    {
+      "id": "42982748",
+      "title": "Validation of plasma biomarker immunoassay-based models for predicting brain amyloid positivity in cognitively impaired individuals.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "date": "2026-11",
+      "pubmed_entry_date": "2026-11-04",
+      "disease": "ad",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article",
+        "Validation Study"
+      ],
+      "doi": "10.1002/alz.71946",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42982748/",
+      "source": "PubMed",
+      "research_type": "validation",
+      "selection_signals": [
+        "validation"
+      ],
+      "priority_score": 7,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-06"
+    },
+    {
+      "id": "42982738",
+      "title": "Stable episodic memory and higher education do not influence the rate of Alzheimer's disease pathology as measured by plasma p-tau217.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "date": "2026-11",
+      "pubmed_entry_date": "2026-11-04",
+      "disease": "ad",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1002/alz.71920",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42982738/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "independent",
+        "large_sample"
+      ],
+      "priority_score": 10,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-06"
+    },
+    {
+      "id": "42982275",
+      "title": "Dementia Risk After Vertebral Augmentation for Osteoporotic Vertebral Compression Fracture: A Propensity Score-Matched Cohort Study.",
+      "journal": "World neurosurgery",
+      "date": "2026-11-04",
+      "pubmed_entry_date": "2026-11-04",
+      "disease": "other",
+      "topic": "diagnosis",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1016/j.wneu.2026.125490",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42982275/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-06"
+    },
+    {
+      "id": "42981415",
+      "title": "A functional connectome identifies vulnerability to cognitive decline and Alzheimer's disease progression.",
+      "journal": "Science advances",
+      "date": "2026-11-04",
+      "pubmed_entry_date": "2026-11-04",
+      "disease": "ad",
+      "topic": "other",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1126/sciadv.aed9351",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42981415/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "independent"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-06"
+    },
+    {
+      "id": "42980900",
+      "title": "Cardiorespiratory fitness and risk of incident dementia: systematic review and meta-analysis of 12 cohort studies involving 2.3 million cognitively intact participants.",
+      "journal": "GeroScience",
+      "date": "2026-11-04",
+      "pubmed_entry_date": "2026-11-04",
+      "disease": "other",
+      "topic": "diagnosis",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1007/s11357-026-02637-6",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42980900/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic",
+        "large_sample"
+      ],
+      "priority_score": 12,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-06"
+    },
+    {
+      "id": "42979920",
+      "title": "Nonlinear dose-response relationship between cumulative anticholinergic use and the risk of dementia in adults with overactive bladder: a systematic review and dose-response meta-analysis.",
+      "journal": "Age and ageing",
+      "date": "2026-08-03",
+      "pubmed_entry_date": "2026-11-04",
+      "disease": "other",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review",
+        "Meta-Analysis"
+      ],
+      "doi": "10.1093/ageing/afag319",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42979920/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 10,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-06"
+    },
+    {
+      "id": "42979674",
+      "title": "Anticipatory grief in everyday life among dementia caregivers: A qualitative systematic review.",
+      "journal": "Death studies",
+      "date": "2026-11-04",
+      "pubmed_entry_date": "2026-11-04",
+      "disease": "other",
+      "topic": "care",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1080/07481187.2026.2759165",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42979674/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-06"
+    },
+    {
+      "id": "42979072",
+      "title": "Efficacy and safety of traditional Chinese medicine kidney-tonifying and blood-activating therapy in the treatment of vascular dementia: a systematic review and meta-analysis.",
+      "journal": "Frontiers in neurology",
+      "date": "2026-10-20",
+      "pubmed_entry_date": "2026-11-04",
+      "disease": "vascular",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review",
+        "Meta-Analysis"
+      ],
+      "doi": "10.3389/fneur.2026.1901245",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42979072/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic",
+        "large_sample"
+      ],
+      "priority_score": 12,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-06"
+    },
     {
       "id": "42979031",
       "title": "Remote versus in-person cognitive testing: the impact of visit modality on longitudinal cognitive outcomes in older adults.",
