@@ -2,7 +2,7 @@
   "meta": {
     "source": "PubMed E-utilities",
     "role": "references cited in the site's free author-written essays",
-    "last_updated": "2026-11-10T21:25:32+00:00",
+    "last_updated": "2026-11-11T22:15:16+00:00",
     "separate_from_new_100": true
   },
   "items": [
@@ -173,6 +173,18 @@
       "article_keys": [
         "n4388d71562a5",
         "n87618757d4b7"
+      ]
+    },
+    {
+      "id": "23079557",
+      "title": "Cognitive reserve in ageing and Alzheimer's disease.",
+      "journal": "The Lancet. Neurology",
+      "year": "2012",
+      "doi": "10.1016/S1474-4422(12)70191-6",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/23079557/",
+      "local_url": "./papers/23079557.html",
+      "article_keys": [
+        "nf2e64e47175a"
       ]
     },
     {
@@ -843,6 +855,18 @@
       "local_url": "./papers/35617937.html",
       "article_keys": [
         "n41427e9b4f57"
+      ]
+    },
+    {
+      "id": "35879736",
+      "title": "Issues and recommendations for the residual approach to quantifying cognitive resilience and reserve.",
+      "journal": "Alzheimer's research & therapy",
+      "year": "2022",
+      "doi": "10.1186/s13195-022-01049-w",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/35879736/",
+      "local_url": "./papers/35879736.html",
+      "article_keys": [
+        "nf2e64e47175a"
       ]
     },
     {
@@ -1531,6 +1555,7 @@
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41709913/",
       "local_url": "./papers/41709913.html",
       "article_keys": [
+        "nf2e64e47175a",
         "n1995314a5ed9",
         "n4388d71562a5",
         "n87618757d4b7"
@@ -1644,6 +1669,18 @@
       "local_url": "./papers/41916283.html",
       "article_keys": [
         "n101590ef8bc5"
+      ]
+    },
+    {
+      "id": "41950468",
+      "title": "Effect of Cognitive Reserve on Age at Symptom Onset and Cognitive Decline in Individuals With Dominantly Inherited Alzheimer Disease.",
+      "journal": "Neurology",
+      "year": "2026",
+      "doi": "10.1212/WNL.0000000000214804",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41950468/",
+      "local_url": "./papers/41950468.html",
+      "article_keys": [
+        "nf2e64e47175a"
       ]
     },
     {
