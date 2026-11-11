@@ -1,19 +1,156 @@
 {
   "meta": {
     "mode": "api",
-    "fetched_at": "2026-11-11T04:07:51+00:00",
+    "fetched_at": "2026-11-11T21:40:36+00:00",
     "verified_at": null,
     "source": "PubMed",
     "description": "Metadata-based research prioritization; not scientific appraisal.",
     "selection_method": "metadata_quality_v1",
-    "archive_count": 248,
+    "archive_count": 254,
     "lookback_days": 14,
-    "newly_added": 41,
+    "newly_added": 6,
     "pending_pmids": [
       "23556151"
     ]
   },
   "items": [
+    {
+      "id": "43011462",
+      "title": "Evaluating the Accuracy of Remote Questionnaire and Speech Measures in Detecting Cognitive Impairment in the ADNI4 Remote Digital Cohort: Cross-Sectional Study.",
+      "journal": "JMIR neurotechnology",
+      "date": "2026-11-06",
+      "pubmed_entry_date": "2026-11-11",
+      "disease": "other",
+      "topic": "diagnosis",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.2196/108372",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43011462/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 7,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-12"
+    },
+    {
+      "id": "43011219",
+      "title": "Association of Cholinesterase Inhibitor-Memantine Combination Therapy With Long-Term Community Management and Mortality in Patients With Dementia: A Nationwide Retrospective Cohort Study.",
+      "journal": "Dementia and neurocognitive disorders",
+      "date": "2026-10-20",
+      "pubmed_entry_date": "2026-11-11",
+      "disease": "other",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.12779/dnd.2026.25.4.253",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43011219/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-12"
+    },
+    {
+      "id": "43010136",
+      "title": "Diabetes mellitus is associated with altered Alzheimer's disease pathology.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "date": "2026-11",
+      "pubmed_entry_date": "2026-11-10",
+      "disease": "ad",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1002/alz.72002",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43010136/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-12"
+    },
+    {
+      "id": "43009781",
+      "title": "Distribution of device-measured 24-hour movement behaviours across the cognitive spectrum in older adults: the HUNT study.",
+      "journal": "European review of aging and physical activity : official journal of the European Group for Research into Elderly and Physical Activity",
+      "date": "2026-08-13",
+      "pubmed_entry_date": "2026-11-10",
+      "disease": "other",
+      "topic": "prevention",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1186/s11556-026-00433-x",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43009781/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 7,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-12"
+    },
+    {
+      "id": "43009349",
+      "title": "Plasma p-tau217 as a biomarker mapping cognitive impairment in Alzheimer's disease.",
+      "journal": "International psychogeriatrics",
+      "date": "2026-11-11",
+      "pubmed_entry_date": "2026-11-10",
+      "disease": "ad",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1016/j.inpsyc.2026.100311",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43009349/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-12"
+    },
+    {
+      "id": "43008775",
+      "title": "Safety, tolerability, and efficacy of bepranemab in people living with prodromal-to-mild Alzheimer's disease: a randomised, double-blind, placebo-controlled, phase 2 trial.",
+      "journal": "The Lancet. Neurology",
+      "date": "2026-11-10",
+      "pubmed_entry_date": "2026-11-10",
+      "disease": "ad",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1016/S1474-4422(26)00357-1",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43008775/",
+      "source": "PubMed",
+      "research_type": "trial",
+      "selection_signals": [
+        "rct"
+      ],
+      "priority_score": 10,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-12"
+    },
     {
       "id": "43005608",
       "title": "Comparative efficacy and safety of quetiapine versus other atypical antipsychotics for behavioral and psychological symptoms in Alzheimer's disease: a systematic review and meta-analysis.",
@@ -2373,7 +2510,7 @@
     },
     {
       "id": "42951114",
-      "title": "The Effects of Blueberry Consumption on Cerebral Blood Flow and Brain Glutathione Levels in Older Adults: A Double-Blind Randomized, Placebo-Controlled Trial.",
+      "title": "The effects of blueberry consumption on cerebral blood flow and brain glutathione concentrations in older adults: a double-blind randomized, placebo-controlled trial.",
       "journal": "The American journal of clinical nutrition",
       "date": "2026-10-28",
       "pubmed_entry_date": "2026-10-28",
