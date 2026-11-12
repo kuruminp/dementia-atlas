@@ -1,19 +1,231 @@
 {
   "meta": {
     "mode": "api",
-    "fetched_at": "2026-11-11T21:40:36+00:00",
+    "fetched_at": "2026-11-12T21:40:23+00:00",
     "verified_at": null,
     "source": "PubMed",
     "description": "Metadata-based research prioritization; not scientific appraisal.",
     "selection_method": "metadata_quality_v1",
-    "archive_count": 254,
+    "archive_count": 263,
     "lookback_days": 14,
-    "newly_added": 6,
+    "newly_added": 9,
     "pending_pmids": [
       "23556151"
     ]
   },
   "items": [
+    {
+      "id": "43016583",
+      "title": "Optimizing exercise prescriptions for improving neuropsychiatric symptoms in older adults with MCI or dementia: a dose-response meta-analysis.",
+      "journal": "Frontiers in aging neuroscience",
+      "date": "2026-10-28",
+      "pubmed_entry_date": "2026-11-12",
+      "disease": "mci",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review"
+      ],
+      "doi": "10.3389/fnagi.2026.1978798",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43016583/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-13"
+    },
+    {
+      "id": "43016171",
+      "title": "Invasive versus conservative strategy for older patients with myocardial infarction based on cognitive function: the SENIOR-RITA cognition analysis.",
+      "journal": "Age and ageing",
+      "date": "2026-10-31",
+      "pubmed_entry_date": "2026-11-12",
+      "disease": "other",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article",
+        "Randomized Controlled Trial",
+        "Comparative Study",
+        "Multicenter Study"
+      ],
+      "doi": "10.1093/ageing/afag330",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43016171/",
+      "source": "PubMed",
+      "research_type": "trial",
+      "selection_signals": [
+        "rct",
+        "multicenter",
+        "large_sample"
+      ],
+      "priority_score": 15,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-13"
+    },
+    {
+      "id": "43016032",
+      "title": "Association between urinary flow rate and cognition in the elderly: a cross-sectional study.",
+      "journal": "The Canadian journal of urology",
+      "date": "2026-10-30",
+      "pubmed_entry_date": "2026-11-12",
+      "disease": "other",
+      "topic": "other",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.32604/cju.2026.087823",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43016032/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 7,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-13"
+    },
+    {
+      "id": "43015907",
+      "title": "Computerised cognitive training combined with nutritional counseling in mild cognitive impairment - results of a 2 × 2 factorial randomized controlled trial (BrainFit-nutrition study).",
+      "journal": "Alzheimer's research & therapy",
+      "date": "2026-11-09",
+      "pubmed_entry_date": "2026-11-11",
+      "disease": "mci",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article",
+        "Randomized Controlled Trial"
+      ],
+      "doi": "10.1186/s13195-026-02255-6",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43015907/",
+      "source": "PubMed",
+      "research_type": "trial",
+      "selection_signals": [
+        "rct"
+      ],
+      "priority_score": 10,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-13"
+    },
+    {
+      "id": "43014126",
+      "title": "Posttraumatic stress disorder and risk of all-cause dementia: A systematic review and meta-regression analysis of between-study heterogeneity.",
+      "journal": "Journal of psychiatric research",
+      "date": "2026-11-09",
+      "pubmed_entry_date": "2026-11-11",
+      "disease": "other",
+      "topic": "other",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.1016/j.jpsychires.2026.11.005",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43014126/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-13"
+    },
+    {
+      "id": "43014119",
+      "title": "Metal dysregulation and neurovascular injury in vascular dementia: A systematic review of clinical evidence and mechanistic synthesis.",
+      "journal": "Journal of trace elements in medicine and biology : organ of the Society for Minerals and Trace Elements (GMS)",
+      "date": "2026-11-06",
+      "pubmed_entry_date": "2026-11-11",
+      "disease": "vascular",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.1016/j.jtemb.2026.127989",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43014119/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-13"
+    },
+    {
+      "id": "43013474",
+      "title": "Potentially modifiable mediators of the association between child abuse and dementia.",
+      "journal": "European journal of psychotraumatology",
+      "date": "2026-11-11",
+      "pubmed_entry_date": "2026-11-11",
+      "disease": "other",
+      "topic": "prevention",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1080/20008066.2026.2751268",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43013474/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-13"
+    },
+    {
+      "id": "43013230",
+      "title": "Neural correlates of frailty and the development of a cerebral frailty risk score for dementia.",
+      "journal": "GeroScience",
+      "date": "2026-11-11",
+      "pubmed_entry_date": "2026-11-11",
+      "disease": "other",
+      "topic": "imaging",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1007/s11357-026-02635-8",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43013230/",
+      "source": "PubMed",
+      "research_type": "validation",
+      "selection_signals": [
+        "validation",
+        "independent"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-13"
+    },
+    {
+      "id": "43013143",
+      "title": "Association between Alzheimer's disease and related dementias and postoperative outcomes after geriatric hip fracture surgery.",
+      "journal": "European journal of orthopaedic surgery & traumatology : orthopedie traumatologie",
+      "date": "2026-11-11",
+      "pubmed_entry_date": "2026-11-11",
+      "disease": "ad",
+      "topic": "other",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1007/s00590-026-05032-1",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43013143/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "multicenter",
+        "large_sample"
+      ],
+      "priority_score": 10,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-13"
+    },
     {
       "id": "43011462",
       "title": "Evaluating the Accuracy of Remote Questionnaire and Speech Measures in Detecting Cognitive Impairment in the ADNI4 Remote Digital Cohort: Cross-Sectional Study.",
@@ -269,7 +481,7 @@
     },
     {
       "id": "43003143",
-      "title": "Effects of Probiotics/Synbiotic Interventions on Cognitive Dysfunction in Alzheimer's or MCI: A Systematic Review and Meta‑Analysis of randomized controlled trials.",
+      "title": "Effects of probiotics/synbiotic interventions on cognitive dysfunction in Alzheimer's or MCI: A systematic review and meta‑analysis of randomized controlled trials.",
       "journal": "Ageing research reviews",
       "date": "2026-11-09",
       "pubmed_entry_date": "2026-11-09",
