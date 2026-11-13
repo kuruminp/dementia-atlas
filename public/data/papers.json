@@ -1,19 +1,163 @@
 {
   "meta": {
     "mode": "api",
-    "fetched_at": "2026-11-12T21:40:23+00:00",
+    "fetched_at": "2026-11-13T21:07:11+00:00",
     "verified_at": null,
     "source": "PubMed",
     "description": "Metadata-based research prioritization; not scientific appraisal.",
     "selection_method": "metadata_quality_v1",
-    "archive_count": 263,
+    "archive_count": 270,
     "lookback_days": 14,
-    "newly_added": 9,
+    "newly_added": 7,
     "pending_pmids": [
       "23556151"
     ]
   },
   "items": [
+    {
+      "id": "43023740",
+      "title": "Mixed-method process evaluation of the Evidence-based Medication knowledge Brokers in Residential Aged CarE (EMBRACE) helix-counterbalanced randomised controlled trial.",
+      "journal": "Age and ageing",
+      "date": "2026-10-31",
+      "pubmed_entry_date": "2026-11-13",
+      "disease": "other",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article",
+        "Randomized Controlled Trial"
+      ],
+      "doi": "10.1093/ageing/afag329",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43023740/",
+      "source": "PubMed",
+      "research_type": "trial",
+      "selection_signals": [
+        "rct"
+      ],
+      "priority_score": 10,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-14"
+    },
+    {
+      "id": "43022134",
+      "title": "Association between statin therapy and dementia risk: evidence from All of Us and UK Biobank with coenzyme Q7-related mediation analysis.",
+      "journal": "Frontiers in pharmacology",
+      "date": "2026-10-29",
+      "pubmed_entry_date": "2026-11-13",
+      "disease": "other",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.3389/fphar.2026.1915633",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43022134/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "independent",
+        "large_sample"
+      ],
+      "priority_score": 10,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-14"
+    },
+    {
+      "id": "43021139",
+      "title": "Daily patterns and prevalence of behavioral and psychological symptoms of dementia in Swedish nursing homes.",
+      "journal": "BMC geriatrics",
+      "date": "2026-10-29",
+      "pubmed_entry_date": "2026-11-12",
+      "disease": "other",
+      "topic": "other",
+      "publication_types": [
+        "Journal Article",
+        "Observational Study",
+        "Multicenter Study"
+      ],
+      "doi": "10.1186/s12877-026-08537-w",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43021139/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "multicenter"
+      ],
+      "priority_score": 7,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-14"
+    },
+    {
+      "id": "43020940",
+      "title": "Association of hobby engagement with cognitive decline transitions and healthy life expectancy: evidence from four international ageing cohorts.",
+      "journal": "European journal of ageing",
+      "date": "2026-08-19",
+      "pubmed_entry_date": "2026-11-12",
+      "disease": "other",
+      "topic": "other",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1007/s10433-026-00935-8",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43020940/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 7,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-14"
+    },
+    {
+      "id": "43020520",
+      "title": "Effect of intensive blood pressure control on cognitive outcomes and brain structures in adults with type 2 diabetes: prespecified analysis of secondary outcomes of BPROAD randomised controlled trial.",
+      "journal": "BMJ (Clinical research ed.)",
+      "date": "2026-11-12",
+      "pubmed_entry_date": "2026-11-12",
+      "disease": "other",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article",
+        "Randomized Controlled Trial",
+        "Multicenter Study"
+      ],
+      "doi": "10.1136/bmj-2026-101209",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43020520/",
+      "source": "PubMed",
+      "research_type": "trial",
+      "selection_signals": [
+        "rct",
+        "multicenter",
+        "large_sample"
+      ],
+      "priority_score": 15,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-14"
+    },
+    {
+      "id": "43019070",
+      "title": "Training executive control and multitasking abilities in older adults: training gains and transfer effects of an online pilot randomized controlled trial.",
+      "journal": "Scientific reports",
+      "date": "2026-09-28",
+      "pubmed_entry_date": "2026-11-12",
+      "disease": "other",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article",
+        "Randomized Controlled Trial"
+      ],
+      "doi": "10.1038/s41598-026-56974-9",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43019070/",
+      "source": "PubMed",
+      "research_type": "trial",
+      "selection_signals": [
+        "rct"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-14"
+    },
     {
       "id": "43016583",
       "title": "Optimizing exercise prescriptions for improving neuropsychiatric symptoms in older adults with MCI or dementia: a dose-response meta-analysis.",
@@ -364,6 +508,31 @@
       "selected_on": "2026-11-12"
     },
     {
+      "id": "43008255",
+      "title": "Performance of Diagnostic Criteria for Autoimmune Encephalitis in Patients With Suspected Rapidly Progressive Dementia.",
+      "journal": "Neurology",
+      "date": "2026-11-10",
+      "pubmed_entry_date": "2026-11-10",
+      "disease": "other",
+      "topic": "diagnosis",
+      "publication_types": [
+        "Journal Article",
+        "Multicenter Study",
+        "Observational Study"
+      ],
+      "doi": "10.1212/WNL.0000000000218783",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43008255/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "multicenter"
+      ],
+      "priority_score": 7,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-14"
+    },
+    {
       "id": "43005608",
       "title": "Comparative efficacy and safety of quetiapine versus other atypical antipsychotics for behavioral and psychological symptoms in Alzheimer's disease: a systematic review and meta-analysis.",
       "journal": "Frontiers in psychiatry",
@@ -465,7 +634,8 @@
       "disease": "ad",
       "topic": "pathology",
       "publication_types": [
-        "Journal Article"
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
       ],
       "doi": "10.1038/s41467-026-77651-5",
       "url": "https://pubmed.ncbi.nlm.nih.gov/43003833/",
