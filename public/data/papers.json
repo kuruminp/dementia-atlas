@@ -1,19 +1,349 @@
 {
   "meta": {
     "mode": "api",
-    "fetched_at": "2026-11-13T21:07:11+00:00",
+    "fetched_at": "2026-11-14T19:38:34+00:00",
     "verified_at": null,
     "source": "PubMed",
     "description": "Metadata-based research prioritization; not scientific appraisal.",
     "selection_method": "metadata_quality_v1",
-    "archive_count": 270,
+    "archive_count": 284,
     "lookback_days": 14,
-    "newly_added": 7,
+    "newly_added": 14,
     "pending_pmids": [
       "23556151"
     ]
   },
   "items": [
+    {
+      "id": "43031554",
+      "title": "Development and validation of a risk stratification model for mild cognitive impairment among older adults with possible sarcopenia integrating traditional Chinese medicine constitution: a multicenter cross-sectional study.",
+      "journal": "Frontiers in public health",
+      "date": "2026-10-30",
+      "pubmed_entry_date": "2026-11-14",
+      "disease": "mci",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article",
+        "Multicenter Study",
+        "Validation Study"
+      ],
+      "doi": "10.3389/fpubh.2026.1980675",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43031554/",
+      "source": "PubMed",
+      "research_type": "validation",
+      "selection_signals": [
+        "validation",
+        "multicenter",
+        "independent"
+      ],
+      "priority_score": 11,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-15"
+    },
+    {
+      "id": "43030797",
+      "title": "Extreme Heat Exposure and Dementia-Related Mortality: A Systematic Review and Meta-Analysis.",
+      "journal": "Journal of clinical medicine",
+      "date": "2026-11-06",
+      "pubmed_entry_date": "2026-11-14",
+      "disease": "other",
+      "topic": "other",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.3390/jcm15218655",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43030797/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-15"
+    },
+    {
+      "id": "43030126",
+      "title": "Efficacy and Safety of Cuban Policosanol on Cognitive Function and Antioxidant Status in Adults with Subjective Memory Decline: A 12-Week Randomized, Double-Blinded, Placebo-Controlled Multicenter Trial.",
+      "journal": "Nutrients",
+      "date": "2026-10-24",
+      "pubmed_entry_date": "2026-11-14",
+      "disease": "mci",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article",
+        "Randomized Controlled Trial",
+        "Multicenter Study"
+      ],
+      "doi": "10.3390/nu18213496",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43030126/",
+      "source": "PubMed",
+      "research_type": "trial",
+      "selection_signals": [
+        "rct",
+        "multicenter"
+      ],
+      "priority_score": 11,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-15"
+    },
+    {
+      "id": "43027761",
+      "title": "Blood-CSF MiRNA Signatures in Alzheimer's Disease Reveal Novel Biomarker Candidates: A Systematic Review.",
+      "journal": "International journal of molecular sciences",
+      "date": "2026-10-24",
+      "pubmed_entry_date": "2026-11-14",
+      "disease": "ad",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review",
+        "Review"
+      ],
+      "doi": "10.3390/ijms27219506",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43027761/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-15"
+    },
+    {
+      "id": "43026650",
+      "title": "Caregiver well-being after multisite implementation of the Care Ecosystem.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "date": "2026-11",
+      "pubmed_entry_date": "2026-11-13",
+      "disease": "other",
+      "topic": "care",
+      "publication_types": [
+        "Journal Article",
+        "Multicenter Study",
+        "Pragmatic Clinical Trial"
+      ],
+      "doi": "10.1002/alz.72005",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43026650/",
+      "source": "PubMed",
+      "research_type": "trial",
+      "selection_signals": [
+        "rct",
+        "multicenter"
+      ],
+      "priority_score": 12,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-15"
+    },
+    {
+      "id": "43026028",
+      "title": "Acute Care Utilization and Cost Outcomes of Home-Based Palliative Care for Persons Living with Dementia in the United States: A Systematic Review.",
+      "journal": "Journal of palliative medicine",
+      "date": "2026-11-13",
+      "pubmed_entry_date": "2026-11-13",
+      "disease": "other",
+      "topic": "care",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.1177/10966218261505194",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43026028/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-15"
+    },
+    {
+      "id": "43025389",
+      "title": "Effects of acupuncture on cognitive function and brain activation in older adults with mild cognitive impairment: A randomized controlled trial.",
+      "journal": "Complementary therapies in clinical practice",
+      "date": "2026-11-11",
+      "pubmed_entry_date": "2026-11-13",
+      "disease": "mci",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1016/j.ctcp.2026.102096",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43025389/",
+      "source": "PubMed",
+      "research_type": "trial",
+      "selection_signals": [
+        "rct"
+      ],
+      "priority_score": 10,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-15"
+    },
+    {
+      "id": "43025039",
+      "title": "Effects of sustained moderate to vigorous physical activity on late-life cognitive function: A target trial emulation study.",
+      "journal": "Maturitas",
+      "date": "2026-11-11",
+      "pubmed_entry_date": "2026-11-13",
+      "disease": "other",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1016/j.maturitas.2026.109189",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43025039/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 7,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-15"
+    },
+    {
+      "id": "43025006",
+      "title": "Systematic review of machine and deep learning in EEG Alzheimer's detection.",
+      "journal": "Psychiatry research. Neuroimaging",
+      "date": "2026-11-02",
+      "pubmed_entry_date": "2026-11-13",
+      "disease": "ad",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.1016/j.pscychresns.2026.112371",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43025006/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-15"
+    },
+    {
+      "id": "43025000",
+      "title": "Effects of non-pharmacological interventions on older adults with cognitive impairment in nursing homes: a systematic review and network meta-analysis.",
+      "journal": "Archives of gerontology and geriatrics",
+      "date": "2026-11-11",
+      "pubmed_entry_date": "2026-11-13",
+      "disease": "other",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.1016/j.archger.2026.106478",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43025000/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic",
+        "large_sample"
+      ],
+      "priority_score": 11,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-15"
+    },
+    {
+      "id": "43024495",
+      "title": "Cultural adaptation and discriminative validity of the Arizona Battery of Communication Disorders -Second Edition (ABCD-2) in neurodegenerative disorders.",
+      "journal": "Applied neuropsychology. Adult",
+      "date": "2026-11-13",
+      "pubmed_entry_date": "2026-11-13",
+      "disease": "ad",
+      "topic": "care",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1080/23279095.2026.2761603",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43024495/",
+      "source": "PubMed",
+      "research_type": "validation",
+      "selection_signals": [
+        "validation",
+        "independent"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-15"
+    },
+    {
+      "id": "43024373",
+      "title": "Association between the Frequency of Individual Outdoor Activity and Risk of Incident Dementia in an Elderly Population in China: A National Cohort Study.",
+      "journal": "Neuroepidemiology",
+      "date": "2026-11-13",
+      "pubmed_entry_date": "2026-11-13",
+      "disease": "other",
+      "topic": "other",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1159/000548330",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43024373/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-15"
+    },
+    {
+      "id": "43024304",
+      "title": "Association between depression and cognitive function in adults aged 50 years and older: A cross-sectional study of NHANES 2011-2014.",
+      "journal": "Medicine",
+      "date": "2026-11-13",
+      "pubmed_entry_date": "2026-11-13",
+      "disease": "ad",
+      "topic": "other",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1097/MD.0000000000051213",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43024304/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 7,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-15"
+    },
+    {
+      "id": "43024096",
+      "title": "Depressive symptom dimensions, physical activity, and incident dementia: a longitudinal analysis of three international cohorts.",
+      "journal": "European archives of psychiatry and clinical neuroscience",
+      "date": "2026-11-13",
+      "pubmed_entry_date": "2026-11-13",
+      "disease": "other",
+      "topic": "other",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1007/s00406-026-02415-7",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43024096/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-15"
+    },
     {
       "id": "43023740",
       "title": "Mixed-method process evaluation of the Evidence-based Medication knowledge Brokers in Residential Aged CarE (EMBRACE) helix-counterbalanced randomised controlled trial.",
@@ -144,6 +474,7 @@
       "disease": "other",
       "topic": "treatment",
       "publication_types": [
+        "Comparative Study",
         "Journal Article",
         "Randomized Controlled Trial"
       ],
