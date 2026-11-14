@@ -3,10 +3,71 @@
     "mode": "curated",
     "source": "note",
     "description": "Verified free published note essays copied with author permission",
-    "fetched_at": "2026-11-13T21:36:23+00:00",
+    "fetched_at": "2026-11-14T20:04:13+00:00",
     "policy": "price=0; published; non-exam; public details only"
   },
   "items": [
+    {
+      "key": "ne6350efdc593",
+      "title": "血液検査で，アルツハイマー病以外のタウ病理も見つけられるのか―eMTBR-tau243が示した新しい可能性",
+      "url": "https://note.com/merry_lily/n/ne6350efdc593",
+      "date": "2026-11-15",
+      "category": "研究の読みもの",
+      "description": "アルツハイマー病の研究では，血液バイオマーカーが急速に発展しています． 以前は，脳の中でどのような変化が起こっているかを調べるために，PET検査や脳脊髄液検査が必要でした． しかし，最近では，血液中のp-tau…",
+      "tag": "research",
+      "local_url": "./articles/ne6350efdc593.html",
+      "related_pmids": [
+        "43026662",
+        "37443334",
+        "40164726"
+      ],
+      "references": [
+        {
+          "pmid": "43026662",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43026662/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "37443334",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37443334/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "40164726",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40164726/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1001/jama.2026.24689",
+          "doi": "10.1001/jama.2026.24689",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/s41591-023-02443-z",
+          "doi": "10.1038/s41591-023-02443-z",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1038/s41591-025-03617-7",
+          "doi": "10.1038/s41591-025-03617-7",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
+    },
     {
       "key": "nf2e64e47175a",
       "title": "アルツハイマー病の発症は，遺伝子だけでは決まらないのか―認知予備能がもたらす「症状の出にくさ」",
