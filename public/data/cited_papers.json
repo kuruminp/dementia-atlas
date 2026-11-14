@@ -2,7 +2,7 @@
   "meta": {
     "source": "PubMed E-utilities",
     "role": "references cited in the site's free author-written essays",
-    "last_updated": "2026-11-13T21:36:45+00:00",
+    "last_updated": "2026-11-14T20:04:27+00:00",
     "separate_from_new_100": true
   },
   "items": [
@@ -1000,6 +1000,7 @@
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/37443334/",
       "local_url": "./papers/37443334.html",
       "article_keys": [
+        "ne6350efdc593",
         "ne04e6bf3aa05",
         "nda8fd98e87cd"
       ]
@@ -1300,6 +1301,7 @@
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40164726/",
       "local_url": "./papers/40164726.html",
       "article_keys": [
+        "ne6350efdc593",
         "ne04e6bf3aa05",
         "nda8fd98e87cd",
         "n9df0bf85ccbe"
@@ -1874,6 +1876,18 @@
       "local_url": "./papers/42864517.html",
       "article_keys": [
         "nc4d5198bd38b"
+      ]
+    },
+    {
+      "id": "43026662",
+      "title": "Fluid eMTBR-tau243 as a Biomarker of Mixed 3-Repeat and 4-Repeat Tau Pathology.",
+      "journal": "JAMA",
+      "year": "2026",
+      "doi": "10.1001/jama.2026.24689",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/43026662/",
+      "local_url": "./papers/43026662.html",
+      "article_keys": [
+        "ne6350efdc593"
       ]
     }
   ]
