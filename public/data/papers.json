@@ -1,19 +1,134 @@
 {
   "meta": {
     "mode": "api",
-    "fetched_at": "2026-11-14T19:38:34+00:00",
+    "fetched_at": "2026-11-15T20:03:49+00:00",
     "verified_at": null,
     "source": "PubMed",
     "description": "Metadata-based research prioritization; not scientific appraisal.",
     "selection_method": "metadata_quality_v1",
-    "archive_count": 284,
+    "archive_count": 289,
     "lookback_days": 14,
-    "newly_added": 14,
+    "newly_added": 5,
     "pending_pmids": [
       "23556151"
     ]
   },
   "items": [
+    {
+      "id": "43034879",
+      "title": "Elevated Phosphorylated Tau and Amyloid-Beta 42 in Sleep Apnoea: Evidence From a Systematic Review and Meta-Analysis.",
+      "journal": "BioMed research international",
+      "date": "2026",
+      "pubmed_entry_date": "2026-11-15",
+      "disease": "ad",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review",
+        "Meta-Analysis"
+      ],
+      "doi": "10.1155/bmri/4366369",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43034879/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-16"
+    },
+    {
+      "id": "43034842",
+      "title": "Smoking and dementia risk: an updated systematic review and meta-analysis of 61 prospective cohort studies and implications for tobacco control.",
+      "journal": "EClinicalMedicine",
+      "date": "2026-11-07",
+      "pubmed_entry_date": "2026-11-15",
+      "disease": "other",
+      "topic": "other",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1016/j.eclinm.2026.104310",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43034842/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-16"
+    },
+    {
+      "id": "43033633",
+      "title": "Structured home-based interventions for people with dementia: A systematic review and meta-analysis.",
+      "journal": "Geriatric nursing (New York, N.Y.)",
+      "date": "2026-11-14",
+      "pubmed_entry_date": "2026-11-14",
+      "disease": "other",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.1016/j.gerinurse.2026.104446",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43033633/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-16"
+    },
+    {
+      "id": "43033017",
+      "title": "Primary non-adherence to anti-dementia drugs, antidepressants, antipsychotics and benzodiazepines in individuals with dementia in Germany: A cohort study of primary care prescriptions.",
+      "journal": "Journal of Alzheimer's disease : JAD",
+      "date": "2026-11-14",
+      "pubmed_entry_date": "2026-11-14",
+      "disease": "other",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1177/13872877261507606",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43033017/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-16"
+    },
+    {
+      "id": "43031905",
+      "title": "Fragmentation and integration in long-term care for older adults living with dementia in mainland China: a polycentric governance framework synthesis.",
+      "journal": "Frontiers in public health",
+      "date": "2026-10-30",
+      "pubmed_entry_date": "2026-11-14",
+      "disease": "other",
+      "topic": "pathology",
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review"
+      ],
+      "doi": "10.3389/fpubh.2026.1873910",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43031905/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-16"
+    },
     {
       "id": "43031554",
       "title": "Development and validation of a risk stratification model for mild cognitive impairment among older adults with possible sarcopenia integrating traditional Chinese medicine constitution: a multicenter cross-sectional study.",
