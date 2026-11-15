@@ -2,7 +2,7 @@
   "meta": {
     "source": "PubMed E-utilities",
     "role": "references cited in the site's free author-written essays",
-    "last_updated": "2026-11-14T20:04:27+00:00",
+    "last_updated": "2026-11-15T20:33:22+00:00",
     "separate_from_new_100": true
   },
   "items": [
@@ -688,6 +688,18 @@
       ]
     },
     {
+      "id": "32989324",
+      "title": "An integrated multi-omics approach identifies epigenetic alterations associated with Alzheimer's disease.",
+      "journal": "Nature genetics",
+      "year": "2020",
+      "doi": "10.1038/s41588-020-0696-0",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/32989324/",
+      "local_url": "./papers/32989324.html",
+      "article_keys": [
+        "n6c526398fced"
+      ]
+    },
+    {
       "id": "33226734",
       "title": "Dominantly inherited Alzheimer's disease in Latin America: Genetic heterogeneity and clinical phenotypes.",
       "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
@@ -1046,6 +1058,18 @@
       ]
     },
     {
+      "id": "38167174",
+      "title": "Histone acetylation in an Alzheimer's disease cell model promotes homeostatic amyloid-reducing pathways.",
+      "journal": "Acta neuropathologica communications",
+      "year": "2024",
+      "doi": "10.1186/s40478-023-01696-6",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/38167174/",
+      "local_url": "./papers/38167174.html",
+      "article_keys": [
+        "n6c526398fced"
+      ]
+    },
+    {
       "id": "38265856",
       "title": "Health Care Professional-Supported Co-Design of a Mime Therapy-Based Serious Game for Facial Rehabilitation.",
       "journal": "JMIR serious games",
@@ -1220,6 +1244,18 @@
       ]
     },
     {
+      "id": "39744681",
+      "title": "Targeted demethylation of cathepsin D via epigenome editing rescues pathology in Alzheimer's disease mouse model.",
+      "journal": "Theranostics",
+      "year": "2025",
+      "doi": "10.7150/thno.103455",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39744681/",
+      "local_url": "./papers/39744681.html",
+      "article_keys": [
+        "n6c526398fced"
+      ]
+    },
+    {
       "id": "39778288",
       "title": "A blood test for Alzheimer's disease: a decade of progress and success.",
       "journal": "EBioMedicine",
@@ -1266,6 +1302,18 @@
       "article_keys": [
         "n1995314a5ed9",
         "ne941ccc5014c"
+      ]
+    },
+    {
+      "id": "40121201",
+      "title": "Brain 5-hydroxymethylcytosine alterations are associated with Alzheimer's disease neuropathology.",
+      "journal": "Nature communications",
+      "year": "2025",
+      "doi": "10.1038/s41467-025-58159-w",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40121201/",
+      "local_url": "./papers/40121201.html",
+      "article_keys": [
+        "n6c526398fced"
       ]
     },
     {
@@ -1453,6 +1501,18 @@
       ]
     },
     {
+      "id": "40752494",
+      "title": "Single-cell multiregion epigenomic rewiring in Alzheimer's disease progression and cognitive resilience.",
+      "journal": "Cell",
+      "year": "2025",
+      "doi": "10.1016/j.cell.2025.06.031",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40752494/",
+      "local_url": "./papers/40752494.html",
+      "article_keys": [
+        "n6c526398fced"
+      ]
+    },
+    {
       "id": "40985290",
       "title": "The relationship of soluble tau species with Alzheimer's disease amyloid plaque removal and tau pathology.",
       "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
@@ -1489,6 +1549,18 @@
       ]
     },
     {
+      "id": "41148349",
+      "title": "Brain-derived 5-hydroxymethylcytosine epigenetic scores are related to Alzheimer's disease pathology and cognitive decline.",
+      "journal": "Acta neuropathologica",
+      "year": "2025",
+      "doi": "10.1007/s00401-025-02950-y",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41148349/",
+      "local_url": "./papers/41148349.html",
+      "article_keys": [
+        "n6c526398fced"
+      ]
+    },
+    {
       "id": "41160347",
       "title": "Initial Real-World Evidence for Lecanemab in the United States.",
       "journal": "Drugs & aging",
@@ -1522,6 +1594,18 @@
       "local_url": "./papers/41296993.html",
       "article_keys": [
         "nab9749614d0a"
+      ]
+    },
+    {
+      "id": "41560705",
+      "title": "Epigenomic aberrations of histone methylation in prefrontal cortex of humans with mild cognitive impairment and Alzheimer's disease.",
+      "journal": "Journal of Alzheimer's disease : JAD",
+      "year": "2026",
+      "doi": "10.1177/13872877251414887",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41560705/",
+      "local_url": "./papers/41560705.html",
+      "article_keys": [
+        "n6c526398fced"
       ]
     },
     {
@@ -1574,6 +1658,18 @@
       "article_keys": [
         "nabdd7ac86909",
         "ne0519d58e075"
+      ]
+    },
+    {
+      "id": "41733741",
+      "title": "Epigenomic subtypes of late-onset Alzheimer's disease reveal distinct microglial signatures.",
+      "journal": "Acta neuropathologica",
+      "year": "2026",
+      "doi": "10.1007/s00401-026-02990-y",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41733741/",
+      "local_url": "./papers/41733741.html",
+      "article_keys": [
+        "n6c526398fced"
       ]
     },
     {
@@ -1647,6 +1743,18 @@
       "local_url": "./papers/41787076.html",
       "article_keys": [
         "ne199bcee2399"
+      ]
+    },
+    {
+      "id": "41808104",
+      "title": "ApoE4 Drives Microglial Lipid Dysregulation in Alzheimer's Disease via Epigenetic Reprogramming of the Asxl1/LXRα-H3K4me3 Axis.",
+      "journal": "Journal of neuroinflammation",
+      "year": "2026",
+      "doi": "10.1186/s12974-026-03740-3",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41808104/",
+      "local_url": "./papers/41808104.html",
+      "article_keys": [
+        "n6c526398fced"
       ]
     },
     {
@@ -1770,6 +1878,18 @@
       ]
     },
     {
+      "id": "42135303",
+      "title": "Single-nucleus epigenomic dysregulation unmasks genetic risk-associated neurodegenerative glia states.",
+      "journal": "Nature communications",
+      "year": "2026",
+      "doi": "10.1038/s41467-026-73007-1",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42135303/",
+      "local_url": "./papers/42135303.html",
+      "article_keys": [
+        "n6c526398fced"
+      ]
+    },
+    {
       "id": "42189519",
       "title": "Plasma eMTBR-tau243 and %p-tau217 for Biological Staging of Alzheimer Disease.",
       "journal": "JAMA neurology",
@@ -1780,6 +1900,30 @@
       "article_keys": [
         "ne0519d58e075",
         "ne04e6bf3aa05"
+      ]
+    },
+    {
+      "id": "42242554",
+      "title": "The evidence for epigenetic age acceleration in neurological disease: A systematic review.",
+      "journal": "Ageing research reviews",
+      "year": "2026",
+      "doi": "10.1016/j.arr.2026.103201",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42242554/",
+      "local_url": "./papers/42242554.html",
+      "article_keys": [
+        "n6c526398fced"
+      ]
+    },
+    {
+      "id": "42263678",
+      "title": "Epigenetic control of microglial mitochondrial immunity by KAT7 drives Alzheimer's disease pathogenesis.",
+      "journal": "Neuron",
+      "year": "2026",
+      "doi": "10.1016/j.neuron.2026.05.015",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42263678/",
+      "local_url": "./papers/42263678.html",
+      "article_keys": [
+        "n6c526398fced"
       ]
     },
     {
@@ -1807,6 +1951,18 @@
       ]
     },
     {
+      "id": "42304519",
+      "title": "From aging to Alzheimer's disease: concordant brain DNA methylation changes in late life.",
+      "journal": "Genome medicine",
+      "year": "2026",
+      "doi": "10.1186/s13073-026-01698-8",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42304519/",
+      "local_url": "./papers/42304519.html",
+      "article_keys": [
+        "n6c526398fced"
+      ]
+    },
+    {
       "id": "42334898",
       "title": "Combining post-mortem and neuroimaging measures of brain amyloidosis to accelerate genomic discovery.",
       "journal": "Brain : a journal of neurology",
@@ -1828,6 +1984,18 @@
       "local_url": "./papers/42339065.html",
       "article_keys": [
         "n46b3726be7f6"
+      ]
+    },
+    {
+      "id": "42363718",
+      "title": "Changes in DNA methylation-based aging predicts brain damage and dementia and reflects life-course cardiovascular risk.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "year": "2026",
+      "doi": "10.1002/alz.71632",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42363718/",
+      "local_url": "./papers/42363718.html",
+      "article_keys": [
+        "n6c526398fced"
       ]
     },
     {
@@ -1855,6 +2023,30 @@
       ]
     },
     {
+      "id": "42525215",
+      "title": "Biological Versus Technical Reliability of Epigenetic Clocks and Implications for Disease Prognosis and Intervention Response.",
+      "journal": "Aging cell",
+      "year": "2026",
+      "doi": "10.1111/acel.70635",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42525215/",
+      "local_url": "./papers/42525215.html",
+      "article_keys": [
+        "n6c526398fced"
+      ]
+    },
+    {
+      "id": "42554263",
+      "title": "Epigenetic aging in Alzheimer's disease: Relation to proteome.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "year": "2026",
+      "doi": "10.1002/alz.71732",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42554263/",
+      "local_url": "./papers/42554263.html",
+      "article_keys": [
+        "n6c526398fced"
+      ]
+    },
+    {
       "id": "42778763",
       "title": "AI-based characterization of Alzheimer's disease phenotypes from population-scale single-cell data.",
       "journal": "Nature medicine",
@@ -1864,6 +2056,18 @@
       "local_url": "./papers/42778763.html",
       "article_keys": [
         "ne6d001063d7f"
+      ]
+    },
+    {
+      "id": "42781504",
+      "title": "A cell-type-resolved meta-analysis reveals glial DNA methylation changes associated with aging and Alzheimer's disease.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "year": "2026",
+      "doi": "10.1002/alz.71864",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42781504/",
+      "local_url": "./papers/42781504.html",
+      "article_keys": [
+        "n6c526398fced"
       ]
     },
     {
