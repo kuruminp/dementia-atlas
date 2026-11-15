@@ -3,7 +3,7 @@
     "mode": "curated",
     "source": "note",
     "description": "Verified free published note essays copied with author permission",
-    "fetched_at": "2026-11-14T20:04:13+00:00",
+    "fetched_at": "2026-11-15T20:33:03+00:00",
     "policy": "price=0; published; non-exam; public details only"
   },
   "items": [
@@ -62,6 +62,158 @@
           "title": "",
           "url": "https://doi.org/10.1038/s41591-025-03617-7",
           "doi": "10.1038/s41591-025-03617-7",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
+    },
+    {
+      "key": "n6c526398fced",
+      "title": "アルツハイマー病は，遺伝子の「使われ方」が変わる病気なのか―最新のエピジェネティクス研究から見えてきたこと",
+      "url": "https://note.com/merry_lily/n/n6c526398fced",
+      "date": "2026-11-15",
+      "category": "研究の読みもの",
+      "description": "アルツハイマー病の研究では，アミロイドβやタウの蓄積が注目されてきました． しかし，同じようにアミロイドβが蓄積していても，認知機能を長く維持できる人がいます． 一方で，比較的短い期間で認知機能が低下する人もい…",
+      "tag": "research",
+      "local_url": "./articles/n6c526398fced.html",
+      "related_pmids": [
+        "42304519",
+        "40121201",
+        "41148349",
+        "40752494",
+        "41733741",
+        "42781504",
+        "42135303",
+        "41560705",
+        "32989324",
+        "38167174",
+        "41808104",
+        "42263678",
+        "39744681",
+        "42554263",
+        "42363718",
+        "42525215",
+        "42242554"
+      ],
+      "references": [
+        {
+          "pmid": "42304519",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42304519/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "40121201",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40121201/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "41148349",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41148349/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "40752494",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40752494/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "41733741",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41733741/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "42781504",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42781504/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "42135303",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42135303/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "41560705",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41560705/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "32989324",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32989324/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "38167174",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38167174/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "41808104",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41808104/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "42263678",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42263678/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "39744681",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39744681/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "42554263",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42554263/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "42363718",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42363718/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "42525215",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42525215/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "42242554",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42242554/",
+          "doi": "",
           "in_catalog": false
         }
       ],
