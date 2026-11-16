@@ -1,19 +1,229 @@
 {
   "meta": {
     "mode": "api",
-    "fetched_at": "2026-11-15T20:03:49+00:00",
+    "fetched_at": "2026-11-16T23:36:41+00:00",
     "verified_at": null,
     "source": "PubMed",
     "description": "Metadata-based research prioritization; not scientific appraisal.",
     "selection_method": "metadata_quality_v1",
-    "archive_count": 289,
+    "archive_count": 298,
     "lookback_days": 14,
-    "newly_added": 5,
+    "newly_added": 9,
     "pending_pmids": [
       "23556151"
     ]
   },
   "items": [
+    {
+      "id": "43038489",
+      "title": "Identification of Type 1 and Type 2 α-Synuclein-Seeds by CSF Seed Amplification Assay in Patients With Movement Disorders.",
+      "journal": "Neurology",
+      "date": "2026-11-16",
+      "pubmed_entry_date": "2026-11-16",
+      "disease": "dlb",
+      "topic": "pathology",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1212/WNL.0000000000218763",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43038489/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-17"
+    },
+    {
+      "id": "43038487",
+      "title": "Robustness of Plasma P-Tau217 Diagnostic Thresholds for Alzheimer Disease Across Various Clinical Populations and Laboratory Environments.",
+      "journal": "Neurology",
+      "date": "2026-11-16",
+      "pubmed_entry_date": "2026-11-16",
+      "disease": "ftd",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article",
+        "Multicenter Study"
+      ],
+      "doi": "10.1212/WNL.0000000000218784",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43038487/",
+      "source": "PubMed",
+      "research_type": "validation",
+      "selection_signals": [
+        "validation",
+        "multicenter",
+        "independent"
+      ],
+      "priority_score": 11,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-17"
+    },
+    {
+      "id": "43037989",
+      "title": "Absolute Risk of Progression to Cognitive Impairment Based on Plasma Phosphorylated Tau 217, Age, Sex, and APOE ε4.",
+      "journal": "JAMA neurology",
+      "date": "2026-11-16",
+      "pubmed_entry_date": "2026-11-16",
+      "disease": "ad",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1001/jamaneurol.2026.4292",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43037989/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 7,
+      "journal_tiebreak": 1,
+      "selected_on": "2026-11-17"
+    },
+    {
+      "id": "43037940",
+      "title": "Design Strategies in Discrete Choice Experiments for Individuals with Cognitive Impairment: A Systematic Review.",
+      "journal": "The patient",
+      "date": "2026-11-16",
+      "pubmed_entry_date": "2026-11-16",
+      "disease": "ad",
+      "topic": "care",
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review"
+      ],
+      "doi": "10.1007/s40271-026-00854-x",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43037940/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-17"
+    },
+    {
+      "id": "43037353",
+      "title": "Comparing multivariate cognitive change in unimpaired older adults to those with questionable impairment or mild dementia: a NACC study.",
+      "journal": "Journal of clinical and experimental neuropsychology",
+      "date": "2026-11-16",
+      "pubmed_entry_date": "2026-11-16",
+      "disease": "ad",
+      "topic": "other",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1080/13803395.2026.2756260",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43037353/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-17"
+    },
+    {
+      "id": "43036545",
+      "title": "Neurovascular, Structural, and Molecular Mechanisms of Cognitive Impairment in Type 2 Diabetes Mellitus: A Systematic Review.",
+      "journal": "Cureus",
+      "date": "2026-10-16",
+      "pubmed_entry_date": "2026-11-16",
+      "disease": "other",
+      "topic": "diagnosis",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.7759/cureus.118011",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43036545/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-17"
+    },
+    {
+      "id": "43035640",
+      "title": "The prevalence of dementia and cognitive impairment in patients with neurocysticercosis: a systematic review and meta-analysis.",
+      "journal": "BMC infectious diseases",
+      "date": "2026-08-18",
+      "pubmed_entry_date": "2026-11-15",
+      "disease": "other",
+      "topic": "care",
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review",
+        "Meta-Analysis"
+      ],
+      "doi": "10.1186/s12879-026-14270-x",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43035640/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 10,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-17"
+    },
+    {
+      "id": "43035561",
+      "title": "Protective effects of rs7315280 on hippocampal volume and cognitive decline in aging by its enhancer activity regulating TESC expression.",
+      "journal": "Neurological sciences : official journal of the Italian Neurological Society and of the Italian Society of Clinical Neurophysiology",
+      "date": "2026-11-16",
+      "pubmed_entry_date": "2026-11-15",
+      "disease": "ad",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article",
+        "Meta-Analysis"
+      ],
+      "doi": "10.1007/s10072-026-09554-8",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43035561/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic",
+        "large_sample"
+      ],
+      "priority_score": 12,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-17"
+    },
+    {
+      "id": "43034993",
+      "title": "Dietary Sugar Intake and Risk of Cognitive Disorders: A Systematic Review and Meta-Analysis.",
+      "journal": "Nutrition reviews",
+      "date": "2026-11-15",
+      "pubmed_entry_date": "2026-11-15",
+      "disease": "other",
+      "topic": "prevention",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1093/nutrit/nuag168",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43034993/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-17"
+    },
     {
       "id": "43034879",
       "title": "Elevated Phosphorylated Tau and Amyloid-Beta 42 in Sleep Apnoea: Evidence From a Systematic Review and Meta-Analysis.",
@@ -1594,8 +1804,7 @@
       "publication_types": [
         "Journal Article",
         "Systematic Review",
-        "Meta-Analysis",
-        "Review"
+        "Meta-Analysis"
       ],
       "doi": "10.1002/gps.70265",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42992512/",
@@ -1824,8 +2033,7 @@
       "publication_types": [
         "Journal Article",
         "Systematic Review",
-        "Meta-Analysis",
-        "Review"
+        "Meta-Analysis"
       ],
       "doi": "10.1002/alz.71674",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42983912/",

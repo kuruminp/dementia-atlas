@@ -1,12 +1,277 @@
 {
   "meta": {
     "mode": "api",
-    "fetched_at": "2026-11-15T20:03:49+00:00",
+    "fetched_at": "2026-11-16T23:36:41+00:00",
     "verified_at": null,
     "source": "ClinicalTrials.gov",
     "description": "Official trial registration data; mechanical categorization."
   },
   "items": [
+    {
+      "id": "NCT07940335",
+      "title": "Lithium Dosing Study",
+      "status": "NOT_YET_RECRUITING",
+      "phases": [
+        "NA"
+      ],
+      "disease": "ad",
+      "topic": "other",
+      "interventions": [
+        "Lithium Orotate (LiO)"
+      ],
+      "mechanism": "non_drug",
+      "updated": "2026-11-16",
+      "has_japan_site": false,
+      "japan_recruiting": false,
+      "japan_recruiting_now": false,
+      "countries": [
+        "United States"
+      ],
+      "url": "https://clinicaltrials.gov/study/NCT07940335",
+      "source": "ClinicalTrials.gov",
+      "study_type": "INTERVENTIONAL"
+    },
+    {
+      "id": "NCT07781657",
+      "title": "Study to Test Effects and Safety of RO7568282 in Early Symptomatic Alzheimer's Disease",
+      "status": "RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "disease": "ad",
+      "topic": "other",
+      "interventions": [
+        "RO7568282"
+      ],
+      "mechanism": "other",
+      "updated": "2026-11-16",
+      "has_japan_site": false,
+      "japan_recruiting": false,
+      "japan_recruiting_now": false,
+      "countries": [
+        "Australia",
+        "France",
+        "Germany",
+        "Poland",
+        "United States"
+      ],
+      "url": "https://clinicaltrials.gov/study/NCT07781657",
+      "source": "ClinicalTrials.gov",
+      "study_type": "INTERVENTIONAL"
+    },
+    {
+      "id": "NCT07779863",
+      "title": "Acupressure as Long-term Intervention to Slow the Progression of Early/Mild Alzheimer's Disease",
+      "status": "NOT_YET_RECRUITING",
+      "phases": [
+        "NA"
+      ],
+      "disease": "ad",
+      "topic": "treatment",
+      "interventions": [
+        "Comfy Acupressure for the Elderly",
+        "Least acupressure control"
+      ],
+      "mechanism": "non_drug",
+      "updated": "2026-11-16",
+      "has_japan_site": false,
+      "japan_recruiting": false,
+      "japan_recruiting_now": false,
+      "countries": [
+        "Hong Kong"
+      ],
+      "url": "https://clinicaltrials.gov/study/NCT07779863",
+      "source": "ClinicalTrials.gov",
+      "study_type": "INTERVENTIONAL"
+    },
+    {
+      "id": "NCT07721467",
+      "title": "Neuroplasticity Enhancement From Cognitive Training Reinforced by Psilocybin",
+      "status": "RECRUITING",
+      "phases": [
+        "PHASE2"
+      ],
+      "disease": "ad",
+      "topic": "other",
+      "interventions": [
+        "Psilocybin",
+        "Cognitive Training"
+      ],
+      "mechanism": "other",
+      "updated": "2026-11-16",
+      "has_japan_site": false,
+      "japan_recruiting": false,
+      "japan_recruiting_now": false,
+      "countries": [
+        "United States"
+      ],
+      "url": "https://clinicaltrials.gov/study/NCT07721467",
+      "source": "ClinicalTrials.gov",
+      "study_type": "INTERVENTIONAL"
+    },
+    {
+      "id": "NCT07325760",
+      "title": "Effectiveness of a ReMIND Diet Intervention on Sarcopenia, Cognitive Frailty and Nutritional Status in Older Adults",
+      "status": "RECRUITING",
+      "phases": [
+        "NA"
+      ],
+      "disease": "mci",
+      "topic": "treatment",
+      "interventions": [
+        "PA Loke Yew and PA DBKL (Intervention Group)"
+      ],
+      "mechanism": "non_drug",
+      "updated": "2026-11-16",
+      "has_japan_site": false,
+      "japan_recruiting": false,
+      "japan_recruiting_now": false,
+      "countries": [
+        "Malaysia"
+      ],
+      "url": "https://clinicaltrials.gov/study/NCT07325760",
+      "source": "ClinicalTrials.gov",
+      "study_type": "INTERVENTIONAL"
+    },
+    {
+      "id": "NCT07177352",
+      "title": "Screening Study to Determine Individuals With Potential Trial Eligibility for Alzheimer's Disease Studies",
+      "status": "RECRUITING",
+      "phases": [
+        "PHASE3"
+      ],
+      "disease": "ad",
+      "topic": "treatment",
+      "interventions": [
+        "No Intervention"
+      ],
+      "mechanism": "non_drug",
+      "updated": "2026-11-16",
+      "has_japan_site": true,
+      "japan_recruiting": true,
+      "japan_recruiting_now": true,
+      "countries": [
+        "Argentina",
+        "Australia",
+        "Brazil",
+        "Canada",
+        "Chile",
+        "China",
+        "Denmark",
+        "Italy",
+        "Japan",
+        "Poland",
+        "Puerto Rico",
+        "South Korea",
+        "Spain",
+        "Taiwan",
+        "United States"
+      ],
+      "url": "https://clinicaltrials.gov/study/NCT07177352",
+      "source": "ClinicalTrials.gov",
+      "study_type": "INTERVENTIONAL"
+    },
+    {
+      "id": "NCT07169630",
+      "title": "PET Imaging of Phosphodiesterase-4 (PDE4) in Volunteers With Alzheimer Disease (AD) or Mild Cognitive Impairment (MCI)",
+      "status": "RECRUITING",
+      "phases": [
+        "PHASE1"
+      ],
+      "disease": "ad",
+      "topic": "imaging",
+      "interventions": [
+        "18F-PF974",
+        "18F-florbetaben"
+      ],
+      "mechanism": "symptomatic",
+      "updated": "2026-11-16",
+      "has_japan_site": false,
+      "japan_recruiting": false,
+      "japan_recruiting_now": false,
+      "countries": [
+        "United States"
+      ],
+      "url": "https://clinicaltrials.gov/study/NCT07169630",
+      "source": "ClinicalTrials.gov",
+      "study_type": "INTERVENTIONAL"
+    },
+    {
+      "id": "NCT07016178",
+      "title": "Innovative Cognitive Impairment Case Finding and Engagement for Diverse Participation in Alzheimer's Disease Care, Treatment, And Research",
+      "status": "COMPLETED",
+      "phases": [
+        "NA"
+      ],
+      "disease": "ad",
+      "topic": "treatment",
+      "interventions": [
+        "Acceptability and Feasibility of Twistle messaging for PDM+ patients",
+        "Passive Digital Marker (PDM)"
+      ],
+      "mechanism": "symptomatic",
+      "updated": "2026-11-16",
+      "has_japan_site": false,
+      "japan_recruiting": false,
+      "japan_recruiting_now": false,
+      "countries": [
+        "United States"
+      ],
+      "url": "https://clinicaltrials.gov/study/NCT07016178",
+      "source": "ClinicalTrials.gov",
+      "study_type": "INTERVENTIONAL"
+    },
+    {
+      "id": "NCT05016219",
+      "title": "Phase 2 - Rhythmic Light Therapy for Alzheimer's Disease Patients",
+      "status": "ACTIVE_NOT_RECRUITING",
+      "phases": [
+        "NA"
+      ],
+      "disease": "ad",
+      "topic": "treatment",
+      "interventions": [
+        "Circadian-Effective Light",
+        "Rhythmic Light",
+        "Placebo Light",
+        "Placebo Rhythmic Light"
+      ],
+      "mechanism": "non_drug",
+      "updated": "2026-11-16",
+      "has_japan_site": false,
+      "japan_recruiting": false,
+      "japan_recruiting_now": false,
+      "countries": [
+        "United States"
+      ],
+      "url": "https://clinicaltrials.gov/study/NCT05016219",
+      "source": "ClinicalTrials.gov",
+      "study_type": "INTERVENTIONAL"
+    },
+    {
+      "id": "NCT05014971",
+      "title": "Telehealth in Lewy Body Dementia",
+      "status": "COMPLETED",
+      "phases": [
+        "NA"
+      ],
+      "disease": "dlb",
+      "topic": "other",
+      "interventions": [
+        "Tele-neurohub"
+      ],
+      "mechanism": "non_drug",
+      "updated": "2026-11-16",
+      "has_japan_site": false,
+      "japan_recruiting": false,
+      "japan_recruiting_now": false,
+      "countries": [
+        "United States"
+      ],
+      "url": "https://clinicaltrials.gov/study/NCT05014971",
+      "source": "ClinicalTrials.gov",
+      "study_type": "INTERVENTIONAL"
+    },
     {
       "id": "NCT07935629",
       "title": "Implementing Brain Health PRO Across Diverse Settings: A Multi-Site Implementation Study",
@@ -52,31 +317,6 @@
         "United States"
       ],
       "url": "https://clinicaltrials.gov/study/NCT07824128",
-      "source": "ClinicalTrials.gov",
-      "study_type": "INTERVENTIONAL"
-    },
-    {
-      "id": "NCT07721467",
-      "title": "Neuroplasticity Enhancement From Cognitive Training Reinforced by Psilocybin",
-      "status": "RECRUITING",
-      "phases": [
-        "PHASE2"
-      ],
-      "disease": "ad",
-      "topic": "other",
-      "interventions": [
-        "Psilocybin",
-        "Cognitive Training"
-      ],
-      "mechanism": "other",
-      "updated": "2026-11-13",
-      "has_japan_site": false,
-      "japan_recruiting": false,
-      "japan_recruiting_now": false,
-      "countries": [
-        "United States"
-      ],
-      "url": "https://clinicaltrials.gov/study/NCT07721467",
       "source": "ClinicalTrials.gov",
       "study_type": "INTERVENTIONAL"
     },
@@ -148,31 +388,6 @@
         "United Kingdom"
       ],
       "url": "https://clinicaltrials.gov/study/NCT07226674",
-      "source": "ClinicalTrials.gov",
-      "study_type": "INTERVENTIONAL"
-    },
-    {
-      "id": "NCT07169630",
-      "title": "PET Imaging of Phosphodiesterase-4 (PDE4) in Volunteers With Alzheimer Disease (AD) or Mild Cognitive Impairment (MCI)",
-      "status": "RECRUITING",
-      "phases": [
-        "PHASE1"
-      ],
-      "disease": "ad",
-      "topic": "imaging",
-      "interventions": [
-        "18F-PF974",
-        "18F-florbetaben"
-      ],
-      "mechanism": "symptomatic",
-      "updated": "2026-11-13",
-      "has_japan_site": false,
-      "japan_recruiting": false,
-      "japan_recruiting_now": false,
-      "countries": [
-        "United States"
-      ],
-      "url": "https://clinicaltrials.gov/study/NCT07169630",
       "source": "ClinicalTrials.gov",
       "study_type": "INTERVENTIONAL"
     },
@@ -1445,57 +1660,6 @@
         "United States"
       ],
       "url": "https://clinicaltrials.gov/study/NCT05231954",
-      "source": "ClinicalTrials.gov",
-      "study_type": "INTERVENTIONAL"
-    },
-    {
-      "id": "NCT07781657",
-      "title": "Study to Test Effects and Safety of RO7568282 in Early Symptomatic Alzheimer's Disease",
-      "status": "RECRUITING",
-      "phases": [
-        "PHASE2"
-      ],
-      "disease": "ad",
-      "topic": "other",
-      "interventions": [
-        "RO7568282"
-      ],
-      "mechanism": "other",
-      "updated": "2026-11-06",
-      "has_japan_site": false,
-      "japan_recruiting": false,
-      "japan_recruiting_now": false,
-      "countries": [
-        "Australia",
-        "France",
-        "United States"
-      ],
-      "url": "https://clinicaltrials.gov/study/NCT07781657",
-      "source": "ClinicalTrials.gov",
-      "study_type": "INTERVENTIONAL"
-    },
-    {
-      "id": "NCT07779863",
-      "title": "Acupressure as Long-term Intervention to Slow the Progression of Early/Mild Alzheimer's Disease",
-      "status": "NOT_YET_RECRUITING",
-      "phases": [
-        "NA"
-      ],
-      "disease": "ad",
-      "topic": "treatment",
-      "interventions": [
-        "Comfy Acupressure for the Elderly",
-        "Least acupressure control"
-      ],
-      "mechanism": "non_drug",
-      "updated": "2026-11-06",
-      "has_japan_site": false,
-      "japan_recruiting": false,
-      "japan_recruiting_now": false,
-      "countries": [
-        "Hong Kong"
-      ],
-      "url": "https://clinicaltrials.gov/study/NCT07779863",
       "source": "ClinicalTrials.gov",
       "study_type": "INTERVENTIONAL"
     },
@@ -3015,63 +3179,6 @@
       "study_type": "INTERVENTIONAL"
     },
     {
-      "id": "NCT06268886",
-      "title": "Study to Evaluate the Efficacy, Safety, and Tolerability of an Anti-MTBR Tau Monoclonal Antibody (BMS-986446) in Participants With Early Alzheimer's Disease",
-      "status": "ACTIVE_NOT_RECRUITING",
-      "phases": [
-        "PHASE2"
-      ],
-      "disease": "ad",
-      "topic": "other",
-      "interventions": [
-        "BMS-986446"
-      ],
-      "mechanism": "other",
-      "updated": "2026-11-02",
-      "has_japan_site": true,
-      "japan_recruiting": false,
-      "japan_recruiting_now": false,
-      "countries": [
-        "Australia",
-        "Belgium",
-        "Canada",
-        "Japan",
-        "Singapore",
-        "South Korea",
-        "Spain",
-        "Sweden",
-        "United Kingdom",
-        "United States"
-      ],
-      "url": "https://clinicaltrials.gov/study/NCT06268886",
-      "source": "ClinicalTrials.gov",
-      "study_type": "INTERVENTIONAL"
-    },
-    {
-      "id": "NCT05550727",
-      "title": "The PorchLight Project",
-      "status": "ACTIVE_NOT_RECRUITING",
-      "phases": [
-        "NA"
-      ],
-      "disease": "ad",
-      "topic": "other",
-      "interventions": [
-        "PorchLight"
-      ],
-      "mechanism": "non_drug",
-      "updated": "2026-11-02",
-      "has_japan_site": false,
-      "japan_recruiting": false,
-      "japan_recruiting_now": false,
-      "countries": [
-        "United States"
-      ],
-      "url": "https://clinicaltrials.gov/study/NCT05550727",
-      "source": "ClinicalTrials.gov",
-      "study_type": "INTERVENTIONAL"
-    },
-    {
       "id": "NCT04396873",
       "title": "PET Imaging of Cyclooxygenases in Neurodegenerative Brain Disease",
       "status": "RECRUITING",
@@ -4006,44 +4113,6 @@
       "study_type": "INTERVENTIONAL"
     },
     {
-      "id": "NCT07177352",
-      "title": "Screening Study to Determine Individuals With Potential Trial Eligibility for Alzheimer's Disease Studies",
-      "status": "RECRUITING",
-      "phases": [
-        "PHASE3"
-      ],
-      "disease": "ad",
-      "topic": "treatment",
-      "interventions": [
-        "No Intervention"
-      ],
-      "mechanism": "non_drug",
-      "updated": "2026-10-19",
-      "has_japan_site": true,
-      "japan_recruiting": true,
-      "japan_recruiting_now": true,
-      "countries": [
-        "Argentina",
-        "Australia",
-        "Brazil",
-        "Canada",
-        "Chile",
-        "China",
-        "Denmark",
-        "Italy",
-        "Japan",
-        "Poland",
-        "Puerto Rico",
-        "South Korea",
-        "Spain",
-        "Taiwan",
-        "United States"
-      ],
-      "url": "https://clinicaltrials.gov/study/NCT07177352",
-      "source": "ClinicalTrials.gov",
-      "study_type": "INTERVENTIONAL"
-    },
-    {
       "id": "NCT06940687",
       "title": "Neurophysiological Benefits of Live Music for Early Alzheimer's Patients and Their Caregivers",
       "status": "COMPLETED",
@@ -4437,97 +4506,6 @@
       "study_type": "INTERVENTIONAL"
     },
     {
-      "id": "NCT07865260",
-      "title": "PhiCube for Bilateral Upper Limb Neuromotor and Cognitive Rehabilitation in Adults",
-      "status": "NOT_YET_RECRUITING",
-      "phases": [
-        "NA"
-      ],
-      "disease": "mci",
-      "topic": "other",
-      "interventions": [
-        "PhiCube",
-        "Conventional rehabilitation"
-      ],
-      "mechanism": "non_drug",
-      "updated": "2026-10-08",
-      "has_japan_site": false,
-      "japan_recruiting": false,
-      "japan_recruiting_now": false,
-      "countries": [
-        "Italy"
-      ],
-      "url": "https://clinicaltrials.gov/study/NCT07865260",
-      "source": "ClinicalTrials.gov",
-      "study_type": "INTERVENTIONAL"
-    },
-    {
-      "id": "NCT07842146",
-      "title": "The Effect of Urolithin A (Mitopure®) on Alzheimer's Disease",
-      "status": "RECRUITING",
-      "phases": [
-        "NA"
-      ],
-      "disease": "ad",
-      "topic": "other",
-      "interventions": [
-        "Urolithin A",
-        "Placebo Control"
-      ],
-      "mechanism": "non_drug",
-      "updated": "2026-10-08",
-      "has_japan_site": false,
-      "japan_recruiting": false,
-      "japan_recruiting_now": false,
-      "countries": [
-        "Czechia"
-      ],
-      "url": "https://clinicaltrials.gov/study/NCT07842146",
-      "source": "ClinicalTrials.gov",
-      "study_type": "INTERVENTIONAL"
-    },
-    {
-      "id": "NCT06976203",
-      "title": "A Study to Evaluate the Efficacy and Safety of KarXT + KarX-EC for Cognitive Impairment in Alzheimer's Disease (MINDSET 2)",
-      "status": "RECRUITING",
-      "phases": [
-        "PHASE3"
-      ],
-      "disease": "ad",
-      "topic": "other",
-      "interventions": [
-        "KarXT",
-        "KarX-EC"
-      ],
-      "mechanism": "symptomatic",
-      "updated": "2026-10-08",
-      "has_japan_site": true,
-      "japan_recruiting": true,
-      "japan_recruiting_now": true,
-      "countries": [
-        "Argentina",
-        "Australia",
-        "Brazil",
-        "Finland",
-        "France",
-        "Germany",
-        "Greece",
-        "Italy",
-        "Japan",
-        "Netherlands",
-        "Poland",
-        "Portugal",
-        "Puerto Rico",
-        "Romania",
-        "Spain",
-        "United Kingdom",
-        "United States"
-      ],
-      "url": "https://clinicaltrials.gov/study/NCT06976203",
-      "source": "ClinicalTrials.gov",
-      "study_type": "INTERVENTIONAL"
-    },
-    {
       "id": "NCT06495476",
       "title": "Study on Ginkgo Biolba Extract Fifty and Mild Cognitive Impairment Associated With CSVD",
       "status": "ACTIVE_NOT_RECRUITING",
@@ -4577,33 +4555,6 @@
         "France"
       ],
       "url": "https://clinicaltrials.gov/study/NCT06439355",
-      "source": "ClinicalTrials.gov",
-      "study_type": "INTERVENTIONAL"
-    },
-    {
-      "id": "NCT05081219",
-      "title": "SNIFF - Combo INI+EMPA Trial",
-      "status": "COMPLETED",
-      "phases": [
-        "PHASE2"
-      ],
-      "disease": "ad",
-      "topic": "treatment",
-      "interventions": [
-        "Insulin (Humulin® R U-100)",
-        "Empagliflozin 10 MG",
-        "Aptar Pharma CPS Intranasal Delivery Device",
-        "Placebo (Insulin Diluent)"
-      ],
-      "mechanism": "other",
-      "updated": "2026-10-07",
-      "has_japan_site": false,
-      "japan_recruiting": false,
-      "japan_recruiting_now": false,
-      "countries": [
-        "United States"
-      ],
-      "url": "https://clinicaltrials.gov/study/NCT05081219",
       "source": "ClinicalTrials.gov",
       "study_type": "INTERVENTIONAL"
     },
@@ -5244,6 +5195,30 @@
         "China"
       ],
       "url": "https://clinicaltrials.gov/study/NCT06507488",
+      "source": "ClinicalTrials.gov",
+      "study_type": "INTERVENTIONAL"
+    },
+    {
+      "id": "NCT05138588",
+      "title": "Personalized Repetitive Transcranial Magnetic Stimulation (rTMS) in Cognitive Fluctuations of Dementia With Lewy Bodies (DLB): Proof of Concept",
+      "status": "RECRUITING",
+      "phases": [
+        "NA"
+      ],
+      "disease": "dlb",
+      "topic": "other",
+      "interventions": [
+        "rTMS"
+      ],
+      "mechanism": "non_drug",
+      "updated": "2026-08-20",
+      "has_japan_site": false,
+      "japan_recruiting": false,
+      "japan_recruiting_now": false,
+      "countries": [
+        "France"
+      ],
+      "url": "https://clinicaltrials.gov/study/NCT05138588",
       "source": "ClinicalTrials.gov",
       "study_type": "INTERVENTIONAL"
     }
