@@ -1,19 +1,184 @@
 {
   "meta": {
     "mode": "api",
-    "fetched_at": "2026-11-16T23:36:41+00:00",
+    "fetched_at": "2026-11-17T22:44:21+00:00",
     "verified_at": null,
     "source": "PubMed",
     "description": "Metadata-based research prioritization; not scientific appraisal.",
     "selection_method": "metadata_quality_v1",
-    "archive_count": 298,
+    "archive_count": 305,
     "lookback_days": 14,
-    "newly_added": 9,
+    "newly_added": 7,
     "pending_pmids": [
       "23556151"
     ]
   },
   "items": [
+    {
+      "id": "43043965",
+      "title": "Integrating large-scale serum baseline metabolomics and APOE ε4 genotype status for the non-invasive detection of Alzheimer's disease in the Alzheimer's Disease Neuroimaging Initiative (ADNI) cohort.",
+      "journal": "PloS one",
+      "date": "2026-11-17",
+      "pubmed_entry_date": "2026-11-17",
+      "disease": "ad",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1371/journal.pone.0356137",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43043965/",
+      "source": "PubMed",
+      "research_type": "validation",
+      "selection_signals": [
+        "validation",
+        "independent"
+      ],
+      "priority_score": 10,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-18"
+    },
+    {
+      "id": "43042671",
+      "title": "Development and regional validation of a literacy-fair verbal cognitive screen for older adults in India.",
+      "journal": "Journal of Alzheimer's disease : JAD",
+      "date": "2026-11-17",
+      "pubmed_entry_date": "2026-11-17",
+      "disease": "ad",
+      "topic": "care",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1177/13872877261507060",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43042671/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 7,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-18"
+    },
+    {
+      "id": "43041399",
+      "title": "Integrative approaches to acupuncture therapies for post-stroke mild cognitive impairment: a systematic review and network meta-analysis.",
+      "journal": "Frontiers in neurology",
+      "date": "2026-11-02",
+      "pubmed_entry_date": "2026-11-17",
+      "disease": "mci",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review",
+        "Network Meta-Analysis"
+      ],
+      "doi": "10.3389/fneur.2026.1954073",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43041399/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic",
+        "large_sample"
+      ],
+      "priority_score": 12,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-18"
+    },
+    {
+      "id": "43041383",
+      "title": "Association between serum ferritin levels and mild cognitive impairment risk in middle-aged and older adults: evidence from the health and retirement study.",
+      "journal": "Frontiers in neurology",
+      "date": "2026-11-02",
+      "pubmed_entry_date": "2026-11-17",
+      "disease": "mci",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.3389/fneur.2026.1932489",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43041383/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-18"
+    },
+    {
+      "id": "43040586",
+      "title": "Association of life-course production work and Lewy body neuropathology.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "date": "2026-11",
+      "pubmed_entry_date": "2026-11-16",
+      "disease": "dlb",
+      "topic": "pathology",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1002/alz.71993",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43040586/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-18"
+    },
+    {
+      "id": "43039924",
+      "title": "APOE ε4 carriership status enhances age-related changes in Alzheimer's disease plasma biomarkers concentrations.",
+      "journal": "Nature communications",
+      "date": "2026-10-17",
+      "pubmed_entry_date": "2026-11-16",
+      "disease": "ad",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article",
+        "Twin Study"
+      ],
+      "doi": "10.1038/s41467-026-78723-2",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43039924/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-18"
+    },
+    {
+      "id": "43039830",
+      "title": "[Effects of Zhuang medicine medicated thread moxibustion on cognitive function and constitution in patients with amnestic mild cognitive impairment].",
+      "journal": "Zhongguo zhen jiu = Chinese acupuncture & moxibustion",
+      "date": "2026-09-09",
+      "pubmed_entry_date": "2026-11-16",
+      "disease": "mci",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article",
+        "Randomized Controlled Trial",
+        "English Abstract"
+      ],
+      "doi": "10.13703/j.0255-2930.20250420-k0001",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43039830/",
+      "source": "PubMed",
+      "research_type": "trial",
+      "selection_signals": [
+        "rct"
+      ],
+      "priority_score": 10,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-18"
+    },
     {
       "id": "43038489",
       "title": "Identification of Type 1 and Type 2 α-Synuclein-Seeds by CSF Seed Amplification Assay in Patients With Movement Disorders.",
