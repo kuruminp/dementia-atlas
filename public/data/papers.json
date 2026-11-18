@@ -1,19 +1,366 @@
 {
   "meta": {
     "mode": "api",
-    "fetched_at": "2026-11-17T22:44:21+00:00",
+    "fetched_at": "2026-11-18T22:26:32+00:00",
     "verified_at": null,
     "source": "PubMed",
     "description": "Metadata-based research prioritization; not scientific appraisal.",
     "selection_method": "metadata_quality_v1",
-    "archive_count": 305,
+    "archive_count": 320,
     "lookback_days": 14,
-    "newly_added": 7,
+    "newly_added": 15,
     "pending_pmids": [
       "23556151"
     ]
   },
   "items": [
+    {
+      "id": "43049744",
+      "title": "Development and Feasibility of the Bern Brain Training App for Older Adults With Subjective Cognitive Decline and Mild Cognitive Impairment: Secondary Analysis of a Randomized Controlled Trial.",
+      "journal": "JMIR serious games",
+      "date": "2026-11-18",
+      "pubmed_entry_date": "2026-11-18",
+      "disease": "mci",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.2196/86271",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43049744/",
+      "source": "PubMed",
+      "research_type": "trial",
+      "selection_signals": [
+        "rct"
+      ],
+      "priority_score": 10,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-19"
+    },
+    {
+      "id": "43049552",
+      "title": "Neurotransmitter and Transcriptomic Basis of Gray Matter Volume Abnormalities in Alzheimer's Disease: A Meta-Analysis.",
+      "journal": "Human brain mapping",
+      "date": "2026-12-01",
+      "pubmed_entry_date": "2026-11-18",
+      "disease": "ad",
+      "topic": "pathology",
+      "publication_types": [
+        "Journal Article",
+        "Meta-Analysis",
+        "Review"
+      ],
+      "doi": "10.1002/hbm.70691",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43049552/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-19"
+    },
+    {
+      "id": "43049195",
+      "title": "Digital Delivery of Apolipoprotein E Genotype and Phosphorylated Tau 217 Results: The eSMARTER Randomized Clinical Trial.",
+      "journal": "JAMA neurology",
+      "date": "2026-11-18",
+      "pubmed_entry_date": "2026-11-18",
+      "disease": "ad",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1001/jamaneurol.2026.4279",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43049195/",
+      "source": "PubMed",
+      "research_type": "trial",
+      "selection_signals": [
+        "rct"
+      ],
+      "priority_score": 10,
+      "journal_tiebreak": 1,
+      "selected_on": "2026-11-19"
+    },
+    {
+      "id": "43049085",
+      "title": "Distinguishing Major Forms of Dementia Through Neuropsychological Performances: A Systematic Review With Structured Narrative Synthesis.",
+      "journal": "Journal of geriatric psychiatry and neurology",
+      "date": "2026-11-18",
+      "pubmed_entry_date": "2026-11-18",
+      "disease": "ftd",
+      "topic": "diagnosis",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.1177/08919887261503011",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43049085/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-19"
+    },
+    {
+      "id": "43048026",
+      "title": "Effectiveness of treatments for traumatic brain injury on reducing risk of cognitive decline or dementia: a systematic review.",
+      "journal": "BMJ neurology open",
+      "date": "2026-11-13",
+      "pubmed_entry_date": "2026-11-18",
+      "disease": "other",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1136/bmjno-2026-001757",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43048026/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-19"
+    },
+    {
+      "id": "43047603",
+      "title": "Artificial intelligence applications in fMRI-based disease diagnosis: A systematic review.",
+      "journal": "Digital health",
+      "date": "2026-10-08",
+      "pubmed_entry_date": "2026-11-18",
+      "disease": "other",
+      "topic": "imaging",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1177/20552076261491584",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43047603/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic",
+        "multicenter",
+        "independent"
+      ],
+      "priority_score": 12,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-19"
+    },
+    {
+      "id": "43046686",
+      "title": "Efficacy of action observation therapy in patients with dementia or cognitive impairment: a systematic review and meta-analysis of randomized trials.",
+      "journal": "Disability and rehabilitation",
+      "date": "2026-11-17",
+      "pubmed_entry_date": "2026-11-18",
+      "disease": "other",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1080/09638288.2026.2747156",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43046686/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-19"
+    },
+    {
+      "id": "43046606",
+      "title": "Multidomain interventions for dementia prevention: a large‑scale systematic review and meta‑analysis of 27 randomized controlled trials.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "date": "2026-11",
+      "pubmed_entry_date": "2026-11-18",
+      "disease": "other",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review",
+        "Meta-Analysis"
+      ],
+      "doi": "10.1002/alz.71997",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43046606/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic",
+        "large_sample"
+      ],
+      "priority_score": 12,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-19"
+    },
+    {
+      "id": "43046597",
+      "title": "Capillary brain-derived p-tau217 for remote triaging of Alzheimer's disease pathology: Clinical performance in a CLIA/CAP-certified laboratory.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "date": "2026-11",
+      "pubmed_entry_date": "2026-11-18",
+      "disease": "ad",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article",
+        "Validation Study"
+      ],
+      "doi": "10.1002/alz.72012",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43046597/",
+      "source": "PubMed",
+      "research_type": "validation",
+      "selection_signals": [
+        "validation"
+      ],
+      "priority_score": 7,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-19"
+    },
+    {
+      "id": "43046143",
+      "title": "Effectiveness, acceptability, and completeness of intervention reporting of psychological interventions for people with dementia or mild cognitive impairment: a mixed-methods systematic review.",
+      "journal": "BMC geriatrics",
+      "date": "2026-11-17",
+      "pubmed_entry_date": "2026-11-17",
+      "disease": "mci",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review",
+        "Meta-Analysis"
+      ],
+      "doi": "10.1186/s12877-026-08596-z",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43046143/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic",
+        "large_sample"
+      ],
+      "priority_score": 12,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-19"
+    },
+    {
+      "id": "43046128",
+      "title": "Comparison of Two Dementia Care Interventions and Usual Care on Days Spent at Home: The D-CARE Randomized Clinical Trial.",
+      "journal": "Journal of the American Geriatrics Society",
+      "date": "2026-11-17",
+      "pubmed_entry_date": "2026-11-17",
+      "disease": "other",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1111/jgs.70838",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43046128/",
+      "source": "PubMed",
+      "research_type": "trial",
+      "selection_signals": [
+        "rct"
+      ],
+      "priority_score": 10,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-19"
+    },
+    {
+      "id": "43045795",
+      "title": "Generational gains in cognitive capacity and dementia incidence rates in Western countries.",
+      "journal": "Nature medicine",
+      "date": "2026-11-17",
+      "pubmed_entry_date": "2026-11-17",
+      "disease": "other",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1038/s41591-026-04759-y",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43045795/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 1,
+      "selected_on": "2026-11-19"
+    },
+    {
+      "id": "43044765",
+      "title": "Pre-procedural serum albumin, age and survival after percutaneous endoscopic gastrostomy in dementia: Derivation and external validation.",
+      "journal": "Clinical nutrition ESPEN",
+      "date": "2026-11-17",
+      "pubmed_entry_date": "2026-11-17",
+      "disease": "other",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1016/j.clnesp.2026.105247",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43044765/",
+      "source": "PubMed",
+      "research_type": "validation",
+      "selection_signals": [
+        "validation",
+        "independent",
+        "large_sample"
+      ],
+      "priority_score": 12,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-19"
+    },
+    {
+      "id": "43044296",
+      "title": "Effects of temporal and parietal cortex non-invasive brain stimulation on memory in healthy older adults, mild cognitive impairment, and Alzheimer's disease: A systematic review and meta-analysis.",
+      "journal": "Neurobiology of aging",
+      "date": "2026-11-15",
+      "pubmed_entry_date": "2026-11-17",
+      "disease": "ad",
+      "topic": "other",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.1016/j.neurobiolaging.2026.11.002",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43044296/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-19"
+    },
+    {
+      "id": "43044253",
+      "title": "Machine-learning-assisted screening prioritization for MoCA-BC-defined mild cognitive impairment among rural older adults in China: a multicentre cross-sectional study.",
+      "journal": "Geriatric nursing (New York, N.Y.)",
+      "date": "2026-11-17",
+      "pubmed_entry_date": "2026-11-17",
+      "disease": "mci",
+      "topic": "diagnosis",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1016/j.gerinurse.2026.104441",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43044253/",
+      "source": "PubMed",
+      "research_type": "validation",
+      "selection_signals": [
+        "validation",
+        "independent"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-19"
+    },
     {
       "id": "43043965",
       "title": "Integrating large-scale serum baseline metabolomics and APOE ε4 genotype status for the non-invasive detection of Alzheimer's disease in the Alzheimer's Disease Neuroimaging Initiative (ADNI) cohort.",
@@ -23,7 +370,9 @@
       "disease": "ad",
       "topic": "biomarker",
       "publication_types": [
-        "Journal Article"
+        "Journal Article",
+        "Multicenter Study",
+        "Observational Study"
       ],
       "doi": "10.1371/journal.pone.0356137",
       "url": "https://pubmed.ncbi.nlm.nih.gov/43043965/",
@@ -31,9 +380,10 @@
       "research_type": "validation",
       "selection_signals": [
         "validation",
+        "multicenter",
         "independent"
       ],
-      "priority_score": 10,
+      "priority_score": 12,
       "journal_tiebreak": 0,
       "selected_on": "2026-11-18"
     },
