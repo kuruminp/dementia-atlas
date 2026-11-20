@@ -1,19 +1,134 @@
 {
   "meta": {
     "mode": "api",
-    "fetched_at": "2026-11-19T22:31:27+00:00",
+    "fetched_at": "2026-11-20T22:04:07+00:00",
     "verified_at": null,
     "source": "PubMed",
     "description": "Metadata-based research prioritization; not scientific appraisal.",
     "selection_method": "metadata_quality_v1",
-    "archive_count": 337,
+    "archive_count": 342,
     "lookback_days": 14,
-    "newly_added": 17,
+    "newly_added": 5,
     "pending_pmids": [
       "23556151"
     ]
   },
   "items": [
+    {
+      "id": "43061843",
+      "title": "Association of cumulative cholesterol-HDL-glucose index with cognitive function changes and risk of new-onset mild cognitive impairment in middle-aged and older adults: A prospective cohort study.",
+      "journal": "Journal of Alzheimer's disease : JAD",
+      "date": "2026-11-20",
+      "pubmed_entry_date": "2026-11-20",
+      "disease": "ad",
+      "topic": "diagnosis",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1177/13872877261507975",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43061843/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-21"
+    },
+    {
+      "id": "43058262",
+      "title": "Real world evidence of second-generation antipsychotics for the management of behavioral and psychological symptoms of dementia: a systematic review and meta-analysis.",
+      "journal": "Psychopharmacology",
+      "date": "2026-11-20",
+      "pubmed_entry_date": "2026-11-19",
+      "disease": "vascular",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1007/s00213-026-07209-2",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43058262/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic",
+        "large_sample"
+      ],
+      "priority_score": 12,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-21"
+    },
+    {
+      "id": "43058145",
+      "title": "AMYPAD-PNHS: A Pan-European, Multi-Site & Multimodal MRI Dataset of Older Adults Without Dementia.",
+      "journal": "Scientific data",
+      "date": "2026-08-03",
+      "pubmed_entry_date": "2026-11-19",
+      "disease": "ad",
+      "topic": "imaging",
+      "publication_types": [
+        "Journal Article",
+        "Dataset"
+      ],
+      "doi": "10.1038/s41597-026-07988-5",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43058145/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "multicenter"
+      ],
+      "priority_score": 7,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-21"
+    },
+    {
+      "id": "43057396",
+      "title": "Genetic Variants and Domain-Specific Cognitive Function in the Alzheimer's Disease Continuum: A Systematic Review.",
+      "journal": "Ageing research reviews",
+      "date": "2026-11-19",
+      "pubmed_entry_date": "2026-11-19",
+      "disease": "ad",
+      "topic": "pathology",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.1016/j.arr.2026.103448",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43057396/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-21"
+    },
+    {
+      "id": "43056189",
+      "title": "A chronic grief management intervention-video (CGMI-V) for family caregivers of persons with dementia residing in long-term care: a randomized controlled trial.",
+      "journal": "Aging & mental health",
+      "date": "2026-11-19",
+      "pubmed_entry_date": "2026-11-19",
+      "disease": "ad",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1080/13607863.2026.2760954",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43056189/",
+      "source": "PubMed",
+      "research_type": "trial",
+      "selection_signals": [
+        "rct"
+      ],
+      "priority_score": 10,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-21"
+    },
     {
       "id": "43055363",
       "title": "Neuropathology-defined Alzheimer's disease transcriptomic programs converge in blood at mild cognitive impairment.",
