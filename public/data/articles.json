@@ -3,10 +3,86 @@
     "mode": "curated",
     "source": "note",
     "description": "Verified free published note essays copied with author permission",
-    "fetched_at": "2026-11-20T22:20:55+00:00",
+    "fetched_at": "2026-11-21T21:06:12+00:00",
     "policy": "price=0; published; non-exam; public details only"
   },
   "items": [
+    {
+      "key": "nab544fce0040",
+      "title": "レカネマブでアミロイドを除去すると，脳では何が起こるのか？――130種類の血液タンパク質から見えてきた治療の意外な影響",
+      "url": "https://note.com/merry_lily/n/nab544fce0040",
+      "date": "2026-11-21",
+      "category": "研究の読みもの",
+      "description": "アルツハイマー病（AD）の治療は，近年大きく進歩しています． レカネマブ（レケンビ）やドナネマブ（ケサンラ）などの抗アミロイドβ（Aβ）抗体が登場し，脳に蓄積したアミロイドを除去することで，認知機能低下の進行を…",
+      "tag": "research",
+      "local_url": "./articles/nab544fce0040.html",
+      "related_pmids": [
+        "36449413",
+        "42785333",
+        "42535277",
+        "40729527"
+      ],
+      "references": [
+        {
+          "pmid": "36449413",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36449413/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "42785333",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42785333/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "42535277",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42535277/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "40729527",
+          "title": "",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40729527/",
+          "doi": "",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1056/nejmoa2212948",
+          "doi": "10.1056/nejmoa2212948",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1016/s1474-4422(26)00284-x",
+          "doi": "10.1016/s1474-4422(26)00284-x",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1002/alz.71705",
+          "doi": "10.1002/alz.71705",
+          "in_catalog": false
+        },
+        {
+          "pmid": "",
+          "title": "",
+          "url": "https://doi.org/10.1002/alz.70535",
+          "doi": "10.1002/alz.70535",
+          "in_catalog": false
+        }
+      ],
+      "source": "note/merry_lily",
+      "access": "free"
+    },
     {
       "key": "ne6350efdc593",
       "title": "血液検査で，アルツハイマー病以外のタウ病理も見つけられるのか―eMTBR-tau243が示した新しい可能性",
