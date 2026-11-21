@@ -2,7 +2,7 @@
   "meta": {
     "source": "PubMed E-utilities",
     "role": "references cited in the site's free author-written essays",
-    "last_updated": "2026-11-20T22:21:15+00:00",
+    "last_updated": "2026-11-21T21:06:33+00:00",
     "separate_from_new_100": true
   },
   "items": [
@@ -950,6 +950,7 @@
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/36449413/",
       "local_url": "./papers/36449413.html",
       "article_keys": [
+        "nab544fce0040",
         "n1956b2c9c1db",
         "n64d727555c2e"
       ]
@@ -1496,6 +1497,7 @@
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40729527/",
       "local_url": "./papers/40729527.html",
       "article_keys": [
+        "nab544fce0040",
         "nabdd7ac86909",
         "n41427e9b4f57"
       ]
@@ -2035,6 +2037,18 @@
       ]
     },
     {
+      "id": "42535277",
+      "title": "Heterogeneity in plasma p-tau217 response and its association with cognitive trajectories under lecanemab treatment.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "year": "2026",
+      "doi": "10.1002/alz.71705",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42535277/",
+      "local_url": "./papers/42535277.html",
+      "article_keys": [
+        "nab544fce0040"
+      ]
+    },
+    {
       "id": "42554263",
       "title": "Epigenetic aging in Alzheimer's disease: Relation to proteome.",
       "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
@@ -2068,6 +2082,18 @@
       "local_url": "./papers/42781504.html",
       "article_keys": [
         "n6c526398fced"
+      ]
+    },
+    {
+      "id": "42785333",
+      "title": "Dynamic changes in plasma biomarkers of Alzheimer's disease in patients treated with lecanemab: a longitudinal cohort study.",
+      "journal": "The Lancet. Neurology",
+      "year": "2026",
+      "doi": "10.1016/S1474-4422(26)00284-X",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42785333/",
+      "local_url": "./papers/42785333.html",
+      "article_keys": [
+        "nab544fce0040"
       ]
     },
     {
