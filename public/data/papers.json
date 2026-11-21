@@ -1,19 +1,114 @@
 {
   "meta": {
     "mode": "api",
-    "fetched_at": "2026-11-20T22:04:07+00:00",
+    "fetched_at": "2026-11-21T20:43:01+00:00",
     "verified_at": null,
     "source": "PubMed",
     "description": "Metadata-based research prioritization; not scientific appraisal.",
     "selection_method": "metadata_quality_v1",
-    "archive_count": 342,
+    "archive_count": 346,
     "lookback_days": 14,
-    "newly_added": 5,
+    "newly_added": 4,
     "pending_pmids": [
       "23556151"
     ]
   },
   "items": [
+    {
+      "id": "43065098",
+      "title": "The association between continuous glucose monitoring metrics and mild cognitive impairment in chinese patients with type 2 diabetes mellitus complicated by white matter hyperintensities: a single-center cross-sectional study.",
+      "journal": "Diabetology & metabolic syndrome",
+      "date": "2026-08-27",
+      "pubmed_entry_date": "2026-11-20",
+      "disease": "mci",
+      "topic": "other",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1186/s13098-026-02287-w",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43065098/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-22"
+    },
+    {
+      "id": "43065059",
+      "title": "Data-driven clustering of atrophy patterns in Alzheimer's disease.",
+      "journal": "Alzheimer's research & therapy",
+      "date": "2026-11-19",
+      "pubmed_entry_date": "2026-11-20",
+      "disease": "ad",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1186/s13195-026-02261-8",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43065059/",
+      "source": "PubMed",
+      "research_type": "validation",
+      "selection_signals": [
+        "validation"
+      ],
+      "priority_score": 7,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-22"
+    },
+    {
+      "id": "43064724",
+      "title": "The efficacy of ketogenic interventions on neuropsychological & metabolic outcomes in serious mental illness & neurocognitive disorders: a systematic review & meta-analysis.",
+      "journal": "Translational psychiatry",
+      "date": "2026-08-27",
+      "pubmed_entry_date": "2026-11-20",
+      "disease": "other",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review",
+        "Meta-Analysis"
+      ],
+      "doi": "10.1038/s41398-026-04370-2",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43064724/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-22"
+    },
+    {
+      "id": "43063473",
+      "title": "AI-Based Monitoring Devices for the Identification of Circadian Parameters as Digital Predictive Biomarkers of Neurodegenerative Diseases in Older Adults: Systematic Review.",
+      "journal": "JMIR aging",
+      "date": "2026-11-20",
+      "pubmed_entry_date": "2026-11-20",
+      "disease": "ad",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review",
+        "Review"
+      ],
+      "doi": "10.2196/83031",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43063473/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic",
+        "multicenter",
+        "independent"
+      ],
+      "priority_score": 12,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-22"
+    },
     {
       "id": "43061843",
       "title": "Association of cumulative cholesterol-HDL-glucose index with cognitive function changes and risk of new-onset mild cognitive impairment in middle-aged and older adults: A prospective cohort study.",
@@ -440,6 +535,7 @@
       "topic": "treatment",
       "publication_types": [
         "Journal Article",
+        "Multicenter Study",
         "Randomized Controlled Trial"
       ],
       "doi": "10.1001/jamanetworkopen.2026.44426",
@@ -447,9 +543,10 @@
       "source": "PubMed",
       "research_type": "trial",
       "selection_signals": [
-        "rct"
+        "rct",
+        "multicenter"
       ],
-      "priority_score": 10,
+      "priority_score": 12,
       "journal_tiebreak": 0,
       "selected_on": "2026-11-20"
     },
@@ -835,6 +932,8 @@
       "topic": "other",
       "publication_types": [
         "Journal Article",
+        "Systematic Review",
+        "Meta-Analysis",
         "Review"
       ],
       "doi": "10.1016/j.neurobiolaging.2026.11.002",
