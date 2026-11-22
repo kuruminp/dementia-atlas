@@ -1,12 +1,12 @@
 {
   "meta": {
     "mode": "api",
-    "fetched_at": "2026-11-21T20:43:01+00:00",
+    "fetched_at": "2026-11-22T20:53:32+00:00",
     "verified_at": null,
     "source": "PubMed",
     "description": "Metadata-based research prioritization; not scientific appraisal.",
     "selection_method": "metadata_quality_v1",
-    "archive_count": 346,
+    "archive_count": 350,
     "lookback_days": 14,
     "newly_added": 4,
     "pending_pmids": [
@@ -14,6 +14,98 @@
     ]
   },
   "items": [
+    {
+      "id": "43066744",
+      "title": "Greater DTI-ALPS reduction in normal pressure hydrocephalus compared with Alzheimer's and Parkinson's diseases: a systematic review and meta-analysis.",
+      "journal": "European radiology",
+      "date": "2026-11-21",
+      "pubmed_entry_date": "2026-11-21",
+      "disease": "ad",
+      "topic": "imaging",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1007/s00330-026-13060-y",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43066744/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic",
+        "large_sample"
+      ],
+      "priority_score": 12,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-23"
+    },
+    {
+      "id": "43066583",
+      "title": "Serum fibroblast growth factor-23 and risk of incident stroke and dementia: The Atherosclerosis Risk in Communities Study.",
+      "journal": "Journal of Alzheimer's disease : JAD",
+      "date": "2026-11-21",
+      "pubmed_entry_date": "2026-11-21",
+      "disease": "other",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1177/13872877261507035",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43066583/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-23"
+    },
+    {
+      "id": "43066573",
+      "title": "Pharmacological and non-pharmacological management of sleep disturbances in Alzheimer's disease: A systematic review and meta-analysis.",
+      "journal": "Journal of Alzheimer's disease : JAD",
+      "date": "2026-11-21",
+      "pubmed_entry_date": "2026-11-21",
+      "disease": "ad",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.1177/13872877261504983",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43066573/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 10,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-23"
+    },
+    {
+      "id": "43066253",
+      "title": "Transcranial pulse stimulation in the treatment of cognitive disorders of aging: a systematic review.",
+      "journal": "Frontiers in psychiatry",
+      "date": "2026-11-06",
+      "pubmed_entry_date": "2026-11-21",
+      "disease": "other",
+      "topic": "imaging",
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review"
+      ],
+      "doi": "10.3389/fpsyt.2026.1958477",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43066253/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-23"
+    },
     {
       "id": "43065098",
       "title": "The association between continuous glucose monitoring metrics and mild cognitive impairment in chinese patients with type 2 diabetes mellitus complicated by white matter hyperintensities: a single-center cross-sectional study.",
