@@ -1,19 +1,90 @@
 {
   "meta": {
     "mode": "api",
-    "fetched_at": "2026-11-22T20:53:32+00:00",
+    "fetched_at": "2026-11-24T01:58:07+00:00",
     "verified_at": null,
     "source": "PubMed",
     "description": "Metadata-based research prioritization; not scientific appraisal.",
     "selection_method": "metadata_quality_v1",
-    "archive_count": 350,
+    "archive_count": 353,
     "lookback_days": 14,
-    "newly_added": 4,
+    "newly_added": 3,
     "pending_pmids": [
       "23556151"
     ]
   },
   "items": [
+    {
+      "id": "43070426",
+      "title": "Systematic Review and Meta-Analysis of Behavioral and Psychological Symptoms of Dementia and Their Impact on Professional Caregiver Burden.",
+      "journal": "Alzheimer disease and associated disorders",
+      "date": "2026-11-13",
+      "pubmed_entry_date": "2026-11-23",
+      "disease": "ad",
+      "topic": "care",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1097/WAD.0000000000000766",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43070426/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-24"
+    },
+    {
+      "id": "43069032",
+      "title": "Latent profile analysis-based development and validation of a model for differentiating subjective cognitive decline profiles in older hemodialysis patients: a cross-sectional study.",
+      "journal": "BMC geriatrics",
+      "date": "2026-08-27",
+      "pubmed_entry_date": "2026-11-22",
+      "disease": "ad",
+      "topic": "other",
+      "publication_types": [
+        "Journal Article",
+        "Validation Study"
+      ],
+      "doi": "10.1186/s12877-026-08006-4",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43069032/",
+      "source": "PubMed",
+      "research_type": "validation",
+      "selection_signals": [
+        "validation",
+        "independent"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-24"
+    },
+    {
+      "id": "43068457",
+      "title": "Postdiagnostic support programme for people newly diagnosed with early-stage dementia: a randomised controlled trial.",
+      "journal": "Age and ageing",
+      "date": "2026-10-31",
+      "pubmed_entry_date": "2026-11-22",
+      "disease": "other",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article",
+        "Randomized Controlled Trial",
+        "Multicenter Study"
+      ],
+      "doi": "10.1093/ageing/afag334",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43068457/",
+      "source": "PubMed",
+      "research_type": "trial",
+      "selection_signals": [
+        "rct",
+        "multicenter"
+      ],
+      "priority_score": 12,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-24"
+    },
     {
       "id": "43066744",
       "title": "Greater DTI-ALPS reduction in normal pressure hydrocephalus compared with Alzheimer's and Parkinson's diseases: a systematic review and meta-analysis.",
