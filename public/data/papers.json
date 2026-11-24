@@ -1,19 +1,183 @@
 {
   "meta": {
     "mode": "api",
-    "fetched_at": "2026-11-24T01:58:07+00:00",
+    "fetched_at": "2026-11-24T23:42:39+00:00",
     "verified_at": null,
     "source": "PubMed",
     "description": "Metadata-based research prioritization; not scientific appraisal.",
     "selection_method": "metadata_quality_v1",
-    "archive_count": 353,
+    "archive_count": 360,
     "lookback_days": 14,
-    "newly_added": 3,
+    "newly_added": 7,
     "pending_pmids": [
+      "32134616",
       "23556151"
     ]
   },
   "items": [
+    {
+      "id": "43077653",
+      "title": "Stage-Dependent Associations of Amyloid Pathology and White Matter Hyperintensities With Cognitive Decline Across the Clinical Continuum.",
+      "journal": "Neurology",
+      "date": "2026-11-24",
+      "pubmed_entry_date": "2026-11-24",
+      "disease": "ad",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article",
+        "Observational Study",
+        "Multicenter Study"
+      ],
+      "doi": "10.1212/WNL.0000000000218823",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43077653/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "multicenter"
+      ],
+      "priority_score": 7,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-25"
+    },
+    {
+      "id": "43077186",
+      "title": "Motoric cognitive risk syndrome identifies older adults at risk of functional decline in rural South Africa.",
+      "journal": "GeroScience",
+      "date": "2026-11-24",
+      "pubmed_entry_date": "2026-11-24",
+      "disease": "other",
+      "topic": "other",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1007/s11357-026-02678-x",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43077186/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 7,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-25"
+    },
+    {
+      "id": "43075684",
+      "title": "Predictive Performance and Risk of Bias of Multimodal Deep Learning Models for Conversion from Mild Cognitive Impairment to Alzheimer's Disease: A Systematic Review and Meta-Analysis.",
+      "journal": "Current Alzheimer research",
+      "date": "2026-11-19",
+      "pubmed_entry_date": "2026-11-24",
+      "disease": "ad",
+      "topic": "other",
+      "publication_types": [
+        "Journal Article",
+        "Meta-Analysis"
+      ],
+      "doi": "10.2174/0115672050521280261104062103",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43075684/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-25"
+    },
+    {
+      "id": "43074921",
+      "title": "Empirical dietary inflammatory pattern and cognitive-state transitions in older US adults: a multistate cohort study.",
+      "journal": "Frontiers in nutrition",
+      "date": "2026-11-09",
+      "pubmed_entry_date": "2026-11-24",
+      "disease": "other",
+      "topic": "prevention",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.3389/fnut.2026.1979010",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43074921/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 7,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-25"
+    },
+    {
+      "id": "43073553",
+      "title": "Ferroptosis-related molecular signatures in Alzheimer's disease and the neuroprotective effects of allicin: an integrated bioinformatics, peripheral single-cell transcriptomic, and experimental study.",
+      "journal": "Naunyn-Schmiedeberg's archives of pharmacology",
+      "date": "2026-11-24",
+      "pubmed_entry_date": "2026-11-23",
+      "disease": "ad",
+      "topic": "other",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1007/s00210-026-06112-z",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43073553/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "independent"
+      ],
+      "priority_score": 7,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-25"
+    },
+    {
+      "id": "43073047",
+      "title": "Effect of a theory-informed multicomponent exercise program on cognitive function and other health outcomes among older adults with mild cognitive impairment: the MIND-STEP randomized controlled trial.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "date": "2026-11",
+      "pubmed_entry_date": "2026-11-23",
+      "disease": "mci",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article",
+        "Randomized Controlled Trial"
+      ],
+      "doi": "10.1002/alz.71984",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43073047/",
+      "source": "PubMed",
+      "research_type": "trial",
+      "selection_signals": [
+        "rct"
+      ],
+      "priority_score": 10,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-25"
+    },
+    {
+      "id": "43072071",
+      "title": "The Effects of Nonpharmacologic Interventions to Enhance Sleep Outcomes Among Older People With Mild Cognitive Impairment: A Systematic Review and Meta-analysis.",
+      "journal": "Journal of the American Medical Directors Association",
+      "date": "2026-11-23",
+      "pubmed_entry_date": "2026-11-23",
+      "disease": "mci",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.1016/j.jamda.2026.106308",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43072071/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 10,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-25"
+    },
     {
       "id": "43070426",
       "title": "Systematic Review and Meta-Analysis of Behavioral and Psychological Symptoms of Dementia and Their Impact on Professional Caregiver Burden.",
