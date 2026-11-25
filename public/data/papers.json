@@ -1,20 +1,317 @@
 {
   "meta": {
     "mode": "api",
-    "fetched_at": "2026-11-24T23:42:39+00:00",
+    "fetched_at": "2026-11-25T23:25:47+00:00",
     "verified_at": null,
     "source": "PubMed",
     "description": "Metadata-based research prioritization; not scientific appraisal.",
     "selection_method": "metadata_quality_v1",
-    "archive_count": 360,
+    "archive_count": 374,
     "lookback_days": 14,
-    "newly_added": 7,
+    "newly_added": 14,
     "pending_pmids": [
       "32134616",
       "23556151"
     ]
   },
   "items": [
+    {
+      "id": "43084810",
+      "title": "Implications of EASO's New Obesity Definition Across Aging Cohorts: Prevalence and Associations With Dementia and All-Cause Mortality.",
+      "journal": "Neurology",
+      "date": "2026-11-25",
+      "pubmed_entry_date": "2026-11-25",
+      "disease": "other",
+      "topic": "diagnosis",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1212/WNL.0000000000218865",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43084810/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-26"
+    },
+    {
+      "id": "43084645",
+      "title": "Multiplex proteomics of cerebrospinal fluid reveals markers of clinical and neuropathological heterogeneity in Lewy body dementia.",
+      "journal": "Science translational medicine",
+      "date": "2026-11-25",
+      "pubmed_entry_date": "2026-11-25",
+      "disease": "dlb",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1126/scitranslmed.adz7369",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43084645/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "independent"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 1,
+      "selected_on": "2026-11-26"
+    },
+    {
+      "id": "43084503",
+      "title": "Candidate metabolic mediators of the association between psoriasis and incident dementia: a prospective metabolomics mediation analysis.",
+      "journal": "Age and ageing",
+      "date": "2026-10-31",
+      "pubmed_entry_date": "2026-11-25",
+      "disease": "other",
+      "topic": "imaging",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1093/ageing/afag338",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43084503/",
+      "source": "PubMed",
+      "research_type": "validation",
+      "selection_signals": [
+        "validation"
+      ],
+      "priority_score": 7,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-26"
+    },
+    {
+      "id": "43083809",
+      "title": "Herpes Zoster Vaccination and Dementia Risk: A Systematic Review of Natural Experiments and Cohort Evidence.",
+      "journal": "Vaccines",
+      "date": "2026-11-13",
+      "pubmed_entry_date": "2026-11-25",
+      "disease": "other",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.3390/vaccines14110979",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43083809/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-26"
+    },
+    {
+      "id": "43082207",
+      "title": "No clear evidence for relationships of apolipoprotein E genotype with measures of common infections in three UK cohorts.",
+      "journal": "Scientific reports",
+      "date": "2026-08-19",
+      "pubmed_entry_date": "2026-11-25",
+      "disease": "ad",
+      "topic": "pathology",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1038/s41598-026-64892-z",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43082207/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-26"
+    },
+    {
+      "id": "43081471",
+      "title": "Bedside Swallowing Screening Scores, Dementia, Disuse Syndrome and Recorded Choking in Hospitalised Patients: A Retrospective Cross-Sectional Study.",
+      "journal": "Geriatrics (Basel, Switzerland)",
+      "date": "2026-10-29",
+      "pubmed_entry_date": "2026-11-25",
+      "disease": "other",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.3390/geriatrics11060156",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43081471/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-26"
+    },
+    {
+      "id": "43080386",
+      "title": "An explainable deep learning framework for differentiating idiopathic normal pressure hydrocephalus from Alzheimer's disease using brain MRI.",
+      "journal": "Frontiers in neuroinformatics",
+      "date": "2026-11-10",
+      "pubmed_entry_date": "2026-11-25",
+      "disease": "ad",
+      "topic": "imaging",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.3389/fninf.2026.1990170",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43080386/",
+      "source": "PubMed",
+      "research_type": "validation",
+      "selection_signals": [
+        "validation",
+        "independent"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-26"
+    },
+    {
+      "id": "43080265",
+      "title": "Effects of intermittent theta burst stimulation combined with hyperbaric oxygen therapy on cognitive function and cerebral blood flow in patients with post-stroke mild cognitive impairment.",
+      "journal": "Frontiers in human neuroscience",
+      "date": "2026-11-10",
+      "pubmed_entry_date": "2026-11-25",
+      "disease": "mci",
+      "topic": "treatment",
+      "publication_types": [
+        "Clinical Trial",
+        "Journal Article"
+      ],
+      "doi": "10.3389/fnhum.2026.1966062",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43080265/",
+      "source": "PubMed",
+      "research_type": "trial",
+      "selection_signals": [
+        "clinical_trial"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-26"
+    },
+    {
+      "id": "43080231",
+      "title": "Trajectories of remnant cholesterol and HbA1c-derived estimated triglyceride-glucose index and risk of dementia in people with type 2 diabetes: A 25-year population-based cohort study in New Zealand.",
+      "journal": "Alzheimer's & dementia (Amsterdam, Netherlands)",
+      "date": "2026-11-23",
+      "pubmed_entry_date": "2026-11-25",
+      "disease": "other",
+      "topic": "other",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1002/dad2.70550",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43080231/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-26"
+    },
+    {
+      "id": "43080091",
+      "title": "Explainable Deep Learning Maps Age-Dependent Differences Between Alzheimer's Disease and Healthy Brain Aging.",
+      "journal": "Human brain mapping",
+      "date": "2026-12-01",
+      "pubmed_entry_date": "2026-11-25",
+      "disease": "ad",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1002/hbm.70656",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43080091/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-26"
+    },
+    {
+      "id": "43079928",
+      "title": "Cognitive, imaging, and proteomic signatures of MRI-based brain aging in the Chariot Pro Study.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "date": "2026-11",
+      "pubmed_entry_date": "2026-11-25",
+      "disease": "other",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1002/alz.72015",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43079928/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 7,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-26"
+    },
+    {
+      "id": "43079847",
+      "title": "Artificial Intelligence for Early Diagnosis and APOE-Targeted Therapeutics of Alzheimer's Disease: A Systematic Review.",
+      "journal": "Current topics in medicinal chemistry",
+      "date": "2026-11-23",
+      "pubmed_entry_date": "2026-11-25",
+      "disease": "ad",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.2174/0115680266539894261119062059",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43079847/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-26"
+    },
+    {
+      "id": "43079554",
+      "title": "Longitudinal coupling of automated telephone-based cognitive change and brain atrophy across the Alzheimer's disease risk continuum.",
+      "journal": "Alzheimer's research & therapy",
+      "date": "2026-11-22",
+      "pubmed_entry_date": "2026-11-25",
+      "disease": "ad",
+      "topic": "care",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1186/s13195-026-02266-3",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43079554/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "independent"
+      ],
+      "priority_score": 7,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-26"
+    },
     {
       "id": "43077653",
       "title": "Stage-Dependent Associations of Amyloid Pathology and White Matter Hyperintensities With Cognitive Decline Across the Clinical Continuum.",
@@ -187,7 +484,9 @@
       "disease": "ad",
       "topic": "care",
       "publication_types": [
-        "Journal Article"
+        "Journal Article",
+        "Systematic Review",
+        "Meta-Analysis"
       ],
       "doi": "10.1097/WAD.0000000000000766",
       "url": "https://pubmed.ncbi.nlm.nih.gov/43070426/",
@@ -508,7 +807,7 @@
     },
     {
       "id": "43057396",
-      "title": "Genetic Variants and Domain-Specific Cognitive Function in the Alzheimer's Disease Continuum: A Systematic Review.",
+      "title": "Genetic variants and domain-specific cognitive function in the Alzheimer's disease continuum: A systematic review.",
       "journal": "Ageing research reviews",
       "date": "2026-11-19",
       "pubmed_entry_date": "2026-11-19",
@@ -2476,6 +2775,29 @@
       "priority_score": 10,
       "journal_tiebreak": 0,
       "selected_on": "2026-11-13"
+    },
+    {
+      "id": "43012635",
+      "title": "Evaluation of a Rapid and Practical Deep Learning Framework for T1-weighted MRI-based Brain Age Estimation.",
+      "journal": "Radiology. Artificial intelligence",
+      "date": "2026-11",
+      "pubmed_entry_date": "2026-11-11",
+      "disease": "other",
+      "topic": "imaging",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1148/ryai.260310",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43012635/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 7,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-26"
     },
     {
       "id": "43011462",
