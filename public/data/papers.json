@@ -1,20 +1,274 @@
 {
   "meta": {
     "mode": "api",
-    "fetched_at": "2026-11-25T23:25:47+00:00",
+    "fetched_at": "2026-11-26T23:25:15+00:00",
     "verified_at": null,
     "source": "PubMed",
     "description": "Metadata-based research prioritization; not scientific appraisal.",
     "selection_method": "metadata_quality_v1",
-    "archive_count": 374,
+    "archive_count": 385,
     "lookback_days": 14,
-    "newly_added": 14,
+    "newly_added": 11,
     "pending_pmids": [
       "32134616",
       "23556151"
     ]
   },
   "items": [
+    {
+      "id": "43095558",
+      "title": "Association Between Herpes Simplex Virus-1 Infection and Dementia or Alzheimer's Disease: A Systematic Review and Meta-Analysis.",
+      "journal": "Open forum infectious diseases",
+      "date": "2026-11-15",
+      "pubmed_entry_date": "2026-11-26",
+      "disease": "ad",
+      "topic": "other",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1093/ofid/ofag707",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43095558/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-27"
+    },
+    {
+      "id": "43095139",
+      "title": "Short-Interval MRI Volume Change and 24-Month Recorded Alzheimer's Disease Diagnosis in Mild Cognitive Impairment: An Exploratory Landmark Analysis.",
+      "journal": "Computational and structural biotechnology journal",
+      "date": "2026-11-25",
+      "pubmed_entry_date": "2026-11-26",
+      "disease": "ad",
+      "topic": "imaging",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.34133/csbj.0284",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43095139/",
+      "source": "PubMed",
+      "research_type": "validation",
+      "selection_signals": [
+        "validation"
+      ],
+      "priority_score": 7,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-27"
+    },
+    {
+      "id": "43093436",
+      "title": "Donepezil Versus Rivastigmine or Galantamine and Dementia Progression in German General Practices: An Active-Comparator New-User Cohort Study.",
+      "journal": "Pharmaceuticals (Basel, Switzerland)",
+      "date": "2026-11-20",
+      "pubmed_entry_date": "2026-11-26",
+      "disease": "ad",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.3390/ph19111853",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43093436/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-27"
+    },
+    {
+      "id": "43091418",
+      "title": "The Clock Drawing Test as a Dynamic Assessment Tool for Monitoring Cognitive Changes in Hospitalized Older Adults Across the Cognitive Spectrum, Including Dementia: A Prospective Observational Study.",
+      "journal": "Medical sciences (Basel, Switzerland)",
+      "date": "2026-11-13",
+      "pubmed_entry_date": "2026-11-26",
+      "disease": "other",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article",
+        "Observational Study"
+      ],
+      "doi": "10.3390/medsci14070780",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43091418/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "multicenter"
+      ],
+      "priority_score": 7,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-27"
+    },
+    {
+      "id": "43090975",
+      "title": "Multivariable Diagnostic Models for Differentiating Alzheimer's Disease, Vascular Dementia, and Mixed Dementia: A Systematic Review.",
+      "journal": "Journal of clinical medicine",
+      "date": "2026-11-15",
+      "pubmed_entry_date": "2026-11-26",
+      "disease": "vascular",
+      "topic": "diagnosis",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.3390/jcm15228942",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43090975/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic",
+        "independent"
+      ],
+      "priority_score": 11,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-27"
+    },
+    {
+      "id": "43089304",
+      "title": "Dysphagia in Alzheimer's Disease: Prevalence, Swallowing Phenotype, Airway Safety, and Associations with Disease Severity: A Systematic Review and Meta-Analysis.",
+      "journal": "Healthcare (Basel, Switzerland)",
+      "date": "2026-11-20",
+      "pubmed_entry_date": "2026-11-26",
+      "disease": "ad",
+      "topic": "diagnosis",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.3390/healthcare14223997",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43089304/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 10,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-27"
+    },
+    {
+      "id": "43088552",
+      "title": "In Silico Modeling of Transcriptomic Signatures in Alzheimer's Disease: A Leakage-Controlled Machine Learning Framework for Candidate Biomarker Discovery.",
+      "journal": "Current issues in molecular biology",
+      "date": "2026-11-19",
+      "pubmed_entry_date": "2026-11-26",
+      "disease": "ad",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.3390/cimb48111251",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43088552/",
+      "source": "PubMed",
+      "research_type": "validation",
+      "selection_signals": [
+        "validation",
+        "independent"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-27"
+    },
+    {
+      "id": "43087707",
+      "title": "Blood GFAP in Cerebral Small Vessel Disease and Vascular Cognitive Impairment: A Systematic Review of Cognitive Associations, Diagnostic Performance, and Prognostic Evidence.",
+      "journal": "Biomedicines",
+      "date": "2026-10-26",
+      "pubmed_entry_date": "2026-11-26",
+      "disease": "vascular",
+      "topic": "diagnosis",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.3390/biomedicines14112451",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43087707/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic",
+        "independent"
+      ],
+      "priority_score": 12,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-27"
+    },
+    {
+      "id": "43087701",
+      "title": "Genome-Wide Genotype Resource and Exploratory Association Analysis of Alzheimer's Disease in a Kazakh Population: A Case-Control Study.",
+      "journal": "Biomedicines",
+      "date": "2026-10-25",
+      "pubmed_entry_date": "2026-11-26",
+      "disease": "ad",
+      "topic": "pathology",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.3390/biomedicines14112444",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43087701/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "independent"
+      ],
+      "priority_score": 7,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-27"
+    },
+    {
+      "id": "43087013",
+      "title": "Associations of energy-adjusted dietary niacin equivalent density with cognitive function and incident dementia: evidence from a large population-based cohort.",
+      "journal": "Nutrition journal",
+      "date": "2026-09-04",
+      "pubmed_entry_date": "2026-11-26",
+      "disease": "ad",
+      "topic": "prevention",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1186/s12937-026-01385-9",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43087013/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-27"
+    },
+    {
+      "id": "43086153",
+      "title": "Response Inhibition Deficits in Mild Cognitive Impairment and Alzheimer's disease: Compensatory Mechanisms, Heterogeneity, and Prognostic Value: A Systematic Review.",
+      "journal": "The American journal of geriatric psychiatry : official journal of the American Association for Geriatric Psychiatry",
+      "date": "2026-10-14",
+      "pubmed_entry_date": "2026-11-25",
+      "disease": "ad",
+      "topic": "diagnosis",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.1016/j.jagp.2026.10.003",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43086153/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-27"
+    },
     {
       "id": "43084810",
       "title": "Implications of EASO's New Obesity Definition Across Aging Cohorts: Prevalence and Associations With Dementia and All-Cause Mortality.",
