@@ -1,12 +1,12 @@
 {
   "meta": {
     "mode": "api",
-    "fetched_at": "2026-11-26T23:25:15+00:00",
+    "fetched_at": "2026-11-27T23:06:14+00:00",
     "verified_at": null,
     "source": "PubMed",
     "description": "Metadata-based research prioritization; not scientific appraisal.",
     "selection_method": "metadata_quality_v1",
-    "archive_count": 385,
+    "archive_count": 396,
     "lookback_days": 14,
     "newly_added": 11,
     "pending_pmids": [
@@ -15,6 +15,238 @@
     ]
   },
   "items": [
+    {
+      "id": "43102428",
+      "title": "Effects of Snoezelen Multisensory Therapy on Behavioral and Psychological Symptoms of Dementia: A 12-Week Randomized Controlled Trial.",
+      "journal": "Clinical gerontologist",
+      "date": "2026-11-27",
+      "pubmed_entry_date": "2026-11-27",
+      "disease": "other",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1080/07317115.2026.2770146",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43102428/",
+      "source": "PubMed",
+      "research_type": "trial",
+      "selection_signals": [
+        "rct"
+      ],
+      "priority_score": 10,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-28"
+    },
+    {
+      "id": "43101943",
+      "title": "Development and external validation of SHARP-WA: A later-life dementia risk prediction model for community-dwelling older women.",
+      "journal": "Journal of Alzheimer's disease : JAD",
+      "date": "2026-11-27",
+      "pubmed_entry_date": "2026-11-27",
+      "disease": "other",
+      "topic": "prevention",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1177/13872877261509097",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43101943/",
+      "source": "PubMed",
+      "research_type": "validation",
+      "selection_signals": [
+        "validation",
+        "independent"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-28"
+    },
+    {
+      "id": "43100124",
+      "title": "The Effects of Hand Massage on Agitated Behaviors in Older Adults with Dementia: A Randomized Controlled Trial.",
+      "journal": "Clinical gerontologist",
+      "date": "2026-11-27",
+      "pubmed_entry_date": "2026-11-27",
+      "disease": "other",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1080/07317115.2026.2769356",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43100124/",
+      "source": "PubMed",
+      "research_type": "trial",
+      "selection_signals": [
+        "rct"
+      ],
+      "priority_score": 10,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-28"
+    },
+    {
+      "id": "43100090",
+      "title": "Docosahexaenoic acid and Alzheimer's disease: a systematic review.",
+      "journal": "Folia neuropathologica",
+      "date": "2026",
+      "pubmed_entry_date": "2026-11-27",
+      "disease": "ad",
+      "topic": "treatment",
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review"
+      ],
+      "doi": "10.5114/fn.2026.165797",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43100090/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-28"
+    },
+    {
+      "id": "43100004",
+      "title": "Association between remitted major depressive disorder and subsequent risk of cognitive deficit and neurocognitive disorders - A systematic review and meta-analysis.",
+      "journal": "Psychological medicine",
+      "date": "2026-11-27",
+      "pubmed_entry_date": "2026-11-27",
+      "disease": "mci",
+      "topic": "diagnosis",
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review",
+        "Meta-Analysis",
+        "Review"
+      ],
+      "doi": "10.1017/S0033291726106692",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43100004/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic",
+        "large_sample"
+      ],
+      "priority_score": 11,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-28"
+    },
+    {
+      "id": "43099856",
+      "title": "Urinary 2-hydroxynaphthalene is associated with late-life poor cognitive performance and ADRM1-related microglial state alterations.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "date": "2026-11",
+      "pubmed_entry_date": "2026-11-27",
+      "disease": "ad",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1002/alz.72000",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43099856/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-28"
+    },
+    {
+      "id": "43099740",
+      "title": "Effect of APOE and LPA genotypes on the risk of dementia after myocardial infarction: a clinic-based cohort study.",
+      "journal": "Alzheimer's research & therapy",
+      "date": "2026-09-05",
+      "pubmed_entry_date": "2026-11-27",
+      "disease": "other",
+      "topic": "care",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1186/s13195-026-02168-4",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43099740/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "large_sample"
+      ],
+      "priority_score": 8,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-28"
+    },
+    {
+      "id": "43099638",
+      "title": "Effects of cerebellar rTMS on cognitive function in Alzheimer's disease: a randomized controlled fNIRS trial.",
+      "journal": "Alzheimer's research & therapy",
+      "date": "2026-09-03",
+      "pubmed_entry_date": "2026-11-27",
+      "disease": "ad",
+      "topic": "biomarker",
+      "publication_types": [
+        "Journal Article",
+        "Randomized Controlled Trial"
+      ],
+      "doi": "10.1186/s13195-026-02170-w",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43099638/",
+      "source": "PubMed",
+      "research_type": "trial",
+      "selection_signals": [
+        "rct"
+      ],
+      "priority_score": 10,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-28"
+    },
+    {
+      "id": "43099621",
+      "title": "Childhood inductive reasoning, cardiovascular and cardiometabolic morbidity and dementia risk - a population representative cohort study across six decades.",
+      "journal": "Alzheimer's research & therapy",
+      "date": "2026-09-05",
+      "pubmed_entry_date": "2026-11-27",
+      "disease": "other",
+      "topic": "other",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1186/s13195-026-02179-1",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43099621/",
+      "source": "PubMed",
+      "research_type": "cohort",
+      "selection_signals": [
+        "cohort",
+        "independent",
+        "large_sample"
+      ],
+      "priority_score": 10,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-28"
+    },
+    {
+      "id": "43097767",
+      "title": "Layers of competence: a mixed-methods systematic review of factors shaping dementia care competence among nursing staff.",
+      "journal": "Geriatric nursing (New York, N.Y.)",
+      "date": "2026-11-26",
+      "pubmed_entry_date": "2026-11-26",
+      "disease": "other",
+      "topic": "other",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "doi": "10.1016/j.gerinurse.2026.104438",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43097767/",
+      "source": "PubMed",
+      "research_type": "systematic",
+      "selection_signals": [
+        "systematic"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-28"
+    },
     {
       "id": "43095558",
       "title": "Association Between Herpes Simplex Virus-1 Infection and Dementia or Alzheimer's Disease: A Systematic Review and Meta-Analysis.",
@@ -962,6 +1194,29 @@
       "priority_score": 9,
       "journal_tiebreak": 0,
       "selected_on": "2026-11-22"
+    },
+    {
+      "id": "43064508",
+      "title": "Machine learning-based mortality prediction models among older adults in routine primary care: comparing overall performance with a subgroup of people with dementia.",
+      "journal": "Family medicine and community health",
+      "date": "2026-11-20",
+      "pubmed_entry_date": "2026-11-20",
+      "disease": "other",
+      "topic": "other",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "doi": "10.1136/fmch-2026-004112",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43064508/",
+      "source": "PubMed",
+      "research_type": "validation",
+      "selection_signals": [
+        "validation",
+        "independent"
+      ],
+      "priority_score": 9,
+      "journal_tiebreak": 0,
+      "selected_on": "2026-11-28"
     },
     {
       "id": "43063473",
